@@ -74,15 +74,15 @@ class AutoScout24Scraper:
     def load_brands_from_json(self):
         """Charge la liste des marques depuis le fichier JSON ou l'extrait si nécessaire."""
         try:
-            brands_file = Path("data/brands_for_scraping.json")
+            brands_file = Path("data/as24_brands_for_scraping.json")
             if brands_file.exists():
                 with open(brands_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     self.brands_list = data["brands"]
-                logger.info(f"📋 Chargé {len(self.brands_list)} marques depuis brands_for_scraping.json")
+                logger.info(f"📋 Chargé {len(self.brands_list)} marques depuis as24_brands_for_scraping.json")
                 return True
             else:
-                logger.warning("⚠️ Fichier brands_for_scraping.json non trouvé")
+                logger.warning("⚠️ Fichier as24_brands_for_scraping.json non trouvé")
                 logger.info("🔄 Extraction automatique des marques depuis AutoScout24...")
                 if self.extract_brands_from_autoscout24():
                     # Recharger après extraction
@@ -174,7 +174,7 @@ class AutoScout24Scraper:
                 "brands": self.brands_list
             }
 
-            brands_file = Path("data/brands_for_scraping.json")
+            brands_file = Path("data/as24_brands_for_scraping.json")
             brands_file.parent.mkdir(parents=True, exist_ok=True)
             with open(brands_file, 'w', encoding='utf-8') as f:
                 json.dump(output_data, f, indent=2, ensure_ascii=False)
@@ -182,7 +182,7 @@ class AutoScout24Scraper:
             # Générer aussi la version Markdown lisible
             self.generate_brands_markdown_version(output_data, str(brands_file))
 
-            logger.info(f"💾 Fichier brands_for_scraping.json créé: {len(brands_data)} marques")
+            logger.info(f"💾 Fichier as24_brands_for_scraping.json créé: {len(brands_data)} marques")
             
             # Comparer avec la version précédente s'il y en a une
             self.compare_with_previous_version()
@@ -198,10 +198,10 @@ class AutoScout24Scraper:
         try:
             # Chercher le fichier de données le plus récent
             data_dir = Path("data")
-            version_pattern = r"auto_scraped_models_(\d{8}_\d{6})\.json"
+            version_pattern = r"as24_scraped_models_(\d{8}_\d{6})\.json"
             
             versions = []
-            for file in data_dir.glob("auto_scraped_models_*.json"):
+            for file in data_dir.glob("as24_scraped_models_*.json"):
                 match = re.search(version_pattern, file.name)
                 if match:
                     timestamp = match.group(1)
@@ -376,10 +376,10 @@ class AutoScout24Scraper:
         try:
             # Chercher le fichier de données le plus récent
             data_dir = Path("data")
-            version_pattern = r"auto_scraped_models_(\d{8}_\d{6})\.json"
+            version_pattern = r"as24_scraped_models_(\d{8}_\d{6})\.json"
             
             versions = []
-            for file in data_dir.glob("auto_scraped_models_*.json"):
+            for file in data_dir.glob("as24_scraped_models_*.json"):
                 match = re.search(version_pattern, file.name)
                 if match:
                     timestamp = match.group(1)
@@ -599,7 +599,7 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
         try:
             if not output_file:
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                output_file = f"data/auto_scraped_models_{timestamp}.json"
+                output_file = f"data/as24_scraped_models_{timestamp}.json"
             
             # Préparer les données
             result_data = {
@@ -757,7 +757,7 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
             
             # Pied de page
             md_content += f"\n---\n\n"
-            md_content += f"**Fichier source** : `auto_scraped_models_{metadata['scraped_at'].replace(':', '').replace('-', '').replace('T', '_')}.json`\n"
+            md_content += f"**Fichier source** : `as24_scraped_models_{metadata['scraped_at'].replace(':', '').replace('-', '').replace('T', '_')}.json`\n"
             md_content += f"**Généré par** : AutoScout24 Scraper {metadata['scraper_version']}\n"
             md_content += f"**Date de génération** : {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}\n"
             
@@ -847,7 +847,7 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
 
             # Pied de page
             md_content += f"\n---\n\n"
-            md_content += f"**Fichier source** : `brands_for_scraping.json`\n"
+            md_content += f"**Fichier source** : `as24_brands_for_scraping.json`\n"
             md_content += f"**Généré par** : AutoScout24 Scraper v{metadata.get('scraper_version', '3.3')}\n"
             md_content += f"**Date de génération** : {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}\n"
 
@@ -862,10 +862,10 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
         try:
             # Chercher le fichier de données le plus récent (sauf le fichier actuel)
             data_dir = Path("data")
-            version_pattern = r"auto_scraped_models_(\d{8}_\d{6})\.json"
+            version_pattern = r"as24_scraped_models_(\d{8}_\d{6})\.json"
             
             versions = []
-            for file in data_dir.glob("auto_scraped_models_*.json"):
+            for file in data_dir.glob("as24_scraped_models_*.json"):
                 match = re.search(version_pattern, file.name)
                 if match:
                     timestamp = match.group(1)

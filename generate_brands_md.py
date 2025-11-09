@@ -87,7 +87,7 @@ def format_brands_as_markdown(brands_data):
 
         # Pied de page
         md_content += f"\n---\n\n"
-        md_content += f"**Fichier source** : `brands_for_scraping.json`\n"
+        md_content += f"**Fichier source** : `as24_brands_for_scraping.json`\n"
         md_content += f"**Généré par** : AutoScout24 Scraper v3.3\n"
         md_content += f"**Date de génération** : {datetime.now().strftime('%d/%m/%Y à %H:%M:%S')}\n"
 
@@ -101,7 +101,7 @@ def main():
     print("🚀 Génération du fichier Markdown des marques...")
 
     # Charger les données existantes
-    brands_file = Path('data/brands_for_scraping.json')
+    brands_file = Path('data/as24_brands_for_scraping.json')
     if brands_file.exists():
         with open(brands_file, 'r', encoding='utf-8') as f:
             brands_data = json.load(f)
@@ -116,7 +116,7 @@ def main():
         else:
             print("❌ Échec de la génération du Markdown")
     else:
-        print("❌ Fichier brands_for_scraping.json non trouvé")
+        print("❌ Fichier as24_brands_for_scraping.json non trouvé")
 
 if __name__ == "__main__":
     main()
