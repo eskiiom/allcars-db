@@ -1,0 +1,8 @@
+# AutoScout24 Scraper - Dépendances Minimales
+# Version 3.3 optimisée - February 2024
+
+# Browser automation (REQUIRED)
+selenium==4.15.2
+
+# WebDriver management (RECOMMENDED - pour simplifier l'installation)
+webdriver-manager==4.0.1
