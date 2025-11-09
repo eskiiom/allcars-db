@@ -314,19 +314,6 @@ python autoscout24_scraper.py --help
 - **Fréquence d'usage** : 1-2 fois par an (production)
 - **Monitoring automatique** des changements
 
-
-### **Scripts archivés :**
-- Tous les scripts du dossier `scripts/` déplacés
-- Scripts de démonstration abandonnés
-- Versions multiples (v1, v2, v3 expérimentales)
-- Scripts d'analyse et de test
-
-### **Fichiers racine archivés :**
-- Tous les `.py`, `.md`, `.log`, `.ps1`, `.bat` inutiles
-- Dossiers multiples (`v2/`, `orchestrator/`, `cache/`, etc.)
-- Fichiers de documentation supplémentaires
-- Fichiers de test et de démonstration
-
 ## 🆘 **Support & Maintenance**
 
 - **Documentation** : Ce README + logs
