@@ -234,29 +234,7 @@ python autoscout24_scraper.py --help
 ---
 ```
 
-## 🧹 **NETTOYAGE COMPLET DU PROJET**
-
-**IMPORTANT :** Ce projet contient énormement de fichiers obsolètes à nettoyer.
-
-### **ÉTAPE 1 : Nettoyer les scripts/ (obligatoire)**
-```bash
-# Python
-python archive/clean_up_old_scripts.py
-
-# PowerShell (Windows)
-.\archive\clean_up_old_scripts.ps1
-```
-
-### **ÉTAPE 2 : Nettoyer la racine (fortement recommandé)**
-```bash
-# Python
-python archive/clean_root_directory.py
-
-# PowerShell (Windows)
-.\archive\clean_root_directory.ps1
-```
-
-## 📁 **Structure du Projet (APRÈS NETTOYAGE)**
+## 📁 **Structure du Projet **
 
 ```
 📦 Projet Nettoyé
@@ -272,39 +250,9 @@ python archive/clean_root_directory.py
 │   └── auto_scraped_models_*.md     # 🆕 Résultats MD (format lisible)
 ├── 📁 docs/                         # Documentation et historique
 │   └── execution_history.md         # Historique des exécutions
-├── 📁 archive/                      # Archive complète
-│   ├── clean_up_old_scripts.ps1     # 🗑️ Script PowerShell nettoyage scripts/
-│   ├── clean_up_old_scripts.py      # 🗑️ Script Python nettoyage scripts/
-│   ├── clean_root_directory.ps1     # 🗑️ Script PowerShell nettoyage racine
-│   ├── clean_root_directory.py      # 🗑️ Script Python nettoyage racine
-│   ├── obsolete_scripts/            # Scripts abandonnés (30+ scripts)
-│   └── obsolete_root_files/         # Fichiers/dossiers racine obsolètes
 └── 📁 logs/                         # Fichiers de log (généré)
     └── scraper.log                  # Log détaillé d'exécution
 ```
-
-## ✅ **Améliorations Apportées**
-
-### **AVANT (Chaos Total) :**
-- ❌ **50+ fichiers** dispersés à la racine
-- ❌ **30+ scripts** dans `scripts/`
-- ❌ **Approches multiples** incohérentes
-- ❌ **Fichier des marques requis** manuellement
-- ❌ **Pas de versioning** des changements
-- ❌ **Pas d'historique** des exécutions
-- ❌ **Pas de version lisible** des données
-- ❌ **Difficile à maintenir**
-
-### **APRÈS (Architecture Claire) :**
-- ✅ **Un seul script principal** moderne et autonome
-- ✅ **Interface CLI** intuitive
-- ✅ **Extraction automatique** des marques si nécessaire
-- ✅ **Versioning automatique** avec rapports détaillés
-- ✅ **🆕 Historique Markdown** automatique et lisible
-- ✅ **🆕 Fichiers Markdown de données** automatiques
-- ✅ **Format lisible** pour analyse et documentation
-- ✅ **Archive complète** de tous les éléments obsolètes
-- ✅ **Prêt pour production** (usage 1-2 fois/an)
 
 ## 🔧 **Fonctionnalités Principales**
 
@@ -366,7 +314,6 @@ python archive/clean_root_directory.py
 - **Fréquence d'usage** : 1-2 fois par an (production)
 - **Monitoring automatique** des changements
 
-## 🗑️ **Contenu de l'Archive**
 
 ### **Scripts archivés :**
 - Tous les scripts du dossier `scripts/` déplacés
@@ -386,31 +333,23 @@ python archive/clean_root_directory.py
 - **Logs** : `scraper.log` pour debugging
 - **🆕 Historique** : `docs/execution_history.md` pour revue des changements
 - **🆕 Fichiers de données** : Format Markdown lisible pour analyse
-- **Archive** : Scripts de référence dans `archive/`
 - **Données** : Timestamps automatiques pour versioning
-- **Nettoyage** : Scripts de nettoyage complets dans `archive/`
 - **Versioning** : Rapports automatiques à chaque exécution
 
 ## 🚀 **Étapes Rapides pour Utiliser le Projet**
 
-1. **Nettoyer le projet** (2 étapes) :
-   ```bash
-   python archive/clean_up_old_scripts.py
-   python archive/clean_root_directory.py
-   ```
-
-2. **Utiliser le script principal** :
+1. **Utiliser le script principal** :
    ```bash
    python autoscout24_scraper.py --test    # Test rapide (extraction auto)
    python autoscout24_scraper.py           # Scraping complet avec versioning + historique + Markdown
    ```
 
-3. **🆕 Générer la version Markdown des marques** (si nécessaire) :
+2. **🆕 Générer la version Markdown des marques** (si nécessaire) :
    ```bash
    python generate_brands_md.py            # Génère brands_for_scraping.md depuis brands_for_scraping.json
    ```
 
-4. **Consulter l'historique et les fichiers** :
+3. **Consulter l'historique et les fichiers** :
    ```bash
    cat docs/execution_history.md           # Voir l'historique des exécutions
    cat data/brands_for_scraping.md         # 🆕 Voir la liste des marques en format lisible
@@ -475,5 +414,3 @@ Le script génère maintenant **automatiquement deux fichiers** par exécution :
 - **Intégration** possible dans documentation projet
 
 ---
-
-**🎉 Projet modernisé, autonome et prêt pour la production avec historique complet et fichiers Markdown de données !**
