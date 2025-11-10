@@ -100,6 +100,15 @@ class AutoScout24Scraper:
             logger.error(f"❌ Erreur lors du chargement des marques: {e}")
             return False
     
+    def write_progress(self, message):
+        """Write progress message to progress file (no encoding issues)."""
+        try:
+            progress_file = "progress_autoscout24_eu_market.txt"
+            with open(progress_file, 'a', encoding='utf-8', errors='ignore') as f:
+                f.write(message + '\n')
+        except:
+            pass  # Ignore any file writing errors
+    
     def extract_brands_from_autoscout24(self):
         """Extrait automatiquement les marques depuis AutoScout24."""
         try:
@@ -972,7 +981,9 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
                 brand_name = brand_info["name"]
                 brand_id = brand_info["id"]
                 
-                logger.info(f"🏷️ [{i}/{len(brands_to_process)}] {brand_name}")
+                progress_msg = f"[{i}/{len(brands_to_process)}] {brand_name}"
+                logger.info(f"🏷️ {progress_msg}")
+                self.write_progress(progress_msg)
                 
                 try:
                     models = self.scrape_brand_models(brand_name, brand_id)
@@ -982,14 +993,22 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
                     model_changes = self.compare_model_changes_with_previous(brand_name, models)
                     
                     if models:
-                        logger.info(f"   ✅ {len(models)} modèles")
+                        success_msg = f"✅ {len(models)} modèles"
+                        logger.info(f"   {success_msg}")
+                        self.write_progress(success_msg)
                         if model_changes and model_changes["total_changes"] > 0:
-                            logger.info(f"   🔄 Changements: +{len(model_changes['new_models'])} -{len(model_changes['removed_models'])}")
+                            change_msg = f"Changements: +{len(model_changes['new_models'])} -{len(model_changes['removed_models'])}"
+                            logger.info(f"   🔄 {change_msg}")
+                            self.write_progress(change_msg)
                     else:
-                        logger.warning(f"   ⚠️ Aucun modèle")
+                        warning_msg = "⚠️ Aucun modèle"
+                        logger.warning(f"   {warning_msg}")
+                        self.write_progress(warning_msg)
                     
                 except Exception as e:
-                    logger.error(f"   ❌ Erreur: {e}")
+                    error_msg = f"❌ Erreur: {e}"
+                    logger.error(f"   {error_msg}")
+                    self.write_progress(error_msg)
                     self.brand_models_data[brand_name] = []
                 
                 # Pause entre les marques (2-4 secondes)
@@ -998,7 +1017,9 @@ Ce fichier contient l'historique complet des exécutions du scraper avec les inf
                 # Afficher le progrès tous les 10 marques
                 if i % 10 == 0:
                     brands_with_models = len([b for b, models in self.brand_models_data.items() if models])
-                    logger.info(f"📊 Progrès: {i}/{len(brands_to_process)} marques, {brands_with_models} avec modèles")
+                    progress_msg = f"📊 Progrès: {i}/{len(brands_to_process)} marques, {brands_with_models} avec modèles"
+                    logger.info(progress_msg)
+                    self.write_progress(progress_msg)
             
             logger.info(f"🎉 Scraping terminé! {len(self.brand_models_data)} marques traitées")
             return True

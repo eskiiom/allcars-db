@@ -100,6 +100,15 @@ class CarGurusScraper:
             logger.error(f"❌ Error loading brands: {e}")
             return False
     
+    def write_progress(self, message):
+        """Write progress message to progress file (no encoding issues)."""
+        try:
+            progress_file = "progress_cargurus_us_market.txt"
+            with open(progress_file, 'a', encoding='utf-8', errors='ignore') as f:
+                f.write(message + '\n')
+        except:
+            pass  # Ignore any file writing errors
+    
     def extract_brands_from_cargurus(self):
         """Automatically extract brands from CarGurus.com."""
         try:
@@ -481,19 +490,27 @@ class CarGurusScraper:
                 brand_name = brand_info["name"]
                 brand_id = brand_info["id"]
                 
-                logger.info(f"🏷️ [{i}/{len(brands_to_process)}] {brand_name}")
+                progress_msg = f"[{i}/{len(brands_to_process)}] {brand_name}"
+                logger.info(f"🏷️ {progress_msg}")
+                self.write_progress(progress_msg)
                 
                 try:
                     models = self.scrape_brand_models(brand_name, brand_id)
                     self.brand_models_data[brand_name] = models
                     
                     if models:
-                        logger.info(f"   ✅ {len(models)} models")
+                        success_msg = f"✅ {len(models)} models"
+                        logger.info(f"   {success_msg}")
+                        self.write_progress(success_msg)
                     else:
-                        logger.warning(f"   ⚠️ No models")
+                        warning_msg = "⚠️ No models"
+                        logger.warning(f"   {warning_msg}")
+                        self.write_progress(warning_msg)
                     
                 except Exception as e:
-                    logger.error(f"   ❌ Error: {e}")
+                    error_msg = f"❌ Error: {e}"
+                    logger.error(f"   {error_msg}")
+                    self.write_progress(error_msg)
                     self.brand_models_data[brand_name] = []
                 
                 # Pause between brands (1-2 seconds)
@@ -502,7 +519,9 @@ class CarGurusScraper:
                 # Show progress every 10 brands
                 if i % 10 == 0:
                     brands_with_models = len([b for b, models in self.brand_models_data.items() if models])
-                    logger.info(f"📊 Progress: {i}/{len(brands_to_process)} brands, {brands_with_models} with models")
+                    progress_msg = f"📊 Progress: {i}/{len(brands_to_process)} brands, {brands_with_models} with models"
+                    logger.info(progress_msg)
+                    self.write_progress(progress_msg)
             
             logger.info(f"🎉 Scraping complete! {len(self.brand_models_data)} brands processed")
             return True

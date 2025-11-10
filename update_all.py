@@ -8,6 +8,7 @@ import subprocess
 import sys
 import time
 import json
+import os
 from pathlib import Path
 from datetime import datetime
 import concurrent.futures
@@ -41,44 +42,39 @@ class AutoScoutOrchestrator:
         print()
     
     def run_scraper(self, script_name, description):
-        """Run a single scraper with timing and live output."""
+        """Run a single scraper with timing - no live output to avoid encoding issues."""
         print(f"🚀 Starting: {description}")
         start_time = time.time()
         
         try:
-            # Run the scraper script with live output
-            process = subprocess.Popen([
+            # Run the scraper script (no live output to avoid encoding issues)
+            result = subprocess.run([
                 sys.executable, script_name
-            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-               text=True, bufsize=1, universal_newlines=True)
+            ], capture_output=True, text=True, timeout=3600, encoding='utf-8')
             
-            # Read and display output in real-time
-            for line in process.stdout:
-                print(f"   {line.rstrip()}")
-            
-            process.wait()
             duration = time.time() - start_time
             
-            if process.returncode == 0:
+            if result.returncode == 0:
                 print(f"✅ {description} completed in {duration:.1f}s")
                 return {
                     'success': True,
                     'duration': duration,
-                    'output': '',
+                    'output': result.stdout,
                     'error': None
                 }
             else:
                 print(f"❌ {description} failed after {duration:.1f}s")
+                if result.stderr:
+                    print(f"Error: {result.stderr}")
                 return {
                     'success': False,
                     'duration': duration,
-                    'output': '',
-                    'error': f"Process exited with code {process.returncode}"
+                    'output': result.stdout,
+                    'error': result.stderr
                 }
                 
         except subprocess.TimeoutExpired:
             print(f"⏰ {description} timed out after 1 hour")
-            process.kill()
             return {
                 'success': False,
                 'duration': 3600,
@@ -116,30 +112,63 @@ class AutoScoutOrchestrator:
         )
     
     def run_parallel_scraper(self, script_name, source_name, source_emoji):
-        """Run a single scraper and return result."""
+        """Run a single scraper and return result with progress tracking via progress files."""
         print(f"🚀 {source_emoji} Starting: {source_name}")
         start_time = time.time()
         
+        # Create progress file for this scraper
+        progress_file = f"progress_{source_name.replace(' ', '_').replace('(', '').replace(')', '').replace('-', '').lower()}.txt"
+        Path(".").mkdir(exist_ok=True)
+        
+        # Remove old progress file if exists
+        if os.path.exists(progress_file):
+            os.remove(progress_file)
+        
         try:
-            # Run the scraper script with live output
+            # Run the scraper script
             process = subprocess.Popen([
                 sys.executable, script_name
-            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-               text=True, bufsize=1, universal_newlines=True)
+            ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             
-            # Read and display output in real-time with source prefix
-            for line in process.stdout:
-                print(f"  {source_emoji} {line.rstrip()}")
+            # Monitor progress by reading the progress file
+            last_lines = set()
             
+            while process.poll() is None:
+                try:
+                    if os.path.exists(progress_file):
+                        with open(progress_file, 'r', encoding='utf-8', errors='ignore') as f:
+                            lines = f.readlines()
+                            
+                            # Show new progress lines
+                            for line in lines:
+                                line = line.strip()
+                                if line and line not in last_lines:
+                                    print(f"  {source_emoji} {line}")
+                                    last_lines.add(line)
+                    
+                    time.sleep(1)  # Check every second
+                except Exception:
+                    pass  # Ignore any reading errors
+                
+            # Wait for process to complete
             process.wait()
             duration = time.time() - start_time
+            
+            # Read final results
+            final_output = ""
+            if os.path.exists(progress_file):
+                try:
+                    with open(progress_file, 'r', encoding='utf-8', errors='ignore') as f:
+                        final_output = f.read()
+                except:
+                    pass
             
             if process.returncode == 0:
                 print(f"  ✅ {source_name} completed in {duration:.1f}s")
                 return {
                     'success': True,
                     'duration': duration,
-                    'output': '',
+                    'output': final_output,
                     'error': None
                 }
             else:
@@ -147,19 +176,10 @@ class AutoScoutOrchestrator:
                 return {
                     'success': False,
                     'duration': duration,
-                    'output': '',
+                    'output': final_output,
                     'error': f"Process exited with code {process.returncode}"
                 }
                 
-        except subprocess.TimeoutExpired:
-            print(f"  ⏰ {source_name} timed out after 1 hour")
-            process.kill()
-            return {
-                'success': False,
-                'duration': 3600,
-                'output': '',
-                'error': 'Timeout after 1 hour'
-            }
         except Exception as e:
             print(f"  💥 {source_name} failed with exception: {e}")
             return {
@@ -168,6 +188,10 @@ class AutoScoutOrchestrator:
                 'output': '',
                 'error': str(e)
             }
+        finally:
+            # Clean up progress file
+            if os.path.exists(progress_file):
+                os.remove(progress_file)
     
     def run_parallel_update(self):
         """Run both scrapers in parallel, then consolidate."""
@@ -189,21 +213,19 @@ class AutoScoutOrchestrator:
             )
             
             print("⚡ Running AS24 and CarGurus in parallel...")
-            print("📊 Live Progress:")
-            print("-" * 50)
+            print("⏳ Processing... (progress will be shown at the end)")
             
             # Wait for both to complete
             as24_result = future_as24.result()
             cguru_result = future_cguru.result()
         
-        print("-" * 50)
         # Store results
         self.results = {
             'as24': as24_result,
             'cguru': cguru_result
         }
         
-        # Check if both succeeded
+        # Show completion summary
         if as24_result['success'] and cguru_result['success']:
             print("✅ Both scrapers completed successfully!")
             print("🔄 Starting consolidation...")
