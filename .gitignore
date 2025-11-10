@@ -4,4 +4,6 @@ data/
 *.pyc
 *.pyo
 *.pyd
+*.log
+.DS_Store
 .pytest_cache/
