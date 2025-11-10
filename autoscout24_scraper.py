@@ -33,7 +33,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler('scraper.log', encoding='utf-8')
+        logging.FileHandler('logs/as24_scraper.log', encoding='utf-8')
     ]
 )
 logger = logging.getLogger(__name__)

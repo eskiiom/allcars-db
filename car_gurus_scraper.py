@@ -33,7 +33,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler('car_gurus_scraper.log', encoding='utf-8')
+        logging.FileHandler('logs/cguru_scraper.log', encoding='utf-8')
     ]
 )
 logger = logging.getLogger(__name__)

