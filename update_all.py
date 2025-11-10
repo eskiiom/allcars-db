@@ -41,38 +41,44 @@ class AutoScoutOrchestrator:
         print()
     
     def run_scraper(self, script_name, description):
-        """Run a single scraper with timing."""
+        """Run a single scraper with timing and live output."""
         print(f"🚀 Starting: {description}")
         start_time = time.time()
         
         try:
-            # Run the scraper script
-            result = subprocess.run([
+            # Run the scraper script with live output
+            process = subprocess.Popen([
                 sys.executable, script_name
-            ], capture_output=True, text=True, timeout=3600)  # 1 hour timeout
+            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+               text=True, bufsize=1, universal_newlines=True)
             
+            # Read and display output in real-time
+            for line in process.stdout:
+                print(f"   {line.rstrip()}")
+            
+            process.wait()
             duration = time.time() - start_time
             
-            if result.returncode == 0:
+            if process.returncode == 0:
                 print(f"✅ {description} completed in {duration:.1f}s")
                 return {
                     'success': True,
                     'duration': duration,
-                    'output': result.stdout,
+                    'output': '',
                     'error': None
                 }
             else:
                 print(f"❌ {description} failed after {duration:.1f}s")
-                print(f"Error: {result.stderr}")
                 return {
                     'success': False,
                     'duration': duration,
-                    'output': result.stdout,
-                    'error': result.stderr
+                    'output': '',
+                    'error': f"Process exited with code {process.returncode}"
                 }
                 
         except subprocess.TimeoutExpired:
             print(f"⏰ {description} timed out after 1 hour")
+            process.kill()
             return {
                 'success': False,
                 'duration': 3600,
@@ -109,21 +115,88 @@ class AutoScoutOrchestrator:
             '🇺🇸 CarGurus (US Market)'
         )
     
+    def run_parallel_scraper(self, script_name, source_name, source_emoji):
+        """Run a single scraper and return result."""
+        print(f"🚀 {source_emoji} Starting: {source_name}")
+        start_time = time.time()
+        
+        try:
+            # Run the scraper script with live output
+            process = subprocess.Popen([
+                sys.executable, script_name
+            ], stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+               text=True, bufsize=1, universal_newlines=True)
+            
+            # Read and display output in real-time with source prefix
+            for line in process.stdout:
+                print(f"  {source_emoji} {line.rstrip()}")
+            
+            process.wait()
+            duration = time.time() - start_time
+            
+            if process.returncode == 0:
+                print(f"  ✅ {source_name} completed in {duration:.1f}s")
+                return {
+                    'success': True,
+                    'duration': duration,
+                    'output': '',
+                    'error': None
+                }
+            else:
+                print(f"  ❌ {source_name} failed after {duration:.1f}s")
+                return {
+                    'success': False,
+                    'duration': duration,
+                    'output': '',
+                    'error': f"Process exited with code {process.returncode}"
+                }
+                
+        except subprocess.TimeoutExpired:
+            print(f"  ⏰ {source_name} timed out after 1 hour")
+            process.kill()
+            return {
+                'success': False,
+                'duration': 3600,
+                'output': '',
+                'error': 'Timeout after 1 hour'
+            }
+        except Exception as e:
+            print(f"  💥 {source_name} failed with exception: {e}")
+            return {
+                'success': False,
+                'duration': 0,
+                'output': '',
+                'error': str(e)
+            }
+    
     def run_parallel_update(self):
         """Run both scrapers in parallel, then consolidate."""
         print("🚀 Starting PARALLEL UPDATE (both sources)...")
         
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
             # Submit both scraper jobs
-            future_as24 = executor.submit(self.run_as24_only)
-            future_cguru = executor.submit(self.run_cguru_only)
+            future_as24 = executor.submit(
+                self.run_parallel_scraper,
+                'autoscout24_scraper.py',
+                'AutoScout24 (EU Market)',
+                '🇪🇺'
+            )
+            future_cguru = executor.submit(
+                self.run_parallel_scraper,
+                'car_gurus_scraper.py',
+                'CarGurus (US Market)',
+                '🇺🇸'
+            )
             
             print("⚡ Running AS24 and CarGurus in parallel...")
+            print("📊 Live Progress:")
+            print("-" * 50)
             
             # Wait for both to complete
             as24_result = future_as24.result()
             cguru_result = future_cguru.result()
         
+        print("-" * 50)
         # Store results
         self.results = {
             'as24': as24_result,
