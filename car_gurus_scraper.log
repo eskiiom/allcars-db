@@ -1,0 +1,92 @@
+2025-11-10 21:03:58,926 - INFO - 🚀 CarGurus.com Autonomous Scraper - US Market v1.0
+2025-11-10 21:03:58,949 - INFO -    • Mode: Test
+2025-11-10 21:03:58,958 - INFO -    • Headless: True
+2025-11-10 21:03:58,966 - INFO -    • Max brands: 20
+2025-11-10 21:03:58,975 - INFO -    • 🚀 Automatic brand extraction if needed
+2025-11-10 21:04:01,338 - INFO - ✅ Selenium driver configured
+2025-11-10 21:04:01,369 - WARNING - ⚠️ File cargurus_brands_for_scraping.json not found
+2025-11-10 21:04:01,382 - INFO - 🔄 Automatic brand extraction from CarGurus...
+2025-11-10 21:04:01,422 - INFO - 🔍 Extracting brands from CarGurus...
+2025-11-10 21:04:01,457 - INFO - 🌐 Navigating to: https://www.cargurus.com
+2025-11-10 21:04:11,531 - INFO - ✅ Homepage loaded
+2025-11-10 21:04:11,566 - INFO - ✅ CarGurus brand menu found
+2025-11-10 21:04:11,658 - INFO - 🔍 Found 108 options in menu
+2025-11-10 21:04:17,141 - INFO - 📝 Brands Markdown file generated: data\cargurus_brands_for_scraping.md
+2025-11-10 21:04:17,174 - INFO - 💾 File cargurus_brands_for_scraping.json created: 107 brands
+2025-11-10 21:04:17,890 - INFO - ✅ Extraction successful: 107 brands
+2025-11-10 21:04:17,930 - INFO - 🌐 Navigating to: https://www.cargurus.com
+2025-11-10 21:04:23,894 - INFO - ✅ Homepage loaded
+2025-11-10 21:04:23,913 - INFO - 🚀 Starting scraping for 20 brands
+2025-11-10 21:04:23,927 - INFO - 🏷️ [1/20] Acura
+2025-11-10 21:04:26,259 - INFO - ✅ Acura: 17 models retrieved
+2025-11-10 21:04:26,265 - INFO -    ✅ 17 models
+2025-11-10 21:04:27,812 - INFO - 🏷️ [2/20] Alfa Romeo
+2025-11-10 21:04:29,979 - INFO - ✅ Alfa Romeo: 11 models retrieved
+2025-11-10 21:04:30,030 - INFO -    ✅ 11 models
+2025-11-10 21:04:31,870 - INFO - 🏷️ [3/20] Audi
+2025-11-10 21:04:34,423 - INFO - ✅ Audi: 61 models retrieved
+2025-11-10 21:04:34,428 - INFO -    ✅ 61 models
+2025-11-10 21:04:35,553 - INFO - 🏷️ [4/20] Bentley
+2025-11-10 21:04:37,852 - INFO - ✅ Bentley: 19 models retrieved
+2025-11-10 21:04:37,909 - INFO -    ✅ 19 models
+2025-11-10 21:04:39,092 - INFO - 🏷️ [5/20] BMW
+2025-11-10 21:04:41,586 - INFO - ✅ BMW: 49 models retrieved
+2025-11-10 21:04:42,825 - INFO -    ✅ 49 models
+2025-11-10 21:04:43,839 - INFO - 🏷️ [6/20] Buick
+2025-11-10 21:04:46,119 - INFO - ✅ Buick: 30 models retrieved
+2025-11-10 21:04:46,123 - INFO -    ✅ 30 models
+2025-11-10 21:04:48,038 - INFO - 🏷️ [7/20] Cadillac
+2025-11-10 21:04:50,476 - INFO - ✅ Cadillac: 52 models retrieved
+2025-11-10 21:04:50,505 - INFO -    ✅ 52 models
+2025-11-10 21:04:52,252 - INFO - 🏷️ [8/20] Chevrolet
+2025-11-10 21:04:56,002 - INFO - ✅ Chevrolet: 118 models retrieved
+2025-11-10 21:04:56,031 - INFO -    ✅ 118 models
+2025-11-10 21:04:57,817 - INFO - 🏷️ [9/20] Chrysler
+2025-11-10 21:05:00,364 - INFO - ✅ Chrysler: 24 models retrieved
+2025-11-10 21:05:00,387 - INFO -    ✅ 24 models
+2025-11-10 21:05:01,427 - INFO - 🏷️ [10/20] Dodge
+2025-11-10 21:05:04,250 - INFO - ✅ Dodge: 53 models retrieved
+2025-11-10 21:05:04,278 - INFO -    ✅ 53 models
+2025-11-10 21:05:06,113 - INFO - 📊 Progress: 10/20 brands, 10 with models
+2025-11-10 21:05:06,121 - INFO - 🏷️ [11/20] Ferrari
+2025-11-10 21:05:08,593 - INFO - ✅ Ferrari: 45 models retrieved
+2025-11-10 21:05:08,671 - INFO -    ✅ 45 models
+2025-11-10 21:05:10,465 - INFO - 🏷️ [12/20] Ford
+2025-11-10 21:05:13,652 - INFO - ✅ Ford: 112 models retrieved
+2025-11-10 21:05:15,510 - INFO -    ✅ 112 models
+2025-11-10 21:05:17,329 - INFO - 🏷️ [13/20] Genesis
+2025-11-10 21:05:19,563 - INFO - ✅ Genesis: 7 models retrieved
+2025-11-10 21:05:24,495 - INFO -    ✅ 7 models
+2025-11-10 21:05:26,494 - INFO - 🏷️ [14/20] GMC
+2025-11-10 21:05:30,776 - INFO - ✅ GMC: 44 models retrieved
+2025-11-10 21:05:30,796 - INFO -    ✅ 44 models
+2025-11-10 21:05:32,014 - INFO - 🏷️ [15/20] Honda
+2025-11-10 21:05:34,346 - INFO - ✅ Honda: 33 models retrieved
+2025-11-10 21:05:34,484 - INFO -    ✅ 33 models
+2025-11-10 21:05:35,656 - INFO - 🏷️ [16/20] Hyundai
+2025-11-10 21:05:38,080 - INFO - ✅ Hyundai: 43 models retrieved
+2025-11-10 21:05:38,086 - INFO -    ✅ 43 models
+2025-11-10 21:05:39,896 - INFO - 🏷️ [17/20] INFINITI
+2025-11-10 21:05:42,224 - INFO - ✅ INFINITI: 38 models retrieved
+2025-11-10 21:05:42,313 - INFO -    ✅ 38 models
+2025-11-10 21:05:44,273 - INFO - 🏷️ [18/20] Jaguar
+2025-11-10 21:05:46,524 - INFO - ✅ Jaguar: 14 models retrieved
+2025-11-10 21:05:46,530 - INFO -    ✅ 14 models
+2025-11-10 21:05:47,893 - INFO - 🏷️ [19/20] Jeep
+2025-11-10 21:05:50,119 - INFO - ✅ Jeep: 23 models retrieved
+2025-11-10 21:05:50,136 - INFO -    ✅ 23 models
+2025-11-10 21:05:51,862 - INFO - 🏷️ [20/20] Kia
+2025-11-10 21:05:54,281 - INFO - ✅ Kia: 36 models retrieved
+2025-11-10 21:05:54,294 - INFO -    ✅ 36 models
+2025-11-10 21:05:56,274 - INFO - 📊 Progress: 20/20 brands, 20 with models
+2025-11-10 21:05:56,291 - INFO - 🎉 Scraping complete! 20 brands processed
+2025-11-10 21:05:56,492 - INFO - 📝 Markdown file generated: data\cargurus_scraped_models_20251110_210556.md
+2025-11-10 21:05:56,497 - INFO - 💾 Results saved:
+2025-11-10 21:05:56,502 - INFO -    📄 JSON: data/cargurus_scraped_models_20251110_210556.json
+2025-11-10 21:05:56,513 - INFO -    📝 MD: data\cargurus_scraped_models_20251110_210556.md
+2025-11-10 21:05:56,547 - INFO - 📊 FINAL SUMMARY:
+2025-11-10 21:05:56,557 - INFO -    • Brands processed: 20
+2025-11-10 21:05:56,597 - INFO -    • Brands with models: 20
+2025-11-10 21:05:56,605 - INFO -    • Total models: 829
+2025-11-10 21:05:56,620 - INFO - 🎉 SUCCESS! File generated: data/cargurus_scraped_models_20251110_210556.json
+2025-11-10 21:05:58,959 - INFO - 🔒 Driver closed

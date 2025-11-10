@@ -1,0 +1,2860 @@
+2025-11-07 23:59:11,259 - INFO - 🚀 AutoScout24 Scraper - Version Simplifiée
+2025-11-07 23:59:11,264 - INFO -    • Mode: Complet
+2025-11-07 23:59:11,269 - INFO -    • Headless: True
+2025-11-07 23:59:11,274 - INFO -    • Marques max: Toutes
+2025-11-07 23:59:11,888 - WARNING - Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2025-11-07 23:59:12,679 - INFO - ✅ Driver Selenium configuré
+2025-11-07 23:59:12,684 - ERROR - ❌ Fichier data/brands_for_scraping.json non trouvé
+2025-11-07 23:59:12,687 - INFO - 💡 Assurez-vous que le fichier des marques existe dans data/
+2025-11-07 23:59:12,691 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-07 23:59:16,729 - INFO - ✅ Page d'accueil chargée
+2025-11-07 23:59:16,734 - INFO - 🚀 Début du scraping pour 0 marques
+2025-11-07 23:59:16,738 - INFO - 🎉 Scraping terminé! 0 marques traitées
+2025-11-07 23:59:16,881 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251107_235916.json
+2025-11-07 23:59:16,886 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-07 23:59:16,890 - INFO -    • Marques traitées: 0
+2025-11-07 23:59:16,894 - INFO -    • Marques avec modèles: 0
+2025-11-07 23:59:16,898 - INFO -    • Total modèles: 0
+2025-11-07 23:59:16,901 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251107_235916.json
+2025-11-07 23:59:19,330 - INFO - 🔒 Driver fermé
+2025-11-08 00:12:52,047 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.1
+2025-11-08 00:12:52,052 - INFO -    • Mode: Test
+2025-11-08 00:12:52,056 - INFO -    • Headless: True
+2025-11-08 00:12:52,086 - INFO -    • Marques max: 20
+2025-11-08 00:12:52,091 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 00:12:52,097 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 00:12:53,594 - INFO - ✅ Driver Selenium configuré
+2025-11-08 00:12:53,625 - WARNING - ⚠️ Fichier brands_for_scraping.json non trouvé
+2025-11-08 00:12:53,628 - INFO - 🔄 Extraction automatique des marques depuis AutoScout24...
+2025-11-08 00:12:53,632 - INFO - 🔍 Extraction des marques depuis AutoScout24...
+2025-11-08 00:12:53,635 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:12:57,627 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:12:57,643 - INFO - ✅ Menu marques trouvé avec sélecteur: select[name='make']
+2025-11-08 00:12:57,706 - INFO - 🔍 Trouvé 290 options dans le menu
+2025-11-08 00:13:02,157 - INFO - 💾 Fichier brands_for_scraping.json créé: 279 marques
+2025-11-08 00:13:02,173 - INFO - 🔄 Comparaison avec la version précédente: auto_scraped_models_20251107_235916.json
+2025-11-08 00:13:02,239 - INFO - 📊 RAPPORT DE VERSIONING:
+2025-11-08 00:13:02,242 - INFO -    • Marques précédentes: 0
+2025-11-08 00:13:02,245 - INFO -    • Marques actuelles: 279
+2025-11-08 00:13:02,277 - INFO -    • Changement: +279
+2025-11-08 00:13:02,282 - INFO -    • NOUVELLES MARQUES (279):
+2025-11-08 00:13:02,287 - INFO -      + 9ff
+2025-11-08 00:13:02,291 - INFO -      + AC
+2025-11-08 00:13:02,295 - INFO -      + ACM
+2025-11-08 00:13:02,324 - INFO -      + Abarth
+2025-11-08 00:13:02,327 - INFO -      + Acura
+2025-11-08 00:13:02,331 - INFO -      + Aerfal
+2025-11-08 00:13:02,334 - INFO -      + Aiways
+2025-11-08 00:13:02,338 - INFO -      + Aixam
+2025-11-08 00:13:02,342 - INFO -      + Alba Mobility
+2025-11-08 00:13:02,346 - INFO -      + Alfa Romeo
+2025-11-08 00:13:02,349 - INFO -      + Alpina
+2025-11-08 00:13:02,378 - INFO -      + Alpine
+2025-11-08 00:13:02,381 - INFO -      + Amphicar
+2025-11-08 00:13:02,385 - INFO -      + Angelelli Automobili
+2025-11-08 00:13:02,390 - INFO -      + Ariel Motor
+2025-11-08 00:13:02,393 - INFO -      + Artega
+2025-11-08 00:13:02,398 - INFO -      + Aspark
+2025-11-08 00:13:02,427 - INFO -      + Aspid
+2025-11-08 00:13:02,431 - INFO -      + Aston Martin
+2025-11-08 00:13:02,435 - INFO -      + Audi
+2025-11-08 00:13:02,439 - INFO -      + Aurus
+2025-11-08 00:13:02,442 - INFO -      + Austin
+2025-11-08 00:13:02,445 - INFO -      + Austin-Healey
+2025-11-08 00:13:02,449 - INFO -      + Autobianchi
+2025-11-08 00:13:02,452 - INFO -      + Autres
+2025-11-08 00:13:02,485 - INFO -      + BAIC
+2025-11-08 00:13:02,489 - INFO -      + BAW
+2025-11-08 00:13:02,493 - INFO -      + BMW
+2025-11-08 00:13:02,497 - INFO -      + BYD
+2025-11-08 00:13:02,501 - INFO -      + Bedford
+2025-11-08 00:13:02,529 - INFO -      + Bellier
+2025-11-08 00:13:02,532 - INFO -      + Bentley
+2025-11-08 00:13:02,536 - INFO -      + Bertone
+2025-11-08 00:13:02,540 - INFO -      + Bestune
+2025-11-08 00:13:02,545 - INFO -      + Boldmen
+2025-11-08 00:13:02,549 - INFO -      + Bolloré
+2025-11-08 00:13:02,553 - INFO -      + Borgward
+2025-11-08 00:13:02,557 - INFO -      + Brilliance
+2025-11-08 00:13:02,560 - INFO -      + Bristol
+2025-11-08 00:13:02,565 - INFO -      + Brute
+2025-11-08 00:13:02,568 - INFO -      + Bugatti
+2025-11-08 00:13:02,571 - INFO -      + Buick
+2025-11-08 00:13:02,576 - INFO -      + CUPRA
+2025-11-08 00:13:02,580 - INFO -      + Cadillac
+2025-11-08 00:13:02,584 - INFO -      + Caravans-Wohnm
+2025-11-08 00:13:02,588 - INFO -      + Carver
+2025-11-08 00:13:02,592 - INFO -      + Casalini
+2025-11-08 00:13:02,599 - INFO -      + Caterham
+2025-11-08 00:13:02,603 - INFO -      + Cenntro
+2025-11-08 00:13:02,631 - INFO -      + Changhe
+2025-11-08 00:13:02,635 - INFO -      + Chatenet
+2025-11-08 00:13:03,149 - INFO -      + Chery
+2025-11-08 00:13:03,154 - INFO -      + Chevrolet
+2025-11-08 00:13:03,159 - INFO -      + Chrysler
+2025-11-08 00:13:03,162 - INFO -      + Cirelli
+2025-11-08 00:13:03,165 - INFO -      + Citroen
+2025-11-08 00:13:03,168 - INFO -      + CityEL
+2025-11-08 00:13:03,171 - INFO -      + Corvette
+2025-11-08 00:13:03,177 - INFO -      + DAF
+2025-11-08 00:13:03,182 - INFO -      + DFSK
+2025-11-08 00:13:03,185 - INFO -      + DR Automobiles
+2025-11-08 00:13:03,189 - INFO -      + DS Automobiles
+2025-11-08 00:13:03,193 - INFO -      + Dacia
+2025-11-08 00:13:03,197 - INFO -      + Daewoo
+2025-11-08 00:13:03,201 - INFO -      + Daihatsu
+2025-11-08 00:13:03,205 - INFO -      + Daimler
+2025-11-08 00:13:03,208 - INFO -      + Dallara
+2025-11-08 00:13:03,212 - INFO -      + Dangel
+2025-11-08 00:13:03,216 - INFO -      + De Tomaso
+2025-11-08 00:13:03,245 - INFO -      + De la Chapelle
+2025-11-08 00:13:03,251 - INFO -      + Delorean
+2025-11-08 00:13:03,254 - INFO -      + Denza
+2025-11-08 00:13:03,259 - INFO -      + Devinci Cars
+2025-11-08 00:13:03,263 - INFO -      + Dodge
+2025-11-08 00:13:03,266 - INFO -      + Dongfeng
+2025-11-08 00:13:03,270 - INFO -      + Donkervoort
+2025-11-08 00:13:03,300 - INFO -      + Dutton
+2025-11-08 00:13:03,304 - INFO -      + EMC
+2025-11-08 00:13:03,307 - INFO -      + EVO
+2025-11-08 00:13:03,310 - INFO -      + Ebro
+2025-11-08 00:13:03,313 - INFO -      + Econelo
+2025-11-08 00:13:03,317 - INFO -      + Edran
+2025-11-08 00:13:03,321 - INFO -      + Elaris
+2025-11-08 00:13:03,350 - INFO -      + Embuggy
+2025-11-08 00:13:03,355 - INFO -      + Estrima
+2025-11-08 00:13:03,358 - INFO -      + Evetta
+2025-11-08 00:13:03,362 - INFO -      + Farizon
+2025-11-08 00:13:03,365 - INFO -      + Ferrari
+2025-11-08 00:13:03,368 - INFO -      + Fiat
+2025-11-08 00:13:03,372 - INFO -      + Fisker
+2025-11-08 00:13:03,375 - INFO -      + Ford
+2025-11-08 00:13:03,408 - INFO -      + Forthing
+2025-11-08 00:13:03,412 - INFO -      + Foton
+2025-11-08 00:13:03,418 - INFO -      + GAZ
+2025-11-08 00:13:03,423 - INFO -      + GEM
+2025-11-08 00:13:03,452 - INFO -      + GEMBALLA
+2025-11-08 00:13:03,455 - INFO -      + GMC
+2025-11-08 00:13:03,459 - INFO -      + GTA
+2025-11-08 00:13:03,463 - INFO -      + GWM
+2025-11-08 00:13:03,466 - INFO -      + Gac Gonow
+2025-11-08 00:13:03,470 - INFO -      + Galloper
+2025-11-08 00:13:03,473 - INFO -      + Gappy
+2025-11-08 00:13:03,476 - INFO -      + Genesis
+2025-11-08 00:13:03,506 - INFO -      + Giana
+2025-11-08 00:13:03,509 - INFO -      + Gillet
+2025-11-08 00:13:03,513 - INFO -      + Giotti Victoria
+2025-11-08 00:13:03,516 - INFO -      + Goupil
+2025-11-08 00:13:03,520 - INFO -      + Great Wall
+2025-11-08 00:13:03,524 - INFO -      + Grecav
+2025-11-08 00:13:03,553 - INFO -      + HUMMER
+2025-11-08 00:13:03,558 - INFO -      + Haima
+2025-11-08 00:13:03,562 - INFO -      + Hamann
+2025-11-08 00:13:03,566 - INFO -      + Haval
+2025-11-08 00:13:03,570 - INFO -      + Hiphi
+2025-11-08 00:13:03,573 - INFO -      + Holden
+2025-11-08 00:13:03,577 - INFO -      + Honda
+2025-11-08 00:13:03,607 - INFO -      + Hongqi
+2025-11-08 00:13:03,618 - INFO -      + Hurtan
+2025-11-08 00:13:03,622 - INFO -      + Hyundai
+2025-11-08 00:13:03,626 - INFO -      + ICH-X
+2025-11-08 00:13:03,654 - INFO -      + IZH
+2025-11-08 00:13:03,660 - INFO -      + Ineos
+2025-11-08 00:13:03,663 - INFO -      + Infiniti
+2025-11-08 00:13:03,667 - INFO -      + Innocenti
+2025-11-08 00:13:03,670 - INFO -      + Invicta
+2025-11-08 00:13:03,674 - INFO -      + Iso Rivolta
+2025-11-08 00:13:03,680 - INFO -      + Isuzu
+2025-11-08 00:13:03,684 - INFO -      + Iveco
+2025-11-08 00:13:03,690 - INFO -      + JAC
+2025-11-08 00:13:03,694 - INFO -      + Jaecoo
+2025-11-08 00:13:03,699 - INFO -      + Jaguar
+2025-11-08 00:13:03,702 - INFO -      + Jeep
+2025-11-08 00:13:03,706 - INFO -      + Jensen
+2025-11-08 00:13:03,710 - INFO -      + KGM
+2025-11-08 00:13:03,713 - INFO -      + KTM
+2025-11-08 00:13:03,717 - INFO -      + Karma
+2025-11-08 00:13:03,723 - INFO -      + Kia
+2025-11-08 00:13:03,726 - INFO -      + Koenigsegg
+2025-11-08 00:13:03,757 - INFO -      + LDV
+2025-11-08 00:13:03,761 - INFO -      + LEVC
+2025-11-08 00:13:03,765 - INFO -      + Lada
+2025-11-08 00:13:03,767 - INFO -      + Lamborghini
+2025-11-08 00:13:03,772 - INFO -      + Lancia
+2025-11-08 00:13:03,776 - INFO -      + Land Rover
+2025-11-08 00:13:03,782 - INFO -      + Leapmotor
+2025-11-08 00:13:03,812 - INFO -      + Lexus
+2025-11-08 00:13:03,815 - INFO -      + Li
+2025-11-08 00:13:03,818 - INFO -      + Lifan
+2025-11-08 00:13:03,822 - INFO -      + Ligier
+2025-11-08 00:13:03,825 - INFO -      + Lincoln
+2025-11-08 00:13:03,828 - INFO -      + Linzda
+2025-11-08 00:13:03,832 - INFO -      + Livan
+2025-11-08 00:13:03,862 - INFO -      + Lorinser
+2025-11-08 00:13:03,866 - INFO -      + Lotus
+2025-11-08 00:13:03,869 - INFO -      + Lucid
+2025-11-08 00:13:03,872 - INFO -      + Lynk & Co
+2025-11-08 00:13:03,876 - INFO -      + M-Ero
+2025-11-08 00:13:03,879 - INFO -      + MAN
+2025-11-08 00:13:03,883 - INFO -      + MG
+2025-11-08 00:13:03,886 - INFO -      + MINI
+2025-11-08 00:13:03,890 - INFO -      + MP Lafer
+2025-11-08 00:13:03,893 - INFO -      + MPM Motors
+2025-11-08 00:13:03,897 - INFO -      + Mahindra
+2025-11-08 00:13:03,900 - INFO -      + Mansory
+2025-11-08 00:13:03,904 - INFO -      + Martin
+2025-11-08 00:13:03,910 - INFO -      + Martin Motors
+2025-11-08 00:13:03,914 - INFO -      + Maserati
+2025-11-08 00:13:03,918 - INFO -      + Matra
+2025-11-08 00:13:03,922 - INFO -      + Maxus
+2025-11-08 00:13:03,926 - INFO -      + Maybach
+2025-11-08 00:13:03,934 - INFO -      + Mazda
+2025-11-08 00:13:03,962 - INFO -      + McLaren
+2025-11-08 00:13:03,970 - INFO -      + Mega
+2025-11-08 00:13:03,974 - INFO -      + Melex
+2025-11-08 00:13:03,978 - INFO -      + Mercedes-Benz
+2025-11-08 00:13:03,983 - INFO -      + Mercury
+2025-11-08 00:13:03,986 - INFO -      + Micro
+2025-11-08 00:13:04,017 - INFO -      + Microcar
+2025-11-08 00:13:04,025 - INFO -      + Militem
+2025-11-08 00:13:04,032 - INFO -      + Minari
+2025-11-08 00:13:04,037 - INFO -      + Minauto
+2025-11-08 00:13:04,065 - INFO -      + Mitsubishi
+2025-11-08 00:13:04,069 - INFO -      + Mitsuoka
+2025-11-08 00:13:04,075 - INFO -      + Mobilize
+2025-11-08 00:13:04,079 - INFO -      + Morgan
+2025-11-08 00:13:04,084 - INFO -      + Moskvich
+2025-11-08 00:13:04,087 - INFO -      + NIO
+2025-11-08 00:13:04,091 - INFO -      + NSU
+2025-11-08 00:13:04,097 - INFO -      + Nissan
+2025-11-08 00:13:04,101 - INFO -      + Oldsmobile
+2025-11-08 00:13:04,105 - INFO -      + Oldtimer
+2025-11-08 00:13:04,110 - INFO -      + Omoda
+2025-11-08 00:13:04,115 - INFO -      + Opel
+2025-11-08 00:13:04,121 - INFO -      + Ora
+2025-11-08 00:13:04,124 - INFO -      + PGO
+2025-11-08 00:13:04,129 - INFO -      + Pagani
+2025-11-08 00:13:04,133 - INFO -      + Panther Westwinds
+2025-11-08 00:13:04,137 - INFO -      + Peugeot
+2025-11-08 00:13:04,167 - INFO -      + Piaggio
+2025-11-08 00:13:04,170 - INFO -      + Plymouth
+2025-11-08 00:13:04,174 - INFO -      + Polestar
+2025-11-08 00:13:04,178 - INFO -      + Pontiac
+2025-11-08 00:13:04,182 - INFO -      + Porsche
+2025-11-08 00:13:04,186 - INFO -      + Proton
+2025-11-08 00:13:04,193 - INFO -      + Puch
+2025-11-08 00:13:04,225 - INFO -      + RAM
+2025-11-08 00:13:04,229 - INFO -      + Regis
+2025-11-08 00:13:04,233 - INFO -      + Reliant
+2025-11-08 00:13:04,238 - INFO -      + Renault
+2025-11-08 00:13:04,242 - INFO -      + Rivian
+2025-11-08 00:13:04,271 - INFO -      + Rolls-Royce
+2025-11-08 00:13:04,275 - INFO -      + Rover
+2025-11-08 00:13:04,282 - INFO -      + Ruf
+2025-11-08 00:13:04,285 - INFO -      + SEAT
+2025-11-08 00:13:04,290 - INFO -      + SGS
+2025-11-08 00:13:04,294 - INFO -      + SWM
+2025-11-08 00:13:04,325 - INFO -      + Saab
+2025-11-08 00:13:04,329 - INFO -      + Santana
+2025-11-08 00:13:04,334 - INFO -      + Segway
+2025-11-08 00:13:04,338 - INFO -      + Selvo
+2025-11-08 00:13:04,374 - INFO -      + Seres
+2025-11-08 00:13:04,378 - INFO -      + Sevic
+2025-11-08 00:13:04,382 - INFO -      + Shelby
+2025-11-08 00:13:04,386 - INFO -      + Shuanghuan
+2025-11-08 00:13:04,390 - INFO -      + Silence
+2025-11-08 00:13:04,394 - INFO -      + Simplici
+2025-11-08 00:13:04,397 - INFO -      + Singer
+2025-11-08 00:13:04,427 - INFO -      + Skoda
+2025-11-08 00:13:04,431 - INFO -      + Skywell
+2025-11-08 00:13:04,438 - INFO -      + SpeedArt
+2025-11-08 00:13:04,442 - INFO -      + Sportequipe
+2025-11-08 00:13:04,445 - INFO -      + Spyker
+2025-11-08 00:13:04,449 - INFO -      + SsangYong
+2025-11-08 00:13:04,477 - INFO -      + Stormborn
+2025-11-08 00:13:04,481 - INFO -      + StreetScooter
+2025-11-08 00:13:04,488 - INFO -      + Studebaker
+2025-11-08 00:13:04,493 - INFO -      + Subaru
+2025-11-08 00:13:04,496 - INFO -      + Suzuki
+2025-11-08 00:13:04,500 - INFO -      + TECHART
+2025-11-08 00:13:04,532 - INFO -      + TVR
+2025-11-08 00:13:04,537 - INFO -      + Talbot
+2025-11-08 00:13:04,541 - INFO -      + Tasso
+2025-11-08 00:13:04,545 - INFO -      + Tata
+2025-11-08 00:13:04,548 - INFO -      + Tazzari EV
+2025-11-08 00:13:04,579 - INFO -      + Tesla
+2025-11-08 00:13:04,583 - INFO -      + Tiger
+2025-11-08 00:13:04,587 - INFO -      + Togg
+2025-11-08 00:13:04,592 - INFO -      + Town Life
+2025-11-08 00:13:04,596 - INFO -      + Toyota
+2025-11-08 00:13:04,601 - INFO -      + Trabant
+2025-11-08 00:13:04,604 - INFO -      + Trailer-Anhänger
+2025-11-08 00:13:04,635 - INFO -      + Triumph
+2025-11-08 00:13:04,639 - INFO -      + Trucks-Lkw
+2025-11-08 00:13:04,643 - INFO -      + UAZ
+2025-11-08 00:13:04,648 - INFO -      + VAZ
+2025-11-08 00:13:04,653 - INFO -      + VEM
+2025-11-08 00:13:04,683 - INFO -      + Vanden Plas
+2025-11-08 00:13:04,691 - INFO -      + Vanderhall
+2025-11-08 00:13:04,695 - INFO -      + VinFast
+2025-11-08 00:13:04,701 - INFO -      + Volkswagen
+2025-11-08 00:13:04,705 - INFO -      + Volvo
+2025-11-08 00:13:04,709 - INFO -      + Voyah
+2025-11-08 00:13:04,713 - INFO -      + Wartburg
+2025-11-08 00:13:04,718 - INFO -      + Weltmeister
+2025-11-08 00:13:04,721 - INFO -      + Wenckstern
+2025-11-08 00:13:04,726 - INFO -      + Westfield
+2025-11-08 00:13:04,730 - INFO -      + Wey
+2025-11-08 00:13:04,734 - INFO -      + Wiesmann
+2025-11-08 00:13:04,737 - INFO -      + XBus
+2025-11-08 00:13:04,743 - INFO -      + XEV
+2025-11-08 00:13:04,746 - INFO -      + Xiaomi
+2025-11-08 00:13:04,751 - INFO -      + Xpeng
+2025-11-08 00:13:04,754 - INFO -      + ZAZ
+2025-11-08 00:13:04,782 - INFO -      + Zastava
+2025-11-08 00:13:04,786 - INFO -      + Zeekr
+2025-11-08 00:13:04,788 - INFO -      + Zhidou
+2025-11-08 00:13:04,791 - INFO -      + Zotye
+2025-11-08 00:13:04,795 - INFO -      + e.GO
+2025-11-08 00:13:04,799 - INFO -      + smart
+2025-11-08 00:13:04,917 - INFO - ✅ Extraction réussie: 279 marques
+2025-11-08 00:13:04,923 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:13:08,589 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:13:08,597 - INFO - 🚀 Début du scraping pour 20 marques
+2025-11-08 00:13:08,602 - INFO - 🏷️ [1/20] Audi
+2025-11-08 00:13:11,351 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 00:13:11,462 - INFO -    🔄 Changements modèles pour Audi:
+2025-11-08 00:13:11,494 - INFO -      + Nouveaux: 100, 200, 50, 80, 90, A1, A2, A3, A4, A4 allroad, A5, A6, A6 allroad, A6 e-tron, A7, A8, Allroad, Autres, Cabriolet, Coupe, Q1, Q2, Q3, Q4 e-tron, Q5, Q6 e-tron, Q7, Q7 e-tron, Q8, Q8 e-tron, QUATTRO, R8, RS, RS Q3, RS Q5, RS Q8, RS e-tron GT, RS2, RS3, RS4, RS5, RS6, RS7, S1, S2, S3, S4, S5, S6, S6 e-tron, S7, S8, SQ2, SQ3, SQ5, SQ6 e-tron, SQ7, SQ8, SQ8 e-tron, TT, TT RS, TTS, V8, e-tron, e-tron GT
+2025-11-08 00:13:11,499 - INFO -    ✅ 65 modèles
+2025-11-08 00:13:11,504 - INFO -    🔄 Changements: +65 -0
+2025-11-08 00:13:15,324 - INFO - 🏷️ [2/20] BMW
+2025-11-08 00:13:18,635 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 00:13:18,739 - INFO -    🔄 Changements modèles pour BMW:
+2025-11-08 00:13:18,743 - INFO -      + Nouveaux: 114, 116, 118, 120, 123, 125, 128, 130, 135, 140, 1er M Coupé, 2002, 214, 216, 218, 220, 223, 225, 228, 230, 235, 240, 315, 316, 318, 320, 323, 324, 325, 328, 330, 335, 340, 418, 420, 425, 428, 430, 435, 440, 518, 520, 523, 524, 525, 528, 530, 535, 540, 545, 550, 620, 628, 630, 633, 635, 640, 645, 650, 725, 728, 730, 732, 735, 740, 745, 750, 760, 830, 840, 850, Active Hybrid 3, Active Hybrid 5, Active Hybrid 7, Active Hybrid X6, Autres, M1, M2, M3, M4, M5, M550, M6, M8, M850, Série 1 (tous), Série 2 (tous), Série 3 (tous), Série 4 (tous), Série 5 (tous), Série 6 (tous), Série 7 (tous), Série 8 (tous), Série M (tous), Série X (tous), Série Z (tous), X1, X2, X2 M, X3, X3 M, X4, X4 M, X5, X5 M, X6, X6 M, X7, X7 M, XM, Z1, Z3, Z3 M, Z4, Z4 M, Z8, i3, i4, i5, i7, i8, iX, iX1, iX2, iX3
+2025-11-08 00:13:18,747 - INFO -    ✅ 125 modèles
+2025-11-08 00:13:18,752 - INFO -    🔄 Changements: +125 -0
+2025-11-08 00:13:22,174 - INFO - 🏷️ [3/20] Ferrari
+2025-11-08 00:13:24,821 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 00:13:24,924 - INFO -    🔄 Changements modèles pour Ferrari:
+2025-11-08 00:13:24,955 - INFO -      + Nouveaux: 12 Cilindri, 195, 206, 208, 246, 250, 275, 288, 296, 296 GTB, 296 GTS, 308, 328, 330, 348, 360, 365, 400, 412, 430 Scuderia, 456, 458, 488, 512, 550, 575, 599, 612, 750, 812, Autres, California, Daytona, Dino GT4, Enzo Ferrari, F12, F355, F40, F430, F50, F512, F8 Spider, F8 Tributo, FF, FXX, GTC4 Lusso, LaFerrari, Mondial, Monza, Portofino, Purosangue, Roma, SF90 Spider, SF90 Stradale, Scuderia Spider 16M, Superamerica, Testarossa
+2025-11-08 00:13:24,960 - INFO -    ✅ 57 modèles
+2025-11-08 00:13:24,969 - INFO -    🔄 Changements: +57 -0
+2025-11-08 00:13:28,354 - INFO - 🏷️ [4/20] Mercedes-Benz
+2025-11-08 00:13:33,919 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 00:13:34,028 - INFO -    🔄 Changements modèles pour Mercedes-Benz:
+2025-11-08 00:13:34,033 - INFO -      + Nouveaux: 170, 180, 190, 200, 208, 210/310, 220, 230, 240, 250, 260, 270, 280, 300, 308, 320, 350, 380, 400, 416, 420, 450, 500, 560, 600, A 140, A 150, A 160, A 170, A 180, A 190, A 200, A 210, A 220, A 250, A 35 AMG, A 45 AMG, AMG GT, AMG ONE, Actros, Atego, Autres, B 150, B 160, B 170, B 180, B 200, B 220, B 250, B Electric Drive, Baureihe 123, Baureihe 124, C 160, C 180, C 200, C 220, C 230, C 240, C 250, C 270, C 280, C 30 AMG, C 300, C 32 AMG, C 320, C 350, C 36 AMG, C 400, C 43 AMG, C 450, C 55 AMG, C 63 AMG, CE (tous), CE 200, CE 220, CE 230, CE 280, CE 300, CL, CL (tous), CL 160, CL 180, CL 200, CL 220, CL 230, CL 320, CL 420, CL 500, CL 55 AMG, CL 600, CL 63 AMG, CL 65 AMG, CLA (tous), CLA 180, CLA 200, CLA 220, CLA 250, CLA 35 AMG, CLA 350, CLA 45 AMG, CLC, CLE, CLE 180, CLE 200, CLE 220, CLE 300, CLE 450, CLE 53 AMG, CLE 63 AMG, CLK, CLK (tous), CLK 200, CLK 220, CLK 230, CLK 240, CLK 270, CLK 280, CLK 320, CLK 350, CLK 430, CLK 500, CLK 55 AMG, CLK 63 AMG, CLS, CLS (tous), CLS 220, CLS 250, CLS 280, CLS 300, CLS 320, CLS 350, CLS 400, CLS 450, CLS 500, CLS 53 AMG, CLS 55 AMG, CLS 63 AMG, Citan, Classe A (tous), Classe B (tous), Classe C (tous), Classe E (tous), Classe EQ (tous), Classe G (tous), Classe M (tous), Classe R (tous), Classe S (tous), Classe T, Classe V (tous), E 200, E 220, E 230, E 240, E 250, E 260, E 270, E 280, E 290, E 300, E 320, E 350, E 36 AMG, E 400, E 420, E 43 AMG, E 430, E 450, E 50 AMG, E 500, E 53 AMG, E 55 AMG, E 550, E 60 AMG, E 63 AMG, EQA, EQA 250, EQA 300, EQA 350, EQB 250, EQB 300, EQB 350, EQC 400, EQE 300, EQE 350, EQE 43, EQE 500, EQE 53, EQE SUV, EQS, EQS SUV, EQT, EQV 250, EQV 300, G, G 230, G 240, G 250, G 270, G 280, G 290, G 300, G 320, G 350, G 400, G 450, G 500, G 55 AMG, G 580, G 63 AMG, G 65 AMG, G 650, GL (tous), GL 320, GL 350, GL 400, GL 420, GL 450, GL 500, GL 55 AMG, GL 63 AMG, GLA (tous), GLA 180, GLA 200, GLA 220, GLA 250, GLA 35 AMG, GLA 45 AMG, GLB (tous), GLB 180, GLB 200, GLB 220, GLB 250, GLB 35 AMG, GLC (tous), GLC 200, GLC 220, GLC 250, GLC 300, GLC 350, GLC 400, GLC 43 AMG, GLC 450, GLC 63 AMG, GLE (tous), GLE 250, GLE 300, GLE 350, GLE 400, GLE 43 AMG, GLE 450, GLE 500, GLE 53 AMG, GLE 580, GLE 63 AMG, GLK (tous), GLK 200, GLK 220, GLK 250, GLK 280, GLK 300, GLK 320, GLK 350, GLS (tous), GLS 350, GLS 400, GLS 450, GLS 500, GLS 580, GLS 600, GLS 63 AMG, MB 100, ML 230, ML 250, ML 270, ML 280, ML 300, ML 320, ML 350, ML 400, ML 420, ML 430, ML 450, ML 500, ML 55 AMG, ML 63 AMG, Marco Polo, Maybach GLS, Maybach S-Klasse, R 280, R 300, R 320, R 350, R 500, R 63 AMG, S 250, S 260, S 280, S 300, S 320, S 350, S 380, S 400, S 420, S 430, S 450, S 500, S 55 AMG, S 550, S 560, S 560 E, S 580, S 600, S 63 AMG, S 65 AMG, S 650, S 680, SL (tous), SL 230, SL 250, SL 280, SL 300, SL 320, SL 350, SL 380, SL 400, SL 420, SL 43 AMG, SL 450, SL 500, SL 55 AMG, SL 560, SL 60 AMG, SL 600, SL 63 AMG, SL 65 AMG, SL 680, SL 70 AMG, SL 73 AMG, SL Roadster AMG, SLC (tous), SLC 180, SLC 200, SLC 250, SLC 280, SLC 300, SLC 350, SLC 380, SLC 43 AMG, SLC 450, SLC 500, SLK, SLK (tous), SLK 200, SLK 230, SLK 250, SLK 280, SLK 300, SLK 32 AMG, SLK 320, SLK 350, SLK 55 AMG, SLR, SLS, Sprinter, Série X (tous), T1, T2, V, V 200, V 220, V 230, V 250, V 280, V 300, Vaneo, Vario, Viano, Vito, W 114/115 Strich-Acht, X 220, X 250, X 350
+2025-11-08 00:13:34,038 - INFO -    ✅ 382 modèles
+2025-11-08 00:13:34,041 - INFO -    🔄 Changements: +382 -0
+2025-11-08 00:13:37,882 - INFO - 🏷️ [5/20] MINI
+2025-11-08 00:13:40,613 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 00:13:40,733 - INFO -    🔄 Changements modèles pour MINI:
+2025-11-08 00:13:40,739 - INFO -      + Nouveaux: 1000, 1300, 3/5 Portes, Aceman, Autres, Clubvan, Cooper, Cooper C, Cooper C Cabrio, Cooper Cabrio, Cooper Clubman, Cooper Countryman, Cooper Coupe, Cooper D, Cooper D Cabrio, Cooper D Clubman, Cooper D Countryman, Cooper D Coupe, Cooper D Paceman, Cooper E, Cooper Paceman, Cooper Roadster, Cooper S, Cooper S Cabrio, Cooper S Clubman, Cooper S Countryman, Cooper S Coupe, Cooper S Paceman, Cooper S Roadster, Cooper SD, Cooper SD Cabrio, Cooper SD Clubman, Cooper SD Countryman, Cooper SD Coupe, Cooper SD Paceman, Cooper SD Roadster, Cooper SE, Cooper SE Countryman, Countryman C, Countryman D, Countryman E, Countryman S All4, Countryman SE All4, Gamme Cabrio (tous), Gamme Clubman (tous), Gamme Countryman (tous), Gamme Coupe (tous), Gamme Paceman (tous), JCW Countryman All4, John Cooper Works, John Cooper Works Cabrio, John Cooper Works Clubman, John Cooper Works Countryman, John Cooper Works Coupe, John Cooper Works E, John Cooper Works Paceman, John Cooper Works Roadster, One, One Cabrio, One Clubman, One Countryman, One D, One D Clubman, One D Countryman, Roadster
+2025-11-08 00:13:40,745 - INFO -    ✅ 65 modèles
+2025-11-08 00:13:40,750 - INFO -    🔄 Changements: +65 -0
+2025-11-08 00:13:44,624 - INFO - 🏷️ [6/20] Peugeot
+2025-11-08 00:13:47,243 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-08 00:13:47,400 - INFO -    🔄 Changements modèles pour Peugeot:
+2025-11-08 00:13:47,404 - INFO -      + Nouveaux: 1007, 104, 106, 107, 108, 2008, 204, 205, 206, 207, 208, 3008, 301, 304, 305, 306, 307, 308, 309, 4007, 4008, 404, 405, 406, 407, 408, 5008, 504, 505, 508, 604, 605, 607, 806, 807, Autres, Bipper, Boxer, Camper, Expert, J5, J9, Partner, RCZ, Ranch, Rifter, Traveller, e-2008, e-208, e-Expert, e-Rifter, e-Traveller, iOn
+2025-11-08 00:13:47,409 - INFO -    ✅ 53 modèles
+2025-11-08 00:13:47,416 - INFO -    🔄 Changements: +53 -0
+2025-11-08 00:13:50,205 - INFO - 🏷️ [7/20] Porsche
+2025-11-08 00:13:52,670 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-08 00:13:52,737 - INFO -    🔄 Changements modèles pour Porsche:
+2025-11-08 00:13:52,832 - INFO -      + Nouveaux: 356, 550, 718, 718 (tous), 718 Spyder, 911, 911 (tous), 912, 914, 918, 924, 928, 930, 944, 959, 962, 964, 968, 991, 992, 993, 996, 997, Autres, Boxster, Carrera GT, Cayenne, Cayman, Macan, Panamera, Targa, Taycan
+2025-11-08 00:13:52,837 - INFO -    ✅ 32 modèles
+2025-11-08 00:13:52,841 - INFO -    🔄 Changements: +32 -0
+2025-11-08 00:13:55,031 - INFO - 🏷️ [8/20] Renault
+2025-11-08 00:13:58,058 - INFO - ✅ Renault: 65 modèles récupérés
+2025-11-08 00:13:58,187 - INFO -    🔄 Changements modèles pour Renault:
+2025-11-08 00:13:58,193 - INFO -      + Nouveaux: Alaskan, Alpine A110, Alpine A310, Alpine A610, Alpine V6, Arkana, Austral, Autres, Avantime, Captur, Clio, Coupe, Duster, Espace, Express, Fluence, Fluence Z.E., Fuego, Grand Espace, Grand Modus, Grand Scenic, Kadjar, Kangoo, Kangoo E-TECH, Kangoo Z.E., Koleos, Laguna, Latitude, Logan, Mascott, Master, Megane, Megane E-Tech, Messenger, Modus, P 1400, R 11, R 14, R 18, R 19, R 20, R 21, R 25, R 30, R 4, R 5, R 6, R 9, Rafale, Rapid, Safrane, Sandero, Sandero Stepway, Scenic, Spider, Super 5, Symbioz, Symbol, Talisman, Trafic, Twingo, Twizy, Vel Satis, Wind, ZOE
+2025-11-08 00:13:58,198 - INFO -    ✅ 65 modèles
+2025-11-08 00:13:58,202 - INFO -    🔄 Changements: +65 -0
+2025-11-08 00:14:00,644 - INFO - 🏷️ [9/20] Toyota
+2025-11-08 00:14:03,743 - INFO - ✅ Toyota: 101 modèles récupérés
+2025-11-08 00:14:03,867 - INFO -    🔄 Changements modèles pour Toyota:
+2025-11-08 00:14:03,873 - INFO -      + Nouveaux: 4-Runner, Allion, Alphard, Altezza, Aristo, Auris, Autres, Avalon, Avensis, Avensis Verso, Aygo, Aygo X, BB, Belta, C-HR, Caldina, Cami, Camry, Carina, Celica, Chaser, Coaster, Corolla, Corolla Cross, Corolla Verso, Corona, Corsa, Cressida, Cresta, Crown, Duet, Dyna, Estima, FJ Cruiser, FJ40, Fortuner, Fun Cruiser, Funcargo, GR86, GT86, Gaia, HDJ, Harrier, Hiace, Highlander, Hilux, Ipsum, Ist, KJ, Land Cruiser, Land Cruiser Prado, Lite-Ace, MR 2, Mark II, Mark X, Matrix, Mirai, Model F, Nadia, Noah, Opa, Paseo, Passo, Pick up, Picnic, Platz, Premio, Previa, Prius, Prius+, Proace, Proace City, Proace Max, RAV 4, Ractis, Raum, Sequoia, Sienna, Solara, Sprinter, Starlet, Supra, Tacoma, Tercel, Town Ace, Tundra, Urban Cruiser, Venza, Verossa, Verso, Verso-S, Vista, Vitz, Voxy, Will, Windom, Wish, Yaris, Yaris Cross, bZ4X, iQ
+2025-11-08 00:14:03,878 - INFO -    ✅ 101 modèles
+2025-11-08 00:14:03,882 - INFO -    🔄 Changements: +101 -0
+2025-11-08 00:14:07,739 - INFO - 🏷️ [10/20] Volkswagen
+2025-11-08 00:14:11,099 - INFO - ✅ Volkswagen: 129 modèles récupérés
+2025-11-08 00:14:11,206 - INFO -    🔄 Changements modèles pour Volkswagen:
+2025-11-08 00:14:11,211 - INFO -      + Nouveaux: 181, Amarok, Anfibio, Arteon, Atlas, Autres, Beetle, Bora, Buggy, Bus, CC, Caddy, Coccinelle, Corrado, Crafter, Cross Golf, Cross Touran, Derby, Eos, Escarabajo, Fox, Golf, Golf (tous), Golf Cabriolet, Golf GTD, Golf GTE, Golf GTI, Golf Plus, Golf R, Golf Sportsvan, Golf Variant, Grand California, ID. Buzz, ID. Buzz (tous), ID. Buzz Cargo, ID.3, ID.4, ID.5, ID.6, ID.7, Iltis, Jetta, Karmann Ghia, Kever, Käfer, L80, LT, Lupo, Maggiolino, New Beetle, Passat, Passat (tous), Passat Alltrack, Passat CC, Passat Variant, Phaeton, Pointer, Polo, Polo (tous), Polo Cross, Polo GTI, Polo Plus, Polo R WRC, Polo Sedan, Polo Variant, Routan, Santana, Scirocco, Sharan, T-Cross, T-Roc, T1, T2, T3, T3 (tous), T3 Blue Star, T3 California, T3 Caravelle, T3 Kombi, T3 Multivan, T3 White Star, T4, T4 (tous), T4 Allstar, T4 California, T4 Caravelle, T4 Kombi, T4 Multivan, T5, T5 (tous), T5 California, T5 Caravelle, T5 Kombi, T5 Multivan, T5 Shuttle, T5 Transporter, T6 (tous), T6 California, T6 Caravelle, T6 Kombi, T6 Multivan, T6 Transporter, T6.1, T6.1 California, T6.1 Caravelle, T6.1 Kombi, T6.1 Multivan, T6.1 Transporter, T7, T7 California, T7 Caravelle, T7 Kombi, T7 Multivan, T7 Transporter, Taigo, Taro, Tayron, Tiguan, Tiguan (tous), Tiguan Allspace, Touareg, Touran, Transporter, Vento, Viloran, XL1, e-Golf, e-up!, up!
+2025-11-08 00:14:11,243 - INFO -    ✅ 129 modèles
+2025-11-08 00:14:11,248 - INFO -    🔄 Changements: +129 -0
+2025-11-08 00:14:14,788 - INFO - 📊 Progrès: 10/20 marques, 10 avec modèles
+2025-11-08 00:14:14,796 - INFO - 🏷️ [11/20] 9ff
+2025-11-08 00:14:17,078 - INFO - ✅ 9ff: 7 modèles récupérés
+2025-11-08 00:14:17,153 - INFO -    🔄 Changements modèles pour 9ff:
+2025-11-08 00:14:17,180 - INFO -      + Nouveaux: Autres, F70 Etronic, F97 A-Max, GT9, GTronic, GTurbo, Speed9
+2025-11-08 00:14:17,184 - INFO -    ✅ 7 modèles
+2025-11-08 00:14:17,187 - INFO -    🔄 Changements: +7 -0
+2025-11-08 00:14:19,563 - INFO - 🏷️ [12/20] Abarth
+2025-11-08 00:14:21,886 - INFO - ✅ Abarth: 18 modèles récupérés
+2025-11-08 00:14:21,993 - INFO -    🔄 Changements modèles pour Abarth:
+2025-11-08 00:14:21,998 - INFO -      + Nouveaux: 124 GT, 124 Rally Tribute, 124 Spider, 500, 500C, 500e, 595, 595 Competizione, 595 Pista, 595 Turismo, 595C, 600e, 695, 695C, Autres, Grande Punto, Punto EVO, Punto Supersport
+2025-11-08 00:14:22,005 - INFO -    ✅ 18 modèles
+2025-11-08 00:14:22,008 - INFO -    🔄 Changements: +18 -0
+2025-11-08 00:14:24,342 - INFO - 🏷️ [13/20] AC
+2025-11-08 00:14:26,491 - INFO - ✅ AC: 3 modèles récupérés
+2025-11-08 00:14:26,572 - INFO -    🔄 Changements modèles pour AC:
+2025-11-08 00:14:26,602 - INFO -      + Nouveaux: Ace, Autres, Cobra
+2025-11-08 00:14:26,608 - INFO -    ✅ 3 modèles
+2025-11-08 00:14:26,614 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:14:30,300 - INFO - 🏷️ [14/20] ACM
+2025-11-08 00:14:32,468 - INFO - ✅ ACM: 3 modèles récupérés
+2025-11-08 00:14:32,593 - INFO -    🔄 Changements modèles pour ACM:
+2025-11-08 00:14:32,597 - INFO -      + Nouveaux: 4 WD, Autres, Biagini Passo
+2025-11-08 00:14:32,605 - INFO -    ✅ 3 modèles
+2025-11-08 00:14:32,608 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:14:34,769 - INFO - 🏷️ [15/20] Acura
+2025-11-08 00:14:37,067 - INFO - ✅ Acura: 12 modèles récupérés
+2025-11-08 00:14:37,118 - INFO -    🔄 Changements modèles pour Acura:
+2025-11-08 00:14:37,147 - INFO -      + Nouveaux: Autres, ILX, MDX, NSX, RDX, RL, RLX, RSX, TL, TLX, TSX, ZDX
+2025-11-08 00:14:37,151 - INFO -    ✅ 12 modèles
+2025-11-08 00:14:37,156 - INFO -    🔄 Changements: +12 -0
+2025-11-08 00:14:40,684 - INFO - 🏷️ [16/20] Aerfal
+2025-11-08 00:14:42,833 - INFO - ✅ Aerfal: 1 modèles récupérés
+2025-11-08 00:14:42,986 - INFO -    🔄 Changements modèles pour Aerfal:
+2025-11-08 00:14:42,990 - INFO -      + Nouveaux: AE94
+2025-11-08 00:14:42,993 - INFO -    ✅ 1 modèles
+2025-11-08 00:14:43,000 - INFO -    🔄 Changements: +1 -0
+2025-11-08 00:14:45,563 - INFO - 🏷️ [17/20] Aiways
+2025-11-08 00:14:47,764 - INFO - ✅ Aiways: 3 modèles récupérés
+2025-11-08 00:14:47,871 - INFO -    🔄 Changements modèles pour Aiways:
+2025-11-08 00:14:47,901 - INFO -      + Nouveaux: Autres, U5, U6 Ion
+2025-11-08 00:14:48,309 - INFO -    ✅ 3 modèles
+2025-11-08 00:14:48,315 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:14:51,681 - INFO - 🏷️ [18/20] Aixam
+2025-11-08 00:14:53,968 - INFO - ✅ Aixam: 16 modèles récupérés
+2025-11-08 00:14:54,255 - INFO -    🔄 Changements modèles pour Aixam:
+2025-11-08 00:14:54,262 - INFO -      + Nouveaux: 400, 500, A., Autres, City, Coupe, Crossline, Crossover, D-truck, GTI, GTO, Mac, Mega, Roadline, Scouty R, e-Truck
+2025-11-08 00:14:54,267 - INFO -    ✅ 16 modèles
+2025-11-08 00:14:54,271 - INFO -    🔄 Changements: +16 -0
+2025-11-08 00:14:58,116 - INFO - 🏷️ [19/20] Alba Mobility
+2025-11-08 00:15:00,377 - INFO - ✅ Alba Mobility: 6 modèles récupérés
+2025-11-08 00:15:00,493 - INFO -    🔄 Changements modèles pour Alba Mobility:
+2025-11-08 00:15:00,500 - INFO -      + Nouveaux: Autres, Cargo, Golf Cart, LE 22 Limited Edition, Street Cart, Tour Cart
+2025-11-08 00:15:00,506 - INFO -    ✅ 6 modèles
+2025-11-08 00:15:00,510 - INFO -    🔄 Changements: +6 -0
+2025-11-08 00:15:04,402 - INFO - 🏷️ [20/20] Alfa Romeo
+2025-11-08 00:15:06,854 - INFO - ✅ Alfa Romeo: 36 modèles récupérés
+2025-11-08 00:15:07,013 - INFO -    🔄 Changements modèles pour Alfa Romeo:
+2025-11-08 00:15:07,017 - INFO -      + Nouveaux: 145, 146, 147, 155, 156, 159, 164, 166, 1750, 2000, 33, 4C, 75, 8C, 90, Alfa 6, Alfasud, Alfetta, Autres, Brera, Crosswagon, GT, GTV, Giulia, Giulietta, Junior, MiTo, Montreal, Quadrifoglio, RZ, SZ, Spider, Sportwagon, Sprint, Stelvio, Tonale
+2025-11-08 00:15:07,020 - INFO -    ✅ 36 modèles
+2025-11-08 00:15:07,049 - INFO -    🔄 Changements: +36 -0
+2025-11-08 00:15:10,905 - INFO - 📊 Progrès: 20/20 marques, 20 avec modèles
+2025-11-08 00:15:10,912 - INFO - 🎉 Scraping terminé! 20 marques traitées
+2025-11-08 00:15:11,001 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251108_001510.json
+2025-11-08 00:15:11,012 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251107_235916.json
+2025-11-08 00:15:11,105 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 00:15:11,109 - INFO -    • Marques: 0 → 20 (+20)
+2025-11-08 00:15:11,115 - INFO -    • Modèles: 0 → 1179 (+1179)
+2025-11-08 00:15:11,144 - INFO -    • NOUVELLES MARQUES (20):
+2025-11-08 00:15:11,148 - INFO -      + 9ff (7 modèles)
+2025-11-08 00:15:11,152 - INFO -      + AC (3 modèles)
+2025-11-08 00:15:11,156 - INFO -      + ACM (3 modèles)
+2025-11-08 00:15:11,160 - INFO -      + Abarth (18 modèles)
+2025-11-08 00:15:11,163 - INFO -      + Acura (12 modèles)
+2025-11-08 00:15:11,168 - INFO -      + Aerfal (1 modèles)
+2025-11-08 00:15:11,201 - INFO -      + Aiways (3 modèles)
+2025-11-08 00:15:11,207 - INFO -      + Aixam (16 modèles)
+2025-11-08 00:15:11,211 - INFO -      + Alba Mobility (6 modèles)
+2025-11-08 00:15:11,215 - INFO -      + Alfa Romeo (36 modèles)
+2025-11-08 00:15:11,246 - INFO -      + Audi (65 modèles)
+2025-11-08 00:15:11,252 - INFO -      + BMW (125 modèles)
+2025-11-08 00:15:11,257 - INFO -      + Ferrari (57 modèles)
+2025-11-08 00:15:11,263 - INFO -      + MINI (65 modèles)
+2025-11-08 00:15:11,268 - INFO -      + Mercedes-Benz (382 modèles)
+2025-11-08 00:15:11,272 - INFO -      + Peugeot (53 modèles)
+2025-11-08 00:15:11,276 - INFO -      + Porsche (32 modèles)
+2025-11-08 00:15:11,280 - INFO -      + Renault (65 modèles)
+2025-11-08 00:15:11,286 - INFO -      + Toyota (101 modèles)
+2025-11-08 00:15:11,290 - INFO -      + Volkswagen (129 modèles)
+2025-11-08 00:15:11,295 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 00:15:11,300 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 00:15:11,304 - INFO -    • Marques traitées: 20
+2025-11-08 00:15:11,309 - INFO -    • Marques avec modèles: 20
+2025-11-08 00:15:11,313 - INFO -    • Total modèles: 1179
+2025-11-08 00:15:11,316 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_001510.json
+2025-11-08 00:15:13,712 - INFO - 🔒 Driver fermé
+2025-11-08 00:39:53,828 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 00:39:53,849 - INFO -    • Mode: Test
+2025-11-08 00:39:53,853 - INFO -    • Headless: True
+2025-11-08 00:39:53,858 - INFO -    • Marques max: 20
+2025-11-08 00:39:53,862 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 00:39:53,865 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 00:39:53,868 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 00:39:55,313 - INFO - ✅ Driver Selenium configuré
+2025-11-08 00:39:55,399 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 00:39:55,403 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:39:59,491 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:39:59,495 - INFO - 🚀 Début du scraping pour 20 marques
+2025-11-08 00:39:59,498 - INFO - 🏷️ [1/20] Audi
+2025-11-08 00:40:02,287 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 00:40:02,403 - INFO -    ✅ 65 modèles
+2025-11-08 00:40:06,053 - INFO - 🏷️ [2/20] BMW
+2025-11-08 00:40:09,403 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 00:40:09,531 - INFO -    ✅ 125 modèles
+2025-11-08 00:40:12,531 - INFO - 🏷️ [3/20] Ferrari
+2025-11-08 00:40:15,183 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 00:40:15,359 - INFO -    ✅ 57 modèles
+2025-11-08 00:40:19,101 - INFO - 🏷️ [4/20] Mercedes-Benz
+2025-11-08 00:40:24,739 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 00:40:24,896 - INFO -    ✅ 382 modèles
+2025-11-08 00:40:27,982 - INFO - 🏷️ [5/20] MINI
+2025-11-08 00:40:30,691 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 00:40:30,834 - INFO -    ✅ 65 modèles
+2025-11-08 00:40:33,429 - INFO - 🏷️ [6/20] Peugeot
+2025-11-08 00:40:36,065 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-08 00:40:36,293 - INFO -    ✅ 53 modèles
+2025-11-08 00:40:38,736 - INFO - 🏷️ [7/20] Porsche
+2025-11-08 00:40:41,171 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-08 00:40:41,319 - INFO -    ✅ 32 modèles
+2025-11-08 00:40:43,497 - INFO - 🏷️ [8/20] Renault
+2025-11-08 00:40:46,256 - INFO - ✅ Renault: 65 modèles récupérés
+2025-11-08 00:40:46,436 - INFO -    ✅ 65 modèles
+2025-11-08 00:40:49,983 - INFO - 🏷️ [9/20] Toyota
+2025-11-08 00:40:53,072 - INFO - ✅ Toyota: 101 modèles récupérés
+2025-11-08 00:40:53,243 - INFO -    ✅ 101 modèles
+2025-11-08 00:40:55,263 - INFO - 🏷️ [10/20] Volkswagen
+2025-11-08 00:40:58,557 - INFO - ✅ Volkswagen: 129 modèles récupérés
+2025-11-08 00:40:58,714 - INFO -    ✅ 129 modèles
+2025-11-08 00:41:01,436 - INFO - 📊 Progrès: 10/20 marques, 10 avec modèles
+2025-11-08 00:41:01,441 - INFO - 🏷️ [11/20] 9ff
+2025-11-08 00:41:03,789 - INFO - ✅ 9ff: 7 modèles récupérés
+2025-11-08 00:41:03,947 - INFO -    ✅ 7 modèles
+2025-11-08 00:41:07,172 - INFO - 🏷️ [12/20] Abarth
+2025-11-08 00:41:09,481 - INFO - ✅ Abarth: 18 modèles récupérés
+2025-11-08 00:41:10,130 - INFO -    ✅ 18 modèles
+2025-11-08 00:41:12,881 - INFO - 🏷️ [13/20] AC
+2025-11-08 00:41:15,077 - INFO - ✅ AC: 3 modèles récupérés
+2025-11-08 00:41:15,257 - INFO -    ✅ 3 modèles
+2025-11-08 00:41:17,651 - INFO - 🏷️ [14/20] ACM
+2025-11-08 00:41:19,835 - INFO - ✅ ACM: 3 modèles récupérés
+2025-11-08 00:41:19,984 - INFO -    ✅ 3 modèles
+2025-11-08 00:41:23,409 - INFO - 🏷️ [15/20] Acura
+2025-11-08 00:41:25,683 - INFO - ✅ Acura: 12 modèles récupérés
+2025-11-08 00:41:25,806 - INFO -    ✅ 12 modèles
+2025-11-08 00:41:28,148 - INFO - 🏷️ [16/20] Aerfal
+2025-11-08 00:41:30,290 - INFO - ✅ Aerfal: 1 modèles récupérés
+2025-11-08 00:41:30,424 - INFO -    ✅ 1 modèles
+2025-11-08 00:41:33,499 - INFO - 🏷️ [17/20] Aiways
+2025-11-08 00:41:35,716 - INFO - ✅ Aiways: 3 modèles récupérés
+2025-11-08 00:41:35,901 - INFO -    ✅ 3 modèles
+2025-11-08 00:41:38,720 - INFO - 🏷️ [18/20] Aixam
+2025-11-08 00:41:40,993 - INFO - ✅ Aixam: 16 modèles récupérés
+2025-11-08 00:41:41,134 - INFO -    ✅ 16 modèles
+2025-11-08 00:41:43,208 - INFO - 🏷️ [19/20] Alba Mobility
+2025-11-08 00:41:45,462 - INFO - ✅ Alba Mobility: 6 modèles récupérés
+2025-11-08 00:41:45,584 - INFO -    ✅ 6 modèles
+2025-11-08 00:41:48,071 - INFO - 🏷️ [20/20] Alfa Romeo
+2025-11-08 00:41:50,593 - INFO - ✅ Alfa Romeo: 36 modèles récupérés
+2025-11-08 00:41:50,742 - INFO -    ✅ 36 modèles
+2025-11-08 00:41:53,124 - INFO - 📊 Progrès: 20/20 marques, 20 avec modèles
+2025-11-08 00:41:53,147 - INFO - 🎉 Scraping terminé! 20 marques traitées
+2025-11-08 00:41:53,252 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251108_004153.json
+2025-11-08 00:41:53,262 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_001510.json
+2025-11-08 00:41:53,342 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 00:41:53,346 - INFO -    • Marques: 20 → 20 (+0)
+2025-11-08 00:41:53,349 - INFO -    • Modèles: 1179 → 1179 (+0)
+2025-11-08 00:41:53,353 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 00:41:53,567 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 00:41:53,571 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 00:41:53,601 - INFO -    • Marques traitées: 20
+2025-11-08 00:41:53,604 - INFO -    • Marques avec modèles: 20
+2025-11-08 00:41:53,608 - INFO -    • Total modèles: 1179
+2025-11-08 00:41:53,611 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_004153.json
+2025-11-08 00:41:53,614 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 00:41:55,963 - INFO - 🔒 Driver fermé
+2025-11-08 00:43:29,688 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 00:43:29,714 - INFO -    • Mode: Complet
+2025-11-08 00:43:29,740 - INFO -    • Headless: True
+2025-11-08 00:43:29,779 - INFO -    • Marques max: 30
+2025-11-08 00:43:29,825 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 00:43:29,885 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 00:43:29,982 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 00:43:36,292 - INFO - ✅ Driver Selenium configuré
+2025-11-08 00:43:36,428 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 00:43:36,434 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:43:40,790 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:43:40,831 - INFO - 🚀 Début du scraping pour 30 marques
+2025-11-08 00:43:40,849 - INFO - 🏷️ [1/30] Audi
+2025-11-08 00:43:43,635 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 00:43:43,788 - INFO -    ✅ 65 modèles
+2025-11-08 00:43:46,006 - INFO - 🏷️ [2/30] BMW
+2025-11-08 00:43:49,278 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 00:43:49,634 - INFO -    ✅ 125 modèles
+2025-11-08 00:43:52,279 - INFO - 🏷️ [3/30] Ferrari
+2025-11-08 00:43:55,034 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 00:43:55,205 - INFO -    ✅ 57 modèles
+2025-11-08 00:43:57,698 - INFO - 🏷️ [4/30] Mercedes-Benz
+2025-11-08 00:44:04,258 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 00:44:04,445 - INFO -    ✅ 382 modèles
+2025-11-08 00:44:07,624 - INFO - 🏷️ [5/30] MINI
+2025-11-08 00:44:10,317 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 00:44:10,495 - INFO -    ✅ 65 modèles
+2025-11-08 00:44:14,010 - INFO - 🏷️ [6/30] Peugeot
+2025-11-08 00:44:16,616 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-08 00:44:16,891 - INFO -    ✅ 53 modèles
+2025-11-08 00:44:19,717 - INFO - 🏷️ [7/30] Porsche
+2025-11-08 00:44:22,120 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-08 00:44:22,357 - INFO -    ✅ 32 modèles
+2025-11-08 00:44:25,304 - INFO - 🏷️ [8/30] Renault
+2025-11-08 00:44:28,010 - INFO - ✅ Renault: 65 modèles récupérés
+2025-11-08 00:44:28,183 - INFO -    ✅ 65 modèles
+2025-11-08 00:44:31,834 - INFO - 🏷️ [9/30] Toyota
+2025-11-08 00:44:34,590 - INFO - ✅ Toyota: 101 modèles récupérés
+2025-11-08 00:44:34,841 - INFO -    ✅ 101 modèles
+2025-11-08 00:44:38,190 - INFO - 🏷️ [10/30] Volkswagen
+2025-11-08 00:44:41,163 - INFO - ✅ Volkswagen: 129 modèles récupérés
+2025-11-08 00:44:41,373 - INFO -    ✅ 129 modèles
+2025-11-08 00:44:43,467 - INFO - 📊 Progrès: 10/30 marques, 10 avec modèles
+2025-11-08 00:44:43,516 - INFO - 🏷️ [11/30] 9ff
+2025-11-08 00:44:45,728 - INFO - ✅ 9ff: 7 modèles récupérés
+2025-11-08 00:44:45,924 - INFO -    ✅ 7 modèles
+2025-11-08 00:44:48,088 - INFO - 🏷️ [12/30] Abarth
+2025-11-08 00:44:50,348 - INFO - ✅ Abarth: 18 modèles récupérés
+2025-11-08 00:44:50,634 - INFO -    ✅ 18 modèles
+2025-11-08 00:44:53,912 - INFO - 🏷️ [13/30] AC
+2025-11-08 00:44:56,167 - INFO - ✅ AC: 3 modèles récupérés
+2025-11-08 00:44:56,316 - INFO -    ✅ 3 modèles
+2025-11-08 00:45:00,108 - INFO - 🏷️ [14/30] ACM
+2025-11-08 00:45:02,293 - INFO - ✅ ACM: 3 modèles récupérés
+2025-11-08 00:45:02,556 - INFO -    ✅ 3 modèles
+2025-11-08 00:45:06,145 - INFO - 🏷️ [15/30] Acura
+2025-11-08 00:45:08,405 - INFO - ✅ Acura: 12 modèles récupérés
+2025-11-08 00:45:08,817 - INFO -    ✅ 12 modèles
+2025-11-08 00:45:12,080 - INFO - 🏷️ [16/30] Aerfal
+2025-11-08 00:45:14,249 - INFO - ✅ Aerfal: 1 modèles récupérés
+2025-11-08 00:45:14,411 - INFO -    ✅ 1 modèles
+2025-11-08 00:45:16,452 - INFO - 🏷️ [17/30] Aiways
+2025-11-08 00:45:18,608 - INFO - ✅ Aiways: 3 modèles récupérés
+2025-11-08 00:45:18,800 - INFO -    ✅ 3 modèles
+2025-11-08 00:45:21,630 - INFO - 🏷️ [18/30] Aixam
+2025-11-08 00:45:23,892 - INFO - ✅ Aixam: 16 modèles récupérés
+2025-11-08 00:45:24,063 - INFO -    ✅ 16 modèles
+2025-11-08 00:45:27,743 - INFO - 🏷️ [19/30] Alba Mobility
+2025-11-08 00:45:30,028 - INFO - ✅ Alba Mobility: 6 modèles récupérés
+2025-11-08 00:45:30,277 - INFO -    ✅ 6 modèles
+2025-11-08 00:45:32,783 - INFO - 🏷️ [20/30] Alfa Romeo
+2025-11-08 00:45:35,726 - INFO - ✅ Alfa Romeo: 36 modèles récupérés
+2025-11-08 00:45:35,938 - INFO -    ✅ 36 modèles
+2025-11-08 00:45:39,684 - INFO - 📊 Progrès: 20/30 marques, 20 avec modèles
+2025-11-08 00:45:39,690 - INFO - 🏷️ [21/30] Alpina
+2025-11-08 00:45:42,005 - INFO - ✅ Alpina: 23 modèles récupérés
+2025-11-08 00:45:42,146 - INFO -    🔄 Changements modèles pour Alpina:
+2025-11-08 00:45:42,149 - INFO -      + Nouveaux: Autres, B10, B11, B12, B3, B4, B5, B6, B7, B8, B9, C1, C2, D10, D3, D4, D5, Roadster Limited Edition, Roadster S, Roadster V8, XB7, XD3, XD4
+2025-11-08 00:45:42,162 - INFO -    ✅ 23 modèles
+2025-11-08 00:45:42,174 - INFO -    🔄 Changements: +23 -0
+2025-11-08 00:45:44,632 - INFO - 🏷️ [22/30] Alpine
+2025-11-08 00:45:46,811 - INFO - ✅ Alpine: 3 modèles récupérés
+2025-11-08 00:45:47,030 - INFO -    🔄 Changements modèles pour Alpine:
+2025-11-08 00:45:47,036 - INFO -      + Nouveaux: A110, A290, Autres
+2025-11-08 00:45:47,169 - INFO -    ✅ 3 modèles
+2025-11-08 00:45:47,184 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:45:49,643 - INFO - 🏷️ [23/30] Amphicar
+2025-11-08 00:45:51,807 - INFO - ✅ Amphicar: 2 modèles récupérés
+2025-11-08 00:45:51,981 - INFO -    🔄 Changements modèles pour Amphicar:
+2025-11-08 00:45:51,986 - INFO -      + Nouveaux: 770, Autres
+2025-11-08 00:45:52,012 - INFO -    ✅ 2 modèles
+2025-11-08 00:45:52,019 - INFO -    🔄 Changements: +2 -0
+2025-11-08 00:45:54,483 - INFO - 🏷️ [24/30] Angelelli Automobili
+2025-11-08 00:45:56,632 - INFO - ✅ Angelelli Automobili: 6 modèles récupérés
+2025-11-08 00:45:56,767 - INFO -    🔄 Changements modèles pour Angelelli Automobili:
+2025-11-08 00:45:56,775 - INFO -      + Nouveaux: Autres, D-1 S Hypercar, D-2 GT Granturismo V12, D-3 Hypersuv, Effequaranta, Hintegrale
+2025-11-08 00:45:56,786 - INFO -    ✅ 6 modèles
+2025-11-08 00:45:56,794 - INFO -    🔄 Changements: +6 -0
+2025-11-08 00:45:59,623 - INFO - 🏷️ [25/30] Ariel Motor
+2025-11-08 00:46:01,846 - INFO - ✅ Ariel Motor: 3 modèles récupérés
+2025-11-08 00:46:02,045 - INFO -    🔄 Changements modèles pour Ariel Motor:
+2025-11-08 00:46:02,050 - INFO -      + Nouveaux: Atom, Autres, Nomad
+2025-11-08 00:46:02,081 - INFO -    ✅ 3 modèles
+2025-11-08 00:46:02,089 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:46:05,228 - INFO - 🏷️ [26/30] Artega
+2025-11-08 00:46:07,435 - INFO - ✅ Artega: 4 modèles récupérés
+2025-11-08 00:46:07,647 - INFO -    🔄 Changements modèles pour Artega:
+2025-11-08 00:46:07,693 - INFO -      + Nouveaux: Autres, GT, Karo, Scalo
+2025-11-08 00:46:07,710 - INFO -    ✅ 4 modèles
+2025-11-08 00:46:07,719 - INFO -    🔄 Changements: +4 -0
+2025-11-08 00:46:11,162 - INFO - 🏷️ [27/30] Aspark
+2025-11-08 00:46:13,308 - INFO - ✅ Aspark: 2 modèles récupérés
+2025-11-08 00:46:15,085 - INFO -    🔄 Changements modèles pour Aspark:
+2025-11-08 00:46:15,095 - INFO -      + Nouveaux: Autres, Owl
+2025-11-08 00:46:15,115 - INFO -    ✅ 2 modèles
+2025-11-08 00:46:15,128 - INFO -    🔄 Changements: +2 -0
+2025-11-08 00:46:17,232 - INFO - 🏷️ [28/30] Aspid
+2025-11-08 00:46:19,432 - INFO - ✅ Aspid: 3 modèles récupérés
+2025-11-08 00:46:22,874 - INFO -    🔄 Changements modèles pour Aspid:
+2025-11-08 00:46:22,880 - INFO -      + Nouveaux: Autres, GT-21, SS
+2025-11-08 00:46:22,899 - INFO -    ✅ 3 modèles
+2025-11-08 00:46:22,905 - INFO -    🔄 Changements: +3 -0
+2025-11-08 00:46:25,955 - INFO - 🏷️ [29/30] Aston Martin
+2025-11-08 00:46:28,241 - INFO - ✅ Aston Martin: 19 modèles récupérés
+2025-11-08 00:46:28,636 - INFO -    🔄 Changements modèles pour Aston Martin:
+2025-11-08 00:46:28,643 - INFO -      + Nouveaux: AR1, Autres, Cygnet, DB, DB11, DB12, DB7, DB9, DBS, DBX, Lagonda, Rapide, V8, Valkyrie, Valour, Vanquish, Vantage, Virage, Volante
+2025-11-08 00:46:28,661 - INFO -    ✅ 19 modèles
+2025-11-08 00:46:28,680 - INFO -    🔄 Changements: +19 -0
+2025-11-08 00:46:30,820 - INFO - 🏷️ [30/30] Aurus
+2025-11-08 00:46:32,982 - INFO - ✅ Aurus: 2 modèles récupérés
+2025-11-08 00:46:33,145 - INFO -    🔄 Changements modèles pour Aurus:
+2025-11-08 00:46:33,165 - INFO -      + Nouveaux: Autres, Komendant
+2025-11-08 00:46:33,174 - INFO -    ✅ 2 modèles
+2025-11-08 00:46:33,207 - INFO -    🔄 Changements: +2 -0
+2025-11-08 00:46:35,964 - INFO - 📊 Progrès: 30/30 marques, 30 avec modèles
+2025-11-08 00:46:35,975 - INFO - 🎉 Scraping terminé! 30 marques traitées
+2025-11-08 00:46:36,238 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251108_004636.json
+2025-11-08 00:46:36,259 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_004153.json
+2025-11-08 00:46:36,490 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 00:46:36,563 - INFO -    • Marques: 20 → 30 (+10)
+2025-11-08 00:46:36,592 - INFO -    • Modèles: 1179 → 1246 (+67)
+2025-11-08 00:46:36,598 - INFO -    • NOUVELLES MARQUES (10):
+2025-11-08 00:46:36,622 - INFO -      + Alpina (23 modèles)
+2025-11-08 00:46:36,642 - INFO -      + Alpine (3 modèles)
+2025-11-08 00:46:36,661 - INFO -      + Amphicar (2 modèles)
+2025-11-08 00:46:36,674 - INFO -      + Angelelli Automobili (6 modèles)
+2025-11-08 00:46:36,699 - INFO -      + Ariel Motor (3 modèles)
+2025-11-08 00:46:36,733 - INFO -      + Artega (4 modèles)
+2025-11-08 00:46:36,754 - INFO -      + Aspark (2 modèles)
+2025-11-08 00:46:36,763 - INFO -      + Aspid (3 modèles)
+2025-11-08 00:46:36,774 - INFO -      + Aston Martin (19 modèles)
+2025-11-08 00:46:36,798 - INFO -      + Aurus (2 modèles)
+2025-11-08 00:46:36,813 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 00:46:37,348 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 00:46:37,368 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 00:46:37,379 - INFO -    • Marques traitées: 30
+2025-11-08 00:46:37,384 - INFO -    • Marques avec modèles: 30
+2025-11-08 00:46:37,410 - INFO -    • Total modèles: 1246
+2025-11-08 00:46:37,416 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_004636.json
+2025-11-08 00:46:37,429 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 00:46:39,674 - INFO - 🔒 Driver fermé
+2025-11-08 00:52:47,658 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 00:52:47,666 - INFO -    • Mode: Complet
+2025-11-08 00:52:47,672 - INFO -    • Headless: True
+2025-11-08 00:52:47,676 - INFO -    • Marques max: 5
+2025-11-08 00:52:47,681 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 00:52:47,687 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 00:52:47,692 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 00:52:49,085 - INFO - ✅ Driver Selenium configuré
+2025-11-08 00:52:49,239 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 00:52:49,269 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:52:53,266 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:52:53,270 - INFO - 🚀 Début du scraping pour 5 marques
+2025-11-08 00:52:53,275 - INFO - 🏷️ [1/5] Audi
+2025-11-08 00:52:56,051 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 00:52:56,146 - INFO -    ✅ 65 modèles
+2025-11-08 00:52:58,958 - INFO - 🏷️ [2/5] BMW
+2025-11-08 00:53:02,336 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 00:53:02,450 - INFO -    ✅ 125 modèles
+2025-11-08 00:53:06,118 - INFO - 🏷️ [3/5] Ferrari
+2025-11-08 00:53:08,763 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 00:53:08,940 - INFO -    ✅ 57 modèles
+2025-11-08 00:53:12,893 - INFO - 🏷️ [4/5] Mercedes-Benz
+2025-11-08 00:53:18,502 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 00:53:18,666 - INFO -    ✅ 382 modèles
+2025-11-08 00:53:22,555 - INFO - 🏷️ [5/5] MINI
+2025-11-08 00:53:25,269 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 00:53:25,431 - INFO -    ✅ 65 modèles
+2025-11-08 00:53:29,110 - INFO - 🎉 Scraping terminé! 5 marques traitées
+2025-11-08 00:53:29,237 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251108_005329.json
+2025-11-08 00:53:29,248 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_004636.json
+2025-11-08 00:53:29,331 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 00:53:29,335 - INFO -    • Marques: 30 → 5 (-25)
+2025-11-08 00:53:29,338 - INFO -    • Modèles: 1246 → 694 (-552)
+2025-11-08 00:53:29,342 - INFO -    • MARQUES SUPPRIMÉES (25):
+2025-11-08 00:53:29,346 - INFO -      - 9ff
+2025-11-08 00:53:29,349 - INFO -      - AC
+2025-11-08 00:53:29,353 - INFO -      - ACM
+2025-11-08 00:53:29,356 - INFO -      - Abarth
+2025-11-08 00:53:29,361 - INFO -      - Acura
+2025-11-08 00:53:29,364 - INFO -      - Aerfal
+2025-11-08 00:53:29,367 - INFO -      - Aiways
+2025-11-08 00:53:29,371 - INFO -      - Aixam
+2025-11-08 00:53:29,374 - INFO -      - Alba Mobility
+2025-11-08 00:53:29,377 - INFO -      - Alfa Romeo
+2025-11-08 00:53:29,380 - INFO -      - Alpina
+2025-11-08 00:53:29,408 - INFO -      - Alpine
+2025-11-08 00:53:29,412 - INFO -      - Amphicar
+2025-11-08 00:53:29,416 - INFO -      - Angelelli Automobili
+2025-11-08 00:53:29,419 - INFO -      - Ariel Motor
+2025-11-08 00:53:29,423 - INFO -      - Artega
+2025-11-08 00:53:29,427 - INFO -      - Aspark
+2025-11-08 00:53:29,431 - INFO -      - Aspid
+2025-11-08 00:53:29,435 - INFO -      - Aston Martin
+2025-11-08 00:53:29,465 - INFO -      - Aurus
+2025-11-08 00:53:29,469 - INFO -      - Peugeot
+2025-11-08 00:53:29,472 - INFO -      - Porsche
+2025-11-08 00:53:29,476 - INFO -      - Renault
+2025-11-08 00:53:29,481 - INFO -      - Toyota
+2025-11-08 00:53:29,485 - INFO -      - Volkswagen
+2025-11-08 00:53:29,513 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 00:53:29,921 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 00:53:29,926 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 00:53:29,931 - INFO -    • Marques traitées: 5
+2025-11-08 00:53:29,936 - INFO -    • Marques avec modèles: 5
+2025-11-08 00:53:29,941 - INFO -    • Total modèles: 694
+2025-11-08 00:53:29,945 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_005329.json
+2025-11-08 00:53:29,975 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 00:53:32,316 - INFO - 🔒 Driver fermé
+2025-11-08 00:54:14,599 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 00:54:14,624 - INFO -    • Mode: Complet
+2025-11-08 00:54:14,632 - INFO -    • Headless: True
+2025-11-08 00:54:14,636 - INFO -    • Marques max: 7
+2025-11-08 00:54:14,639 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 00:54:14,643 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 00:54:14,672 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 00:54:15,566 - INFO - ✅ Driver Selenium configuré
+2025-11-08 00:54:15,714 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 00:54:15,720 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 00:54:19,713 - INFO - ✅ Page d'accueil chargée
+2025-11-08 00:54:19,743 - INFO - 🚀 Début du scraping pour 7 marques
+2025-11-08 00:54:19,747 - INFO - 🏷️ [1/7] Audi
+2025-11-08 00:54:22,572 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 00:54:22,711 - INFO -    ✅ 65 modèles
+2025-11-08 00:54:25,680 - INFO - 🏷️ [2/7] BMW
+2025-11-08 00:54:28,970 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 00:54:29,082 - INFO -    ✅ 125 modèles
+2025-11-08 00:54:33,059 - INFO - 🏷️ [3/7] Ferrari
+2025-11-08 00:54:35,760 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 00:54:35,874 - INFO -    ✅ 57 modèles
+2025-11-08 00:54:38,125 - INFO - 🏷️ [4/7] Mercedes-Benz
+2025-11-08 00:54:43,828 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 00:54:43,971 - INFO -    ✅ 382 modèles
+2025-11-08 00:54:47,858 - INFO - 🏷️ [5/7] MINI
+2025-11-08 00:54:50,607 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 00:54:50,735 - INFO -    ✅ 65 modèles
+2025-11-08 00:54:53,191 - INFO - 🏷️ [6/7] Peugeot
+2025-11-08 00:54:55,861 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-08 00:54:56,008 - INFO -    🔄 Changements modèles pour Peugeot:
+2025-11-08 00:54:56,012 - INFO -      + Nouveaux: 1007, 104, 106, 107, 108, 2008, 204, 205, 206, 207, 208, 3008, 301, 304, 305, 306, 307, 308, 309, 4007, 4008, 404, 405, 406, 407, 408, 5008, 504, 505, 508, 604, 605, 607, 806, 807, Autres, Bipper, Boxer, Camper, Expert, J5, J9, Partner, RCZ, Ranch, Rifter, Traveller, e-2008, e-208, e-Expert, e-Rifter, e-Traveller, iOn
+2025-11-08 00:54:56,043 - INFO -    ✅ 53 modèles
+2025-11-08 00:54:56,047 - INFO -    🔄 Changements: +53 -0
+2025-11-08 00:54:59,827 - INFO - 🏷️ [7/7] Porsche
+2025-11-08 00:55:02,263 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-08 00:55:02,448 - INFO -    🔄 Changements modèles pour Porsche:
+2025-11-08 00:55:02,453 - INFO -      + Nouveaux: 356, 550, 718, 718 (tous), 718 Spyder, 911, 911 (tous), 912, 914, 918, 924, 928, 930, 944, 959, 962, 964, 968, 991, 992, 993, 996, 997, Autres, Boxster, Carrera GT, Cayenne, Cayman, Macan, Panamera, Targa, Taycan
+2025-11-08 00:55:02,457 - INFO -    ✅ 32 modèles
+2025-11-08 00:55:02,462 - INFO -    🔄 Changements: +32 -0
+2025-11-08 00:55:05,560 - INFO - 🎉 Scraping terminé! 7 marques traitées
+2025-11-08 00:55:07,173 - INFO - 💾 Résultats sauvegardés: data/auto_scraped_models_20251108_005505.json
+2025-11-08 00:55:07,226 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_005329.json
+2025-11-08 00:55:07,449 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 00:55:07,457 - INFO -    • Marques: 5 → 7 (+2)
+2025-11-08 00:55:07,563 - INFO -    • Modèles: 694 → 779 (+85)
+2025-11-08 00:55:07,570 - INFO -    • NOUVELLES MARQUES (2):
+2025-11-08 00:55:07,577 - INFO -      + Peugeot (53 modèles)
+2025-11-08 00:55:07,582 - INFO -      + Porsche (32 modèles)
+2025-11-08 00:55:07,613 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 00:55:08,347 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 00:55:08,353 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 00:55:08,383 - INFO -    • Marques traitées: 7
+2025-11-08 00:55:08,388 - INFO -    • Marques avec modèles: 7
+2025-11-08 00:55:08,392 - INFO -    • Total modèles: 779
+2025-11-08 00:55:08,396 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_005505.json
+2025-11-08 00:55:08,401 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 00:55:10,769 - INFO - 🔒 Driver fermé
+2025-11-08 01:04:34,420 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:04:34,426 - INFO -    • Mode: Complet
+2025-11-08 01:04:34,433 - INFO -    • Headless: True
+2025-11-08 01:04:34,437 - INFO -    • Marques max: 5
+2025-11-08 01:04:34,443 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:04:34,447 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:04:34,450 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:04:35,036 - WARNING - Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+2025-11-08 01:04:36,235 - INFO - ✅ Driver Selenium configuré
+2025-11-08 01:04:36,394 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 01:04:36,399 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:04:40,343 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:04:40,347 - INFO - 🚀 Début du scraping pour 5 marques
+2025-11-08 01:04:40,351 - INFO - 🏷️ [1/5] Audi
+2025-11-08 01:04:43,252 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 01:04:43,378 - INFO -    ✅ 65 modèles
+2025-11-08 01:04:47,330 - INFO - 🏷️ [2/5] BMW
+2025-11-08 01:04:50,623 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 01:04:50,779 - INFO -    ✅ 125 modèles
+2025-11-08 01:04:54,297 - INFO - 🏷️ [3/5] Ferrari
+2025-11-08 01:04:56,961 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 01:04:57,095 - INFO -    ✅ 57 modèles
+2025-11-08 01:04:59,217 - INFO - 🏷️ [4/5] Mercedes-Benz
+2025-11-08 01:05:04,888 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 01:05:05,015 - INFO -    ✅ 382 modèles
+2025-11-08 01:05:08,531 - INFO - 🏷️ [5/5] MINI
+2025-11-08 01:05:11,408 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 01:05:11,537 - INFO -    ✅ 65 modèles
+2025-11-08 01:05:14,858 - INFO - 🎉 Scraping terminé! 5 marques traitées
+2025-11-08 01:05:15,059 - INFO - 📝 Fichier Markdown généré: data\auto_scraped_models_20251108_010514.md
+2025-11-08 01:05:15,064 - INFO - 💾 Résultats sauvegardés:
+2025-11-08 01:05:15,070 - INFO -    📄 JSON: data/auto_scraped_models_20251108_010514.json
+2025-11-08 01:05:15,101 - INFO -    📝 MD: data\auto_scraped_models_20251108_010514.md
+2025-11-08 01:05:15,112 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_005505.json
+2025-11-08 01:05:15,225 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 01:05:15,255 - INFO -    • Marques: 7 → 5 (-2)
+2025-11-08 01:05:15,259 - INFO -    • Modèles: 779 → 694 (-85)
+2025-11-08 01:05:15,264 - INFO -    • MARQUES SUPPRIMÉES (2):
+2025-11-08 01:05:15,271 - INFO -      - Peugeot
+2025-11-08 01:05:15,276 - INFO -      - Porsche
+2025-11-08 01:05:15,305 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 01:05:15,969 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 01:05:15,974 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 01:05:15,981 - INFO -    • Marques traitées: 5
+2025-11-08 01:05:15,985 - INFO -    • Marques avec modèles: 5
+2025-11-08 01:05:15,991 - INFO -    • Total modèles: 694
+2025-11-08 01:05:15,995 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_010514.json
+2025-11-08 01:05:16,023 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 01:05:18,367 - INFO - 🔒 Driver fermé
+2025-11-08 01:08:36,168 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:08:36,172 - INFO -    • Mode: Test
+2025-11-08 01:08:36,181 - INFO -    • Headless: True
+2025-11-08 01:08:36,187 - INFO -    • Marques max: 20
+2025-11-08 01:08:36,216 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:08:36,221 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:08:36,225 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:08:36,472 - INFO - ⏹️ Interruption par l'utilisateur
+2025-11-08 01:08:43,754 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:08:43,761 - INFO -    • Mode: Complet
+2025-11-08 01:08:43,792 - INFO -    • Headless: True
+2025-11-08 01:08:43,796 - INFO -    • Marques max: 3
+2025-11-08 01:08:43,803 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:08:43,806 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:08:43,810 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:08:44,627 - INFO - ✅ Driver Selenium configuré
+2025-11-08 01:08:44,735 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 01:08:44,765 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:08:48,829 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:08:48,832 - INFO - 🚀 Début du scraping pour 3 marques
+2025-11-08 01:08:48,863 - INFO - 🏷️ [1/3] Audi
+2025-11-08 01:08:51,649 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 01:08:51,793 - INFO -    ✅ 65 modèles
+2025-11-08 01:08:55,564 - INFO - 🏷️ [2/3] BMW
+2025-11-08 01:08:58,852 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 01:08:58,968 - INFO -    ✅ 125 modèles
+2025-11-08 01:09:02,698 - INFO - 🏷️ [3/3] Ferrari
+2025-11-08 01:09:05,379 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 01:09:05,521 - INFO -    ✅ 57 modèles
+2025-11-08 01:09:08,172 - INFO - 🎉 Scraping terminé! 3 marques traitées
+2025-11-08 01:09:08,381 - INFO - 📝 Fichier Markdown généré: data\auto_scraped_models_20251108_010908.md
+2025-11-08 01:09:08,387 - INFO - 💾 Résultats sauvegardés:
+2025-11-08 01:09:08,391 - INFO -    📄 JSON: data/auto_scraped_models_20251108_010908.json
+2025-11-08 01:09:08,420 - INFO -    📝 MD: data\auto_scraped_models_20251108_010908.md
+2025-11-08 01:09:08,438 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_010514.json
+2025-11-08 01:09:08,581 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 01:09:08,585 - INFO -    • Marques: 5 → 3 (-2)
+2025-11-08 01:09:08,594 - INFO -    • Modèles: 694 → 247 (-447)
+2025-11-08 01:09:08,624 - INFO -    • MARQUES SUPPRIMÉES (2):
+2025-11-08 01:09:08,633 - INFO -      - MINI
+2025-11-08 01:09:08,651 - INFO -      - Mercedes-Benz
+2025-11-08 01:09:08,655 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 01:09:09,041 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 01:09:09,085 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 01:09:09,089 - INFO -    • Marques traitées: 3
+2025-11-08 01:09:09,095 - INFO -    • Marques avec modèles: 3
+2025-11-08 01:09:09,099 - INFO -    • Total modèles: 247
+2025-11-08 01:09:09,104 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_010908.json
+2025-11-08 01:09:09,107 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 01:09:11,455 - INFO - 🔒 Driver fermé
+2025-11-08 01:11:42,570 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:11:42,577 - INFO -    • Mode: Complet
+2025-11-08 01:11:42,582 - INFO -    • Headless: True
+2025-11-08 01:11:42,588 - INFO -    • Marques max: 2
+2025-11-08 01:11:42,594 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:11:42,598 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:11:42,604 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:11:43,455 - INFO - ✅ Driver Selenium configuré
+2025-11-08 01:11:43,464 - WARNING - ⚠️ Fichier brands_for_scraping.json non trouvé
+2025-11-08 01:11:43,467 - INFO - 🔄 Extraction automatique des marques depuis AutoScout24...
+2025-11-08 01:11:43,471 - INFO - 🔍 Extraction des marques depuis AutoScout24...
+2025-11-08 01:11:43,474 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:11:47,485 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:11:47,530 - INFO - ✅ Menu marques trouvé avec sélecteur: select[name='make']
+2025-11-08 01:11:47,583 - INFO - 🔍 Trouvé 290 options dans le menu
+2025-11-08 01:11:52,619 - INFO - 💾 Fichier brands_for_scraping.json créé: 279 marques
+2025-11-08 01:11:52,637 - INFO - ℹ️ Aucune version précédente trouvée
+2025-11-08 01:11:52,779 - INFO - ✅ Extraction réussie: 279 marques
+2025-11-08 01:11:52,788 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:11:56,468 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:11:56,473 - INFO - 🚀 Début du scraping pour 2 marques
+2025-11-08 01:11:56,476 - INFO - 🏷️ [1/2] Audi
+2025-11-08 01:11:59,226 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 01:11:59,246 - INFO -    ✅ 65 modèles
+2025-11-08 01:12:02,401 - INFO - 🏷️ [2/2] BMW
+2025-11-08 01:12:05,671 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 01:12:05,683 - INFO -    ✅ 125 modèles
+2025-11-08 01:12:09,141 - INFO - 🎉 Scraping terminé! 2 marques traitées
+2025-11-08 01:12:09,320 - INFO - 📝 Fichier Markdown généré: data\auto_scraped_models_20251108_011209.md
+2025-11-08 01:12:09,325 - INFO - 💾 Résultats sauvegardés:
+2025-11-08 01:12:09,329 - INFO -    📄 JSON: data/auto_scraped_models_20251108_011209.json
+2025-11-08 01:12:09,332 - INFO -    📝 MD: data\auto_scraped_models_20251108_011209.md
+2025-11-08 01:12:09,874 - INFO - ℹ️ Première exécution - aucun rapport de versioning
+2025-11-08 01:12:10,078 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 01:12:10,081 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 01:12:10,085 - INFO -    • Marques traitées: 2
+2025-11-08 01:12:10,093 - INFO -    • Marques avec modèles: 2
+2025-11-08 01:12:10,097 - INFO -    • Total modèles: 190
+2025-11-08 01:12:10,101 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_011209.json
+2025-11-08 01:12:10,131 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 01:12:12,469 - INFO - 🔒 Driver fermé
+2025-11-08 01:13:51,379 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:13:51,405 - INFO -    • Mode: Complet
+2025-11-08 01:13:51,410 - INFO -    • Headless: True
+2025-11-08 01:13:51,416 - INFO -    • Marques max: 5
+2025-11-08 01:13:51,420 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:13:51,423 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:13:51,452 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:13:52,395 - INFO - ✅ Driver Selenium configuré
+2025-11-08 01:13:52,535 - INFO - 📋 Chargé 279 marques depuis brands_for_scraping.json
+2025-11-08 01:13:52,538 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:13:56,479 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:13:56,483 - INFO - 🚀 Début du scraping pour 5 marques
+2025-11-08 01:13:56,487 - INFO - 🏷️ [1/5] Audi
+2025-11-08 01:13:59,277 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 01:13:59,362 - INFO -    ✅ 65 modèles
+2025-11-08 01:14:02,137 - INFO - 🏷️ [2/5] BMW
+2025-11-08 01:14:05,451 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 01:14:05,529 - INFO -    ✅ 125 modèles
+2025-11-08 01:14:08,457 - INFO - 🏷️ [3/5] Ferrari
+2025-11-08 01:14:11,141 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 01:14:11,282 - INFO -    🔄 Changements modèles pour Ferrari:
+2025-11-08 01:14:11,287 - INFO -      + Nouveaux: 12 Cilindri, 195, 206, 208, 246, 250, 275, 288, 296, 296 GTB, 296 GTS, 308, 328, 330, 348, 360, 365, 400, 412, 430 Scuderia, 456, 458, 488, 512, 550, 575, 599, 612, 750, 812, Autres, California, Daytona, Dino GT4, Enzo Ferrari, F12, F355, F40, F430, F50, F512, F8 Spider, F8 Tributo, FF, FXX, GTC4 Lusso, LaFerrari, Mondial, Monza, Portofino, Purosangue, Roma, SF90 Spider, SF90 Stradale, Scuderia Spider 16M, Superamerica, Testarossa
+2025-11-08 01:14:11,320 - INFO -    ✅ 57 modèles
+2025-11-08 01:14:11,324 - INFO -    🔄 Changements: +57 -0
+2025-11-08 01:14:13,938 - INFO - 🏷️ [4/5] Mercedes-Benz
+2025-11-08 01:14:19,521 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 01:14:19,624 - INFO -    🔄 Changements modèles pour Mercedes-Benz:
+2025-11-08 01:14:19,635 - INFO -      + Nouveaux: 170, 180, 190, 200, 208, 210/310, 220, 230, 240, 250, 260, 270, 280, 300, 308, 320, 350, 380, 400, 416, 420, 450, 500, 560, 600, A 140, A 150, A 160, A 170, A 180, A 190, A 200, A 210, A 220, A 250, A 35 AMG, A 45 AMG, AMG GT, AMG ONE, Actros, Atego, Autres, B 150, B 160, B 170, B 180, B 200, B 220, B 250, B Electric Drive, Baureihe 123, Baureihe 124, C 160, C 180, C 200, C 220, C 230, C 240, C 250, C 270, C 280, C 30 AMG, C 300, C 32 AMG, C 320, C 350, C 36 AMG, C 400, C 43 AMG, C 450, C 55 AMG, C 63 AMG, CE (tous), CE 200, CE 220, CE 230, CE 280, CE 300, CL, CL (tous), CL 160, CL 180, CL 200, CL 220, CL 230, CL 320, CL 420, CL 500, CL 55 AMG, CL 600, CL 63 AMG, CL 65 AMG, CLA (tous), CLA 180, CLA 200, CLA 220, CLA 250, CLA 35 AMG, CLA 350, CLA 45 AMG, CLC, CLE, CLE 180, CLE 200, CLE 220, CLE 300, CLE 450, CLE 53 AMG, CLE 63 AMG, CLK, CLK (tous), CLK 200, CLK 220, CLK 230, CLK 240, CLK 270, CLK 280, CLK 320, CLK 350, CLK 430, CLK 500, CLK 55 AMG, CLK 63 AMG, CLS, CLS (tous), CLS 220, CLS 250, CLS 280, CLS 300, CLS 320, CLS 350, CLS 400, CLS 450, CLS 500, CLS 53 AMG, CLS 55 AMG, CLS 63 AMG, Citan, Classe A (tous), Classe B (tous), Classe C (tous), Classe E (tous), Classe EQ (tous), Classe G (tous), Classe M (tous), Classe R (tous), Classe S (tous), Classe T, Classe V (tous), E 200, E 220, E 230, E 240, E 250, E 260, E 270, E 280, E 290, E 300, E 320, E 350, E 36 AMG, E 400, E 420, E 43 AMG, E 430, E 450, E 50 AMG, E 500, E 53 AMG, E 55 AMG, E 550, E 60 AMG, E 63 AMG, EQA, EQA 250, EQA 300, EQA 350, EQB 250, EQB 300, EQB 350, EQC 400, EQE 300, EQE 350, EQE 43, EQE 500, EQE 53, EQE SUV, EQS, EQS SUV, EQT, EQV 250, EQV 300, G, G 230, G 240, G 250, G 270, G 280, G 290, G 300, G 320, G 350, G 400, G 450, G 500, G 55 AMG, G 580, G 63 AMG, G 65 AMG, G 650, GL (tous), GL 320, GL 350, GL 400, GL 420, GL 450, GL 500, GL 55 AMG, GL 63 AMG, GLA (tous), GLA 180, GLA 200, GLA 220, GLA 250, GLA 35 AMG, GLA 45 AMG, GLB (tous), GLB 180, GLB 200, GLB 220, GLB 250, GLB 35 AMG, GLC (tous), GLC 200, GLC 220, GLC 250, GLC 300, GLC 350, GLC 400, GLC 43 AMG, GLC 450, GLC 63 AMG, GLE (tous), GLE 250, GLE 300, GLE 350, GLE 400, GLE 43 AMG, GLE 450, GLE 500, GLE 53 AMG, GLE 580, GLE 63 AMG, GLK (tous), GLK 200, GLK 220, GLK 250, GLK 280, GLK 300, GLK 320, GLK 350, GLS (tous), GLS 350, GLS 400, GLS 450, GLS 500, GLS 580, GLS 600, GLS 63 AMG, MB 100, ML 230, ML 250, ML 270, ML 280, ML 300, ML 320, ML 350, ML 400, ML 420, ML 430, ML 450, ML 500, ML 55 AMG, ML 63 AMG, Marco Polo, Maybach GLS, Maybach S-Klasse, R 280, R 300, R 320, R 350, R 500, R 63 AMG, S 250, S 260, S 280, S 300, S 320, S 350, S 380, S 400, S 420, S 430, S 450, S 500, S 55 AMG, S 550, S 560, S 560 E, S 580, S 600, S 63 AMG, S 65 AMG, S 650, S 680, SL (tous), SL 230, SL 250, SL 280, SL 300, SL 320, SL 350, SL 380, SL 400, SL 420, SL 43 AMG, SL 450, SL 500, SL 55 AMG, SL 560, SL 60 AMG, SL 600, SL 63 AMG, SL 65 AMG, SL 680, SL 70 AMG, SL 73 AMG, SL Roadster AMG, SLC (tous), SLC 180, SLC 200, SLC 250, SLC 280, SLC 300, SLC 350, SLC 380, SLC 43 AMG, SLC 450, SLC 500, SLK, SLK (tous), SLK 200, SLK 230, SLK 250, SLK 280, SLK 300, SLK 32 AMG, SLK 320, SLK 350, SLK 55 AMG, SLR, SLS, Sprinter, Série X (tous), T1, T2, V, V 200, V 220, V 230, V 250, V 280, V 300, Vaneo, Vario, Viano, Vito, W 114/115 Strich-Acht, X 220, X 250, X 350
+2025-11-08 01:14:19,664 - INFO -    ✅ 382 modèles
+2025-11-08 01:14:19,668 - INFO -    🔄 Changements: +382 -0
+2025-11-08 01:14:22,063 - INFO - 🏷️ [5/5] MINI
+2025-11-08 01:14:24,844 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 01:14:24,903 - INFO -    🔄 Changements modèles pour MINI:
+2025-11-08 01:14:24,907 - INFO -      + Nouveaux: 1000, 1300, 3/5 Portes, Aceman, Autres, Clubvan, Cooper, Cooper C, Cooper C Cabrio, Cooper Cabrio, Cooper Clubman, Cooper Countryman, Cooper Coupe, Cooper D, Cooper D Cabrio, Cooper D Clubman, Cooper D Countryman, Cooper D Coupe, Cooper D Paceman, Cooper E, Cooper Paceman, Cooper Roadster, Cooper S, Cooper S Cabrio, Cooper S Clubman, Cooper S Countryman, Cooper S Coupe, Cooper S Paceman, Cooper S Roadster, Cooper SD, Cooper SD Cabrio, Cooper SD Clubman, Cooper SD Countryman, Cooper SD Coupe, Cooper SD Paceman, Cooper SD Roadster, Cooper SE, Cooper SE Countryman, Countryman C, Countryman D, Countryman E, Countryman S All4, Countryman SE All4, Gamme Cabrio (tous), Gamme Clubman (tous), Gamme Countryman (tous), Gamme Coupe (tous), Gamme Paceman (tous), JCW Countryman All4, John Cooper Works, John Cooper Works Cabrio, John Cooper Works Clubman, John Cooper Works Countryman, John Cooper Works Coupe, John Cooper Works E, John Cooper Works Paceman, John Cooper Works Roadster, One, One Cabrio, One Clubman, One Countryman, One D, One D Clubman, One D Countryman, Roadster
+2025-11-08 01:14:24,937 - INFO -    ✅ 65 modèles
+2025-11-08 01:14:24,941 - INFO -    🔄 Changements: +65 -0
+2025-11-08 01:14:27,078 - INFO - 🎉 Scraping terminé! 5 marques traitées
+2025-11-08 01:14:27,235 - INFO - 📝 Fichier Markdown généré: data\auto_scraped_models_20251108_011427.md
+2025-11-08 01:14:27,240 - INFO - 💾 Résultats sauvegardés:
+2025-11-08 01:14:27,245 - INFO -    📄 JSON: data/auto_scraped_models_20251108_011427.json
+2025-11-08 01:14:27,250 - INFO -    📝 MD: data\auto_scraped_models_20251108_011427.md
+2025-11-08 01:14:27,263 - INFO - 🔄 Rapport de versioning vs auto_scraped_models_20251108_011209.json
+2025-11-08 01:14:27,342 - INFO - 📊 COMPARAISON GLOBALE:
+2025-11-08 01:14:27,346 - INFO -    • Marques: 2 → 5 (+3)
+2025-11-08 01:14:27,354 - INFO -    • Modèles: 190 → 694 (+504)
+2025-11-08 01:14:27,358 - INFO -    • NOUVELLES MARQUES (3):
+2025-11-08 01:14:27,362 - INFO -      + Ferrari (57 modèles)
+2025-11-08 01:14:27,365 - INFO -      + MINI (65 modèles)
+2025-11-08 01:14:27,393 - INFO -      + Mercedes-Benz (382 modèles)
+2025-11-08 01:14:27,397 - INFO - 📁 Fichier de comparaison disponible pour analyse détaillée
+2025-11-08 01:14:27,813 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 01:14:27,819 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 01:14:27,826 - INFO -    • Marques traitées: 5
+2025-11-08 01:14:27,856 - INFO -    • Marques avec modèles: 5
+2025-11-08 01:14:27,860 - INFO -    • Total modèles: 694
+2025-11-08 01:14:27,864 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_011427.json
+2025-11-08 01:14:27,868 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 01:14:30,195 - INFO - 🔒 Driver fermé
+2025-11-08 01:28:00,788 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-08 01:28:00,794 - INFO -    • Mode: Complet
+2025-11-08 01:28:00,804 - INFO -    • Headless: True
+2025-11-08 01:28:00,808 - INFO -    • Marques max: Toutes
+2025-11-08 01:28:00,823 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-08 01:28:00,828 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-08 01:28:00,837 - INFO -    • 📝 Historique Markdown automatique
+2025-11-08 01:28:03,077 - INFO - ✅ Driver Selenium configuré
+2025-11-08 01:28:03,089 - WARNING - ⚠️ Fichier brands_for_scraping.json non trouvé
+2025-11-08 01:28:03,096 - INFO - 🔄 Extraction automatique des marques depuis AutoScout24...
+2025-11-08 01:28:03,101 - INFO - 🔍 Extraction des marques depuis AutoScout24...
+2025-11-08 01:28:03,107 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:28:07,457 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:28:07,495 - INFO - ✅ Menu marques trouvé avec sélecteur: select[name='make']
+2025-11-08 01:28:07,536 - INFO - 🔍 Trouvé 290 options dans le menu
+2025-11-08 01:28:13,594 - INFO - 📝 Fichier Markdown des marques généré: data\brands_for_scraping.md
+2025-11-08 01:28:13,597 - INFO - 💾 Fichier brands_for_scraping.json créé: 279 marques
+2025-11-08 01:28:13,639 - INFO - ℹ️ Aucune version précédente trouvée
+2025-11-08 01:28:13,787 - INFO - ✅ Extraction réussie: 279 marques
+2025-11-08 01:28:13,792 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-08 01:28:18,567 - INFO - ✅ Page d'accueil chargée
+2025-11-08 01:28:18,602 - INFO - 🚀 Début du scraping pour 279 marques
+2025-11-08 01:28:18,650 - INFO - 🏷️ [1/279] Audi
+2025-11-08 01:28:21,263 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-08 01:28:21,313 - INFO -    ✅ 65 modèles
+2025-11-08 01:28:23,460 - INFO - 🏷️ [2/279] BMW
+2025-11-08 01:28:26,423 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-08 01:28:26,443 - INFO -    ✅ 125 modèles
+2025-11-08 01:28:29,895 - INFO - 🏷️ [3/279] Ferrari
+2025-11-08 01:28:32,378 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-08 01:28:32,421 - INFO -    ✅ 57 modèles
+2025-11-08 01:28:36,110 - INFO - 🏷️ [4/279] Mercedes-Benz
+2025-11-08 01:28:40,582 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-08 01:28:40,632 - INFO -    ✅ 382 modèles
+2025-11-08 01:28:44,268 - INFO - 🏷️ [5/279] MINI
+2025-11-08 01:28:46,843 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-08 01:28:47,119 - INFO -    ✅ 65 modèles
+2025-11-08 01:28:50,605 - INFO - 🏷️ [6/279] Peugeot
+2025-11-08 01:28:53,083 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-08 01:28:53,123 - INFO -    ✅ 53 modèles
+2025-11-08 01:28:56,008 - INFO - 🏷️ [7/279] Porsche
+2025-11-08 01:28:58,409 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-08 01:28:58,448 - INFO -    ✅ 32 modèles
+2025-11-08 01:29:01,848 - INFO - 🏷️ [8/279] Renault
+2025-11-08 01:29:04,372 - INFO - ✅ Renault: 65 modèles récupérés
+2025-11-08 01:29:04,385 - INFO -    ✅ 65 modèles
+2025-11-08 01:29:08,115 - INFO - 🏷️ [9/279] Toyota
+2025-11-08 01:29:10,881 - INFO - ✅ Toyota: 101 modèles récupérés
+2025-11-08 01:29:10,936 - INFO -    ✅ 101 modèles
+2025-11-08 01:29:13,747 - INFO - 🏷️ [10/279] Volkswagen
+2025-11-08 01:29:16,698 - INFO - ✅ Volkswagen: 129 modèles récupérés
+2025-11-08 01:29:16,726 - INFO -    ✅ 129 modèles
+2025-11-08 01:29:20,389 - INFO - 📊 Progrès: 10/279 marques, 10 avec modèles
+2025-11-08 01:29:20,402 - INFO - 🏷️ [11/279] 9ff
+2025-11-08 01:29:22,615 - INFO - ✅ 9ff: 7 modèles récupérés
+2025-11-08 01:29:22,636 - INFO -    ✅ 7 modèles
+2025-11-08 01:29:25,772 - INFO - 🏷️ [12/279] Abarth
+2025-11-08 01:29:28,034 - INFO - ✅ Abarth: 18 modèles récupérés
+2025-11-08 01:29:28,078 - INFO -    ✅ 18 modèles
+2025-11-08 01:29:30,859 - INFO - 🏷️ [13/279] AC
+2025-11-08 01:29:33,010 - INFO - ✅ AC: 3 modèles récupérés
+2025-11-08 01:29:33,064 - INFO -    ✅ 3 modèles
+2025-11-08 01:29:37,080 - INFO - 🏷️ [14/279] ACM
+2025-11-08 01:29:39,277 - INFO - ✅ ACM: 3 modèles récupérés
+2025-11-08 01:29:39,303 - INFO -    ✅ 3 modèles
+2025-11-08 01:29:42,148 - INFO - 🏷️ [15/279] Acura
+2025-11-08 01:29:44,408 - INFO - ✅ Acura: 12 modèles récupérés
+2025-11-08 01:29:44,427 - INFO -    ✅ 12 modèles
+2025-11-08 01:29:46,598 - INFO - 🏷️ [16/279] Aerfal
+2025-11-08 01:29:48,825 - INFO - ✅ Aerfal: 1 modèles récupérés
+2025-11-08 01:29:48,838 - INFO -    ✅ 1 modèles
+2025-11-08 01:29:52,164 - INFO - 🏷️ [17/279] Aiways
+2025-11-08 01:29:54,367 - INFO - ✅ Aiways: 3 modèles récupérés
+2025-11-08 01:29:54,407 - INFO -    ✅ 3 modèles
+2025-11-08 01:29:57,330 - INFO - 🏷️ [18/279] Aixam
+2025-11-08 01:29:59,575 - INFO - ✅ Aixam: 16 modèles récupérés
+2025-11-08 01:29:59,622 - INFO -    ✅ 16 modèles
+2025-11-08 01:30:02,088 - INFO - 🏷️ [19/279] Alba Mobility
+2025-11-08 01:30:04,264 - INFO - ✅ Alba Mobility: 6 modèles récupérés
+2025-11-08 01:30:04,293 - INFO -    ✅ 6 modèles
+2025-11-08 01:30:08,283 - INFO - 🏷️ [20/279] Alfa Romeo
+2025-11-08 01:30:10,661 - INFO - ✅ Alfa Romeo: 36 modèles récupérés
+2025-11-08 01:30:10,684 - INFO -    ✅ 36 modèles
+2025-11-08 01:30:13,003 - INFO - 📊 Progrès: 20/279 marques, 20 avec modèles
+2025-11-08 01:30:13,032 - INFO - 🏷️ [21/279] Alpina
+2025-11-08 01:30:15,331 - INFO - ✅ Alpina: 23 modèles récupérés
+2025-11-08 01:30:15,343 - INFO -    ✅ 23 modèles
+2025-11-08 01:30:19,038 - INFO - 🏷️ [22/279] Alpine
+2025-11-08 01:30:21,191 - INFO - ✅ Alpine: 3 modèles récupérés
+2025-11-08 01:30:21,239 - INFO -    ✅ 3 modèles
+2025-11-08 01:30:24,797 - INFO - 🏷️ [23/279] Amphicar
+2025-11-08 01:30:26,938 - INFO - ✅ Amphicar: 2 modèles récupérés
+2025-11-08 01:30:26,970 - INFO -    ✅ 2 modèles
+2025-11-08 01:30:29,755 - INFO - 🏷️ [24/279] Angelelli Automobili
+2025-11-08 01:30:32,069 - INFO - ✅ Angelelli Automobili: 6 modèles récupérés
+2025-11-08 01:30:32,133 - INFO -    ✅ 6 modèles
+2025-11-08 01:30:34,167 - INFO - 🏷️ [25/279] Ariel Motor
+2025-11-08 01:30:36,359 - INFO - ✅ Ariel Motor: 3 modèles récupérés
+2025-11-08 01:30:36,393 - INFO -    ✅ 3 modèles
+2025-11-08 01:30:39,980 - INFO - 🏷️ [26/279] Artega
+2025-11-08 01:30:42,147 - INFO - ✅ Artega: 4 modèles récupérés
+2025-11-08 01:30:42,186 - INFO -    ✅ 4 modèles
+2025-11-08 01:30:44,820 - INFO - 🏷️ [27/279] Aspark
+2025-11-08 01:30:46,970 - INFO - ✅ Aspark: 2 modèles récupérés
+2025-11-08 01:30:46,994 - INFO -    ✅ 2 modèles
+2025-11-08 01:30:49,281 - INFO - 🏷️ [28/279] Aspid
+2025-11-08 01:30:51,449 - INFO - ✅ Aspid: 3 modèles récupérés
+2025-11-08 01:30:51,498 - INFO -    ✅ 3 modèles
+2025-11-08 01:30:54,855 - INFO - 🏷️ [29/279] Aston Martin
+2025-11-08 01:30:57,116 - INFO - ✅ Aston Martin: 19 modèles récupérés
+2025-11-08 01:30:57,128 - INFO -    ✅ 19 modèles
+2025-11-08 01:30:59,923 - INFO - 🏷️ [30/279] Aurus
+2025-11-08 01:31:02,897 - INFO - ✅ Aurus: 2 modèles récupérés
+2025-11-08 01:31:02,948 - INFO -    ✅ 2 modèles
+2025-11-08 01:31:06,728 - INFO - 📊 Progrès: 30/279 marques, 30 avec modèles
+2025-11-08 01:31:06,742 - INFO - 🏷️ [31/279] Austin
+2025-11-08 01:31:08,987 - INFO - ✅ Austin: 9 modèles récupérés
+2025-11-08 01:31:09,009 - INFO -    ✅ 9 modèles
+2025-11-08 01:31:12,099 - INFO - 🏷️ [32/279] Austin-Healey
+2025-11-08 01:31:14,821 - INFO - ✅ Austin-Healey: 4 modèles récupérés
+2025-11-08 01:31:14,854 - INFO -    ✅ 4 modèles
+2025-11-08 01:31:18,669 - INFO - 🏷️ [33/279] Autobianchi
+2025-11-08 01:31:20,902 - INFO - ✅ Autobianchi: 4 modèles récupérés
+2025-11-08 01:31:20,934 - INFO -    ✅ 4 modèles
+2025-11-08 01:31:23,299 - INFO - 🏷️ [34/279] BAIC
+2025-11-08 01:31:25,662 - INFO - ✅ BAIC: 17 modèles récupérés
+2025-11-08 01:31:25,736 - INFO -    ✅ 17 modèles
+2025-11-08 01:31:28,608 - INFO - 🏷️ [35/279] BAW
+2025-11-08 01:31:30,733 - INFO - ✅ BAW: 2 modèles récupérés
+2025-11-08 01:31:30,764 - INFO -    ✅ 2 modèles
+2025-11-08 01:31:33,019 - INFO - 🏷️ [36/279] Bedford
+2025-11-08 01:31:35,337 - INFO - ✅ Bedford: 16 modèles récupérés
+2025-11-08 01:31:35,375 - INFO -    ✅ 16 modèles
+2025-11-08 01:31:39,344 - INFO - 🏷️ [37/279] Bellier
+2025-11-08 01:31:42,157 - INFO - ✅ Bellier: 9 modèles récupérés
+2025-11-08 01:31:42,307 - INFO -    ✅ 9 modèles
+2025-11-08 01:31:45,536 - INFO - 🏷️ [38/279] Bentley
+2025-11-08 01:31:47,805 - INFO - ✅ Bentley: 18 modèles récupérés
+2025-11-08 01:31:48,114 - INFO -    ✅ 18 modèles
+2025-11-08 01:31:50,925 - INFO - 🏷️ [39/279] Bertone
+2025-11-08 01:31:53,192 - INFO - ✅ Bertone: 2 modèles récupérés
+2025-11-08 01:31:53,235 - INFO -    ✅ 2 modèles
+2025-11-08 01:31:56,583 - INFO - 🏷️ [40/279] Bestune
+2025-11-08 01:31:58,768 - INFO - ✅ Bestune: 3 modèles récupérés
+2025-11-08 01:31:58,781 - INFO -    ✅ 3 modèles
+2025-11-08 01:32:01,220 - INFO - 📊 Progrès: 40/279 marques, 40 avec modèles
+2025-11-08 01:32:01,226 - INFO - 🏷️ [41/279] Boldmen
+2025-11-08 01:32:03,390 - INFO - ✅ Boldmen: 2 modèles récupérés
+2025-11-08 01:32:03,475 - INFO -    ✅ 2 modèles
+2025-11-08 01:32:06,702 - INFO - 🏷️ [42/279] Bolloré
+2025-11-08 01:32:08,887 - INFO - ✅ Bolloré: 4 modèles récupérés
+2025-11-08 01:32:08,914 - INFO -    ✅ 4 modèles
+2025-11-08 01:32:12,728 - INFO - 🏷️ [43/279] Borgward
+2025-11-08 01:32:14,985 - INFO - ✅ Borgward: 15 modèles récupérés
+2025-11-08 01:32:14,998 - INFO -    ✅ 15 modèles
+2025-11-08 01:32:18,061 - INFO - 🏷️ [44/279] Brilliance
+2025-11-08 01:32:20,245 - INFO - ✅ Brilliance: 9 modèles récupérés
+2025-11-08 01:32:20,275 - INFO -    ✅ 9 modèles
+2025-11-08 01:32:23,873 - INFO - 🏷️ [45/279] Bristol
+2025-11-08 01:32:26,073 - INFO - ✅ Bristol: 3 modèles récupérés
+2025-11-08 01:32:26,112 - INFO -    ✅ 3 modèles
+2025-11-08 01:32:29,835 - INFO - 🏷️ [46/279] Brute
+2025-11-08 01:32:31,996 - INFO - ✅ Brute: 2 modèles récupérés
+2025-11-08 01:32:32,040 - INFO -    ✅ 2 modèles
+2025-11-08 01:32:34,237 - INFO - 🏷️ [47/279] Bugatti
+2025-11-08 01:32:36,502 - INFO - ✅ Bugatti: 7 modèles récupérés
+2025-11-08 01:32:36,515 - INFO -    ✅ 7 modèles
+2025-11-08 01:32:40,335 - INFO - 🏷️ [48/279] Buick
+2025-11-08 01:32:42,583 - INFO - ✅ Buick: 16 modèles récupérés
+2025-11-08 01:32:42,961 - INFO -    ✅ 16 modèles
+2025-11-08 01:32:45,864 - INFO - 🏷️ [49/279] BYD
+2025-11-08 01:32:48,099 - INFO - ✅ BYD: 17 modèles récupérés
+2025-11-08 01:32:48,945 - INFO -    ✅ 17 modèles
+2025-11-08 01:32:51,103 - INFO - 🏷️ [50/279] Cadillac
+2025-11-08 01:32:53,422 - INFO - ✅ Cadillac: 26 modèles récupérés
+2025-11-08 01:32:53,452 - INFO -    ✅ 26 modèles
+2025-11-08 01:32:57,755 - INFO - 📊 Progrès: 50/279 marques, 50 avec modèles
+2025-11-08 01:32:57,761 - INFO - 🏷️ [51/279] Caravans-Wohnm
+2025-11-08 01:33:00,659 - INFO - ✅ Caravans-Wohnm: 125 modèles récupérés
+2025-11-08 01:33:00,675 - INFO -    ✅ 125 modèles
+2025-11-08 01:33:03,467 - INFO - 🏷️ [52/279] Carver
+2025-11-08 01:33:05,603 - INFO - ✅ Carver: 3 modèles récupérés
+2025-11-08 01:33:05,637 - INFO -    ✅ 3 modèles
+2025-11-08 01:33:09,079 - INFO - 🏷️ [53/279] Casalini
+2025-11-08 01:33:11,331 - INFO - ✅ Casalini: 11 modèles récupérés
+2025-11-08 01:33:12,087 - INFO -    ✅ 11 modèles
+2025-11-08 01:33:14,653 - INFO - 🏷️ [54/279] Caterham
+2025-11-08 01:33:16,942 - INFO - ✅ Caterham: 22 modèles récupérés
+2025-11-08 01:33:16,953 - INFO -    ✅ 22 modèles
+2025-11-08 01:33:21,337 - INFO - 🏷️ [55/279] Cenntro
+2025-11-08 01:33:23,503 - INFO - ✅ Cenntro: 8 modèles récupérés
+2025-11-08 01:33:23,545 - INFO -    ✅ 8 modèles
+2025-11-08 01:33:26,541 - INFO - 🏷️ [56/279] Changhe
+2025-11-08 01:33:28,801 - INFO - ✅ Changhe: 10 modèles récupérés
+2025-11-08 01:33:28,828 - INFO -    ✅ 10 modèles
+2025-11-08 01:33:31,461 - INFO - 🏷️ [57/279] Chatenet
+2025-11-08 01:33:33,717 - INFO - ✅ Chatenet: 13 modèles récupérés
+2025-11-08 01:33:33,747 - INFO -    ✅ 13 modèles
+2025-11-08 01:33:35,945 - INFO - 🏷️ [58/279] Chery
+2025-11-08 01:33:38,285 - INFO - ✅ Chery: 28 modèles récupérés
+2025-11-08 01:33:38,304 - INFO -    ✅ 28 modèles
+2025-11-08 01:33:41,462 - INFO - 🏷️ [59/279] Chevrolet
+2025-11-08 01:33:44,060 - INFO - ✅ Chevrolet: 66 modèles récupérés
+2025-11-08 01:33:44,094 - INFO -    ✅ 66 modèles
+2025-11-08 01:33:47,529 - INFO - 🏷️ [60/279] Chrysler
+2025-11-08 01:33:49,854 - INFO - ✅ Chrysler: 28 modèles récupérés
+2025-11-08 01:33:49,875 - INFO -    ✅ 28 modèles
+2025-11-08 01:33:52,730 - INFO - 📊 Progrès: 60/279 marques, 60 avec modèles
+2025-11-08 01:33:52,734 - INFO - 🏷️ [61/279] Cirelli
+2025-11-08 01:33:54,954 - INFO - ✅ Cirelli: 8 modèles récupérés
+2025-11-08 01:33:55,002 - INFO -    ✅ 8 modèles
+2025-11-08 01:33:58,700 - INFO - 🏷️ [62/279] Citroen
+2025-11-08 01:34:01,256 - INFO - ✅ Citroen: 62 modèles récupérés
+2025-11-08 01:34:01,292 - INFO -    ✅ 62 modèles
+2025-11-08 01:34:04,878 - INFO - 🏷️ [63/279] CityEL
+2025-11-08 01:34:07,027 - INFO - ✅ CityEL: 4 modèles récupérés
+2025-11-08 01:34:07,069 - INFO -    ✅ 4 modèles
+2025-11-08 01:34:09,130 - INFO - 🏷️ [64/279] Corvette
+2025-11-08 01:34:11,430 - INFO - ✅ Corvette: 15 modèles récupérés
+2025-11-08 01:34:11,468 - INFO -    ✅ 15 modèles
+2025-11-08 01:34:13,994 - INFO - 🏷️ [65/279] CUPRA
+2025-11-08 01:34:16,215 - INFO - ✅ CUPRA: 10 modèles récupérés
+2025-11-08 01:34:16,241 - INFO -    ✅ 10 modèles
+2025-11-08 01:34:19,343 - INFO - 🏷️ [66/279] Dacia
+2025-11-08 01:34:21,614 - INFO - ✅ Dacia: 17 modèles récupérés
+2025-11-08 01:34:21,628 - INFO -    ✅ 17 modèles
+2025-11-08 01:34:23,750 - INFO - 🏷️ [67/279] Daewoo
+2025-11-08 01:34:26,010 - INFO - ✅ Daewoo: 20 modèles récupérés
+2025-11-08 01:34:26,021 - INFO -    ✅ 20 modèles
+2025-11-08 01:34:28,880 - INFO - 🏷️ [68/279] DAF
+2025-11-08 01:34:31,039 - INFO - ✅ DAF: 4 modèles récupérés
+2025-11-08 01:34:31,082 - INFO -    ✅ 4 modèles
+2025-11-08 01:34:34,673 - INFO - 🏷️ [69/279] Daihatsu
+2025-11-08 01:34:37,510 - INFO - ✅ Daihatsu: 23 modèles récupérés
+2025-11-08 01:34:37,541 - INFO -    ✅ 23 modèles
+2025-11-08 01:34:39,978 - INFO - 🏷️ [70/279] Daimler
+2025-11-08 01:34:42,159 - INFO - ✅ Daimler: 6 modèles récupérés
+2025-11-08 01:34:42,206 - INFO -    ✅ 6 modèles
+2025-11-08 01:34:45,755 - INFO - 📊 Progrès: 70/279 marques, 70 avec modèles
+2025-11-08 01:34:45,774 - INFO - 🏷️ [71/279] Dallara
+2025-11-08 01:34:47,963 - INFO - ✅ Dallara: 2 modèles récupérés
+2025-11-08 01:34:48,036 - INFO -    ✅ 2 modèles
+2025-11-08 01:34:50,486 - INFO - 🏷️ [72/279] Dangel
+2025-11-08 01:34:52,820 - INFO - ✅ Dangel: 14 modèles récupérés
+2025-11-08 01:34:52,859 - INFO -    ✅ 14 modèles
+2025-11-08 01:34:56,240 - INFO - 🏷️ [73/279] De la Chapelle
+2025-11-08 01:34:58,571 - INFO - ✅ De la Chapelle: 6 modèles récupérés
+2025-11-08 01:34:59,200 - INFO -    ✅ 6 modèles
+2025-11-08 01:35:01,581 - INFO - 🏷️ [74/279] De Tomaso
+2025-11-08 01:35:03,962 - INFO - ✅ De Tomaso: 8 modèles récupérés
+2025-11-08 01:35:04,030 - INFO -    ✅ 8 modèles
+2025-11-08 01:35:07,225 - INFO - 🏷️ [75/279] Delorean
+2025-11-08 01:35:09,394 - INFO - ✅ Delorean: 2 modèles récupérés
+2025-11-08 01:35:09,460 - INFO -    ✅ 2 modèles
+2025-11-08 01:35:11,932 - INFO - 🏷️ [76/279] Denza
+2025-11-08 01:35:14,090 - INFO - ✅ Denza: 2 modèles récupérés
+2025-11-08 01:35:14,143 - INFO -    ✅ 2 modèles
+2025-11-08 01:35:18,119 - INFO - 🏷️ [77/279] Devinci Cars
+2025-11-08 01:35:20,321 - INFO - ✅ Devinci Cars: 2 modèles récupérés
+2025-11-08 01:35:20,356 - INFO -    ✅ 2 modèles
+2025-11-08 01:35:22,799 - INFO - 🏷️ [78/279] DFSK
+2025-11-08 01:35:25,351 - INFO - ✅ DFSK: 31 modèles récupérés
+2025-11-08 01:35:25,423 - INFO -    ✅ 31 modèles
+2025-11-08 01:35:27,910 - INFO - 🏷️ [79/279] Dodge
+2025-11-08 01:35:30,516 - INFO - ✅ Dodge: 22 modèles récupérés
+2025-11-08 01:35:30,586 - INFO -    ✅ 22 modèles
+2025-11-08 01:35:32,775 - INFO - 🏷️ [80/279] Dongfeng
+2025-11-08 01:35:34,950 - INFO - ✅ Dongfeng: 2 modèles récupérés
+2025-11-08 01:35:34,987 - INFO -    ✅ 2 modèles
+2025-11-08 01:35:38,336 - INFO - 📊 Progrès: 80/279 marques, 80 avec modèles
+2025-11-08 01:35:38,353 - INFO - 🏷️ [81/279] Donkervoort
+2025-11-08 01:35:40,587 - INFO - ✅ Donkervoort: 4 modèles récupérés
+2025-11-08 01:35:40,618 - INFO -    ✅ 4 modèles
+2025-11-08 01:35:44,173 - INFO - 🏷️ [82/279] DR Automobiles
+2025-11-08 01:35:46,481 - INFO - ✅ DR Automobiles: 19 modèles récupérés
+2025-11-08 01:35:46,569 - INFO -    ✅ 19 modèles
+2025-11-08 01:35:49,050 - INFO - 🏷️ [83/279] DS Automobiles
+2025-11-08 01:35:51,429 - INFO - ✅ DS Automobiles: 11 modèles récupérés
+2025-11-08 01:35:51,930 - INFO -    ✅ 11 modèles
+2025-11-08 01:35:55,009 - INFO - 🏷️ [84/279] Dutton
+2025-11-08 01:35:57,461 - INFO - ✅ Dutton: 21 modèles récupérés
+2025-11-08 01:35:57,506 - INFO -    ✅ 21 modèles
+2025-11-08 01:36:00,816 - INFO - 🏷️ [85/279] e.GO
+2025-11-08 01:36:03,145 - INFO - ✅ e.GO: 7 modèles récupérés
+2025-11-08 01:36:03,503 - INFO -    ✅ 7 modèles
+2025-11-08 01:36:06,179 - INFO - 🏷️ [86/279] Ebro
+2025-11-08 01:36:08,481 - INFO - ✅ Ebro: 3 modèles récupérés
+2025-11-08 01:36:08,572 - INFO -    ✅ 3 modèles
+2025-11-08 01:36:11,008 - INFO - 🏷️ [87/279] Econelo
+2025-11-08 01:36:13,217 - INFO - ✅ Econelo: 3 modèles récupérés
+2025-11-08 01:36:13,240 - INFO -    ✅ 3 modèles
+2025-11-08 01:36:16,459 - INFO - 🏷️ [88/279] Edran
+2025-11-08 01:36:18,630 - INFO - ✅ Edran: 2 modèles récupérés
+2025-11-08 01:36:18,661 - INFO -    ✅ 2 modèles
+2025-11-08 01:36:22,461 - INFO - 🏷️ [89/279] Elaris
+2025-11-08 01:36:24,720 - INFO - ✅ Elaris: 10 modèles récupérés
+2025-11-08 01:36:24,754 - INFO -    ✅ 10 modèles
+2025-11-08 01:36:26,915 - INFO - 🏷️ [90/279] Embuggy
+2025-11-08 01:36:29,091 - INFO - ✅ Embuggy: 4 modèles récupérés
+2025-11-08 01:36:29,108 - INFO -    ✅ 4 modèles
+2025-11-08 01:36:32,085 - INFO - 📊 Progrès: 90/279 marques, 90 avec modèles
+2025-11-08 01:36:32,116 - INFO - 🏷️ [91/279] EMC
+2025-11-08 01:36:34,331 - INFO - ✅ EMC: 7 modèles récupérés
+2025-11-08 01:36:34,379 - INFO -    ✅ 7 modèles
+2025-11-08 01:36:37,511 - INFO - 🏷️ [92/279] Estrima
+2025-11-08 01:36:39,728 - INFO - ✅ Estrima: 2 modèles récupérés
+2025-11-08 01:36:39,757 - INFO -    ✅ 2 modèles
+2025-11-08 01:36:43,084 - INFO - 🏷️ [93/279] Evetta
+2025-11-08 01:36:45,304 - INFO - ✅ Evetta: 3 modèles récupérés
+2025-11-08 01:36:45,807 - INFO -    ✅ 3 modèles
+2025-11-08 01:36:49,412 - INFO - 🏷️ [94/279] EVO
+2025-11-08 01:36:51,671 - INFO - ✅ EVO: 8 modèles récupérés
+2025-11-08 01:36:51,696 - INFO -    ✅ 8 modèles
+2025-11-08 01:36:54,051 - INFO - 🏷️ [95/279] Farizon
+2025-11-08 01:36:56,249 - INFO - ✅ Farizon: 2 modèles récupérés
+2025-11-08 01:36:56,292 - INFO -    ✅ 2 modèles
+2025-11-08 01:36:59,920 - INFO - 🏷️ [96/279] Fiat
+2025-11-08 01:37:02,663 - INFO - ✅ Fiat: 78 modèles récupérés
+2025-11-08 01:37:02,707 - INFO -    ✅ 78 modèles
+2025-11-08 01:37:04,896 - INFO - 🏷️ [97/279] Fisker
+2025-11-08 01:37:07,117 - INFO - ✅ Fisker: 6 modèles récupérés
+2025-11-08 01:37:07,193 - INFO -    ✅ 6 modèles
+2025-11-08 01:37:10,537 - INFO - 🏷️ [98/279] Ford
+2025-11-08 01:37:13,484 - INFO - ✅ Ford: 87 modèles récupérés
+2025-11-08 01:37:13,502 - INFO -    ✅ 87 modèles
+2025-11-08 01:37:16,939 - INFO - 🏷️ [99/279] Forthing
+2025-11-08 01:37:19,248 - INFO - ✅ Forthing: 3 modèles récupérés
+2025-11-08 01:37:19,324 - INFO -    ✅ 3 modèles
+2025-11-08 01:37:23,086 - INFO - 🏷️ [100/279] Foton
+2025-11-08 01:37:25,286 - INFO - ✅ Foton: 3 modèles récupérés
+2025-11-08 01:37:25,331 - INFO -    ✅ 3 modèles
+2025-11-08 01:37:28,560 - INFO - 📊 Progrès: 100/279 marques, 100 avec modèles
+2025-11-08 01:37:28,590 - INFO - 🏷️ [101/279] Gac Gonow
+2025-11-08 01:37:30,788 - INFO - ✅ Gac Gonow: 8 modèles récupérés
+2025-11-08 01:37:30,848 - INFO -    ✅ 8 modèles
+2025-11-08 01:37:34,454 - INFO - 🏷️ [102/279] Galloper
+2025-11-08 01:37:36,703 - INFO - ✅ Galloper: 5 modèles récupérés
+2025-11-08 01:37:36,742 - INFO -    ✅ 5 modèles
+2025-11-08 01:37:39,556 - INFO - 🏷️ [103/279] Gappy
+2025-11-08 01:37:41,759 - INFO - ✅ Gappy: 2 modèles récupérés
+2025-11-08 01:37:41,811 - INFO -    ✅ 2 modèles
+2025-11-08 01:37:45,696 - INFO - 🏷️ [104/279] GAZ
+2025-11-08 01:37:48,169 - INFO - ✅ GAZ: 34 modèles récupérés
+2025-11-08 01:37:48,212 - INFO -    ✅ 34 modèles
+2025-11-08 01:37:51,988 - INFO - 🏷️ [105/279] GEM
+2025-11-08 01:37:54,248 - INFO - ✅ GEM: 9 modèles récupérés
+2025-11-08 01:37:54,290 - INFO -    ✅ 9 modèles
+2025-11-08 01:37:56,482 - INFO - 🏷️ [106/279] GEMBALLA
+2025-11-08 01:37:58,739 - INFO - ✅ GEMBALLA: 9 modèles récupérés
+2025-11-08 01:37:58,756 - INFO -    ✅ 9 modèles
+2025-11-08 01:38:01,945 - INFO - 🏷️ [107/279] Genesis
+2025-11-08 01:38:04,210 - INFO - ✅ Genesis: 9 modèles récupérés
+2025-11-08 01:38:04,275 - INFO -    ✅ 9 modèles
+2025-11-08 01:38:07,433 - INFO - 🏷️ [108/279] Giana
+2025-11-08 01:38:09,973 - INFO - ✅ Giana: 2 modèles récupérés
+2025-11-08 01:38:10,018 - INFO -    ✅ 2 modèles
+2025-11-08 01:38:13,864 - INFO - 🏷️ [109/279] Gillet
+2025-11-08 01:38:16,000 - INFO - ✅ Gillet: 3 modèles récupérés
+2025-11-08 01:38:16,033 - INFO -    ✅ 3 modèles
+2025-11-08 01:38:18,482 - INFO - 🏷️ [110/279] Giotti Victoria
+2025-11-08 01:38:20,685 - INFO - ✅ Giotti Victoria: 3 modèles récupérés
+2025-11-08 01:38:20,727 - INFO -    ✅ 3 modèles
+2025-11-08 01:38:22,887 - INFO - 📊 Progrès: 110/279 marques, 110 avec modèles
+2025-11-08 01:38:22,924 - INFO - 🏷️ [111/279] GMC
+2025-11-08 01:38:25,223 - INFO - ✅ GMC: 13 modèles récupérés
+2025-11-08 01:38:25,244 - INFO -    ✅ 13 modèles
+2025-11-08 01:38:28,495 - INFO - 🏷️ [112/279] Goupil
+2025-11-08 01:38:30,732 - INFO - ✅ Goupil: 5 modèles récupérés
+2025-11-08 01:38:30,761 - INFO -    ✅ 5 modèles
+2025-11-08 01:38:33,477 - INFO - 🏷️ [113/279] Great Wall
+2025-11-08 01:38:35,876 - INFO - ✅ Great Wall: 21 modèles récupérés
+2025-11-08 01:38:35,917 - INFO -    ✅ 21 modèles
+2025-11-08 01:38:38,710 - INFO - 🏷️ [114/279] Grecav
+2025-11-08 01:38:40,954 - INFO - ✅ Grecav: 4 modèles récupérés
+2025-11-08 01:38:41,045 - INFO -    ✅ 4 modèles
+2025-11-08 01:38:43,324 - INFO - 🏷️ [115/279] GTA
+2025-11-08 01:38:45,520 - INFO - ✅ GTA: 2 modèles récupérés
+2025-11-08 01:38:45,559 - INFO -    ✅ 2 modèles
+2025-11-08 01:38:47,675 - INFO - 🏷️ [116/279] GWM
+2025-11-08 01:38:50,186 - INFO - ✅ GWM: 5 modèles récupérés
+2025-11-08 01:38:50,253 - INFO -    ✅ 5 modèles
+2025-11-08 01:38:53,882 - INFO - 🏷️ [117/279] Haima
+2025-11-08 01:38:56,163 - INFO - ✅ Haima: 13 modèles récupérés
+2025-11-08 01:38:56,204 - INFO -    ✅ 13 modèles
+2025-11-08 01:38:58,325 - INFO - 🏷️ [118/279] Hamann
+2025-11-08 01:39:00,487 - INFO - ✅ Hamann: 1 modèles récupérés
+2025-11-08 01:39:00,511 - INFO -    ✅ 1 modèles
+2025-11-08 01:39:04,422 - INFO - 🏷️ [119/279] Haval
+2025-11-08 01:39:06,610 - INFO - ✅ Haval: 4 modèles récupérés
+2025-11-08 01:39:06,650 - INFO -    ✅ 4 modèles
+2025-11-08 01:39:09,185 - INFO - 🏷️ [120/279] Hiphi
+2025-11-08 01:39:11,387 - INFO - ✅ Hiphi: 5 modèles récupérés
+2025-11-08 01:39:11,417 - INFO -    ✅ 5 modèles
+2025-11-08 01:39:14,391 - INFO - 📊 Progrès: 120/279 marques, 120 avec modèles
+2025-11-08 01:39:14,423 - INFO - 🏷️ [121/279] Holden
+2025-11-08 01:39:16,702 - INFO - ✅ Holden: 11 modèles récupérés
+2025-11-08 01:39:16,777 - INFO -    ✅ 11 modèles
+2025-11-08 01:39:18,975 - INFO - 🏷️ [122/279] Honda
+2025-11-08 01:39:21,441 - INFO - ✅ Honda: 45 modèles récupérés
+2025-11-08 01:39:21,489 - INFO -    ✅ 45 modèles
+2025-11-08 01:39:24,021 - INFO - 🏷️ [123/279] Hongqi
+2025-11-08 01:39:26,228 - INFO - ✅ Hongqi: 6 modèles récupérés
+2025-11-08 01:39:26,260 - INFO -    ✅ 6 modèles
+2025-11-08 01:39:29,383 - INFO - 🏷️ [124/279] HUMMER
+2025-11-08 01:39:31,590 - INFO - ✅ HUMMER: 5 modèles récupérés
+2025-11-08 01:39:31,615 - INFO -    ✅ 5 modèles
+2025-11-08 01:39:34,395 - INFO - 🏷️ [125/279] Hurtan
+2025-11-08 01:39:36,593 - INFO - ✅ Hurtan: 7 modèles récupérés
+2025-11-08 01:39:36,614 - INFO -    ✅ 7 modèles
+2025-11-08 01:39:39,269 - INFO - 🏷️ [126/279] Hyundai
+2025-11-08 01:39:41,962 - INFO - ✅ Hyundai: 66 modèles récupérés
+2025-11-08 01:39:42,014 - INFO -    ✅ 66 modèles
+2025-11-08 01:39:45,349 - INFO - 🏷️ [127/279] ICH-X
+2025-11-08 01:39:47,557 - INFO - ✅ ICH-X: 3 modèles récupérés
+2025-11-08 01:39:47,597 - INFO -    ✅ 3 modèles
+2025-11-08 01:39:49,684 - INFO - 🏷️ [128/279] Ineos
+2025-11-08 01:39:51,891 - INFO - ✅ Ineos: 2 modèles récupérés
+2025-11-08 01:39:51,912 - INFO -    ✅ 2 modèles
+2025-11-08 01:39:55,139 - INFO - 🏷️ [129/279] Infiniti
+2025-11-08 01:39:57,536 - INFO - ✅ Infiniti: 27 modèles récupérés
+2025-11-08 01:39:57,553 - INFO -    ✅ 27 modèles
+2025-11-08 01:39:59,830 - INFO - 🏷️ [130/279] Innocenti
+2025-11-08 01:40:02,079 - INFO - ✅ Innocenti: 7 modèles récupérés
+2025-11-08 01:40:02,108 - INFO -    ✅ 7 modèles
+2025-11-08 01:40:04,353 - INFO - 📊 Progrès: 130/279 marques, 130 avec modèles
+2025-11-08 01:40:04,360 - INFO - 🏷️ [131/279] Invicta
+2025-11-08 01:40:06,541 - INFO - ✅ Invicta: 2 modèles récupérés
+2025-11-08 01:40:06,559 - INFO -    ✅ 2 modèles
+2025-11-08 01:40:10,382 - INFO - 🏷️ [132/279] Iso Rivolta
+2025-11-08 01:40:12,580 - INFO - ✅ Iso Rivolta: 6 modèles récupérés
+2025-11-08 01:40:12,634 - INFO -    ✅ 6 modèles
+2025-11-08 01:40:16,461 - INFO - 🏷️ [133/279] Isuzu
+2025-11-08 01:40:18,768 - INFO - ✅ Isuzu: 15 modèles récupérés
+2025-11-08 01:40:18,797 - INFO -    ✅ 15 modèles
+2025-11-08 01:40:22,765 - INFO - 🏷️ [134/279] Iveco
+2025-11-08 01:40:24,903 - INFO - ✅ Iveco: 4 modèles récupérés
+2025-11-08 01:40:24,943 - INFO -    ✅ 4 modèles
+2025-11-08 01:40:27,702 - INFO - 🏷️ [135/279] IZH
+2025-11-08 01:40:29,989 - INFO - ✅ IZH: 12 modèles récupérés
+2025-11-08 01:40:30,011 - INFO -    ✅ 12 modèles
+2025-11-08 01:40:32,646 - INFO - 🏷️ [136/279] JAC
+2025-11-08 01:40:34,916 - INFO - ✅ JAC: 9 modèles récupérés
+2025-11-08 01:40:35,386 - INFO -    ✅ 9 modèles
+2025-11-08 01:40:39,356 - INFO - 🏷️ [137/279] Jaecoo
+2025-11-08 01:40:41,599 - INFO - ✅ Jaecoo: 4 modèles récupérés
+2025-11-08 01:40:41,678 - INFO -    ✅ 4 modèles
+2025-11-08 01:40:44,709 - INFO - 🏷️ [138/279] Jaguar
+2025-11-08 01:40:47,130 - INFO - ✅ Jaguar: 27 modèles récupérés
+2025-11-08 01:40:47,157 - INFO -    ✅ 27 modèles
+2025-11-08 01:40:51,049 - INFO - 🏷️ [139/279] Jeep
+2025-11-08 01:40:53,337 - INFO - ✅ Jeep: 17 modèles récupérés
+2025-11-08 01:40:53,392 - INFO -    ✅ 17 modèles
+2025-11-08 01:40:57,199 - INFO - 🏷️ [140/279] Jensen
+2025-11-08 01:40:59,504 - INFO - ✅ Jensen: 15 modèles récupérés
+2025-11-08 01:40:59,555 - INFO -    ✅ 15 modèles
+2025-11-08 01:41:02,466 - INFO - 📊 Progrès: 140/279 marques, 140 avec modèles
+2025-11-08 01:41:02,507 - INFO - 🏷️ [141/279] Karma
+2025-11-08 01:41:04,726 - INFO - ✅ Karma: 6 modèles récupérés
+2025-11-08 01:41:04,776 - INFO -    ✅ 6 modèles
+2025-11-08 01:41:08,792 - INFO - 🏷️ [142/279] KGM
+2025-11-08 01:41:11,078 - INFO - ✅ KGM: 12 modèles récupérés
+2025-11-08 01:41:11,124 - INFO -    ✅ 12 modèles
+2025-11-08 01:41:14,005 - INFO - 🏷️ [143/279] Kia
+2025-11-08 01:41:16,518 - INFO - ✅ Kia: 45 modèles récupérés
+2025-11-08 01:41:16,553 - INFO -    ✅ 45 modèles
+2025-11-08 01:41:19,385 - INFO - 🏷️ [144/279] Koenigsegg
+2025-11-08 01:41:21,619 - INFO - ✅ Koenigsegg: 6 modèles récupérés
+2025-11-08 01:41:21,666 - INFO -    ✅ 6 modèles
+2025-11-08 01:41:24,942 - INFO - 🏷️ [145/279] KTM
+2025-11-08 01:41:27,196 - INFO - ✅ KTM: 6 modèles récupérés
+2025-11-08 01:41:27,247 - INFO -    ✅ 6 modèles
+2025-11-08 01:41:30,626 - INFO - 🏷️ [146/279] Lada
+2025-11-08 01:41:32,981 - INFO - ✅ Lada: 28 modèles récupérés
+2025-11-08 01:41:33,026 - INFO -    ✅ 28 modèles
+2025-11-08 01:41:36,949 - INFO - 🏷️ [147/279] Lamborghini
+2025-11-08 01:41:39,309 - INFO - ✅ Lamborghini: 21 modèles récupérés
+2025-11-08 01:41:39,337 - INFO -    ✅ 21 modèles
+2025-11-08 01:41:41,561 - INFO - 🏷️ [148/279] Lancia
+2025-11-08 01:41:43,949 - INFO - ✅ Lancia: 26 modèles récupérés
+2025-11-08 01:41:43,993 - INFO -    ✅ 26 modèles
+2025-11-08 01:41:47,442 - INFO - 🏷️ [149/279] Land Rover
+2025-11-08 01:41:49,710 - INFO - ✅ Land Rover: 11 modèles récupérés
+2025-11-08 01:41:49,760 - INFO -    ✅ 11 modèles
+2025-11-08 01:41:52,273 - INFO - 🏷️ [150/279] LDV
+2025-11-08 01:41:54,443 - INFO - ✅ LDV: 3 modèles récupérés
+2025-11-08 01:41:54,483 - INFO -    ✅ 3 modèles
+2025-11-08 01:41:57,386 - INFO - 📊 Progrès: 150/279 marques, 150 avec modèles
+2025-11-08 01:41:57,394 - INFO - 🏷️ [151/279] Leapmotor
+2025-11-08 01:41:59,607 - INFO - ✅ Leapmotor: 4 modèles récupérés
+2025-11-08 01:41:59,647 - INFO -    ✅ 4 modèles
+2025-11-08 01:42:03,170 - INFO - 🏷️ [152/279] LEVC
+2025-11-08 01:42:05,327 - INFO - ✅ LEVC: 3 modèles récupérés
+2025-11-08 01:42:05,397 - INFO -    ✅ 3 modèles
+2025-11-08 01:42:07,559 - INFO - 🏷️ [153/279] Lexus
+2025-11-08 01:42:10,387 - INFO - ✅ Lexus: 75 modèles récupérés
+2025-11-08 01:42:10,409 - INFO -    ✅ 75 modèles
+2025-11-08 01:42:14,999 - INFO - 🏷️ [154/279] Li
+2025-11-08 01:42:17,157 - INFO - ✅ Li: 5 modèles récupérés
+2025-11-08 01:42:17,177 - INFO -    ✅ 5 modèles
+2025-11-08 01:42:20,811 - INFO - 🏷️ [155/279] Lifan
+2025-11-08 01:42:23,167 - INFO - ✅ Lifan: 19 modèles récupérés
+2025-11-08 01:42:23,208 - INFO -    ✅ 19 modèles
+2025-11-08 01:42:25,286 - INFO - 🏷️ [156/279] Ligier
+2025-11-08 01:42:27,582 - INFO - ✅ Ligier: 17 modèles récupérés
+2025-11-08 01:42:27,610 - INFO -    ✅ 17 modèles
+2025-11-08 01:42:31,349 - INFO - 🏷️ [157/279] Lincoln
+2025-11-08 01:42:33,642 - INFO - ✅ Lincoln: 15 modèles récupérés
+2025-11-08 01:42:33,655 - INFO -    ✅ 15 modèles
+2025-11-08 01:42:36,173 - INFO - 🏷️ [158/279] Linzda
+2025-11-08 01:42:38,406 - INFO - ✅ Linzda: 2 modèles récupérés
+2025-11-08 01:42:38,452 - INFO -    ✅ 2 modèles
+2025-11-08 01:42:40,469 - INFO - 🏷️ [159/279] Livan
+2025-11-08 01:42:42,725 - INFO - ✅ Livan: 2 modèles récupérés
+2025-11-08 01:42:42,769 - INFO -    ✅ 2 modèles
+2025-11-08 01:42:46,422 - INFO - 🏷️ [160/279] Lorinser
+2025-11-08 01:42:48,791 - INFO - ✅ Lorinser: 14 modèles récupérés
+2025-11-08 01:42:48,806 - INFO -    ✅ 14 modèles
+2025-11-08 01:42:52,748 - INFO - 📊 Progrès: 160/279 marques, 160 avec modèles
+2025-11-08 01:42:52,758 - INFO - 🏷️ [161/279] Lotus
+2025-11-08 01:42:55,164 - INFO - ✅ Lotus: 22 modèles récupérés
+2025-11-08 01:42:55,204 - INFO -    ✅ 22 modèles
+2025-11-08 01:42:57,364 - INFO - 🏷️ [162/279] Lucid
+2025-11-08 01:42:59,561 - INFO - ✅ Lucid: 2 modèles récupérés
+2025-11-08 01:42:59,578 - INFO -    ✅ 2 modèles
+2025-11-08 01:43:02,874 - INFO - 🏷️ [163/279] Lynk & Co
+2025-11-08 01:43:05,123 - INFO - ✅ Lynk & Co: 4 modèles récupérés
+2025-11-08 01:43:05,142 - INFO -    ✅ 4 modèles
+2025-11-08 01:43:08,325 - INFO - 🏷️ [164/279] M-Ero
+2025-11-08 01:43:10,781 - INFO - ✅ M-Ero: 2 modèles récupérés
+2025-11-08 01:43:10,823 - INFO -    ✅ 2 modèles
+2025-11-08 01:43:13,619 - INFO - 🏷️ [165/279] Mahindra
+2025-11-08 01:43:15,934 - INFO - ✅ Mahindra: 19 modèles récupérés
+2025-11-08 01:43:15,953 - INFO -    ✅ 19 modèles
+2025-11-08 01:43:18,213 - INFO - 🏷️ [166/279] MAN
+2025-11-08 01:43:20,416 - INFO - ✅ MAN: 2 modèles récupérés
+2025-11-08 01:43:20,487 - INFO -    ✅ 2 modèles
+2025-11-08 01:43:24,375 - INFO - 🏷️ [167/279] Mansory
+2025-11-08 01:43:27,031 - INFO - ✅ Mansory: 58 modèles récupérés
+2025-11-08 01:43:27,057 - INFO -    ✅ 58 modèles
+2025-11-08 01:43:29,144 - INFO - 🏷️ [168/279] Martin
+2025-11-08 01:43:31,355 - INFO - ✅ Martin: 3 modèles récupérés
+2025-11-08 01:43:31,406 - INFO -    ✅ 3 modèles
+2025-11-08 01:43:34,031 - INFO - 🏷️ [169/279] Martin Motors
+2025-11-08 01:43:36,208 - INFO - ✅ Martin Motors: 6 modèles récupérés
+2025-11-08 01:43:36,221 - INFO -    ✅ 6 modèles
+2025-11-08 01:43:39,547 - INFO - 🏷️ [170/279] Maserati
+2025-11-08 01:43:42,008 - INFO - ✅ Maserati: 32 modèles récupérés
+2025-11-08 01:43:42,062 - INFO -    ✅ 32 modèles
+2025-11-08 01:43:44,232 - INFO - 📊 Progrès: 170/279 marques, 170 avec modèles
+2025-11-08 01:43:44,257 - INFO - 🏷️ [171/279] Matra
+2025-11-08 01:43:46,448 - INFO - ✅ Matra: 2 modèles récupérés
+2025-11-08 01:43:46,468 - INFO -    ✅ 2 modèles
+2025-11-08 01:43:50,151 - INFO - 🏷️ [172/279] Maxus
+2025-11-08 01:43:52,480 - INFO - ✅ Maxus: 16 modèles récupérés
+2025-11-08 01:43:52,510 - INFO -    ✅ 16 modèles
+2025-11-08 01:43:55,607 - INFO - 🏷️ [173/279] Maybach
+2025-11-08 01:43:57,796 - INFO - ✅ Maybach: 4 modèles récupérés
+2025-11-08 01:43:57,836 - INFO -    ✅ 4 modèles
+2025-11-08 01:44:01,158 - INFO - 🏷️ [174/279] Mazda
+2025-11-08 01:44:03,709 - INFO - ✅ Mazda: 40 modèles récupérés
+2025-11-08 01:44:03,757 - INFO -    ✅ 40 modèles
+2025-11-08 01:44:06,701 - INFO - 🏷️ [175/279] McLaren
+2025-11-08 01:44:09,124 - INFO - ✅ McLaren: 22 modèles récupérés
+2025-11-08 01:44:09,140 - INFO -    ✅ 22 modèles
+2025-11-08 01:44:11,159 - INFO - 🏷️ [176/279] Mega
+2025-11-08 01:44:13,446 - INFO - ✅ Mega: 6 modèles récupérés
+2025-11-08 01:44:13,486 - INFO -    ✅ 6 modèles
+2025-11-08 01:44:16,900 - INFO - 🏷️ [177/279] Melex
+2025-11-08 01:44:19,528 - INFO - ✅ Melex: 55 modèles récupérés
+2025-11-08 01:44:19,571 - INFO -    ✅ 55 modèles
+2025-11-08 01:44:21,808 - INFO - 🏷️ [178/279] Mercury
+2025-11-08 01:44:24,027 - INFO - ✅ Mercury: 4 modèles récupérés
+2025-11-08 01:44:24,042 - INFO -    ✅ 4 modèles
+2025-11-08 01:44:27,126 - INFO - 🏷️ [179/279] MG
+2025-11-08 01:44:29,491 - INFO - ✅ MG: 21 modèles récupérés
+2025-11-08 01:44:29,521 - INFO -    ✅ 21 modèles
+2025-11-08 01:44:33,045 - INFO - 🏷️ [180/279] Micro
+2025-11-08 01:44:35,242 - INFO - ✅ Micro: 2 modèles récupérés
+2025-11-08 01:44:35,292 - INFO -    ✅ 2 modèles
+2025-11-08 01:44:37,646 - INFO - 📊 Progrès: 180/279 marques, 180 avec modèles
+2025-11-08 01:44:37,653 - INFO - 🏷️ [181/279] Microcar
+2025-11-08 01:44:39,933 - INFO - ✅ Microcar: 12 modèles récupérés
+2025-11-08 01:44:39,963 - INFO -    ✅ 12 modèles
+2025-11-08 01:44:43,079 - INFO - 🏷️ [182/279] Militem
+2025-11-08 01:44:45,303 - INFO - ✅ Militem: 6 modèles récupérés
+2025-11-08 01:44:45,339 - INFO -    ✅ 6 modèles
+2025-11-08 01:44:47,505 - INFO - 🏷️ [183/279] Minari
+2025-11-08 01:44:49,703 - INFO - ✅ Minari: 3 modèles récupérés
+2025-11-08 01:44:49,790 - INFO -    ✅ 3 modèles
+2025-11-08 01:44:52,317 - INFO - 🏷️ [184/279] Minauto
+2025-11-08 01:44:54,573 - INFO - ✅ Minauto: 5 modèles récupérés
+2025-11-08 01:44:54,606 - INFO -    ✅ 5 modèles
+2025-11-08 01:44:56,835 - INFO - 🏷️ [185/279] Mitsubishi
+2025-11-08 01:44:59,377 - INFO - ✅ Mitsubishi: 48 modèles récupérés
+2025-11-08 01:44:59,413 - INFO -    ✅ 48 modèles
+2025-11-08 01:45:01,806 - INFO - 🏷️ [186/279] Mitsuoka
+2025-11-08 01:45:04,058 - INFO - ✅ Mitsuoka: 7 modèles récupérés
+2025-11-08 01:45:04,088 - INFO -    ✅ 7 modèles
+2025-11-08 01:45:06,337 - INFO - 🏷️ [187/279] Mobilize
+2025-11-08 01:45:08,567 - INFO - ✅ Mobilize: 2 modèles récupérés
+2025-11-08 01:45:08,580 - INFO -    ✅ 2 modèles
+2025-11-08 01:45:11,006 - INFO - 🏷️ [188/279] Morgan
+2025-11-08 01:45:13,315 - INFO - ✅ Morgan: 19 modèles récupérés
+2025-11-08 01:45:13,384 - INFO -    ✅ 19 modèles
+2025-11-08 01:45:16,212 - INFO - 🏷️ [189/279] Moskvich
+2025-11-08 01:45:18,542 - INFO - ✅ Moskvich: 22 modèles récupérés
+2025-11-08 01:45:18,570 - INFO -    ✅ 22 modèles
+2025-11-08 01:45:20,818 - INFO - 🏷️ [190/279] MP Lafer
+2025-11-08 01:45:23,063 - INFO - ✅ MP Lafer: 2 modèles récupérés
+2025-11-08 01:45:23,083 - INFO -    ✅ 2 modèles
+2025-11-08 01:45:25,569 - INFO - 📊 Progrès: 190/279 marques, 190 avec modèles
+2025-11-08 01:45:25,573 - INFO - 🏷️ [191/279] MPM Motors
+2025-11-08 01:45:27,710 - INFO - ✅ MPM Motors: 3 modèles récupérés
+2025-11-08 01:45:27,731 - INFO -    ✅ 3 modèles
+2025-11-08 01:45:29,862 - INFO - 🏷️ [192/279] NIO
+2025-11-08 01:45:32,170 - INFO - ✅ NIO: 6 modèles récupérés
+2025-11-08 01:45:32,194 - INFO -    ✅ 6 modèles
+2025-11-08 01:45:34,439 - INFO - 🏷️ [193/279] Nissan
+2025-11-08 01:45:37,297 - INFO - ✅ Nissan: 84 modèles récupérés
+2025-11-08 01:45:37,345 - INFO -    ✅ 84 modèles
+2025-11-08 01:45:40,105 - INFO - 🏷️ [194/279] NSU
+2025-11-08 01:45:42,390 - INFO - ✅ NSU: 10 modèles récupérés
+2025-11-08 01:45:42,425 - INFO -    ✅ 10 modèles
+2025-11-08 01:45:46,788 - INFO - 🏷️ [195/279] Oldsmobile
+2025-11-08 01:45:49,099 - INFO - ✅ Oldsmobile: 10 modèles récupérés
+2025-11-08 01:45:49,142 - INFO -    ✅ 10 modèles
+2025-11-08 01:45:52,658 - INFO - 🏷️ [196/279] Oldtimer
+2025-11-08 01:45:56,933 - INFO - ✅ Oldtimer: 277 modèles récupérés
+2025-11-08 01:45:56,969 - INFO -    ✅ 277 modèles
+2025-11-08 01:45:59,334 - INFO - 🏷️ [197/279] Omoda
+2025-11-08 01:46:01,602 - INFO - ✅ Omoda: 3 modèles récupérés
+2025-11-08 01:46:01,631 - INFO -    ✅ 3 modèles
+2025-11-08 01:46:04,483 - INFO - 🏷️ [198/279] Opel
+2025-11-08 01:46:07,081 - INFO - ✅ Opel: 53 modèles récupérés
+2025-11-08 01:46:07,108 - INFO -    ✅ 53 modèles
+2025-11-08 01:46:09,267 - INFO - 🏷️ [199/279] Ora
+2025-11-08 01:46:11,465 - INFO - ✅ Ora: 2 modèles récupérés
+2025-11-08 01:46:11,518 - INFO -    ✅ 2 modèles
+2025-11-08 01:46:15,006 - INFO - 🏷️ [200/279] Pagani
+2025-11-08 01:46:17,195 - INFO - ✅ Pagani: 3 modèles récupérés
+2025-11-08 01:46:17,236 - INFO -    ✅ 3 modèles
+2025-11-08 01:46:20,283 - INFO - 📊 Progrès: 200/279 marques, 200 avec modèles
+2025-11-08 01:46:20,305 - INFO - 🏷️ [201/279] Panther Westwinds
+2025-11-08 01:46:22,518 - INFO - ✅ Panther Westwinds: 7 modèles récupérés
+2025-11-08 01:46:22,542 - INFO -    ✅ 7 modèles
+2025-11-08 01:46:24,859 - INFO - 🏷️ [202/279] PGO
+2025-11-08 01:46:27,096 - INFO - ✅ PGO: 6 modèles récupérés
+2025-11-08 01:46:27,127 - INFO -    ✅ 6 modèles
+2025-11-08 01:46:30,442 - INFO - 🏷️ [203/279] Piaggio
+2025-11-08 01:46:32,657 - INFO - ✅ Piaggio: 7 modèles récupérés
+2025-11-08 01:46:32,678 - INFO -    ✅ 7 modèles
+2025-11-08 01:46:36,287 - INFO - 🏷️ [204/279] Plymouth
+2025-11-08 01:46:38,690 - INFO - ✅ Plymouth: 32 modèles récupérés
+2025-11-08 01:46:38,707 - INFO -    ✅ 32 modèles
+2025-11-08 01:46:41,502 - INFO - 🏷️ [205/279] Polestar
+2025-11-08 01:46:43,778 - INFO - ✅ Polestar: 5 modèles récupérés
+2025-11-08 01:46:43,821 - INFO -    ✅ 5 modèles
+2025-11-08 01:46:46,658 - INFO - 🏷️ [206/279] Pontiac
+2025-11-08 01:46:49,002 - INFO - ✅ Pontiac: 19 modèles récupérés
+2025-11-08 01:46:49,043 - INFO -    ✅ 19 modèles
+2025-11-08 01:46:52,419 - INFO - 🏷️ [207/279] Proton
+2025-11-08 01:46:54,741 - INFO - ✅ Proton: 13 modèles récupérés
+2025-11-08 01:46:54,779 - INFO -    ✅ 13 modèles
+2025-11-08 01:46:57,984 - INFO - 🏷️ [208/279] Puch
+2025-11-08 01:47:00,253 - INFO - ✅ Puch: 4 modèles récupérés
+2025-11-08 01:47:00,301 - INFO -    ✅ 4 modèles
+2025-11-08 01:47:03,008 - INFO - 🏷️ [209/279] RAM
+2025-11-08 01:47:05,273 - INFO - ✅ RAM: 6 modèles récupérés
+2025-11-08 01:47:05,325 - INFO -    ✅ 6 modèles
+2025-11-08 01:47:09,497 - INFO - 🏷️ [210/279] Regis
+2025-11-08 01:47:11,704 - INFO - ✅ Regis: 2 modèles récupérés
+2025-11-08 01:47:11,721 - INFO -    ✅ 2 modèles
+2025-11-08 01:47:15,442 - INFO - 📊 Progrès: 210/279 marques, 210 avec modèles
+2025-11-08 01:47:15,450 - INFO - 🏷️ [211/279] Reliant
+2025-11-08 01:47:17,721 - INFO - ✅ Reliant: 11 modèles récupérés
+2025-11-08 01:47:17,763 - INFO -    ✅ 11 modèles
+2025-11-08 01:47:21,616 - INFO - 🏷️ [212/279] Rivian
+2025-11-08 01:47:23,829 - INFO - ✅ Rivian: 3 modèles récupérés
+2025-11-08 01:47:23,862 - INFO -    ✅ 3 modèles
+2025-11-08 01:47:27,421 - INFO - 🏷️ [213/279] Rolls-Royce
+2025-11-08 01:47:29,762 - INFO - ✅ Rolls-Royce: 30 modèles récupérés
+2025-11-08 01:47:29,835 - INFO -    ✅ 30 modèles
+2025-11-08 01:47:32,903 - INFO - 🏷️ [214/279] Rover
+2025-11-08 01:47:35,386 - INFO - ✅ Rover: 36 modèles récupérés
+2025-11-08 01:47:35,445 - INFO -    ✅ 36 modèles
+2025-11-08 01:47:38,051 - INFO - 🏷️ [215/279] Ruf
+2025-11-08 01:47:40,421 - INFO - ✅ Ruf: 20 modèles récupérés
+2025-11-08 01:47:40,446 - INFO -    ✅ 20 modèles
+2025-11-08 01:47:43,673 - INFO - 🏷️ [216/279] Saab
+2025-11-08 01:47:46,020 - INFO - ✅ Saab: 17 modèles récupérés
+2025-11-08 01:47:46,064 - INFO -    ✅ 17 modèles
+2025-11-08 01:47:49,341 - INFO - 🏷️ [217/279] Santana
+2025-11-08 01:47:51,580 - INFO - ✅ Santana: 12 modèles récupérés
+2025-11-08 01:47:51,612 - INFO -    ✅ 12 modèles
+2025-11-08 01:47:55,628 - INFO - 🏷️ [218/279] SEAT
+2025-11-08 01:47:58,011 - INFO - ✅ SEAT: 22 modèles récupérés
+2025-11-08 01:47:58,051 - INFO -    ✅ 22 modèles
+2025-11-08 01:48:01,040 - INFO - 🏷️ [219/279] Segway
+2025-11-08 01:48:03,263 - INFO - ✅ Segway: 8 modèles récupérés
+2025-11-08 01:48:03,280 - INFO -    ✅ 8 modèles
+2025-11-08 01:48:06,674 - INFO - 🏷️ [220/279] Selvo
+2025-11-08 01:48:08,915 - INFO - ✅ Selvo: 3 modèles récupérés
+2025-11-08 01:48:08,960 - INFO -    ✅ 3 modèles
+2025-11-08 01:48:12,771 - INFO - 📊 Progrès: 220/279 marques, 220 avec modèles
+2025-11-08 01:48:12,792 - INFO - 🏷️ [221/279] Seres
+2025-11-08 01:48:14,988 - INFO - ✅ Seres: 4 modèles récupérés
+2025-11-08 01:48:15,011 - INFO -    ✅ 4 modèles
+2025-11-08 01:48:18,780 - INFO - 🏷️ [222/279] Sevic
+2025-11-08 01:48:21,051 - INFO - ✅ Sevic: 2 modèles récupérés
+2025-11-08 01:48:21,097 - INFO -    ✅ 2 modèles
+2025-11-08 01:48:24,873 - INFO - 🏷️ [223/279] SGS
+2025-11-08 01:48:27,119 - INFO - ✅ SGS: 7 modèles récupérés
+2025-11-08 01:48:27,143 - INFO -    ✅ 7 modèles
+2025-11-08 01:48:30,302 - INFO - 🏷️ [224/279] Shelby
+2025-11-08 01:48:32,593 - INFO - ✅ Shelby: 6 modèles récupérés
+2025-11-08 01:48:32,617 - INFO -    ✅ 6 modèles
+2025-11-08 01:48:35,654 - INFO - 🏷️ [225/279] Shuanghuan
+2025-11-08 01:48:37,894 - INFO - ✅ Shuanghuan: 2 modèles récupérés
+2025-11-08 01:48:37,934 - INFO -    ✅ 2 modèles
+2025-11-08 01:48:41,002 - INFO - 🏷️ [226/279] Silence
+2025-11-08 01:48:43,195 - INFO - ✅ Silence: 1 modèles récupérés
+2025-11-08 01:48:43,252 - INFO -    ✅ 1 modèles
+2025-11-08 01:48:46,469 - INFO - 🏷️ [227/279] Simplici
+2025-11-08 01:48:48,711 - INFO - ✅ Simplici: 2 modèles récupérés
+2025-11-08 01:48:48,744 - INFO -    ✅ 2 modèles
+2025-11-08 01:48:51,620 - INFO - 🏷️ [228/279] Singer
+2025-11-08 01:48:53,790 - INFO - ✅ Singer: 1 modèles récupérés
+2025-11-08 01:48:53,815 - INFO -    ✅ 1 modèles
+2025-11-08 01:48:57,306 - INFO - 🏷️ [229/279] Skoda
+2025-11-08 01:48:59,714 - INFO - ✅ Skoda: 24 modèles récupérés
+2025-11-08 01:48:59,751 - INFO -    ✅ 24 modèles
+2025-11-08 01:49:02,919 - INFO - 🏷️ [230/279] Skywell
+2025-11-08 01:49:05,144 - INFO - ✅ Skywell: 2 modèles récupérés
+2025-11-08 01:49:05,217 - INFO -    ✅ 2 modèles
+2025-11-08 01:49:08,993 - INFO - 📊 Progrès: 230/279 marques, 230 avec modèles
+2025-11-08 01:49:09,013 - INFO - 🏷️ [231/279] smart
+2025-11-08 01:49:11,293 - INFO - ✅ smart: 10 modèles récupérés
+2025-11-08 01:49:11,328 - INFO -    ✅ 10 modèles
+2025-11-08 01:49:14,790 - INFO - 🏷️ [232/279] SpeedArt
+2025-11-08 01:49:16,972 - INFO - ✅ SpeedArt: 1 modèles récupérés
+2025-11-08 01:49:17,009 - INFO -    ✅ 1 modèles
+2025-11-08 01:49:20,538 - INFO - 🏷️ [233/279] Sportequipe
+2025-11-08 01:49:22,799 - INFO - ✅ Sportequipe: 5 modèles récupérés
+2025-11-08 01:49:22,842 - INFO -    ✅ 5 modèles
+2025-11-08 01:49:25,599 - INFO - 🏷️ [234/279] Spyker
+2025-11-08 01:49:27,867 - INFO - ✅ Spyker: 4 modèles récupérés
+2025-11-08 01:49:27,905 - INFO -    ✅ 4 modèles
+2025-11-08 01:49:30,561 - INFO - 🏷️ [235/279] SsangYong
+2025-11-08 01:49:32,844 - INFO - ✅ SsangYong: 12 modèles récupérés
+2025-11-08 01:49:32,882 - INFO -    ✅ 12 modèles
+2025-11-08 01:49:36,040 - INFO - 🏷️ [236/279] Stormborn
+2025-11-08 01:49:38,252 - INFO - ✅ Stormborn: 2 modèles récupérés
+2025-11-08 01:49:38,296 - INFO -    ✅ 2 modèles
+2025-11-08 01:49:41,913 - INFO - 🏷️ [237/279] StreetScooter
+2025-11-08 01:49:44,151 - INFO - ✅ StreetScooter: 3 modèles récupérés
+2025-11-08 01:49:44,202 - INFO -    ✅ 3 modèles
+2025-11-08 01:49:48,113 - INFO - 🏷️ [238/279] Studebaker
+2025-11-08 01:49:50,291 - INFO - ✅ Studebaker: 2 modèles récupérés
+2025-11-08 01:49:50,335 - INFO -    ✅ 2 modèles
+2025-11-08 01:49:53,834 - INFO - 🏷️ [239/279] Subaru
+2025-11-08 01:49:56,266 - INFO - ✅ Subaru: 30 modèles récupérés
+2025-11-08 01:49:56,314 - INFO -    ✅ 30 modèles
+2025-11-08 01:49:58,604 - INFO - 🏷️ [240/279] Suzuki
+2025-11-08 01:50:01,015 - INFO - ✅ Suzuki: 33 modèles récupérés
+2025-11-08 01:50:01,044 - INFO -    ✅ 33 modèles
+2025-11-08 01:50:04,483 - INFO - 📊 Progrès: 240/279 marques, 240 avec modèles
+2025-11-08 01:50:04,514 - INFO - 🏷️ [241/279] SWM
+2025-11-08 01:50:06,754 - INFO - ✅ SWM: 5 modèles récupérés
+2025-11-08 01:50:06,784 - INFO -    ✅ 5 modèles
+2025-11-08 01:50:10,485 - INFO - 🏷️ [242/279] Talbot
+2025-11-08 01:50:12,763 - INFO - ✅ Talbot: 14 modèles récupérés
+2025-11-08 01:50:12,808 - INFO -    ✅ 14 modèles
+2025-11-08 01:50:15,012 - INFO - 🏷️ [243/279] Tasso
+2025-11-08 01:50:17,269 - INFO - ✅ Tasso: 10 modèles récupérés
+2025-11-08 01:50:17,318 - INFO -    ✅ 10 modèles
+2025-11-08 01:50:20,830 - INFO - 🏷️ [244/279] Tata
+2025-11-08 01:50:23,173 - INFO - ✅ Tata: 20 modèles récupérés
+2025-11-08 01:50:23,217 - INFO -    ✅ 20 modèles
+2025-11-08 01:50:25,943 - INFO - 🏷️ [245/279] Tazzari EV
+2025-11-08 01:50:28,230 - INFO - ✅ Tazzari EV: 12 modèles récupérés
+2025-11-08 01:50:28,282 - INFO -    ✅ 12 modèles
+2025-11-08 01:50:32,057 - INFO - 🏷️ [246/279] TECHART
+2025-11-08 01:50:34,271 - INFO - ✅ TECHART: 1 modèles récupérés
+2025-11-08 01:50:34,317 - INFO -    ✅ 1 modèles
+2025-11-08 01:50:37,333 - INFO - 🏷️ [247/279] Tesla
+2025-11-08 01:50:39,631 - INFO - ✅ Tesla: 7 modèles récupérés
+2025-11-08 01:50:39,684 - INFO -    ✅ 7 modèles
+2025-11-08 01:50:42,203 - INFO - 🏷️ [248/279] Tiger
+2025-11-08 01:50:44,420 - INFO - ✅ Tiger: 2 modèles récupérés
+2025-11-08 01:50:44,463 - INFO -    ✅ 2 modèles
+2025-11-08 01:50:46,630 - INFO - 🏷️ [249/279] Togg
+2025-11-08 01:50:48,883 - INFO - ✅ Togg: 2 modèles récupérés
+2025-11-08 01:50:48,916 - INFO -    ✅ 2 modèles
+2025-11-08 01:50:51,540 - INFO - 🏷️ [250/279] Town Life
+2025-11-08 01:50:53,772 - INFO - ✅ Town Life: 3 modèles récupérés
+2025-11-08 01:50:53,816 - INFO -    ✅ 3 modèles
+2025-11-08 01:50:56,094 - INFO - 📊 Progrès: 250/279 marques, 250 avec modèles
+2025-11-08 01:50:56,119 - INFO - 🏷️ [251/279] Trabant
+2025-11-08 01:50:58,285 - INFO - ✅ Trabant: 7 modèles récupérés
+2025-11-08 01:50:58,310 - INFO -    ✅ 7 modèles
+2025-11-08 01:51:02,179 - INFO - 🏷️ [252/279] Trailer-Anhänger
+2025-11-08 01:51:04,348 - INFO - ✅ Trailer-Anhänger: 1 modèles récupérés
+2025-11-08 01:51:04,374 - INFO -    ✅ 1 modèles
+2025-11-08 01:51:07,005 - INFO - 🏷️ [253/279] Triumph
+2025-11-08 01:51:09,304 - INFO - ✅ Triumph: 15 modèles récupérés
+2025-11-08 01:51:09,348 - INFO -    ✅ 15 modèles
+2025-11-08 01:51:12,784 - INFO - 🏷️ [254/279] Trucks-Lkw
+2025-11-08 01:51:15,248 - INFO - ✅ Trucks-Lkw: 37 modèles récupérés
+2025-11-08 01:51:15,281 - INFO -    ✅ 37 modèles
+2025-11-08 01:51:17,914 - INFO - 🏷️ [255/279] TVR
+2025-11-08 01:51:20,243 - INFO - ✅ TVR: 14 modèles récupérés
+2025-11-08 01:51:20,288 - INFO -    ✅ 14 modèles
+2025-11-08 01:51:24,046 - INFO - 🏷️ [256/279] UAZ
+2025-11-08 01:51:26,367 - INFO - ✅ UAZ: 23 modèles récupérés
+2025-11-08 01:51:26,394 - INFO -    ✅ 23 modèles
+2025-11-08 01:51:30,181 - INFO - 🏷️ [257/279] Vanden Plas
+2025-11-08 01:51:32,360 - INFO - ✅ Vanden Plas: 3 modèles récupérés
+2025-11-08 01:51:33,046 - INFO -    ✅ 3 modèles
+2025-11-08 01:51:35,359 - INFO - 🏷️ [258/279] Vanderhall
+2025-11-08 01:51:37,614 - INFO - ✅ Vanderhall: 8 modèles récupérés
+2025-11-08 01:51:37,652 - INFO -    ✅ 8 modèles
+2025-11-08 01:51:41,146 - INFO - 🏷️ [259/279] VAZ
+2025-11-08 01:51:43,878 - INFO - ✅ VAZ: 83 modèles récupérés
+2025-11-08 01:51:43,905 - INFO -    ✅ 83 modèles
+2025-11-08 01:51:47,771 - INFO - 🏷️ [260/279] VEM
+2025-11-08 01:51:50,057 - INFO - ✅ VEM: 8 modèles récupérés
+2025-11-08 01:51:50,103 - INFO -    ✅ 8 modèles
+2025-11-08 01:51:53,655 - INFO - 📊 Progrès: 260/279 marques, 260 avec modèles
+2025-11-08 01:51:53,669 - INFO - 🏷️ [261/279] VinFast
+2025-11-08 01:51:55,938 - INFO - ✅ VinFast: 5 modèles récupérés
+2025-11-08 01:51:55,957 - INFO -    ✅ 5 modèles
+2025-11-08 01:51:59,736 - INFO - 🏷️ [262/279] Volvo
+2025-11-08 01:52:02,378 - INFO - ✅ Volvo: 54 modèles récupérés
+2025-11-08 01:52:02,423 - INFO -    ✅ 54 modèles
+2025-11-08 01:52:04,880 - INFO - 🏷️ [263/279] Voyah
+2025-11-08 01:52:07,093 - INFO - ✅ Voyah: 5 modèles récupérés
+2025-11-08 01:52:07,138 - INFO -    ✅ 5 modèles
+2025-11-08 01:52:10,530 - INFO - 🏷️ [264/279] Wartburg
+2025-11-08 01:52:12,850 - INFO - ✅ Wartburg: 12 modèles récupérés
+2025-11-08 01:52:12,881 - INFO -    ✅ 12 modèles
+2025-11-08 01:52:15,422 - INFO - 🏷️ [265/279] Weltmeister
+2025-11-08 01:52:17,660 - INFO - ✅ Weltmeister: 4 modèles récupérés
+2025-11-08 01:52:17,701 - INFO -    ✅ 4 modèles
+2025-11-08 01:52:21,535 - INFO - 🏷️ [266/279] Wenckstern
+2025-11-08 01:52:23,709 - INFO - ✅ Wenckstern: 4 modèles récupérés
+2025-11-08 01:52:23,738 - INFO -    ✅ 4 modèles
+2025-11-08 01:52:26,421 - INFO - 🏷️ [267/279] Westfield
+2025-11-08 01:52:28,714 - INFO - ✅ Westfield: 15 modèles récupérés
+2025-11-08 01:52:28,758 - INFO -    ✅ 15 modèles
+2025-11-08 01:52:31,144 - INFO - 🏷️ [268/279] Wey
+2025-11-08 01:52:33,346 - INFO - ✅ Wey: 3 modèles récupérés
+2025-11-08 01:52:33,398 - INFO -    ✅ 3 modèles
+2025-11-08 01:52:36,965 - INFO - 🏷️ [269/279] Wiesmann
+2025-11-08 01:52:39,250 - INFO - ✅ Wiesmann: 7 modèles récupérés
+2025-11-08 01:52:39,291 - INFO -    ✅ 7 modèles
+2025-11-08 01:52:41,475 - INFO - 🏷️ [270/279] XBus
+2025-11-08 01:52:43,690 - INFO - ✅ XBus: 2 modèles récupérés
+2025-11-08 01:52:43,744 - INFO -    ✅ 2 modèles
+2025-11-08 01:52:47,097 - INFO - 📊 Progrès: 270/279 marques, 270 avec modèles
+2025-11-08 01:52:47,121 - INFO - 🏷️ [271/279] XEV
+2025-11-08 01:52:49,356 - INFO - ✅ XEV: 3 modèles récupérés
+2025-11-08 01:52:49,944 - INFO -    ✅ 3 modèles
+2025-11-08 01:52:53,538 - INFO - 🏷️ [272/279] Xiaomi
+2025-11-08 01:52:55,744 - INFO - ✅ Xiaomi: 2 modèles récupérés
+2025-11-08 01:52:55,792 - INFO -    ✅ 2 modèles
+2025-11-08 01:52:58,263 - INFO - 🏷️ [273/279] Xpeng
+2025-11-08 01:53:00,509 - INFO - ✅ Xpeng: 6 modèles récupérés
+2025-11-08 01:53:00,555 - INFO -    ✅ 6 modèles
+2025-11-08 01:53:03,149 - INFO - 🏷️ [274/279] Zastava
+2025-11-08 01:53:05,414 - INFO - ✅ Zastava: 15 modèles récupérés
+2025-11-08 01:53:05,459 - INFO -    ✅ 15 modèles
+2025-11-08 01:53:08,290 - INFO - 🏷️ [275/279] ZAZ
+2025-11-08 01:53:10,541 - INFO - ✅ ZAZ: 9 modèles récupérés
+2025-11-08 01:53:10,586 - INFO -    ✅ 9 modèles
+2025-11-08 01:53:13,151 - INFO - 🏷️ [276/279] Zeekr
+2025-11-08 01:53:15,355 - INFO - ✅ Zeekr: 3 modèles récupérés
+2025-11-08 01:53:15,395 - INFO -    ✅ 3 modèles
+2025-11-08 01:53:17,954 - INFO - 🏷️ [277/279] Zhidou
+2025-11-08 01:53:20,163 - INFO - ✅ Zhidou: 5 modèles récupérés
+2025-11-08 01:53:20,771 - INFO -    ✅ 5 modèles
+2025-11-08 01:53:22,811 - INFO - 🏷️ [278/279] Zotye
+2025-11-08 01:53:25,113 - INFO - ✅ Zotye: 11 modèles récupérés
+2025-11-08 01:53:25,131 - INFO -    ✅ 11 modèles
+2025-11-08 01:53:28,255 - INFO - 🏷️ [279/279] Autres
+2025-11-08 01:53:31,180 - INFO - ✅ Autres: 95 modèles récupérés
+2025-11-08 01:53:31,685 - INFO -    ✅ 95 modèles
+2025-11-08 01:53:35,043 - INFO - 🎉 Scraping terminé! 279 marques traitées
+2025-11-08 01:53:35,422 - INFO - 📝 Fichier Markdown généré: data\auto_scraped_models_20251108_015335.md
+2025-11-08 01:53:35,454 - INFO - 💾 Résultats sauvegardés:
+2025-11-08 01:53:35,462 - INFO -    📄 JSON: data/auto_scraped_models_20251108_015335.json
+2025-11-08 01:53:35,470 - INFO -    📝 MD: data\auto_scraped_models_20251108_015335.md
+2025-11-08 01:53:35,517 - INFO - ℹ️ Première exécution - aucun rapport de versioning
+2025-11-08 01:53:35,877 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-08 01:53:35,883 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-08 01:53:35,919 - INFO -    • Marques traitées: 279
+2025-11-08 01:53:35,929 - INFO -    • Marques avec modèles: 279
+2025-11-08 01:53:35,965 - INFO -    • Total modèles: 4905
+2025-11-08 01:53:35,981 - INFO - 🎉 SUCCESS! Fichier généré: data/auto_scraped_models_20251108_015335.json
+2025-11-08 01:53:35,988 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-08 01:53:38,357 - INFO - 🔒 Driver fermé
+2025-11-10 00:10:25,191 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-10 00:10:25,196 - INFO -    • Mode: Complet
+2025-11-10 00:10:25,204 - INFO -    • Headless: True
+2025-11-10 00:10:25,217 - INFO -    • Marques max: Toutes
+2025-11-10 00:10:25,225 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-10 00:10:25,235 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-10 00:10:25,270 - INFO -    • 📝 Historique Markdown automatique
+2025-11-10 00:10:28,849 - INFO - ✅ Driver Selenium configuré
+2025-11-10 00:10:28,859 - WARNING - ⚠️ Fichier as24_brands_for_scraping.json non trouvé
+2025-11-10 00:10:28,868 - INFO - 🔄 Extraction automatique des marques depuis AutoScout24...
+2025-11-10 00:10:28,877 - INFO - 🔍 Extraction des marques depuis AutoScout24...
+2025-11-10 00:10:28,886 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-10 00:10:34,405 - INFO - ✅ Page d'accueil chargée
+2025-11-10 00:10:34,450 - INFO - ✅ Menu marques trouvé avec sélecteur: select[name='make']
+2025-11-10 00:10:34,504 - INFO - 🔍 Trouvé 290 options dans le menu
+2025-11-10 00:10:44,472 - INFO - 📝 Fichier Markdown des marques généré: data\as24_brands_for_scraping.md
+2025-11-10 00:10:44,478 - INFO - 💾 Fichier as24_brands_for_scraping.json créé: 279 marques
+2025-11-10 00:10:44,521 - INFO - ℹ️ Aucune version précédente trouvée
+2025-11-10 00:10:44,634 - INFO - ✅ Extraction réussie: 279 marques
+2025-11-10 00:10:44,639 - INFO - 🌐 Navigation vers: https://www.autoscout24.fr
+2025-11-10 00:10:48,551 - INFO - ✅ Page d'accueil chargée
+2025-11-10 00:10:48,561 - INFO - 🚀 Début du scraping pour 279 marques
+2025-11-10 00:10:48,573 - INFO - 🏷️ [1/279] Audi
+2025-11-10 00:10:51,825 - INFO - ✅ Audi: 65 modèles récupérés
+2025-11-10 00:10:51,857 - INFO -    ✅ 65 modèles
+2025-11-10 00:10:54,572 - INFO - 🏷️ [2/279] BMW
+2025-11-10 00:10:58,032 - INFO - ✅ BMW: 125 modèles récupérés
+2025-11-10 00:10:59,428 - INFO -    ✅ 125 modèles
+2025-11-10 00:11:02,564 - INFO - 🏷️ [3/279] Ferrari
+2025-11-10 00:11:05,198 - INFO - ✅ Ferrari: 57 modèles récupérés
+2025-11-10 00:11:05,217 - INFO -    ✅ 57 modèles
+2025-11-10 00:11:08,878 - INFO - 🏷️ [4/279] Mercedes-Benz
+2025-11-10 00:11:16,884 - INFO - ✅ Mercedes-Benz: 382 modèles récupérés
+2025-11-10 00:11:16,900 - INFO -    ✅ 382 modèles
+2025-11-10 00:11:20,756 - INFO - 🏷️ [5/279] MINI
+2025-11-10 00:11:23,390 - INFO - ✅ MINI: 65 modèles récupérés
+2025-11-10 00:11:23,437 - INFO -    ✅ 65 modèles
+2025-11-10 00:11:26,145 - INFO - 🏷️ [6/279] Peugeot
+2025-11-10 00:11:28,596 - INFO - ✅ Peugeot: 53 modèles récupérés
+2025-11-10 00:11:28,653 - INFO -    ✅ 53 modèles
+2025-11-10 00:11:32,494 - INFO - 🏷️ [7/279] Porsche
+2025-11-10 00:11:34,806 - INFO - ✅ Porsche: 32 modèles récupérés
+2025-11-10 00:11:34,822 - INFO -    ✅ 32 modèles
+2025-11-10 00:11:36,989 - INFO - 🏷️ [8/279] Renault
+2025-11-10 00:11:39,665 - INFO - ✅ Renault: 65 modèles récupérés
+2025-11-10 00:11:39,681 - INFO -    ✅ 65 modèles
+2025-11-10 00:11:43,259 - INFO - 🏷️ [9/279] Toyota
+2025-11-10 00:11:46,066 - INFO - ✅ Toyota: 101 modèles récupérés
+2025-11-10 00:11:46,081 - INFO -    ✅ 101 modèles
+2025-11-10 00:11:48,111 - INFO - 🏷️ [10/279] Volkswagen
+2025-11-10 00:11:51,292 - INFO - ✅ Volkswagen: 129 modèles récupérés
+2025-11-10 00:11:53,042 - INFO -    ✅ 129 modèles
+2025-11-10 00:11:56,603 - INFO - 📊 Progrès: 10/279 marques, 10 avec modèles
+2025-11-10 00:11:56,613 - INFO - 🏷️ [11/279] 9ff
+2025-11-10 00:12:00,006 - INFO - ✅ 9ff: 7 modèles récupérés
+2025-11-10 00:12:00,051 - INFO -    ✅ 7 modèles
+2025-11-10 00:12:03,913 - INFO - 🏷️ [12/279] Abarth
+2025-11-10 00:12:06,151 - INFO - ✅ Abarth: 18 modèles récupérés
+2025-11-10 00:12:06,188 - INFO -    ✅ 18 modèles
+2025-11-10 00:12:09,510 - INFO - 🏷️ [13/279] AC
+2025-11-10 00:12:11,654 - INFO - ✅ AC: 3 modèles récupérés
+2025-11-10 00:12:11,670 - INFO -    ✅ 3 modèles
+2025-11-10 00:12:13,852 - INFO - 🏷️ [14/279] ACM
+2025-11-10 00:12:15,979 - INFO - ✅ ACM: 3 modèles récupérés
+2025-11-10 00:12:16,025 - INFO -    ✅ 3 modèles
+2025-11-10 00:12:20,016 - INFO - 🏷️ [15/279] Acura
+2025-11-10 00:12:22,188 - INFO - ✅ Acura: 12 modèles récupérés
+2025-11-10 00:12:22,227 - INFO -    ✅ 12 modèles
+2025-11-10 00:12:25,066 - INFO - 🏷️ [16/279] Aerfal
+2025-11-10 00:12:27,199 - INFO - ✅ Aerfal: 1 modèles récupérés
+2025-11-10 00:12:27,241 - INFO -    ✅ 1 modèles
+2025-11-10 00:12:30,113 - INFO - 🏷️ [17/279] Aiways
+2025-11-10 00:12:33,421 - INFO - ✅ Aiways: 3 modèles récupérés
+2025-11-10 00:12:33,439 - INFO -    ✅ 3 modèles
+2025-11-10 00:12:37,052 - INFO - 🏷️ [18/279] Aixam
+2025-11-10 00:12:39,280 - INFO - ✅ Aixam: 16 modèles récupérés
+2025-11-10 00:12:40,597 - INFO -    ✅ 16 modèles
+2025-11-10 00:12:44,362 - INFO - 🏷️ [19/279] Alba Mobility
+2025-11-10 00:12:46,767 - INFO - ✅ Alba Mobility: 6 modèles récupérés
+2025-11-10 00:12:46,801 - INFO -    ✅ 6 modèles
+2025-11-10 00:12:50,618 - INFO - 🏷️ [20/279] Alfa Romeo
+2025-11-10 00:12:53,089 - INFO - ✅ Alfa Romeo: 36 modèles récupérés
+2025-11-10 00:12:53,140 - INFO -    ✅ 36 modèles
+2025-11-10 00:12:56,785 - INFO - 📊 Progrès: 20/279 marques, 20 avec modèles
+2025-11-10 00:12:56,789 - INFO - 🏷️ [21/279] Alpina
+2025-11-10 00:12:59,069 - INFO - ✅ Alpina: 23 modèles récupérés
+2025-11-10 00:12:59,087 - INFO -    ✅ 23 modèles
+2025-11-10 00:13:02,176 - INFO - 🏷️ [22/279] Alpine
+2025-11-10 00:13:04,442 - INFO - ✅ Alpine: 3 modèles récupérés
+2025-11-10 00:13:04,457 - INFO -    ✅ 3 modèles
+2025-11-10 00:13:06,750 - INFO - 🏷️ [23/279] Amphicar
+2025-11-10 00:13:08,917 - INFO - ✅ Amphicar: 2 modèles récupérés
+2025-11-10 00:13:08,960 - INFO -    ✅ 2 modèles
+2025-11-10 00:13:11,008 - INFO - 🏷️ [24/279] Angelelli Automobili
+2025-11-10 00:13:13,154 - INFO - ✅ Angelelli Automobili: 6 modèles récupérés
+2025-11-10 00:13:13,166 - INFO -    ✅ 6 modèles
+2025-11-10 00:13:16,970 - INFO - 🏷️ [25/279] Ariel Motor
+2025-11-10 00:13:19,107 - INFO - ✅ Ariel Motor: 3 modèles récupérés
+2025-11-10 00:13:19,143 - INFO -    ✅ 3 modèles
+2025-11-10 00:13:21,366 - INFO - 🏷️ [26/279] Artega
+2025-11-10 00:13:23,560 - INFO - ✅ Artega: 4 modèles récupérés
+2025-11-10 00:13:23,577 - INFO -    ✅ 4 modèles
+2025-11-10 00:13:26,345 - INFO - 🏷️ [27/279] Aspark
+2025-11-10 00:13:29,185 - INFO - ✅ Aspark: 2 modèles récupérés
+2025-11-10 00:13:29,200 - INFO -    ✅ 2 modèles
+2025-11-10 00:13:31,413 - INFO - 🏷️ [28/279] Aspid
+2025-11-10 00:13:33,537 - INFO - ✅ Aspid: 3 modèles récupérés
+2025-11-10 00:13:33,553 - INFO -    ✅ 3 modèles
+2025-11-10 00:13:36,335 - INFO - 🏷️ [29/279] Aston Martin
+2025-11-10 00:13:38,606 - INFO - ✅ Aston Martin: 19 modèles récupérés
+2025-11-10 00:13:38,629 - INFO -    ✅ 19 modèles
+2025-11-10 00:13:41,620 - INFO - 🏷️ [30/279] Aurus
+2025-11-10 00:13:43,774 - INFO - ✅ Aurus: 2 modèles récupérés
+2025-11-10 00:13:43,791 - INFO -    ✅ 2 modèles
+2025-11-10 00:13:47,118 - INFO - 📊 Progrès: 30/279 marques, 30 avec modèles
+2025-11-10 00:13:47,126 - INFO - 🏷️ [31/279] Austin
+2025-11-10 00:13:49,272 - INFO - ✅ Austin: 9 modèles récupérés
+2025-11-10 00:13:49,318 - INFO -    ✅ 9 modèles
+2025-11-10 00:13:51,938 - INFO - 🏷️ [32/279] Austin-Healey
+2025-11-10 00:13:54,123 - INFO - ✅ Austin-Healey: 4 modèles récupérés
+2025-11-10 00:13:54,138 - INFO -    ✅ 4 modèles
+2025-11-10 00:13:57,621 - INFO - 🏷️ [33/279] Autobianchi
+2025-11-10 00:13:59,763 - INFO - ✅ Autobianchi: 4 modèles récupérés
+2025-11-10 00:13:59,810 - INFO -    ✅ 4 modèles
+2025-11-10 00:14:03,453 - INFO - 🏷️ [34/279] BAIC
+2025-11-10 00:14:05,726 - INFO - ✅ BAIC: 17 modèles récupérés
+2025-11-10 00:14:05,746 - INFO -    ✅ 17 modèles
+2025-11-10 00:14:08,410 - INFO - 🏷️ [35/279] BAW
+2025-11-10 00:14:10,531 - INFO - ✅ BAW: 2 modèles récupérés
+2025-11-10 00:14:10,551 - INFO -    ✅ 2 modèles
+2025-11-10 00:14:14,083 - INFO - 🏷️ [36/279] Bedford
+2025-11-10 00:14:16,272 - INFO - ✅ Bedford: 16 modèles récupérés
+2025-11-10 00:14:16,607 - INFO -    ✅ 16 modèles
+2025-11-10 00:14:20,194 - INFO - 🏷️ [37/279] Bellier
+2025-11-10 00:14:22,379 - INFO - ✅ Bellier: 9 modèles récupérés
+2025-11-10 00:14:22,428 - INFO -    ✅ 9 modèles
+2025-11-10 00:14:25,437 - INFO - 🏷️ [38/279] Bentley
+2025-11-10 00:14:27,641 - INFO - ✅ Bentley: 18 modèles récupérés
+2025-11-10 00:14:27,661 - INFO -    ✅ 18 modèles
+2025-11-10 00:14:29,684 - INFO - 🏷️ [39/279] Bertone
+2025-11-10 00:14:31,833 - INFO - ✅ Bertone: 2 modèles récupérés
+2025-11-10 00:14:31,860 - INFO -    ✅ 2 modèles
+2025-11-10 00:14:34,238 - INFO - 🏷️ [40/279] Bestune
+2025-11-10 00:14:36,379 - INFO - ✅ Bestune: 3 modèles récupérés
+2025-11-10 00:14:36,396 - INFO -    ✅ 3 modèles
+2025-11-10 00:14:38,913 - INFO - 📊 Progrès: 40/279 marques, 40 avec modèles
+2025-11-10 00:14:38,921 - INFO - 🏷️ [41/279] Boldmen
+2025-11-10 00:14:41,070 - INFO - ✅ Boldmen: 2 modèles récupérés
+2025-11-10 00:14:41,082 - INFO -    ✅ 2 modèles
+2025-11-10 00:14:44,887 - INFO - 🏷️ [42/279] Bolloré
+2025-11-10 00:14:47,209 - INFO - ✅ Bolloré: 4 modèles récupérés
+2025-11-10 00:14:47,230 - INFO -    ✅ 4 modèles
+2025-11-10 00:14:50,810 - INFO - 🏷️ [43/279] Borgward
+2025-11-10 00:14:53,716 - INFO - ✅ Borgward: 15 modèles récupérés
+2025-11-10 00:14:53,764 - INFO -    ✅ 15 modèles
+2025-11-10 00:14:57,069 - INFO - 🏷️ [44/279] Brilliance
+2025-11-10 00:14:59,716 - INFO - ✅ Brilliance: 9 modèles récupérés
+2025-11-10 00:14:59,872 - INFO -    ✅ 9 modèles
+2025-11-10 00:15:02,661 - INFO - 🏷️ [45/279] Bristol
+2025-11-10 00:15:04,851 - INFO - ✅ Bristol: 3 modèles récupérés
+2025-11-10 00:15:05,097 - INFO -    ✅ 3 modèles
+2025-11-10 00:15:07,723 - INFO - 🏷️ [46/279] Brute
+2025-11-10 00:15:09,926 - INFO - ✅ Brute: 2 modèles récupérés
+2025-11-10 00:15:09,953 - INFO -    ✅ 2 modèles
+2025-11-10 00:15:12,107 - INFO - 🏷️ [47/279] Bugatti
+2025-11-10 00:15:14,269 - INFO - ✅ Bugatti: 7 modèles récupérés
+2025-11-10 00:15:14,281 - INFO -    ✅ 7 modèles
+2025-11-10 00:15:16,362 - INFO - 🏷️ [48/279] Buick
+2025-11-10 00:15:18,649 - INFO - ✅ Buick: 16 modèles récupérés
+2025-11-10 00:15:18,667 - INFO -    ✅ 16 modèles
+2025-11-10 00:15:20,803 - INFO - 🏷️ [49/279] BYD
+2025-11-10 00:15:23,066 - INFO - ✅ BYD: 17 modèles récupérés
+2025-11-10 00:15:23,112 - INFO -    ✅ 17 modèles
+2025-11-10 00:15:26,466 - INFO - 🏷️ [50/279] Cadillac
+2025-11-10 00:15:28,785 - INFO - ✅ Cadillac: 26 modèles récupérés
+2025-11-10 00:15:28,804 - INFO -    ✅ 26 modèles
+2025-11-10 00:15:31,181 - INFO - 📊 Progrès: 50/279 marques, 50 avec modèles
+2025-11-10 00:15:31,202 - INFO - 🏷️ [51/279] Caravans-Wohnm
+2025-11-10 00:15:34,407 - INFO - ✅ Caravans-Wohnm: 125 modèles récupérés
+2025-11-10 00:15:34,436 - INFO -    ✅ 125 modèles
+2025-11-10 00:15:37,301 - INFO - 🏷️ [52/279] Carver
+2025-11-10 00:15:39,801 - INFO - ✅ Carver: 3 modèles récupérés
+2025-11-10 00:15:39,859 - INFO -    ✅ 3 modèles
+2025-11-10 00:15:49,574 - INFO - 🏷️ [53/279] Casalini
+2025-11-10 00:15:52,081 - INFO - ✅ Casalini: 11 modèles récupérés
+2025-11-10 00:15:52,101 - INFO -    ✅ 11 modèles
+2025-11-10 00:15:55,011 - INFO - 🏷️ [54/279] Caterham
+2025-11-10 00:15:57,712 - INFO - ✅ Caterham: 22 modèles récupérés
+2025-11-10 00:15:57,729 - INFO -    ✅ 22 modèles
+2025-11-10 00:16:00,787 - INFO - 🏷️ [55/279] Cenntro
+2025-11-10 00:16:03,112 - INFO - ✅ Cenntro: 8 modèles récupérés
+2025-11-10 00:16:03,123 - INFO -    ✅ 8 modèles
+2025-11-10 00:16:06,384 - INFO - 🏷️ [56/279] Changhe
+2025-11-10 00:16:08,766 - INFO - ✅ Changhe: 10 modèles récupérés
+2025-11-10 00:16:08,793 - INFO -    ✅ 10 modèles
+2025-11-10 00:16:11,217 - INFO - 🏷️ [57/279] Chatenet
+2025-11-10 00:16:13,718 - INFO - ✅ Chatenet: 13 modèles récupérés
+2025-11-10 00:16:13,748 - INFO -    ✅ 13 modèles
+2025-11-10 00:16:17,641 - INFO - 🏷️ [58/279] Chery
+2025-11-10 00:16:20,255 - INFO - ✅ Chery: 28 modèles récupérés
+2025-11-10 00:16:22,040 - INFO -    ✅ 28 modèles
+2025-11-10 00:16:24,443 - INFO - 🏷️ [59/279] Chevrolet
+2025-11-10 00:16:27,615 - INFO - ✅ Chevrolet: 66 modèles récupérés
+2025-11-10 00:16:27,660 - INFO -    ✅ 66 modèles
+2025-11-10 00:16:29,955 - INFO - 🏷️ [60/279] Chrysler
+2025-11-10 00:16:32,546 - INFO - ✅ Chrysler: 28 modèles récupérés
+2025-11-10 00:16:32,588 - INFO -    ✅ 28 modèles
+2025-11-10 00:16:35,529 - INFO - 📊 Progrès: 60/279 marques, 60 avec modèles
+2025-11-10 00:16:35,612 - INFO - 🏷️ [61/279] Cirelli
+2025-11-10 00:16:37,880 - INFO - ✅ Cirelli: 8 modèles récupérés
+2025-11-10 00:16:37,917 - INFO -    ✅ 8 modèles
+2025-11-10 00:16:41,250 - INFO - 🏷️ [62/279] Citroen
+2025-11-10 00:16:44,436 - INFO - ✅ Citroen: 62 modèles récupérés
+2025-11-10 00:16:44,469 - INFO -    ✅ 62 modèles
+2025-11-10 00:16:46,774 - INFO - 🏷️ [63/279] CityEL
+2025-11-10 00:16:49,018 - INFO - ✅ CityEL: 4 modèles récupérés
+2025-11-10 00:16:49,063 - INFO -    ✅ 4 modèles
+2025-11-10 00:16:52,619 - INFO - 🏷️ [64/279] Corvette
+2025-11-10 00:16:55,178 - INFO - ✅ Corvette: 15 modèles récupérés
+2025-11-10 00:16:55,195 - INFO -    ✅ 15 modèles
+2025-11-10 00:16:57,489 - INFO - 🏷️ [65/279] CUPRA
+2025-11-10 00:16:59,817 - INFO - ✅ CUPRA: 10 modèles récupérés
+2025-11-10 00:16:59,839 - INFO -    ✅ 10 modèles
+2025-11-10 00:17:03,385 - INFO - 🏷️ [66/279] Dacia
+2025-11-10 00:17:05,795 - INFO - ✅ Dacia: 17 modèles récupérés
+2025-11-10 00:17:05,810 - INFO -    ✅ 17 modèles
+2025-11-10 00:17:09,183 - INFO - 🏷️ [67/279] Daewoo
+2025-11-10 00:17:11,830 - INFO - ✅ Daewoo: 20 modèles récupérés
+2025-11-10 00:17:11,865 - INFO -    ✅ 20 modèles
+2025-11-10 00:17:15,715 - INFO - 🏷️ [68/279] DAF
+2025-11-10 00:17:17,963 - INFO - ✅ DAF: 4 modèles récupérés
+2025-11-10 00:17:17,980 - INFO -    ✅ 4 modèles
+2025-11-10 00:17:20,872 - INFO - 🏷️ [69/279] Daihatsu
+2025-11-10 00:17:25,418 - INFO - ✅ Daihatsu: 23 modèles récupérés
+2025-11-10 00:17:25,436 - INFO -    ✅ 23 modèles
+2025-11-10 00:17:29,464 - INFO - 🏷️ [70/279] Daimler
+2025-11-10 00:17:31,764 - INFO - ✅ Daimler: 6 modèles récupérés
+2025-11-10 00:17:31,779 - INFO -    ✅ 6 modèles
+2025-11-10 00:17:35,431 - INFO - 📊 Progrès: 70/279 marques, 70 avec modèles
+2025-11-10 00:17:35,451 - INFO - 🏷️ [71/279] Dallara
+2025-11-10 00:17:37,669 - INFO - ✅ Dallara: 2 modèles récupérés
+2025-11-10 00:17:37,715 - INFO -    ✅ 2 modèles
+2025-11-10 00:17:41,420 - INFO - 🏷️ [72/279] Dangel
+2025-11-10 00:17:43,745 - INFO - ✅ Dangel: 14 modèles récupérés
+2025-11-10 00:17:43,761 - INFO -    ✅ 14 modèles
+2025-11-10 00:17:46,263 - INFO - 🏷️ [73/279] De la Chapelle
+2025-11-10 00:17:48,429 - INFO - ✅ De la Chapelle: 6 modèles récupérés
+2025-11-10 00:17:48,468 - INFO -    ✅ 6 modèles
+2025-11-10 00:17:52,439 - INFO - 🏷️ [74/279] De Tomaso
+2025-11-10 00:17:54,766 - INFO - ✅ De Tomaso: 8 modèles récupérés
+2025-11-10 00:17:55,246 - INFO -    ✅ 8 modèles
+2025-11-10 00:17:57,307 - INFO - 🏷️ [75/279] Delorean
+2025-11-10 00:17:59,594 - INFO - ✅ Delorean: 2 modèles récupérés
+2025-11-10 00:17:59,638 - INFO -    ✅ 2 modèles
+2025-11-10 00:18:02,847 - INFO - 🏷️ [76/279] Denza
+2025-11-10 00:18:04,961 - INFO - ✅ Denza: 2 modèles récupérés
+2025-11-10 00:18:05,000 - INFO -    ✅ 2 modèles
+2025-11-10 00:18:08,743 - INFO - 🏷️ [77/279] Devinci Cars
+2025-11-10 00:18:11,232 - INFO - ✅ Devinci Cars: 2 modèles récupérés
+2025-11-10 00:18:11,251 - INFO -    ✅ 2 modèles
+2025-11-10 00:18:14,182 - INFO - 🏷️ [78/279] DFSK
+2025-11-10 00:18:16,495 - INFO - ✅ DFSK: 31 modèles récupérés
+2025-11-10 00:18:16,520 - INFO -    ✅ 31 modèles
+2025-11-10 00:18:20,057 - INFO - 🏷️ [79/279] Dodge
+2025-11-10 00:18:22,306 - INFO - ✅ Dodge: 22 modèles récupérés
+2025-11-10 00:18:22,319 - INFO -    ✅ 22 modèles
+2025-11-10 00:18:25,342 - INFO - 🏷️ [80/279] Dongfeng
+2025-11-10 00:18:27,466 - INFO - ✅ Dongfeng: 2 modèles récupérés
+2025-11-10 00:18:27,487 - INFO -    ✅ 2 modèles
+2025-11-10 00:18:30,139 - INFO - 📊 Progrès: 80/279 marques, 80 avec modèles
+2025-11-10 00:18:30,145 - INFO - 🏷️ [81/279] Donkervoort
+2025-11-10 00:18:32,269 - INFO - ✅ Donkervoort: 4 modèles récupérés
+2025-11-10 00:18:32,302 - INFO -    ✅ 4 modèles
+2025-11-10 00:18:35,989 - INFO - 🏷️ [82/279] DR Automobiles
+2025-11-10 00:18:38,219 - INFO - ✅ DR Automobiles: 19 modèles récupérés
+2025-11-10 00:18:38,241 - INFO -    ✅ 19 modèles
+2025-11-10 00:18:40,983 - INFO - 🏷️ [83/279] DS Automobiles
+2025-11-10 00:18:43,180 - INFO - ✅ DS Automobiles: 11 modèles récupérés
+2025-11-10 00:18:43,207 - INFO -    ✅ 11 modèles
+2025-11-10 00:18:45,711 - INFO - 🏷️ [84/279] Dutton
+2025-11-10 00:18:47,957 - INFO - ✅ Dutton: 21 modèles récupérés
+2025-11-10 00:18:47,976 - INFO -    ✅ 21 modèles
+2025-11-10 00:18:51,061 - INFO - 🏷️ [85/279] e.GO
+2025-11-10 00:18:53,244 - INFO - ✅ e.GO: 7 modèles récupérés
+2025-11-10 00:18:54,367 - INFO -    ✅ 7 modèles
+2025-11-10 00:18:57,742 - INFO - 🏷️ [86/279] Ebro
+2025-11-10 00:18:59,879 - INFO - ✅ Ebro: 3 modèles récupérés
+2025-11-10 00:18:59,894 - INFO -    ✅ 3 modèles
+2025-11-10 00:19:03,805 - INFO - 🏷️ [87/279] Econelo
+2025-11-10 00:19:05,960 - INFO - ✅ Econelo: 3 modèles récupérés
+2025-11-10 00:19:05,984 - INFO -    ✅ 3 modèles
+2025-11-10 00:19:09,152 - INFO - 🏷️ [88/279] Edran
+2025-11-10 00:19:11,329 - INFO - ✅ Edran: 2 modèles récupérés
+2025-11-10 00:19:11,366 - INFO -    ✅ 2 modèles
+2025-11-10 00:19:14,507 - INFO - 🏷️ [89/279] Elaris
+2025-11-10 00:19:16,718 - INFO - ✅ Elaris: 10 modèles récupérés
+2025-11-10 00:19:16,738 - INFO -    ✅ 10 modèles
+2025-11-10 00:19:19,235 - INFO - 🏷️ [90/279] Embuggy
+2025-11-10 00:19:21,369 - INFO - ✅ Embuggy: 4 modèles récupérés
+2025-11-10 00:19:21,385 - INFO -    ✅ 4 modèles
+2025-11-10 00:19:25,031 - INFO - 📊 Progrès: 90/279 marques, 90 avec modèles
+2025-11-10 00:19:25,037 - INFO - 🏷️ [91/279] EMC
+2025-11-10 00:19:27,191 - INFO - ✅ EMC: 7 modèles récupérés
+2025-11-10 00:19:27,237 - INFO -    ✅ 7 modèles
+2025-11-10 00:19:29,354 - INFO - 🏷️ [92/279] Estrima
+2025-11-10 00:19:31,487 - INFO - ✅ Estrima: 2 modèles récupérés
+2025-11-10 00:19:31,501 - INFO -    ✅ 2 modèles
+2025-11-10 00:19:33,977 - INFO - 🏷️ [93/279] Evetta
+2025-11-10 00:19:37,943 - INFO - ✅ Evetta: 3 modèles récupérés
+2025-11-10 00:19:39,159 - INFO -    ✅ 3 modèles
+2025-11-10 00:19:45,351 - INFO - 🏷️ [94/279] EVO
+2025-11-10 00:19:47,524 - INFO - ✅ EVO: 8 modèles récupérés
+2025-11-10 00:19:47,562 - INFO -    ✅ 8 modèles
+2025-11-10 00:19:51,025 - INFO - 🏷️ [95/279] Farizon
+2025-11-10 00:19:53,149 - INFO - ✅ Farizon: 2 modèles récupérés
+2025-11-10 00:19:53,196 - INFO -    ✅ 2 modèles
+2025-11-10 00:19:56,089 - INFO - 🏷️ [96/279] Fiat
+2025-11-10 00:19:58,912 - INFO - ✅ Fiat: 78 modèles récupérés
+2025-11-10 00:19:58,925 - INFO -    ✅ 78 modèles
+2025-11-10 00:20:01,852 - INFO - 🏷️ [97/279] Fisker
+2025-11-10 00:20:04,089 - INFO - ✅ Fisker: 6 modèles récupérés
+2025-11-10 00:20:04,103 - INFO -    ✅ 6 modèles
+2025-11-10 00:20:07,120 - INFO - 🏷️ [98/279] Ford
+2025-11-10 00:20:10,189 - INFO - ✅ Ford: 87 modèles récupérés
+2025-11-10 00:20:10,232 - INFO -    ✅ 87 modèles
+2025-11-10 00:20:13,827 - INFO - 🏷️ [99/279] Forthing
+2025-11-10 00:20:15,975 - INFO - ✅ Forthing: 3 modèles récupérés
+2025-11-10 00:20:16,017 - INFO -    ✅ 3 modèles
+2025-11-10 00:20:18,215 - INFO - 🏷️ [100/279] Foton
+2025-11-10 00:20:20,368 - INFO - ✅ Foton: 3 modèles récupérés
+2025-11-10 00:20:25,197 - INFO -    ✅ 3 modèles
+2025-11-10 00:20:30,499 - INFO - 📊 Progrès: 100/279 marques, 100 avec modèles
+2025-11-10 00:20:30,526 - INFO - 🏷️ [101/279] Gac Gonow
+2025-11-10 00:20:32,798 - INFO - ✅ Gac Gonow: 8 modèles récupérés
+2025-11-10 00:20:32,818 - INFO -    ✅ 8 modèles
+2025-11-10 00:20:36,132 - INFO - 🏷️ [102/279] Galloper
+2025-11-10 00:20:38,309 - INFO - ✅ Galloper: 5 modèles récupérés
+2025-11-10 00:20:38,353 - INFO -    ✅ 5 modèles
+2025-11-10 00:20:41,070 - INFO - 🏷️ [103/279] Gappy
+2025-11-10 00:20:43,192 - INFO - ✅ Gappy: 2 modèles récupérés
+2025-11-10 00:20:43,207 - INFO -    ✅ 2 modèles
+2025-11-10 00:20:47,077 - INFO - 🏷️ [104/279] GAZ
+2025-11-10 00:20:49,430 - INFO - ✅ GAZ: 34 modèles récupérés
+2025-11-10 00:20:49,461 - INFO -    ✅ 34 modèles
+2025-11-10 00:20:52,041 - INFO - 🏷️ [105/279] GEM
+2025-11-10 00:20:54,233 - INFO - ✅ GEM: 9 modèles récupérés
+2025-11-10 00:20:54,281 - INFO -    ✅ 9 modèles
+2025-11-10 00:20:58,118 - INFO - 🏷️ [106/279] GEMBALLA
+2025-11-10 00:21:00,315 - INFO - ✅ GEMBALLA: 9 modèles récupérés
+2025-11-10 00:21:00,353 - INFO -    ✅ 9 modèles
+2025-11-10 00:21:03,049 - INFO - 🏷️ [107/279] Genesis
+2025-11-10 00:21:06,064 - INFO - ✅ Genesis: 9 modèles récupérés
+2025-11-10 00:21:06,107 - INFO -    ✅ 9 modèles
+2025-11-10 00:21:09,084 - INFO - 🏷️ [108/279] Giana
+2025-11-10 00:21:13,995 - INFO - ✅ Giana: 2 modèles récupérés
+2025-11-10 00:21:14,035 - INFO -    ✅ 2 modèles
+2025-11-10 00:21:16,520 - INFO - 🏷️ [109/279] Gillet
+2025-11-10 00:21:18,707 - INFO - ✅ Gillet: 3 modèles récupérés
+2025-11-10 00:21:18,750 - INFO -    ✅ 3 modèles
+2025-11-10 00:21:22,606 - INFO - 🏷️ [110/279] Giotti Victoria
+2025-11-10 00:21:24,738 - INFO - ✅ Giotti Victoria: 3 modèles récupérés
+2025-11-10 00:21:24,778 - INFO -    ✅ 3 modèles
+2025-11-10 00:21:28,458 - INFO - 📊 Progrès: 110/279 marques, 110 avec modèles
+2025-11-10 00:21:28,467 - INFO - 🏷️ [111/279] GMC
+2025-11-10 00:21:30,642 - INFO - ✅ GMC: 13 modèles récupérés
+2025-11-10 00:21:30,680 - INFO -    ✅ 13 modèles
+2025-11-10 00:21:33,517 - INFO - 🏷️ [112/279] Goupil
+2025-11-10 00:21:35,673 - INFO - ✅ Goupil: 5 modèles récupérés
+2025-11-10 00:21:35,691 - INFO -    ✅ 5 modèles
+2025-11-10 00:21:39,212 - INFO - 🏷️ [113/279] Great Wall
+2025-11-10 00:21:41,499 - INFO - ✅ Great Wall: 21 modèles récupérés
+2025-11-10 00:21:41,541 - INFO -    ✅ 21 modèles
+2025-11-10 00:21:44,619 - INFO - 🏷️ [114/279] Grecav
+2025-11-10 00:21:46,741 - INFO - ✅ Grecav: 4 modèles récupérés
+2025-11-10 00:21:46,759 - INFO -    ✅ 4 modèles
+2025-11-10 00:21:51,262 - INFO - 🏷️ [115/279] GTA
+2025-11-10 00:21:53,442 - INFO - ✅ GTA: 2 modèles récupérés
+2025-11-10 00:21:53,463 - INFO -    ✅ 2 modèles
+2025-11-10 00:21:55,707 - INFO - 🏷️ [116/279] GWM
+2025-11-10 00:21:57,837 - INFO - ✅ GWM: 5 modèles récupérés
+2025-11-10 00:21:57,851 - INFO -    ✅ 5 modèles
+2025-11-10 00:22:01,157 - INFO - 🏷️ [117/279] Haima
+2025-11-10 00:22:03,430 - INFO - ✅ Haima: 13 modèles récupérés
+2025-11-10 00:22:03,448 - INFO -    ✅ 13 modèles
+2025-11-10 00:22:06,227 - INFO - 🏷️ [118/279] Hamann
+2025-11-10 00:22:08,538 - INFO - ✅ Hamann: 1 modèles récupérés
+2025-11-10 00:22:08,572 - INFO -    ✅ 1 modèles
+2025-11-10 00:22:11,859 - INFO - 🏷️ [119/279] Haval
+2025-11-10 00:22:14,021 - INFO - ✅ Haval: 4 modèles récupérés
+2025-11-10 00:22:14,037 - INFO -    ✅ 4 modèles
+2025-11-10 00:22:18,030 - INFO - 🏷️ [120/279] Hiphi
+2025-11-10 00:22:20,176 - INFO - ✅ Hiphi: 5 modèles récupérés
+2025-11-10 00:22:20,193 - INFO -    ✅ 5 modèles
+2025-11-10 00:22:22,537 - INFO - 📊 Progrès: 120/279 marques, 120 avec modèles
+2025-11-10 00:22:22,545 - INFO - 🏷️ [121/279] Holden
+2025-11-10 00:22:24,763 - INFO - ✅ Holden: 11 modèles récupérés
+2025-11-10 00:22:24,804 - INFO -    ✅ 11 modèles
+2025-11-10 00:22:28,000 - INFO - 🏷️ [122/279] Honda
+2025-11-10 00:22:30,411 - INFO - ✅ Honda: 45 modèles récupérés
+2025-11-10 00:22:30,431 - INFO -    ✅ 45 modèles
+2025-11-10 00:22:33,738 - INFO - 🏷️ [123/279] Hongqi
+2025-11-10 00:22:35,929 - INFO - ✅ Hongqi: 6 modèles récupérés
+2025-11-10 00:22:35,942 - INFO -    ✅ 6 modèles
+2025-11-10 00:22:39,736 - INFO - 🏷️ [124/279] HUMMER
+2025-11-10 00:22:48,364 - INFO - ✅ HUMMER: 5 modèles récupérés
+2025-11-10 00:22:48,512 - INFO -    ✅ 5 modèles
+2025-11-10 00:22:52,246 - INFO - 🏷️ [125/279] Hurtan
+2025-11-10 00:22:54,474 - INFO - ✅ Hurtan: 7 modèles récupérés
+2025-11-10 00:22:54,498 - INFO -    ✅ 7 modèles
+2025-11-10 00:22:56,579 - INFO - 🏷️ [126/279] Hyundai
+2025-11-10 00:22:59,277 - INFO - ✅ Hyundai: 66 modèles récupérés
+2025-11-10 00:22:59,295 - INFO -    ✅ 66 modèles
+2025-11-10 00:23:01,651 - INFO - 🏷️ [127/279] ICH-X
+2025-11-10 00:23:03,816 - INFO - ✅ ICH-X: 3 modèles récupérés
+2025-11-10 00:23:03,857 - INFO -    ✅ 3 modèles
+2025-11-10 00:23:06,852 - INFO - 🏷️ [128/279] Ineos
+2025-11-10 00:23:09,100 - INFO - ✅ Ineos: 2 modèles récupérés
+2025-11-10 00:23:09,136 - INFO -    ✅ 2 modèles
+2025-11-10 00:23:12,707 - INFO - 🏷️ [129/279] Infiniti
+2025-11-10 00:23:15,078 - INFO - ✅ Infiniti: 27 modèles récupérés
+2025-11-10 00:23:15,125 - INFO -    ✅ 27 modèles
+2025-11-10 00:23:18,234 - INFO - 🏷️ [130/279] Innocenti
+2025-11-10 00:23:20,498 - INFO - ✅ Innocenti: 7 modèles récupérés
+2025-11-10 00:23:21,779 - INFO -    ✅ 7 modèles
+2025-11-10 00:23:25,525 - INFO - 📊 Progrès: 130/279 marques, 130 avec modèles
+2025-11-10 00:23:25,557 - INFO - 🏷️ [131/279] Invicta
+2025-11-10 00:23:33,674 - INFO - ✅ Invicta: 2 modèles récupérés
+2025-11-10 00:23:33,997 - INFO -    ✅ 2 modèles
+2025-11-10 00:23:36,851 - INFO - 🏷️ [132/279] Iso Rivolta
+2025-11-10 00:23:39,079 - INFO - ✅ Iso Rivolta: 6 modèles récupérés
+2025-11-10 00:23:39,141 - INFO -    ✅ 6 modèles
+2025-11-10 00:23:42,437 - INFO - 🏷️ [133/279] Isuzu
+2025-11-10 00:23:44,718 - INFO - ✅ Isuzu: 15 modèles récupérés
+2025-11-10 00:23:44,729 - INFO -    ✅ 15 modèles
+2025-11-10 00:23:46,770 - INFO - 🏷️ [134/279] Iveco
+2025-11-10 00:23:48,953 - INFO - ✅ Iveco: 4 modèles récupérés
+2025-11-10 00:23:48,967 - INFO -    ✅ 4 modèles
+2025-11-10 00:23:51,814 - INFO - 🏷️ [135/279] IZH
+2025-11-10 00:23:54,080 - INFO - ✅ IZH: 12 modèles récupérés
+2025-11-10 00:23:54,097 - INFO -    ✅ 12 modèles
+2025-11-10 00:23:57,380 - INFO - 🏷️ [136/279] JAC
+2025-11-10 00:23:59,656 - INFO - ✅ JAC: 9 modèles récupérés
+2025-11-10 00:23:59,670 - INFO -    ✅ 9 modèles
+2025-11-10 00:24:01,900 - INFO - 🏷️ [137/279] Jaecoo
+2025-11-10 00:24:04,114 - INFO - ✅ Jaecoo: 4 modèles récupérés
+2025-11-10 00:24:04,159 - INFO -    ✅ 4 modèles
+2025-11-10 00:24:06,473 - INFO - 🏷️ [138/279] Jaguar
+2025-11-10 00:24:08,881 - INFO - ✅ Jaguar: 27 modèles récupérés
+2025-11-10 00:24:08,896 - INFO -    ✅ 27 modèles
+2025-11-10 00:24:11,564 - INFO - 🏷️ [139/279] Jeep
+2025-11-10 00:24:13,901 - INFO - ✅ Jeep: 17 modèles récupérés
+2025-11-10 00:24:13,942 - INFO -    ✅ 17 modèles
+2025-11-10 00:24:22,875 - INFO - 🏷️ [140/279] Jensen
+2025-11-10 00:24:25,143 - INFO - ✅ Jensen: 15 modèles récupérés
+2025-11-10 00:24:25,164 - INFO -    ✅ 15 modèles
+2025-11-10 00:24:27,199 - INFO - 📊 Progrès: 140/279 marques, 140 avec modèles
+2025-11-10 00:24:27,204 - INFO - 🏷️ [141/279] Karma
+2025-11-10 00:24:29,407 - INFO - ✅ Karma: 6 modèles récupérés
+2025-11-10 00:24:29,455 - INFO -    ✅ 6 modèles
+2025-11-10 00:24:33,284 - INFO - 🏷️ [142/279] KGM
+2025-11-10 00:24:35,543 - INFO - ✅ KGM: 12 modèles récupérés
+2025-11-10 00:24:35,565 - INFO -    ✅ 12 modèles
+2025-11-10 00:24:38,388 - INFO - 🏷️ [143/279] Kia
+2025-11-10 00:24:40,892 - INFO - ✅ Kia: 45 modèles récupérés
+2025-11-10 00:24:40,941 - INFO -    ✅ 45 modèles
+2025-11-10 00:24:43,729 - INFO - 🏷️ [144/279] Koenigsegg
+2025-11-10 00:24:45,901 - INFO - ✅ Koenigsegg: 6 modèles récupérés
+2025-11-10 00:24:45,912 - INFO -    ✅ 6 modèles
+2025-11-10 00:24:49,762 - INFO - 🏷️ [145/279] KTM
+2025-11-10 00:24:51,944 - INFO - ✅ KTM: 6 modèles récupérés
+2025-11-10 00:24:51,984 - INFO -    ✅ 6 modèles
+2025-11-10 00:24:56,653 - INFO - 🏷️ [146/279] Lada
+2025-11-10 00:24:59,008 - INFO - ✅ Lada: 28 modèles récupérés
+2025-11-10 00:24:59,223 - INFO -    ✅ 28 modèles
+2025-11-10 00:25:03,068 - INFO - 🏷️ [147/279] Lamborghini
+2025-11-10 00:25:06,389 - INFO - ✅ Lamborghini: 21 modèles récupérés
+2025-11-10 00:25:06,883 - INFO -    ✅ 21 modèles
+2025-11-10 00:25:10,272 - INFO - 🏷️ [148/279] Lancia
+2025-11-10 00:25:12,693 - INFO - ✅ Lancia: 26 modèles récupérés
+2025-11-10 00:25:12,735 - INFO -    ✅ 26 modèles
+2025-11-10 00:25:16,068 - INFO - 🏷️ [149/279] Land Rover
+2025-11-10 00:25:18,380 - INFO - ✅ Land Rover: 11 modèles récupérés
+2025-11-10 00:25:18,415 - INFO -    ✅ 11 modèles
+2025-11-10 00:25:21,907 - INFO - 🏷️ [150/279] LDV
+2025-11-10 00:25:24,069 - INFO - ✅ LDV: 3 modèles récupérés
+2025-11-10 00:25:24,100 - INFO -    ✅ 3 modèles
+2025-11-10 00:25:26,609 - INFO - 📊 Progrès: 150/279 marques, 150 avec modèles
+2025-11-10 00:25:26,616 - INFO - 🏷️ [151/279] Leapmotor
+2025-11-10 00:25:28,819 - INFO - ✅ Leapmotor: 4 modèles récupérés
+2025-11-10 00:25:28,862 - INFO -    ✅ 4 modèles
+2025-11-10 00:25:31,083 - INFO - 🏷️ [152/279] LEVC
+2025-11-10 00:25:33,259 - INFO - ✅ LEVC: 3 modèles récupérés
+2025-11-10 00:25:33,277 - INFO -    ✅ 3 modèles
+2025-11-10 00:25:35,322 - INFO - 🏷️ [153/279] Lexus
+2025-11-10 00:25:38,054 - INFO - ✅ Lexus: 75 modèles récupérés
+2025-11-10 00:25:38,084 - INFO -    ✅ 75 modèles
+2025-11-10 00:25:41,564 - INFO - 🏷️ [154/279] Li
+2025-11-10 00:25:43,757 - INFO - ✅ Li: 5 modèles récupérés
+2025-11-10 00:25:43,801 - INFO -    ✅ 5 modèles
+2025-11-10 00:25:46,689 - INFO - 🏷️ [155/279] Lifan
+2025-11-10 00:25:49,091 - INFO - ✅ Lifan: 19 modèles récupérés
+2025-11-10 00:25:52,012 - INFO -    ✅ 19 modèles
+2025-11-10 00:25:54,639 - INFO - 🏷️ [156/279] Ligier
+2025-11-10 00:25:56,960 - INFO - ✅ Ligier: 17 modèles récupérés
+2025-11-10 00:25:56,976 - INFO -    ✅ 17 modèles
+2025-11-10 00:26:00,014 - INFO - 🏷️ [157/279] Lincoln
+2025-11-10 00:26:02,288 - INFO - ✅ Lincoln: 15 modèles récupérés
+2025-11-10 00:26:02,505 - INFO -    ✅ 15 modèles
+2025-11-10 00:26:05,981 - INFO - 🏷️ [158/279] Linzda
+2025-11-10 00:26:08,153 - INFO - ✅ Linzda: 2 modèles récupérés
+2025-11-10 00:26:08,231 - INFO -    ✅ 2 modèles
+2025-11-10 00:26:12,220 - INFO - 🏷️ [159/279] Livan
+2025-11-10 00:26:14,370 - INFO - ✅ Livan: 2 modèles récupérés
+2025-11-10 00:26:14,412 - INFO -    ✅ 2 modèles
+2025-11-10 00:26:17,844 - INFO - 🏷️ [160/279] Lorinser
+2025-11-10 00:26:20,095 - INFO - ✅ Lorinser: 14 modèles récupérés
+2025-11-10 00:26:20,107 - INFO -    ✅ 14 modèles
+2025-11-10 00:26:22,902 - INFO - 📊 Progrès: 160/279 marques, 160 avec modèles
+2025-11-10 00:26:22,915 - INFO - 🏷️ [161/279] Lotus
+2025-11-10 00:26:25,195 - INFO - ✅ Lotus: 22 modèles récupérés
+2025-11-10 00:26:25,213 - INFO -    ✅ 22 modèles
+2025-11-10 00:26:28,341 - INFO - 🏷️ [162/279] Lucid
+2025-11-10 00:26:30,506 - INFO - ✅ Lucid: 2 modèles récupérés
+2025-11-10 00:26:30,522 - INFO -    ✅ 2 modèles
+2025-11-10 00:26:34,217 - INFO - 🏷️ [163/279] Lynk & Co
+2025-11-10 00:26:36,379 - INFO - ✅ Lynk & Co: 4 modèles récupérés
+2025-11-10 00:26:38,449 - INFO -    ✅ 4 modèles
+2025-11-10 00:26:40,990 - INFO - 🏷️ [164/279] M-Ero
+2025-11-10 00:26:45,043 - INFO - ✅ M-Ero: 2 modèles récupérés
+2025-11-10 00:26:45,089 - INFO -    ✅ 2 modèles
+2025-11-10 00:26:48,355 - INFO - 🏷️ [165/279] Mahindra
+2025-11-10 00:26:50,658 - INFO - ✅ Mahindra: 19 modèles récupérés
+2025-11-10 00:26:50,681 - INFO -    ✅ 19 modèles
+2025-11-10 00:26:54,634 - INFO - 🏷️ [166/279] MAN
+2025-11-10 00:26:56,843 - INFO - ✅ MAN: 2 modèles récupérés
+2025-11-10 00:26:56,859 - INFO -    ✅ 2 modèles
+2025-11-10 00:26:59,653 - INFO - 🏷️ [167/279] Mansory
+2025-11-10 00:27:02,270 - INFO - ✅ Mansory: 58 modèles récupérés
+2025-11-10 00:27:02,297 - INFO -    ✅ 58 modèles
+2025-11-10 00:27:04,377 - INFO - 🏷️ [168/279] Martin
+2025-11-10 00:27:06,589 - INFO - ✅ Martin: 3 modèles récupérés
+2025-11-10 00:27:06,636 - INFO -    ✅ 3 modèles
+2025-11-10 00:27:10,502 - INFO - 🏷️ [169/279] Martin Motors
+2025-11-10 00:27:12,757 - INFO - ✅ Martin Motors: 6 modèles récupérés
+2025-11-10 00:27:12,799 - INFO -    ✅ 6 modèles
+2025-11-10 00:27:16,157 - INFO - 🏷️ [170/279] Maserati
+2025-11-10 00:27:18,700 - INFO - ✅ Maserati: 32 modèles récupérés
+2025-11-10 00:27:18,733 - INFO -    ✅ 32 modèles
+2025-11-10 00:27:21,519 - INFO - 📊 Progrès: 170/279 marques, 170 avec modèles
+2025-11-10 00:27:21,526 - INFO - 🏷️ [171/279] Matra
+2025-11-10 00:27:30,356 - INFO - ✅ Matra: 2 modèles récupérés
+2025-11-10 00:27:30,562 - INFO -    ✅ 2 modèles
+2025-11-10 00:27:33,575 - INFO - 🏷️ [172/279] Maxus
+2025-11-10 00:27:35,834 - INFO - ✅ Maxus: 16 modèles récupérés
+2025-11-10 00:27:35,878 - INFO -    ✅ 16 modèles
+2025-11-10 00:27:39,574 - INFO - 🏷️ [173/279] Maybach
+2025-11-10 00:27:41,776 - INFO - ✅ Maybach: 4 modèles récupérés
+2025-11-10 00:27:41,816 - INFO -    ✅ 4 modèles
+2025-11-10 00:27:44,779 - INFO - 🏷️ [174/279] Mazda
+2025-11-10 00:27:47,226 - INFO - ✅ Mazda: 40 modèles récupérés
+2025-11-10 00:27:47,257 - INFO -    ✅ 40 modèles
+2025-11-10 00:27:50,241 - INFO - 🏷️ [175/279] McLaren
+2025-11-10 00:27:52,557 - INFO - ✅ McLaren: 22 modèles récupérés
+2025-11-10 00:27:52,584 - INFO -    ✅ 22 modèles
+2025-11-10 00:27:55,983 - INFO - 🏷️ [176/279] Mega
+2025-11-10 00:27:58,243 - INFO - ✅ Mega: 6 modèles récupérés
+2025-11-10 00:27:59,134 - INFO -    ✅ 6 modèles
+2025-11-10 00:28:02,529 - INFO - 🏷️ [177/279] Melex
+2025-11-10 00:28:05,142 - INFO - ✅ Melex: 55 modèles récupérés
+2025-11-10 00:28:05,178 - INFO -    ✅ 55 modèles
+2025-11-10 00:28:07,185 - INFO - 🏷️ [178/279] Mercury
+2025-11-10 00:28:09,351 - INFO - ✅ Mercury: 4 modèles récupérés
+2025-11-10 00:28:09,394 - INFO -    ✅ 4 modèles
+2025-11-10 00:28:12,892 - INFO - 🏷️ [179/279] MG
+2025-11-10 00:28:16,267 - INFO - ✅ MG: 21 modèles récupérés
+2025-11-10 00:28:16,283 - INFO -    ✅ 21 modèles
+2025-11-10 00:28:19,918 - INFO - 🏷️ [180/279] Micro
+2025-11-10 00:28:22,053 - INFO - ✅ Micro: 2 modèles récupérés
+2025-11-10 00:28:22,070 - INFO -    ✅ 2 modèles
+2025-11-10 00:28:24,263 - INFO - 📊 Progrès: 180/279 marques, 180 avec modèles
+2025-11-10 00:28:24,270 - INFO - 🏷️ [181/279] Microcar
+2025-11-10 00:28:26,523 - INFO - ✅ Microcar: 12 modèles récupérés
+2025-11-10 00:28:26,566 - INFO -    ✅ 12 modèles
+2025-11-10 00:28:29,256 - INFO - 🏷️ [182/279] Militem
+2025-11-10 00:28:31,456 - INFO - ✅ Militem: 6 modèles récupérés
+2025-11-10 00:28:31,473 - INFO -    ✅ 6 modèles
+2025-11-10 00:28:34,725 - INFO - 🏷️ [183/279] Minari
+2025-11-10 00:28:36,917 - INFO - ✅ Minari: 3 modèles récupérés
+2025-11-10 00:28:36,955 - INFO -    ✅ 3 modèles
+2025-11-10 00:28:39,416 - INFO - 🏷️ [184/279] Minauto
+2025-11-10 00:28:41,626 - INFO - ✅ Minauto: 5 modèles récupérés
+2025-11-10 00:28:41,668 - INFO -    ✅ 5 modèles
+2025-11-10 00:28:45,107 - INFO - 🏷️ [185/279] Mitsubishi
+2025-11-10 00:28:47,620 - INFO - ✅ Mitsubishi: 48 modèles récupérés
+2025-11-10 00:28:47,639 - INFO -    ✅ 48 modèles
+2025-11-10 00:28:50,383 - INFO - 🏷️ [186/279] Mitsuoka
+2025-11-10 00:28:52,592 - INFO - ✅ Mitsuoka: 7 modèles récupérés
+2025-11-10 00:28:54,324 - INFO -    ✅ 7 modèles
+2025-11-10 00:28:56,455 - INFO - 🏷️ [187/279] Mobilize
+2025-11-10 00:28:58,594 - INFO - ✅ Mobilize: 2 modèles récupérés
+2025-11-10 00:29:00,062 - INFO -    ✅ 2 modèles
+2025-11-10 00:29:02,863 - INFO - 🏷️ [188/279] Morgan
+2025-11-10 00:29:05,190 - INFO - ✅ Morgan: 19 modèles récupérés
+2025-11-10 00:29:05,229 - INFO -    ✅ 19 modèles
+2025-11-10 00:29:08,091 - INFO - 🏷️ [189/279] Moskvich
+2025-11-10 00:29:10,414 - INFO - ✅ Moskvich: 22 modèles récupérés
+2025-11-10 00:29:10,451 - INFO -    ✅ 22 modèles
+2025-11-10 00:29:13,859 - INFO - 🏷️ [190/279] MP Lafer
+2025-11-10 00:29:16,051 - INFO - ✅ MP Lafer: 2 modèles récupérés
+2025-11-10 00:29:16,079 - INFO -    ✅ 2 modèles
+2025-11-10 00:29:19,144 - INFO - 📊 Progrès: 190/279 marques, 190 avec modèles
+2025-11-10 00:29:19,148 - INFO - 🏷️ [191/279] MPM Motors
+2025-11-10 00:29:21,311 - INFO - ✅ MPM Motors: 3 modèles récupérés
+2025-11-10 00:29:21,357 - INFO -    ✅ 3 modèles
+2025-11-10 00:29:24,144 - INFO - 🏷️ [192/279] NIO
+2025-11-10 00:29:26,390 - INFO - ✅ NIO: 6 modèles récupérés
+2025-11-10 00:29:26,423 - INFO -    ✅ 6 modèles
+2025-11-10 00:29:30,427 - INFO - 🏷️ [193/279] Nissan
+2025-11-10 00:29:33,176 - INFO - ✅ Nissan: 84 modèles récupérés
+2025-11-10 00:29:33,188 - INFO -    ✅ 84 modèles
+2025-11-10 00:29:36,289 - INFO - 🏷️ [194/279] NSU
+2025-11-10 00:29:38,505 - INFO - ✅ NSU: 10 modèles récupérés
+2025-11-10 00:29:43,368 - INFO -    ✅ 10 modèles
+2025-11-10 00:29:46,335 - INFO - 🏷️ [195/279] Oldsmobile
+2025-11-10 00:29:48,568 - INFO - ✅ Oldsmobile: 10 modèles récupérés
+2025-11-10 00:29:48,604 - INFO -    ✅ 10 modèles
+2025-11-10 00:29:51,573 - INFO - 🏷️ [196/279] Oldtimer
+2025-11-10 00:29:55,983 - INFO - ✅ Oldtimer: 277 modèles récupérés
+2025-11-10 00:29:56,001 - INFO -    ✅ 277 modèles
+2025-11-10 00:29:59,569 - INFO - 🏷️ [197/279] Omoda
+2025-11-10 00:30:01,771 - INFO - ✅ Omoda: 3 modèles récupérés
+2025-11-10 00:30:01,809 - INFO -    ✅ 3 modèles
+2025-11-10 00:30:04,317 - INFO - 🏷️ [198/279] Opel
+2025-11-10 00:30:06,871 - INFO - ✅ Opel: 53 modèles récupérés
+2025-11-10 00:30:06,887 - INFO -    ✅ 53 modèles
+2025-11-10 00:30:09,467 - INFO - 🏷️ [199/279] Ora
+2025-11-10 00:30:11,628 - INFO - ✅ Ora: 2 modèles récupérés
+2025-11-10 00:30:11,645 - INFO -    ✅ 2 modèles
+2025-11-10 00:30:15,344 - INFO - 🏷️ [200/279] Pagani
+2025-11-10 00:30:17,730 - INFO - ✅ Pagani: 3 modèles récupérés
+2025-11-10 00:30:17,740 - INFO -    ✅ 3 modèles
+2025-11-10 00:30:20,417 - INFO - 📊 Progrès: 200/279 marques, 200 avec modèles
+2025-11-10 00:30:20,423 - INFO - 🏷️ [201/279] Panther Westwinds
+2025-11-10 00:30:22,656 - INFO - ✅ Panther Westwinds: 7 modèles récupérés
+2025-11-10 00:30:22,669 - INFO -    ✅ 7 modèles
+2025-11-10 00:30:25,681 - INFO - 🏷️ [202/279] PGO
+2025-11-10 00:30:27,934 - INFO - ✅ PGO: 6 modèles récupérés
+2025-11-10 00:30:27,970 - INFO -    ✅ 6 modèles
+2025-11-10 00:30:30,464 - INFO - 🏷️ [203/279] Piaggio
+2025-11-10 00:30:32,667 - INFO - ✅ Piaggio: 7 modèles récupérés
+2025-11-10 00:30:32,677 - INFO -    ✅ 7 modèles
+2025-11-10 00:30:35,983 - INFO - 🏷️ [204/279] Plymouth
+2025-11-10 00:30:38,433 - INFO - ✅ Plymouth: 32 modèles récupérés
+2025-11-10 00:30:38,467 - INFO -    ✅ 32 modèles
+2025-11-10 00:30:42,036 - INFO - 🏷️ [205/279] Polestar
+2025-11-10 00:30:44,182 - INFO - ✅ Polestar: 5 modèles récupérés
+2025-11-10 00:30:44,250 - INFO -    ✅ 5 modèles
+2025-11-10 00:30:46,685 - INFO - 🏷️ [206/279] Pontiac
+2025-11-10 00:30:49,277 - INFO - ✅ Pontiac: 19 modèles récupérés
+2025-11-10 00:30:49,324 - INFO -    ✅ 19 modèles
+2025-11-10 00:30:53,141 - INFO - 🏷️ [207/279] Proton
+2025-11-10 00:30:55,394 - INFO - ✅ Proton: 13 modèles récupérés
+2025-11-10 00:30:55,415 - INFO -    ✅ 13 modèles
+2025-11-10 00:30:59,375 - INFO - 🏷️ [208/279] Puch
+2025-11-10 00:31:01,559 - INFO - ✅ Puch: 4 modèles récupérés
+2025-11-10 00:31:01,609 - INFO -    ✅ 4 modèles
+2025-11-10 00:31:04,619 - INFO - 🏷️ [209/279] RAM
+2025-11-10 00:31:06,775 - INFO - ✅ RAM: 6 modèles récupérés
+2025-11-10 00:31:06,819 - INFO -    ✅ 6 modèles
+2025-11-10 00:31:10,512 - INFO - 🏷️ [210/279] Regis
+2025-11-10 00:31:12,673 - INFO - ✅ Regis: 2 modèles récupérés
+2025-11-10 00:31:12,714 - INFO -    ✅ 2 modèles
+2025-11-10 00:31:17,059 - INFO - 📊 Progrès: 210/279 marques, 210 avec modèles
+2025-11-10 00:31:17,064 - INFO - 🏷️ [211/279] Reliant
+2025-11-10 00:31:19,307 - INFO - ✅ Reliant: 11 modèles récupérés
+2025-11-10 00:31:19,320 - INFO -    ✅ 11 modèles
+2025-11-10 00:31:23,176 - INFO - 🏷️ [212/279] Rivian
+2025-11-10 00:31:25,346 - INFO - ✅ Rivian: 3 modèles récupérés
+2025-11-10 00:31:25,371 - INFO -    ✅ 3 modèles
+2025-11-10 00:31:29,219 - INFO - 🏷️ [213/279] Rolls-Royce
+2025-11-10 00:31:31,599 - INFO - ✅ Rolls-Royce: 30 modèles récupérés
+2025-11-10 00:31:31,613 - INFO -    ✅ 30 modèles
+2025-11-10 00:31:34,357 - INFO - 🏷️ [214/279] Rover
+2025-11-10 00:31:36,813 - INFO - ✅ Rover: 36 modèles récupérés
+2025-11-10 00:31:36,837 - INFO -    ✅ 36 modèles
+2025-11-10 00:31:40,819 - INFO - 🏷️ [215/279] Ruf
+2025-11-10 00:31:43,149 - INFO - ✅ Ruf: 20 modèles récupérés
+2025-11-10 00:31:43,187 - INFO -    ✅ 20 modèles
+2025-11-10 00:31:46,001 - INFO - 🏷️ [216/279] Saab
+2025-11-10 00:31:48,316 - INFO - ✅ Saab: 17 modèles récupérés
+2025-11-10 00:31:48,354 - INFO -    ✅ 17 modèles
+2025-11-10 00:31:52,042 - INFO - 🏷️ [217/279] Santana
+2025-11-10 00:31:54,275 - INFO - ✅ Santana: 12 modèles récupérés
+2025-11-10 00:31:54,288 - INFO -    ✅ 12 modèles
+2025-11-10 00:31:58,249 - INFO - 🏷️ [218/279] SEAT
+2025-11-10 00:32:01,064 - INFO - ✅ SEAT: 22 modèles récupérés
+2025-11-10 00:32:01,086 - INFO -    ✅ 22 modèles
+2025-11-10 00:32:03,418 - INFO - 🏷️ [219/279] Segway
+2025-11-10 00:32:05,589 - INFO - ✅ Segway: 8 modèles récupérés
+2025-11-10 00:32:05,606 - INFO -    ✅ 8 modèles
+2025-11-10 00:32:07,651 - INFO - 🏷️ [220/279] Selvo
+2025-11-10 00:32:09,817 - INFO - ✅ Selvo: 3 modèles récupérés
+2025-11-10 00:32:09,862 - INFO -    ✅ 3 modèles
+2025-11-10 00:32:13,075 - INFO - 📊 Progrès: 220/279 marques, 220 avec modèles
+2025-11-10 00:32:13,079 - INFO - 🏷️ [221/279] Seres
+2025-11-10 00:32:15,403 - INFO - ✅ Seres: 4 modèles récupérés
+2025-11-10 00:32:15,421 - INFO -    ✅ 4 modèles
+2025-11-10 00:32:18,032 - INFO - 🏷️ [222/279] Sevic
+2025-11-10 00:32:20,219 - INFO - ✅ Sevic: 2 modèles récupérés
+2025-11-10 00:32:20,233 - INFO -    ✅ 2 modèles
+2025-11-10 00:32:22,611 - INFO - 🏷️ [223/279] SGS
+2025-11-10 00:32:24,800 - INFO - ✅ SGS: 7 modèles récupérés
+2025-11-10 00:32:24,818 - INFO -    ✅ 7 modèles
+2025-11-10 00:32:27,677 - INFO - 🏷️ [224/279] Shelby
+2025-11-10 00:32:29,914 - INFO - ✅ Shelby: 6 modèles récupérés
+2025-11-10 00:32:29,932 - INFO -    ✅ 6 modèles
+2025-11-10 00:32:32,051 - INFO - 🏷️ [225/279] Shuanghuan
+2025-11-10 00:32:34,224 - INFO - ✅ Shuanghuan: 2 modèles récupérés
+2025-11-10 00:32:34,243 - INFO -    ✅ 2 modèles
+2025-11-10 00:32:36,411 - INFO - 🏷️ [226/279] Silence
+2025-11-10 00:32:38,554 - INFO - ✅ Silence: 1 modèles récupérés
+2025-11-10 00:32:38,571 - INFO -    ✅ 1 modèles
+2025-11-10 00:32:42,206 - INFO - 🏷️ [227/279] Simplici
+2025-11-10 00:32:48,054 - INFO - ✅ Simplici: 2 modèles récupérés
+2025-11-10 00:32:48,288 - INFO -    ✅ 2 modèles
+2025-11-10 00:32:50,507 - INFO - 🏷️ [228/279] Singer
+2025-11-10 00:32:52,737 - INFO - ✅ Singer: 1 modèles récupérés
+2025-11-10 00:32:52,771 - INFO -    ✅ 1 modèles
+2025-11-10 00:32:55,783 - INFO - 🏷️ [229/279] Skoda
+2025-11-10 00:32:58,153 - INFO - ✅ Skoda: 24 modèles récupérés
+2025-11-10 00:32:58,282 - INFO -    ✅ 24 modèles
+2025-11-10 00:33:02,083 - INFO - 🏷️ [230/279] Skywell
+2025-11-10 00:33:04,266 - INFO - ✅ Skywell: 2 modèles récupérés
+2025-11-10 00:33:04,290 - INFO -    ✅ 2 modèles
+2025-11-10 00:33:07,626 - INFO - 📊 Progrès: 230/279 marques, 230 avec modèles
+2025-11-10 00:33:07,676 - INFO - 🏷️ [231/279] smart
+2025-11-10 00:33:09,914 - INFO - ✅ smart: 10 modèles récupérés
+2025-11-10 00:33:09,951 - INFO -    ✅ 10 modèles
+2025-11-10 00:33:13,274 - INFO - 🏷️ [232/279] SpeedArt
+2025-11-10 00:33:15,418 - INFO - ✅ SpeedArt: 1 modèles récupérés
+2025-11-10 00:33:15,433 - INFO -    ✅ 1 modèles
+2025-11-10 00:33:17,937 - INFO - 🏷️ [233/279] Sportequipe
+2025-11-10 00:33:20,162 - INFO - ✅ Sportequipe: 5 modèles récupérés
+2025-11-10 00:33:20,202 - INFO -    ✅ 5 modèles
+2025-11-10 00:33:22,869 - INFO - 🏷️ [234/279] Spyker
+2025-11-10 00:33:25,077 - INFO - ✅ Spyker: 4 modèles récupérés
+2025-11-10 00:33:25,116 - INFO -    ✅ 4 modèles
+2025-11-10 00:33:27,233 - INFO - 🏷️ [235/279] SsangYong
+2025-11-10 00:33:32,693 - INFO - ✅ SsangYong: 12 modèles récupérés
+2025-11-10 00:33:32,704 - INFO -    ✅ 12 modèles
+2025-11-10 00:33:35,810 - INFO - 🏷️ [236/279] Stormborn
+2025-11-10 00:33:37,985 - INFO - ✅ Stormborn: 2 modèles récupérés
+2025-11-10 00:33:38,021 - INFO -    ✅ 2 modèles
+2025-11-10 00:33:41,607 - INFO - 🏷️ [237/279] StreetScooter
+2025-11-10 00:33:43,791 - INFO - ✅ StreetScooter: 3 modèles récupérés
+2025-11-10 00:33:43,814 - INFO -    ✅ 3 modèles
+2025-11-10 00:33:46,028 - INFO - 🏷️ [238/279] Studebaker
+2025-11-10 00:33:48,215 - INFO - ✅ Studebaker: 2 modèles récupérés
+2025-11-10 00:33:48,258 - INFO -    ✅ 2 modèles
+2025-11-10 00:33:51,574 - INFO - 🏷️ [239/279] Subaru
+2025-11-10 00:33:53,980 - INFO - ✅ Subaru: 30 modèles récupérés
+2025-11-10 00:33:54,000 - INFO -    ✅ 30 modèles
+2025-11-10 00:33:56,315 - INFO - 🏷️ [240/279] Suzuki
+2025-11-10 00:33:58,752 - INFO - ✅ Suzuki: 33 modèles récupérés
+2025-11-10 00:33:58,796 - INFO -    ✅ 33 modèles
+2025-11-10 00:34:01,016 - INFO - 📊 Progrès: 240/279 marques, 240 avec modèles
+2025-11-10 00:34:01,022 - INFO - 🏷️ [241/279] SWM
+2025-11-10 00:34:03,232 - INFO - ✅ SWM: 5 modèles récupérés
+2025-11-10 00:34:03,354 - INFO -    ✅ 5 modèles
+2025-11-10 00:34:06,129 - INFO - 🏷️ [242/279] Talbot
+2025-11-10 00:34:14,306 - INFO - ✅ Talbot: 14 modèles récupérés
+2025-11-10 00:34:14,636 - INFO -    ✅ 14 modèles
+2025-11-10 00:34:18,350 - INFO - 🏷️ [243/279] Tasso
+2025-11-10 00:34:20,577 - INFO - ✅ Tasso: 10 modèles récupérés
+2025-11-10 00:34:20,623 - INFO -    ✅ 10 modèles
+2025-11-10 00:34:24,078 - INFO - 🏷️ [244/279] Tata
+2025-11-10 00:34:26,434 - INFO - ✅ Tata: 20 modèles récupérés
+2025-11-10 00:34:26,457 - INFO -    ✅ 20 modèles
+2025-11-10 00:34:29,211 - INFO - 🏷️ [245/279] Tazzari EV
+2025-11-10 00:34:31,472 - INFO - ✅ Tazzari EV: 12 modèles récupérés
+2025-11-10 00:34:31,516 - INFO -    ✅ 12 modèles
+2025-11-10 00:34:34,593 - INFO - 🏷️ [246/279] TECHART
+2025-11-10 00:34:36,716 - INFO - ✅ TECHART: 1 modèles récupérés
+2025-11-10 00:34:36,731 - INFO -    ✅ 1 modèles
+2025-11-10 00:34:40,325 - INFO - 🏷️ [247/279] Tesla
+2025-11-10 00:34:42,541 - INFO - ✅ Tesla: 7 modèles récupérés
+2025-11-10 00:34:42,564 - INFO -    ✅ 7 modèles
+2025-11-10 00:34:46,258 - INFO - 🏷️ [248/279] Tiger
+2025-11-10 00:34:48,451 - INFO - ✅ Tiger: 2 modèles récupérés
+2025-11-10 00:34:48,479 - INFO -    ✅ 2 modèles
+2025-11-10 00:34:50,789 - INFO - 🏷️ [249/279] Togg
+2025-11-10 00:34:52,996 - INFO - ✅ Togg: 2 modèles récupérés
+2025-11-10 00:34:53,013 - INFO -    ✅ 2 modèles
+2025-11-10 00:34:56,588 - INFO - 🏷️ [250/279] Town Life
+2025-11-10 00:35:00,295 - INFO - ✅ Town Life: 3 modèles récupérés
+2025-11-10 00:35:00,338 - INFO -    ✅ 3 modèles
+2025-11-10 00:35:03,870 - INFO - 📊 Progrès: 250/279 marques, 250 avec modèles
+2025-11-10 00:35:03,892 - INFO - 🏷️ [251/279] Trabant
+2025-11-10 00:35:06,128 - INFO - ✅ Trabant: 7 modèles récupérés
+2025-11-10 00:35:06,140 - INFO -    ✅ 7 modèles
+2025-11-10 00:35:08,858 - INFO - 🏷️ [252/279] Trailer-Anhänger
+2025-11-10 00:35:11,060 - INFO - ✅ Trailer-Anhänger: 1 modèles récupérés
+2025-11-10 00:35:11,106 - INFO -    ✅ 1 modèles
+2025-11-10 00:35:14,713 - INFO - 🏷️ [253/279] Triumph
+2025-11-10 00:35:17,011 - INFO - ✅ Triumph: 15 modèles récupérés
+2025-11-10 00:35:17,045 - INFO -    ✅ 15 modèles
+2025-11-10 00:35:20,370 - INFO - 🏷️ [254/279] Trucks-Lkw
+2025-11-10 00:35:22,839 - INFO - ✅ Trucks-Lkw: 37 modèles récupérés
+2025-11-10 00:35:22,882 - INFO -    ✅ 37 modèles
+2025-11-10 00:35:25,630 - INFO - 🏷️ [255/279] TVR
+2025-11-10 00:35:27,939 - INFO - ✅ TVR: 14 modèles récupérés
+2025-11-10 00:35:27,957 - INFO -    ✅ 14 modèles
+2025-11-10 00:35:31,903 - INFO - 🏷️ [256/279] UAZ
+2025-11-10 00:35:34,274 - INFO - ✅ UAZ: 23 modèles récupérés
+2025-11-10 00:35:34,302 - INFO -    ✅ 23 modèles
+2025-11-10 00:35:36,692 - INFO - 🏷️ [257/279] Vanden Plas
+2025-11-10 00:35:38,894 - INFO - ✅ Vanden Plas: 3 modèles récupérés
+2025-11-10 00:35:38,911 - INFO -    ✅ 3 modèles
+2025-11-10 00:35:42,247 - INFO - 🏷️ [258/279] Vanderhall
+2025-11-10 00:35:45,566 - INFO - ✅ Vanderhall: 8 modèles récupérés
+2025-11-10 00:35:45,609 - INFO -    ✅ 8 modèles
+2025-11-10 00:35:47,692 - INFO - 🏷️ [259/279] VAZ
+2025-11-10 00:35:51,358 - INFO - ✅ VAZ: 83 modèles récupérés
+2025-11-10 00:35:51,386 - INFO -    ✅ 83 modèles
+2025-11-10 00:35:55,273 - INFO - 🏷️ [260/279] VEM
+2025-11-10 00:35:57,485 - INFO - ✅ VEM: 8 modèles récupérés
+2025-11-10 00:35:57,504 - INFO -    ✅ 8 modèles
+2025-11-10 00:35:59,919 - INFO - 📊 Progrès: 260/279 marques, 260 avec modèles
+2025-11-10 00:35:59,938 - INFO - 🏷️ [261/279] VinFast
+2025-11-10 00:36:02,179 - INFO - ✅ VinFast: 5 modèles récupérés
+2025-11-10 00:36:02,208 - INFO -    ✅ 5 modèles
+2025-11-10 00:36:05,874 - INFO - 🏷️ [262/279] Volvo
+2025-11-10 00:36:08,460 - INFO - ✅ Volvo: 54 modèles récupérés
+2025-11-10 00:36:08,478 - INFO -    ✅ 54 modèles
+2025-11-10 00:36:12,408 - INFO - 🏷️ [263/279] Voyah
+2025-11-10 00:36:14,610 - INFO - ✅ Voyah: 5 modèles récupérés
+2025-11-10 00:36:14,646 - INFO -    ✅ 5 modèles
+2025-11-10 00:36:18,425 - INFO - 🏷️ [264/279] Wartburg
+2025-11-10 00:36:22,301 - INFO - ✅ Wartburg: 12 modèles récupérés
+2025-11-10 00:36:22,327 - INFO -    ✅ 12 modèles
+2025-11-10 00:36:24,993 - INFO - 🏷️ [265/279] Weltmeister
+2025-11-10 00:36:30,265 - INFO - ✅ Weltmeister: 4 modèles récupérés
+2025-11-10 00:36:31,017 - INFO -    ✅ 4 modèles
+2025-11-10 00:36:34,076 - INFO - 🏷️ [266/279] Wenckstern
+2025-11-10 00:36:36,300 - INFO - ✅ Wenckstern: 4 modèles récupérés
+2025-11-10 00:36:36,343 - INFO -    ✅ 4 modèles
+2025-11-10 00:36:40,308 - INFO - 🏷️ [267/279] Westfield
+2025-11-10 00:36:42,627 - INFO - ✅ Westfield: 15 modèles récupérés
+2025-11-10 00:36:42,650 - INFO -    ✅ 15 modèles
+2025-11-10 00:36:45,932 - INFO - 🏷️ [268/279] Wey
+2025-11-10 00:36:48,170 - INFO - ✅ Wey: 3 modèles récupérés
+2025-11-10 00:36:48,186 - INFO -    ✅ 3 modèles
+2025-11-10 00:36:51,910 - INFO - 🏷️ [269/279] Wiesmann
+2025-11-10 00:36:54,089 - INFO - ✅ Wiesmann: 7 modèles récupérés
+2025-11-10 00:36:54,120 - INFO -    ✅ 7 modèles
+2025-11-10 00:36:57,789 - INFO - 🏷️ [270/279] XBus
+2025-11-10 00:36:59,978 - INFO - ✅ XBus: 2 modèles récupérés
+2025-11-10 00:37:00,008 - INFO -    ✅ 2 modèles
+2025-11-10 00:37:02,946 - INFO - 📊 Progrès: 270/279 marques, 270 avec modèles
+2025-11-10 00:37:02,971 - INFO - 🏷️ [271/279] XEV
+2025-11-10 00:37:05,176 - INFO - ✅ XEV: 3 modèles récupérés
+2025-11-10 00:37:05,187 - INFO -    ✅ 3 modèles
+2025-11-10 00:37:09,176 - INFO - 🏷️ [272/279] Xiaomi
+2025-11-10 00:37:11,337 - INFO - ✅ Xiaomi: 2 modèles récupérés
+2025-11-10 00:37:18,924 - INFO -    ✅ 2 modèles
+2025-11-10 00:37:22,654 - INFO - 🏷️ [273/279] Xpeng
+2025-11-10 00:37:24,819 - INFO - ✅ Xpeng: 6 modèles récupérés
+2025-11-10 00:37:24,839 - INFO -    ✅ 6 modèles
+2025-11-10 00:37:27,438 - INFO - 🏷️ [274/279] Zastava
+2025-11-10 00:37:29,710 - INFO - ✅ Zastava: 15 modèles récupérés
+2025-11-10 00:37:29,756 - INFO -    ✅ 15 modèles
+2025-11-10 00:37:33,459 - INFO - 🏷️ [275/279] ZAZ
+2025-11-10 00:37:35,701 - INFO - ✅ ZAZ: 9 modèles récupérés
+2025-11-10 00:37:35,745 - INFO -    ✅ 9 modèles
+2025-11-10 00:37:37,786 - INFO - 🏷️ [276/279] Zeekr
+2025-11-10 00:37:40,053 - INFO - ✅ Zeekr: 3 modèles récupérés
+2025-11-10 00:37:40,098 - INFO -    ✅ 3 modèles
+2025-11-10 00:37:43,696 - INFO - 🏷️ [277/279] Zhidou
+2025-11-10 00:37:45,951 - INFO - ✅ Zhidou: 5 modèles récupérés
+2025-11-10 00:37:45,988 - INFO -    ✅ 5 modèles
+2025-11-10 00:37:48,469 - INFO - 🏷️ [278/279] Zotye
+2025-11-10 00:37:50,684 - INFO - ✅ Zotye: 11 modèles récupérés
+2025-11-10 00:37:50,701 - INFO -    ✅ 11 modèles
+2025-11-10 00:37:54,197 - INFO - 🏷️ [279/279] Autres
+2025-11-10 00:37:57,182 - INFO - ✅ Autres: 95 modèles récupérés
+2025-11-10 00:38:02,223 - INFO -    ✅ 95 modèles
+2025-11-10 00:38:05,230 - INFO - 🎉 Scraping terminé! 279 marques traitées
+2025-11-10 00:38:05,595 - INFO - 📝 Fichier Markdown généré: data\as24_scraped_models_20251110_003805.md
+2025-11-10 00:38:05,602 - INFO - 💾 Résultats sauvegardés:
+2025-11-10 00:38:05,636 - INFO -    📄 JSON: data/as24_scraped_models_20251110_003805.json
+2025-11-10 00:38:05,652 - INFO -    📝 MD: data\as24_scraped_models_20251110_003805.md
+2025-11-10 00:38:05,702 - INFO - ℹ️ Première exécution - aucun rapport de versioning
+2025-11-10 00:38:06,251 - INFO - 📝 Historique mis à jour: docs\execution_history.md
+2025-11-10 00:38:06,259 - INFO - 📊 RÉSUMÉ FINAL:
+2025-11-10 00:38:06,300 - INFO -    • Marques traitées: 279
+2025-11-10 00:38:06,307 - INFO -    • Marques avec modèles: 279
+2025-11-10 00:38:06,315 - INFO -    • Total modèles: 4905
+2025-11-10 00:38:06,323 - INFO - 🎉 SUCCESS! Fichier généré: data/as24_scraped_models_20251110_003805.json
+2025-11-10 00:38:06,357 - INFO - 📝 Historique disponible: docs/execution_history.md
+2025-11-10 00:38:08,614 - INFO - 🔒 Driver fermé
+2025-11-10 16:13:13,495 - INFO - 🚀 AutoScout24 Scraper Autonome - Version 3.3 avec Historique et Markdown
+2025-11-10 16:13:13,541 - INFO -    • Mode: Complet
+2025-11-10 16:13:13,545 - INFO -    • Headless: True
+2025-11-10 16:13:13,550 - INFO -    • Marques max: Toutes
+2025-11-10 16:13:13,557 - INFO -    • 🚀 Extraction automatique des marques si nécessaire
+2025-11-10 16:13:13,562 - INFO -    • 📊 Rapport de versioning automatique
+2025-11-10 16:13:13,570 - INFO -    • 📝 Historique Markdown automatique
+2025-11-10 16:13:15,400 - INFO - ⏹️ Interruption par l'utilisateur
