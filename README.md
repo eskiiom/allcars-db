@@ -44,6 +44,20 @@ python consolidate_brands_models.py
 # - data/consolidated_brands_models.md (pour humains)
 ```
 
+### **🔄 ORCHESTRATION PRINCIPALE (NOUVEAU!)**
+```bash
+# Script d'orchestration principal - GESTION COMPLÈTE
+python update_all.py
+
+# Menu interactif avec 6 options:
+# 0. [DÉFAUT] 🔄 Mettre à jour TOUS + Consolider (PARALLÈLE)
+# 1. 🇪🇺 AutoScout24 UNIQUEMENT (marché EU)
+# 2. 🇺🇸 CarGurus UNIQUEMENT (marché US)
+# 3. 🔄 Les 2 sources SANS consolidation
+# 4. 🔗 Consolider UNIQUEMENT
+# 9. 📊 Afficher stats stockées + Quitter
+```
+
 ## 🌍 **NOUVELLE ARCHITECTURE GLOBALE v4.0**
 
 ### **1. ✅ AutoScout24 (Europe) - 280+ Marques**
@@ -88,6 +102,7 @@ python consolidate_brands_models.py
 ├── 🚀 autoscout24_scraper.py        # Script principal EU (v3.3+)
 ├── 🚀 car_gurus_scraper.py          # Script principal US (v1.0)
 ├── 🔗 consolidate_brands_models.py  # Consolidation multi-sources
+├── 🔄 update_all.py                 # ⭐ Script d'orchestration principal
 ├── 📄 generate_brands_md.py         # Générateur Markdown marques
 ├── 📄 test_dependencies.py          # Test des dépendances
 ├── 📄 README.md                     # Documentation

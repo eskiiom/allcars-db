@@ -30,7 +30,7 @@ def load_data_sources():
             'data': as24_data,
             'brands_models': as24_data.get('brands_models', {})
         }
-        print(f"✅ Loaded AS24 data from: {latest_as24}")
+        print(f"Loaded AS24 data from: {latest_as24}")
     
     # Load CarGurus data if available
     cguru_files = list(data_dir.glob("*cargurus*scraped_models*.json"))
@@ -45,7 +45,7 @@ def load_data_sources():
             'data': cguru_data,
             'brands_models': cguru_data.get('brands_models', {})
         }
-        print(f"✅ Loaded CarGurus data from: {latest_cguru}")
+        print(f"Loaded CarGurus data from: {latest_cguru}")
     
     return data_sources
 
@@ -239,8 +239,8 @@ def generate_markdown_output(consolidated_data, stats, data_sources):
 
 def main():
     """Main consolidation process."""
-    print("🚀 Starting Brand/Model Consolidation...")
-    print("📌 Method: Additive only (no deletions)")
+    print("Starting Brand/Model Consolidation...")
+    print("Method: Additive only (no deletions)")
     print()
     
     # Load all data sources
