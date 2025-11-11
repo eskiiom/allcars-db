@@ -67,7 +67,7 @@ def consolidate_brands_models(data_sources):
     for source_name, source_info in data_sources.items():
         all_brands.update(source_info['brands_models'].keys())
     
-    print(f"🔍 Processing {len(all_brands)} unique brands...")
+    print(f"Processing {len(all_brands)} unique brands...")
     
     for brand in sorted(all_brands):
         brand_info = {
@@ -130,7 +130,7 @@ def save_json_output(consolidated_data, stats, data_sources):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
     
-    print(f"💾 JSON output saved: {output_file}")
+    print(f"JSON output saved: {output_file}")
     return str(output_file)
 
 def generate_markdown_output(consolidated_data, stats, data_sources):
@@ -247,10 +247,10 @@ def main():
     data_sources = load_data_sources()
     
     if not data_sources:
-        print("❌ No data sources found! Please run AS24 or CarGurus scrapers first.")
+        print("ERROR: No data sources found! Please run AS24 or CarGurus scrapers first.")
         sys.exit(1)
     
-    print(f"📊 Found {len(data_sources)} data sources")
+    print(f"Found {len(data_sources)} data sources")
     print()
     
     # Consolidate data
@@ -262,17 +262,17 @@ def main():
     
     # Final summary
     print()
-    print("🎉 CONSOLIDATION COMPLETE!")
-    print(f"✅ Total brands: {stats['total_brands']}")
-    print(f"✅ Total models: {stats['total_models']}")
-    print(f"✅ AS24 only: {stats['brands_only_as24']} brands")
-    print(f"✅ CarGurus only: {stats['brands_only_cguru']} brands")
-    print(f"✅ Both sources: {stats['brands_both']} brands")
+    print("CONSOLIDATION COMPLETE!")
+    print(f"Total brands: {stats['total_brands']}")
+    print(f"Total models: {stats['total_models']}")
+    print(f"AS24 only: {stats['brands_only_as24']} brands")
+    print(f"CarGurus only: {stats['brands_only_cguru']} brands")
+    print(f"Both sources: {stats['brands_both']} brands")
     print()
-    print(f"📄 JSON: {json_file}")
-    print(f"📝 MD: {md_file}")
+    print(f"JSON: {json_file}")
+    print(f"MD: {md_file}")
     print()
-    print("💡 Next steps:")
+    print("Next steps:")
     print("   1. Review the Markdown file for accuracy")
     print("   2. Use JSON file for programmatic access")
     print("   3. Re-run after new scrapes to add data")
