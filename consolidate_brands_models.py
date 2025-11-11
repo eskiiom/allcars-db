@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Brand/Model Consolidation Script
-Consolidates automotive brands and models from AS24 and CarGurus sources
+Brand/Model Consolidation Script v2.0
+Consolidates automotive brands and models from AS24, CarGurus, and Auto-Data sources
 Supports incremental addition only - no deletions allowed
 Outputs both JSON (for scripts) and Markdown (for humans)
 """
@@ -47,6 +47,21 @@ def load_data_sources():
         }
         print(f"Loaded CarGurus data from: {latest_cguru}")
     
+    # Load Auto-Data data if available
+    autodata_files = list(data_dir.glob("*as24_autodata*scraped_models*.json"))
+    if autodata_files:
+        # Get the most recent Auto-Data file
+        autodata_files.sort()
+        latest_autodata = autodata_files[-1]
+        with open(latest_autodata, 'r', encoding='utf-8') as f:
+            autodata_data = json.load(f)
+        data_sources['Auto-Data'] = {
+            'file': str(latest_autodata),
+            'data': autodata_data,
+            'brands_models': autodata_data.get('brands_models', {})
+        }
+        print(f"Loaded Auto-Data data from: {latest_autodata}")
+    
     return data_sources
 
 def consolidate_brands_models(data_sources):
@@ -57,7 +72,9 @@ def consolidate_brands_models(data_sources):
         'total_models': 0,
         'brands_only_as24': 0,
         'brands_only_cguru': 0,
+        'brands_only_autodata': 0,
         'brands_both': 0,
+        'brands_all_three': 0,
         'new_models_added': 0,
         'unique_combinations': 0
     }
@@ -104,9 +121,16 @@ def consolidate_brands_models(data_sources):
                 stats['brands_only_as24'] += 1
             elif 'CarGurus' in brand_info['sources']:
                 stats['brands_only_cguru'] += 1
+            elif 'Auto-Data' in brand_info['sources']:
+                stats['brands_only_autodata'] += 1
         elif len(brand_info['sources']) == 2:
             stats['brands_both'] += 1
             # Count new models that appear in both sources
+            for model in brand_info['models']:
+                stats['unique_combinations'] += 1
+        elif len(brand_info['sources']) == 3:
+            stats['brands_all_three'] += 1
+            # Count new models that appear in all three sources
             for model in brand_info['models']:
                 stats['unique_combinations'] += 1
     
@@ -117,10 +141,10 @@ def save_json_output(consolidated_data, stats, data_sources):
     output_data = {
         'metadata': {
             'consolidated_at': datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
-            'consolidation_version': 'v1.0',
+            'consolidation_version': 'v2.0',
             'data_sources': data_sources,
             'statistics': stats,
-            'description': 'Consolidated automotive brands and models from AS24 and CarGurus - ADDITIVE ONLY'
+            'description': 'Consolidated automotive brands and models from AS24, CarGurus, and Auto-Data - ADDITIVE ONLY'
         },
         'consolidated_brands_models': consolidated_data,
         'brands_list': sorted(consolidated_data.keys())
@@ -135,24 +159,26 @@ def save_json_output(consolidated_data, stats, data_sources):
 
 def generate_markdown_output(consolidated_data, stats, data_sources):
     """Generate readable Markdown output."""
-    md_content = f"""# 🚗 Consolidated Automotive Brands & Models
+    md_content = f"""# Consolidated Automotive Brands & Models (3 Sources)
 
-**Consolidation Date** : {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}  
-**Version** : v1.0  
-**Method** : Additive consolidation (no deletions)  
+**Consolidation Date** : {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+**Version** : v2.0
+**Method** : Additive consolidation (no deletions)
 
-## 📊 Global Statistics
+## Global Statistics
 
-- **📋 Total Brands** : {stats['total_brands']}
-- **🏷️ Total Models** : {stats['total_models']}
-- **🌍 Unique Combinations** : {stats['unique_combinations']}
+- **Total Brands** : {stats['total_brands']}
+- **Total Models** : {stats['total_models']}
+- **Unique Combinations** : {stats['unique_combinations']}
 
-### Brand Distribution
+### Brand Distribution (3 Sources)
 - **AS24 Only** : {stats['brands_only_as24']} brands
-- **CarGurus Only** : {stats['brands_only_cguru']} brands  
-- **Both Sources** : {stats['brands_both']} brands
+- **CarGurus Only** : {stats['brands_only_cguru']} brands
+- **Auto-Data Only** : {stats['brands_only_autodata']} brands
+- **2 Sources** : {stats['brands_both']} brands
+- **All 3 Sources** : {stats['brands_all_three']} brands
 
-## 📋 Data Sources
+## Data Sources
 
 """
     
@@ -162,7 +188,7 @@ def generate_markdown_output(consolidated_data, stats, data_sources):
         md_content += f"- **Brands Count** : {len(source_info['brands_models'])}\n"
         md_content += f"- **Total Models** : {sum(len(models) for models in source_info['brands_models'].values())}\n\n"
     
-    md_content += """## 📋 Complete Brand List
+    md_content += """## Complete Brand List
 
 | Brand | Sources | Model Count | First 3 Models |
 |-------|---------|-------------|----------------|
@@ -181,7 +207,7 @@ def generate_markdown_output(consolidated_data, stats, data_sources):
     
     md_content += f"""
 
-## 📈 Analysis
+## Analysis
 
 ### Top 20 Brands by Model Count
 
@@ -195,28 +221,43 @@ def generate_markdown_output(consolidated_data, stats, data_sources):
     
     md_content += f"""
 
-### Brands Available in Both Sources
+### Multi-Source Brand Analysis
 
 """
     
-    # Brands available in both sources
+    # All three sources
+    all_three = [(name, info) for name, info in consolidated_data.items() if len(info['sources']) == 3]
+    all_three.sort(key=lambda x: x[1]['model_count'], reverse=True)
+    
+    # Two sources
     both_sources = [(name, info) for name, info in consolidated_data.items() if len(info['sources']) == 2]
     both_sources.sort(key=lambda x: x[1]['model_count'], reverse=True)
     
-    md_content += "| Brand | AS24 Models | CarGurus Models | Total Models |\n"
-    md_content += "|-------|-------------|-----------------|-------------|\n"
+    if all_three:
+        md_content += "#### Brands Available in ALL THREE Sources\n\n"
+        md_content += "| Brand | Total Models | Sources |\n"
+        md_content += "|-------|-------------|----------|\n"
+        
+        for brand_name, brand_info in all_three:
+            total_count = brand_info['model_count']
+            sources_str = " + ".join(brand_info['sources'])
+            md_content += f"| {brand_name} | {total_count} | {sources_str} |\n"
+        
+        md_content += "\n"
     
-    for brand_name, brand_info in both_sources:
-        # Count models per source (approximate)
-        # Note: This is a simplified calculation
-        as24_count = len([m for m in brand_info['models']])  # Simplified for now
-        cguru_count = len([m for m in brand_info['models']])  # Simplified for now
-        total_count = brand_info['model_count']
-        md_content += f"| {brand_name} | ~{as24_count} | ~{cguru_count} | {total_count} |\n"
+    if both_sources:
+        md_content += "#### Brands Available in TWO Sources\n\n"
+        md_content += "| Brand | Total Models | Sources |\n"
+        md_content += "|-------|-------------|----------|\n"
+        
+        for brand_name, brand_info in both_sources:
+            total_count = brand_info['model_count']
+            sources_str = " + ".join(brand_info['sources'])
+            md_content += f"| {brand_name} | {total_count} | {sources_str} |\n"
     
     md_content += f"""
 
-## 🔄 Usage Instructions
+## Usage Instructions
 
 1. **For Scripts** : Use `data/consolidated_brands_models.json`
 2. **For Humans** : This Markdown file for browsing
@@ -225,16 +266,16 @@ def generate_markdown_output(consolidated_data, stats, data_sources):
 
 ---
 
-**Generated by** : Brand/Model Consolidation Script v1.0  
-**Data Sources** : AutoScout24 (EU) + CarGurus (US)  
-**Last Updated** : {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}  
+**Generated by** : Brand/Model Consolidation Script v2.0
+**Data Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG)
+**Last Updated** : {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
 """
     
     output_file = Path("data/consolidated_brands_models.md")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(md_content)
     
-    print(f"📝 Markdown output saved: {output_file}")
+    print(f"MD - Markdown output saved: {output_file}")
     return str(output_file)
 
 def main():
@@ -247,7 +288,7 @@ def main():
     data_sources = load_data_sources()
     
     if not data_sources:
-        print("ERROR: No data sources found! Please run AS24 or CarGurus scrapers first.")
+        print("ERROR: No data sources found! Please run AS24, CarGurus, or Auto-Data scrapers first.")
         sys.exit(1)
     
     print(f"Found {len(data_sources)} data sources")
@@ -267,7 +308,9 @@ def main():
     print(f"Total models: {stats['total_models']}")
     print(f"AS24 only: {stats['brands_only_as24']} brands")
     print(f"CarGurus only: {stats['brands_only_cguru']} brands")
-    print(f"Both sources: {stats['brands_both']} brands")
+    print(f"Auto-Data only: {stats['brands_only_autodata']} brands")
+    print(f"2 sources: {stats['brands_both']} brands")
+    print(f"All 3 sources: {stats['brands_all_three']} brands")
     print()
     print(f"JSON: {json_file}")
     print(f"MD: {md_file}")

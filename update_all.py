@@ -24,8 +24,8 @@ class AutoScoutOrchestrator:
     def display_banner(self):
         """Display the main banner."""
         print("🚗" * 20)
-        print("🔄 AUTOMOBILE DATA UPDATE SYSTEM v4.0")
-        print("🌍 EU + US Markets | AutoScout24 + CarGurus")
+        print("🔄 AUTOMOBILE DATA UPDATE SYSTEM v5.0")
+        print("🌍 EU + US Markets | AutoScout24 + CarGurus + Auto-Data")
         print("📊 Consolidation & Analysis")
         print("🚗" * 20)
         print()
@@ -36,8 +36,12 @@ class AutoScoutOrchestrator:
         print("   0. [Default] 🔄 Update ALL sources + Consolidate (PARALLEL)")
         print("   1. 🇪🇺 Update AutoScout24 ONLY (EU market)")
         print("   2. 🇺🇸 Update CarGurus ONLY (US market)")
-        print("   3. 🔄 Update BOTH sources (NO consolidation)")
-        print("   4. 🔗 Consolidate data ONLY")
+        print("   3. 🇧🇬 Update Auto-Data ONLY (Technical specs)")
+        print("   4. 🔄 Update AS24 + CarGurus (NO auto-data)")
+        print("   5. 🔄 Update AS24 + Auto-Data (NO car-gurus)")
+        print("   6. 🔄 Update CarGurus + Auto-Data (NO as24)")
+        print("   7. 🔄 Update ALL THREE sources (NO consolidation)")
+        print("   8. 🔗 Consolidate data ONLY")
         print("   9. 📊 Show stored statistics + Quit")
         print()
     
@@ -109,6 +113,13 @@ class AutoScoutOrchestrator:
         return self.run_scraper(
             'car_gurus_scraper.py',
             '🇺🇸 CarGurus (US Market)'
+        )
+    
+    def run_auto_data_only(self):
+        """Run only Auto-Data scraper."""
+        return self.run_scraper(
+            'autodata_scraper.py',
+            '🇧🇬 Auto-Data (Technical Specs)'
         )
     
     def run_parallel_scraper(self, script_name, source_name, source_emoji):
@@ -194,11 +205,11 @@ class AutoScoutOrchestrator:
                 os.remove(progress_file)
     
     def run_parallel_update(self):
-        """Run both scrapers in parallel, then consolidate."""
-        print("🚀 Starting PARALLEL UPDATE (both sources)...")
+        """Run all three scrapers in parallel, then consolidate."""
+        print("🚀 Starting PARALLEL UPDATE (all three sources)...")
         
-        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-            # Submit both scraper jobs
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            # Submit all three scraper jobs
             future_as24 = executor.submit(
                 self.run_parallel_scraper,
                 'autoscout24_scraper.py',
@@ -211,34 +222,42 @@ class AutoScoutOrchestrator:
                 'CarGurus (US Market)',
                 '🇺🇸'
             )
+            future_autodata = executor.submit(
+                self.run_parallel_scraper,
+                'autodata_scraper.py',
+                'Auto-Data (Technical Specs)',
+                '🇧🇬'
+            )
             
-            print("⚡ Running AS24 and CarGurus in parallel...")
+            print("⚡ Running AS24, CarGurus, and Auto-Data in parallel...")
             print("⏳ Processing... (progress will be shown at the end)")
             
-            # Wait for both to complete
+            # Wait for all three to complete
             as24_result = future_as24.result()
             cguru_result = future_cguru.result()
+            autodata_result = future_autodata.result()
         
         # Store results
         self.results = {
             'as24': as24_result,
-            'cguru': cguru_result
+            'cguru': cguru_result,
+            'autodata': autodata_result
         }
         
         # Show completion summary
-        if as24_result['success'] and cguru_result['success']:
-            print("✅ Both scrapers completed successfully!")
+        if as24_result['success'] and cguru_result['success'] and autodata_result['success']:
+            print("✅ All three scrapers completed successfully!")
             print("🔄 Starting consolidation...")
             consolidation_result = self.run_consolidation()
             self.results['consolidation'] = consolidation_result
             return True
         else:
-            print("❌ One or both scrapers failed!")
+            print("❌ One or more scrapers failed!")
             return False
     
     def run_both_no_consolidation(self):
-        """Run both scrapers without consolidation."""
-        print("🚀 Starting PARALLEL UPDATE (no consolidation)...")
+        """Run AS24 and CarGurus without consolidation (old method for backward compatibility)."""
+        print("🚀 Starting AS24 + CarGurus update (no consolidation)...")
         
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
             future_as24 = executor.submit(self.run_as24_only)
@@ -255,6 +274,69 @@ class AutoScoutOrchestrator:
         }
         
         return as24_result['success'] and cguru_result['success']
+    
+    def run_as24_autodata_no_consolidation(self):
+        """Run AS24 and Auto-Data without consolidation."""
+        print("🚀 Starting AS24 + Auto-Data update (no consolidation)...")
+        
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+            future_as24 = executor.submit(self.run_as24_only)
+            future_autodata = executor.submit(self.run_auto_data_only)
+            
+            print("⚡ Running AS24 and Auto-Data in parallel...")
+            
+            as24_result = future_as24.result()
+            autodata_result = future_autodata.result()
+        
+        self.results = {
+            'as24': as24_result,
+            'autodata': autodata_result
+        }
+        
+        return as24_result['success'] and autodata_result['success']
+    
+    def run_cguru_autodata_no_consolidation(self):
+        """Run CarGurus and Auto-Data without consolidation."""
+        print("🚀 Starting CarGurus + Auto-Data update (no consolidation)...")
+        
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+            future_cguru = executor.submit(self.run_cguru_only)
+            future_autodata = executor.submit(self.run_auto_data_only)
+            
+            print("⚡ Running CarGurus and Auto-Data in parallel...")
+            
+            cguru_result = future_cguru.result()
+            autodata_result = future_autodata.result()
+        
+        self.results = {
+            'cguru': cguru_result,
+            'autodata': autodata_result
+        }
+        
+        return cguru_result['success'] and autodata_result['success']
+    
+    def run_all_three_no_consolidation(self):
+        """Run all three scrapers without consolidation."""
+        print("🚀 Starting ALL THREE sources update (no consolidation)...")
+        
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            future_as24 = executor.submit(self.run_as24_only)
+            future_cguru = executor.submit(self.run_cguru_only)
+            future_autodata = executor.submit(self.run_auto_data_only)
+            
+            print("⚡ Running AS24, CarGurus, and Auto-Data in parallel...")
+            
+            as24_result = future_as24.result()
+            cguru_result = future_cguru.result()
+            autodata_result = future_autodata.result()
+        
+        self.results = {
+            'as24': as24_result,
+            'cguru': cguru_result,
+            'autodata': autodata_result
+        }
+        
+        return as24_result['success'] and cguru_result['success'] and autodata_result['success']
     
     def show_statistics(self):
         """Display stored statistics from consolidated data."""
@@ -307,6 +389,12 @@ class AutoScoutOrchestrator:
         if cguru_files:
             latest_cguru = max(cguru_files, key=lambda x: x.stat().st_mtime)
             print(f"🇺🇸 Latest CarGurus: {latest_cguru.name}")
+        
+        # Show recent Auto-Data files
+        autodata_files = list(data_dir.glob("as24_autodata_scraped_models_*.json"))
+        if autodata_files:
+            latest_autodata = max(autodata_files, key=lambda x: x.stat().st_mtime)
+            print(f"🇧🇬 Latest Auto-Data: {latest_autodata.name}")
         
         print("=" * 50)
     
@@ -362,11 +450,32 @@ class AutoScoutOrchestrator:
                     success = result['success']
                     
                 elif choice == "3":
-                    print("\n🔄 Starting BOTH sources update (no consolidation)...")
+                    print("\n🇧🇬 Starting Auto-Data ONLY update...")
+                    self.start_time = time.time()
+                    result = self.run_auto_data_only()
+                    success = result['success']
+                    
+                elif choice == "4":
+                    print("\n🔄 Starting AS24 + CarGurus update (no auto-data)...")
                     self.start_time = time.time()
                     success = self.run_both_no_consolidation()
                     
-                elif choice == "4":
+                elif choice == "5":
+                    print("\n🔄 Starting AS24 + Auto-Data update (no car-gurus)...")
+                    self.start_time = time.time()
+                    success = self.run_as24_autodata_no_consolidation()
+                    
+                elif choice == "6":
+                    print("\n🔄 Starting CarGurus + Auto-Data update (no as24)...")
+                    self.start_time = time.time()
+                    success = self.run_cguru_autodata_no_consolidation()
+                    
+                elif choice == "7":
+                    print("\n🔄 Starting ALL THREE sources update (no consolidation)...")
+                    self.start_time = time.time()
+                    success = self.run_all_three_no_consolidation()
+                    
+                elif choice == "8":
                     print("\n🔗 Starting CONSOLIDATION ONLY...")
                     self.start_time = time.time()
                     result = self.run_consolidation()
@@ -378,7 +487,7 @@ class AutoScoutOrchestrator:
                     return
                     
                 else:
-                    print("❌ Invalid option! Please choose 0-4 or 9.")
+                    print("❌ Invalid option! Please choose 0-9.")
                     continue
                 
                 # Display summary if we had results
