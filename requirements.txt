@@ -6,3 +6,6 @@ selenium==4.15.2
 
 # WebDriver management (RECOMMENDED - pour simplifier l'installation)
 webdriver-manager==4.0.1
+
+# Data analysis for technical specifications (REQUIRED for technical scraper)
+pandas==2.1.4

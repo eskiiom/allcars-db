@@ -49,6 +49,24 @@ python autodata_scraper.py --max-brands 50
 python autodata_scraper.py --no-headless
 ```
 
+### **🏗️ Auto-Data Technical Specifications (Base Données Véhicule)**
+```bash
+# Scraping marques populaires (Toyota, BMW, Audi, etc.) - RECOMMANDÉ
+python autodata_technical_scraper.py --popular-brands
+
+# Scraper une marque spécifique
+python autodata_technical_scraper.py --brand "BMW"
+
+# Test rapide du scraper (BMW - 5 modèles)
+python test_autodata_technical.py
+
+# Analyser les données techniques
+python analyze_technical_data.py
+
+# Orchestrateur technique complet
+python technical_orchestrator.py
+```
+
 ### **Consolidation Multi-Sources**
 ```bash
 # Consolider les marques et modèles de tous les scrapers (v2.0 - 3 sources)
@@ -103,7 +121,16 @@ python update_all.py
 - **Log** : `logs/autodata_scraper.log`
 - **Performance** : ~10 minutes pour scraping complet
 
-### **4. 🆕 Consolidation Multi-Sources v2.0**
+### **4. 🏗️ Auto-Data Technical Specifications (Nouvelle Base)**
+- **Spécifications techniques complètes** (moteur, performance, dimensions)
+- **Base de données** pour site de suivi de dépenses véhicule
+- **Marques prioritaires** : Toyota, BMW, Audi, VW, Ford, etc.
+- **Données extraites** : Puissance, couple, 0-100 km/h, consommation, dimensions
+- **Script** : `autodata_technical_scraper.py`
+- **Performance** : Variable selon nombre de modèles par marque
+- **Format de sortie** : JSON (intégration site) + CSV (analyse)
+
+### **5. 🆕 Consolidation Multi-Sources v2.0**
 - **Fusion intelligente** des marques et modèles EU + US + BG
 - **Approche additive uniquement** - aucune suppression
 - **Sorties JSON + Markdown** pour différents usages
@@ -136,6 +163,10 @@ python update_all.py
 ├── 🚀 autoscout24_scraper.py        # Script principal EU (v3.3+)
 ├── 🚀 car_gurus_scraper.py          # Script principal US (v1.0)
 ├── 🚀 autodata_scraper.py           # Script principal BG (v1.0)
+├── 🏗️ autodata_technical_scraper.py # Spécifications techniques (v1.0)
+├── 🧪 test_autodata_technical.py    # Tests scraper technique
+├── 📊 analyze_technical_data.py     # Analyseur données + web-ready
+├── 🔧 technical_orchestrator.py     # Orchestrateur technique (v1.0)
 ├── 🔗 consolidate_brands_models.py  # Consolidation multi-sources (v2.0)
 ├── 🔄 update_all.py                 # ⭐ Orchestrateur principal (v5.0)
 ├── 📄 generate_brands_md.py         # Générateur Markdown marques
@@ -143,6 +174,8 @@ python update_all.py
 ├── 📄 README.md                     # Documentation
 ├── 📄 requirements.txt              # Dépendances
 ├── 📄 .gitignore                    # Git ignore
+├── 📁 docs/                         # Documentation technique
+│   └── autodata_web_integration_guide.md # Guide intégration web
 ├── 📁 logs/                         # Logs des scripts
 │   ├── as24_scraper.log            # Log AutoScout24
 │   ├── cguru_scraper.log           # Log CarGurus
