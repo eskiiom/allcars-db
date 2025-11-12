@@ -391,7 +391,7 @@ class AutoScoutOrchestrator:
             print(f"🇺🇸 Latest CarGurus: {latest_cguru.name}")
         
         # Show recent Auto-Data files
-        autodata_files = list(data_dir.glob("as24_autodata_scraped_models_*.json"))
+        autodata_files = list(data_dir.glob("autodata_scraped_models_*.json"))
         if autodata_files:
             latest_autodata = max(autodata_files, key=lambda x: x.stat().st_mtime)
             print(f"🇧🇬 Latest Auto-Data: {latest_autodata.name}")

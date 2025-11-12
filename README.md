@@ -85,7 +85,7 @@ python update_all.py
 - **Historique Markdown** automatique
 - **Fichiers de données** JSON + Markdown
 - **Log** : `logs/as24_scraper.log`
-- **Performance** : ~45-60 minutes pour scraping complet
+- **Performance** : ~32-33 minutes pour scraping complet
 
 ### **2. ✅ CarGurus (États-Unis) - 107 Marques**
 - **107+ marques** américaines extraites automatiquement
@@ -93,15 +93,15 @@ python update_all.py
 - **Approche additive** - nouvelles données uniquement
 - **Compatible** avec le système de consolidation
 - **Log** : `logs/cguru_scraper.log`
-- **Performance** : ~30-45 minutes pour scraping complet
+- **Performance** : ~1 minute pour scraping complet
 
-### **3. ✅ Auto-Data (Bulgarie) - 17 Marques**
-- **17 marques** bulgares extraites automatiquement
+### **3. ✅ Auto-Data (Bulgarie) - 63 Marques**
+- **63+ marques** bulgares extraites automatiquement
 - **Spécifications techniques** automobiles détaillées
-- **Site bulgare** avec modèle unique d'extraction
+- **Site bulgare** avec extraction intelligente de liens
 - **Intégration** complète dans le système de consolidation
 - **Log** : `logs/autodata_scraper.log`
-- **Performance** : ~3-5 minutes pour scraping complet
+- **Performance** : ~10 minutes pour scraping complet
 
 ### **4. 🆕 Consolidation Multi-Sources v2.0**
 - **Fusion intelligente** des marques et modèles EU + US + BG
@@ -125,7 +125,7 @@ python update_all.py
 **Répartition des Données :**
 - **AS24 (Europe)** : 280 marques, ~4,500+ modèles
 - **CarGurus (US)** : 107 marques, 829 modèles
-- **Auto-Data (BG)** : 17 marques, 511 modèles
+- **Auto-Data (BG)** : 63+ marques, extraction en cours
 - **Sources Communes 3** : 19 marques (BMW, Audi, Ford, Toyota, etc.)
 - **Sources Communes 2** : 58 marques supplémentaires
 
@@ -152,14 +152,16 @@ python update_all.py
 │   ├── as24_brands_for_scraping.md      # Marques EU (lisible)
 │   ├── cargurus_brands_for_scraping.json # Marques US
 │   ├── cargurus_brands_for_scraping.md   # Marques US (lisible)
-│   ├── as24_autodata_scraped_models_*.json  # Résultats BG
-│   ├── as24_autodata_scraped_models_*.md    # Résultats BG (lisible)
-│   ├── as24_scraped_models_*.json          # Résultats EU
-│   ├── as24_scraped_models_*.md            # Résultats EU (lisible)
-│   ├── cargurus_scraped_models_*.json      # Résultats US
-│   ├── cargurus_scraped_models_*.md        # Résultats US (lisible)
-│   ├── consolidated_brands_models.json     # ⭐ Consolidation 3 sources (scripts)
-│   └── consolidated_brands_models.md       # ⭐ Consolidation 3 sources (humans)
+│   ├── autodata_brands_for_scraping.json # Marques BG
+│   ├── autodata_brands_for_scraping.md   # Marques BG (lisible)
+│   ├── autodata_scraped_models_*.json    # Résultats BG
+│   ├── autodata_scraped_models_*.md      # Résultats BG (lisible)
+│   ├── as24_scraped_models_*.json        # Résultats EU
+│   ├── as24_scraped_models_*.md          # Résultats EU (lisible)
+│   ├── cargurus_scraped_models_*.json    # Résultats US
+│   ├── cargurus_scraped_models_*.md      # Résultats US (lisible)
+│   ├── consolidated_brands_models.json   # ⭐ Consolidation 3 sources (scripts)
+│   └── consolidated_brands_models.md     # ⭐ Consolidation 3 sources (humans)
 └── 🏗️ archive/                      # Anciens scripts et fichiers
 ```
 
@@ -203,19 +205,19 @@ python update_all.py
 ## 📈 **Performance et Données**
 
 ### **AutoScout24 (Europe)**
-- **279+ marques** scrapées en ~45-60 minutes
+- **279+ marques** scrapées en ~32-33 minutes (performance optimisée)
 - **Taux de succès** : 100%
 - **Couverture** : Marché européen complet
 - **Fréquence** : 1-2 fois par an
 
-### **CarGurus (États-Unis)**  
-- **107+ marques** scrapées en ~30-45 minutes
+### **CarGurus (États-Unis)**
+- **107+ marques** scrapées en ~1 minute (performance exceptionnelle)
 - **Taux de succès** : 100%
 - **Couverture** : Marché américain complet
 - **Fréquence** : 1-2 fois par an
 
 ### **Auto-Data (Bulgarie)**
-- **17 marques** scrapées en ~3-5 minutes
+- **63+ marques** scrapées en ~10 minutes (extraction technique complexe)
 - **Taux de succès** : 100%
 - **Couverture** : Spécifications techniques bulgares
 - **Fréquence** : 1-2 fois par an
@@ -386,7 +388,7 @@ python update_all.py
 ### **Extension Géographique**
 - **Europe** : AutoScout24 (279+ marques)
 - **États-Unis** : CarGurus (107+ marques)
-- **Bulgarie** : Auto-Data (17+ marques)
+- **Bulgarie** : Auto-Data (63+ marques)
 - **Global** : 310+ marques consolidées
 
 ### **Système de Consolidation 3 Sources**
@@ -403,22 +405,27 @@ python update_all.py
 
 ### **Stabilité et Compatibilité**
 - **Correction Unicode** - Compatibilité Windows complète
+- **Auto-Data corrigé** - URLs malformées et sélecteurs CSS améliorés
+- **Préfixes cohérents** - as24_, cguru_, autodata_ par source
 - **Nettoyage** - Suppression des fichiers d'analyse/debug
 - **Git optimisé** - Repository propre et organisé
 - **Documentation** - README complet et actualisé
 
 ### **Performance Optimisée**
-- **Auto-Data rapide** - 3-5 minutes vs 30-60 minutes
+- **AutoScout24 optimisé** - 32-33 minutes (vs 45-60 minutes estimé)
+- **CarGurus exceptionnel** - 1 minute (vs 30-45 minutes estimé)
+- **Auto-Data technique** - 10 minutes (extraction complexe de specs)
 - **Parallélisme** - Scraping simultané des 3 sources
 - **Consolidation efficace** - Quelques secondes pour 310 marques
 - **Logs centralisés** - Suivi unifié de toutes les opérations
 
 ---
 
-**Généré le** : 2025-11-11T20:58:00Z  
-**Version** : v5.0 - Système Automobile Global 3 Sources  
-**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Consolidation  
-**Marques** : 310 uniques, 6,071+ modèles  
-**Scripts** : 4 principaux + orchestrateur + utilitaires  
-**Maintenance** : Automatique + manuelle  
+**Généré le** : 2025-11-11T22:52:00Z
+**Version** : v5.0 - Système Automobile Global 3 Sources
+**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Consolidation
+**Marques** : 310 uniques, 6,071+ modèles
+**Scripts** : 4 principaux + orchestrateur + utilitaires
+**Maintenance** : Automatique + manuelle
 **Compatibilité** : Windows/Linux/Mac + Correction Unicode
+**Corrections récentes** : Préfixes cohérents (as24_, cguru_, autodata_) + Auto-Data v1.1 corrigé

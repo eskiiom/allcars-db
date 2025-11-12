@@ -49,6 +49,7 @@ class AutoDataScraper:
         self.brand_models_data = {}
         self.setup_driver(headless)
         self.brand_mapping = self.get_brand_mapping()
+        self.load_brands_from_json()
         
     def setup_driver(self, headless=True):
         """Configure le driver Selenium avec des options optimisées."""
@@ -73,6 +74,138 @@ class AutoDataScraper:
         except Exception as e:
             logger.error(f"❌ Erreur configuration driver: {e}")
             raise
+    
+    def load_brands_from_json(self):
+        """Charge ou extrait la liste des marques depuis le fichier JSON."""
+        try:
+            brands_file = Path("data/autodata_brands_for_scraping.json")
+            if brands_file.exists():
+                with open(brands_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    self.brand_mapping = data["brands"]
+                logger.info(f"📋 Chargé {len(self.brand_mapping)} marques depuis autodata_brands_for_scraping.json")
+                return True
+            else:
+                logger.warning("⚠️ Fichier autodata_brands_for_scraping.json non trouvé")
+                logger.info("🔄 Extraction automatique des marques depuis Auto-Data...")
+                if self.extract_brands_from_autodata():
+                    # Recharger après extraction
+                    with open(brands_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                        self.brand_mapping = data["brands"]
+                    logger.info(f"✅ Extraction réussie: {len(self.brand_mapping)} marques")
+                    return True
+                else:
+                    logger.error("❌ Impossible d'extraire les marques")
+                    self.brand_mapping = self.get_brand_mapping()  # Fallback
+                    return False
+                
+        except Exception as e:
+            logger.error(f"❌ Erreur lors du chargement des marques: {e}")
+            self.brand_mapping = self.get_brand_mapping()  # Fallback
+            return False
+    
+    def extract_brands_from_autodata(self):
+        """Extrait automatiquement les marques depuis Auto-Data.net."""
+        try:
+            logger.info("🔍 Extraction des marques depuis Auto-Data.net...")
+            
+            # Naviguer vers la page des marques
+            brand_url = f"{self.full_base_url}/"
+            logger.info(f"🌐 Navigation vers: {brand_url}")
+            self.driver.get(brand_url)
+            
+            # Attendre que la page se charge
+            WebDriverWait(self.driver, 20).until(
+                EC.presence_of_element_located((By.TAG_NAME, "body"))
+            )
+            time.sleep(3)
+            
+            brands_data = {}
+            
+            # Chercher les liens vers les marques
+            brand_selectors = [
+                "a[href*='-brand-']",
+                "[href*='car-brands']",
+                ".brand-list a"
+            ]
+            
+            for selector in brand_selectors:
+                try:
+                    elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                    if elements:
+                        logger.debug(f"🔍 Trouvé {len(elements)} éléments avec sélecteur: {selector}")
+                        
+                        for element in elements:
+                            try:
+                                href = element.get_attribute("href")
+                                text = element.text.strip()
+                                
+                                # Extraire le slug et l'ID de la marque depuis l'URL
+                                if href and "-brand-" in href:
+                                    match = re.search(r'/([^-/]+)-brand-(\d+)', href)
+                                    if match:
+                                        brand_slug = match.group(1)
+                                        brand_id = match.group(2)
+                                        
+                                        # Utiliser le texte comme nom si disponible
+                                        if text:
+                                            brand_name = text
+                                        else:
+                                            brand_name = brand_slug.replace('-', ' ').title()
+                                        
+                                        # Nettoyer le slug de la marque (cas spéciaux)
+                                        clean_slug = brand_slug
+                                        if brand_slug == "alpine":
+                                            clean_slug = "alpine"  # Alpina utilise "alpine" pas "alpina"
+                                        
+                                        brands_data[brand_name] = {
+                                            "name": brand_name,
+                                            "slug": clean_slug,
+                                            "id": brand_id
+                                        }
+                            except Exception:
+                                continue
+                        
+                        if brands_data:  # Si on a trouvé des marques, on s'arrête
+                            break
+                            
+                except Exception as e:
+                    logger.debug(f"Sélecteur {selector} a échoué: {e}")
+                    continue
+            
+            if not brands_data:
+                logger.warning("⚠️ Aucune marque trouvée, utilisation du mapping hardcodé")
+                # Fallback vers le mapping hardcodé (format dict)
+                hardcoded = self.get_brand_mapping()
+                self.brand_mapping = hardcoded  # Garder le format dict pour compatibilité
+            else:
+                # Convertir en format attendu
+                self.brand_mapping = list(brands_data.values())
+            
+            # Sauvegarder le fichier brands_for_scraping.json
+            output_data = {
+                "metadata": {
+                    "extracted_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "source": "Auto-Data.net Auto Extraction",
+                    "method": "link_extraction_from_brand_pages",
+                    "total_brands": len(self.brand_mapping)
+                },
+                "brands": self.brand_mapping
+            }
+
+            brands_file = Path("data/autodata_brands_for_scraping.json")
+            brands_file.parent.mkdir(parents=True, exist_ok=True)
+            with open(brands_file, 'w', encoding='utf-8') as f:
+                json.dump(output_data, f, indent=2, ensure_ascii=False)
+
+            logger.info(f"💾 Fichier autodata_brands_for_scraping.json créé: {len(self.brand_mapping)} marques")
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Erreur lors de l'extraction des marques: {e}")
+            return False
     
     def get_brand_mapping(self):
         """Mapping des marques avec leurs IDs basé sur l'exploration."""
@@ -103,7 +236,23 @@ class AutoDataScraper:
     def extract_model_links_from_brand_page(self, brand_slug, brand_name):
         """Extrait les liens vers les modèles d'une page de marque."""
         try:
-            brand_url = f"{self.full_base_url}/{brand_slug}-brand-{self.brand_mapping[brand_slug]['id']}"
+            # Obtenir l'ID de la marque en gérant les deux formats
+            if isinstance(self.brand_mapping, dict):
+                # Format hardcodé
+                brand_id = self.brand_mapping[brand_slug]['id']
+            else:
+                # Format extrait dynamiquement
+                brand_id = None
+                for brand in self.brand_mapping:
+                    if brand.get('slug') == brand_slug:
+                        brand_id = brand.get('id')
+                        break
+                
+                if not brand_id:
+                    logger.error(f"❌ Marque {brand_slug} non trouvée dans le mapping")
+                    return []
+            
+            brand_url = f"{self.base_url}{self.language}/{brand_slug}-brand-{brand_id}"
             logger.info(f"🌐 Extracting models from: {brand_url}")
             
             self.driver.get(brand_url)
@@ -120,8 +269,13 @@ class AutoDataScraper:
             # Pattern principal: Liens avec "model" dans l'URL
             model_link_selectors = [
                 "a[href*='model']",
+                "a[href*='data']",
                 "[class*='model'] a",
-                ".model-list a"
+                ".model-list a",
+                "tr td a",  # Dans les tableaux
+                ".car-model a",  # Classes spécifiques Auto-Data
+                "td:first-child a",  # Liens dans première colonne
+                ".tab-content a[href*='model']"  # Onglets de contenu
             ]
             
             for selector in model_link_selectors:
@@ -204,12 +358,12 @@ class AutoDataScraper:
         try:
             if not output_file:
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                output_file = f"data/as24_autodata_scraped_models_{timestamp}.json"
+                output_file = f"data/autodata_scraped_models_{timestamp}.json"
             
             result_data = {
                 "metadata": {
                     "scraped_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "scraper_version": "autodata_scraper_v1.0",
+                    "scraper_version": "autodata_scraper_v1.1",
                     "source": "Auto-Data.net",
                     "method": "link_extraction_from_brand_pages",
                     "url_pattern": "/bg/{brand-name}-brand-{brand-id}",
@@ -217,7 +371,7 @@ class AutoDataScraper:
                     "total_models": sum(len(models) for models in self.brand_models_data.values()),
                     "brands_with_models": len([b for b, models in self.brand_models_data.items() if models]),
                     "brands_without_models": len([b for b, models in self.brand_models_data.items() if not models]),
-                    "file_prefix": "as24_",
+                    "file_prefix": "autodata_",
                     "integration_ready": True
                 },
                 "brands_models": self.brand_models_data
@@ -237,7 +391,7 @@ class AutoDataScraper:
             logger.info(f"   • Marques traitées: {len(self.brand_models_data)}")
             logger.info(f"   • Marques avec modèles: {brands_with_models}")
             logger.info(f"   • Total modèles: {total_models}")
-            logger.info(f"   • Fichier as24_: {Path(output_file).name}")
+            logger.info(f"   • Fichier autodata_: {Path(output_file).name}")
             
             return output_file
             
@@ -248,13 +402,20 @@ class AutoDataScraper:
     def scrape_all_brands(self, max_brands=None):
         """Scrape toutes les marques."""
         try:
-            brands_to_process = list(self.brand_mapping.items())[:max_brands] if max_brands else list(self.brand_mapping.items())
-            logger.info(f"🚀 Début du scraping Auto-Data pour {len(brands_to_process)} marques")
+            # Gérer les différents formats possibles du brand_mapping
+            if isinstance(self.brand_mapping, dict):
+                # Format hardcodé (dict avec slug -> info)
+                brands_items = list(self.brand_mapping.items())[:max_brands] if max_brands else list(self.brand_mapping.items())
+            else:
+                # Format extrait dynamiquement (liste de dicts)
+                brands_items = [(b["slug"], b) for b in (self.brand_mapping[:max_brands] if max_brands else self.brand_mapping)]
             
-            for i, (brand_slug, brand_info) in enumerate(brands_to_process, 1):
+            logger.info(f"🚀 Début du scraping Auto-Data pour {len(brands_items)} marques")
+            
+            for i, (brand_slug, brand_info) in enumerate(brands_items, 1):
                 brand_name = brand_info["name"]
                 
-                logger.info(f"🏷️ [{i}/{len(brands_to_process)}] {brand_name}")
+                logger.info(f"🏷️ [{i}/{len(brands_items)}] {brand_name}")
                 
                 try:
                     models = self.scrape_brand_models(brand_slug, brand_name)
@@ -275,7 +436,7 @@ class AutoDataScraper:
                 # Afficher le progrès
                 if i % 5 == 0:
                     brands_with_models = len([b for b, models in self.brand_models_data.items() if models])
-                    logger.info(f"📊 Progrès: {i}/{len(brands_to_process)} marques, {brands_with_models} avec modèles")
+                    logger.info(f"📊 Progrès: {i}/{len(brands_items)} marques, {brands_with_models} avec modèles")
             
             logger.info(f"🎉 Scraping Auto-Data terminé! {len(self.brand_models_data)} marques traitées")
             return True
@@ -326,7 +487,7 @@ Ce scraper génère des fichiers avec préfixe as24_ pour identification dans le
     logger.info(f"   • Marques max: {max_brands or 'Toutes'}")
     logger.info(f"   • Source: Auto-Data.net (intégrée)")
     logger.info(f"   • Pattern: /bg/{{brand-name}}-brand-{{brand-id}}")
-    logger.info(f"   • Préfixe fichiers: as24_")
+    logger.info(f"   • Préfixe fichiers: autodata_")
     
     try:
         scraper = AutoDataScraper(headless=args.headless)

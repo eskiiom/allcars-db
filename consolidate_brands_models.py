@@ -48,7 +48,7 @@ def load_data_sources():
         print(f"Loaded CarGurus data from: {latest_cguru}")
     
     # Load Auto-Data data if available
-    autodata_files = list(data_dir.glob("*as24_autodata*scraped_models*.json"))
+    autodata_files = list(data_dir.glob("*autodata*scraped_models*.json"))
     if autodata_files:
         # Get the most recent Auto-Data file
         autodata_files.sort()
