@@ -1,6 +1,12 @@
-# 🚗 AutoScout24 + CarGurus + Auto-Data - Système Automobile Global
+TLDR; 
+📅 Last Update: 2025-11-13T23:58:30Z
+🌍 Data Sources: 4
+📋 Total Brands: 1739
+🏷️ Total Models: 8239
 
-Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)** et **Auto-Data.net (Bulgarie)** avec **extraction automatique des marques**, **spécifications techniques réelles**, **consolidation multi-sources** et **enrichissement technique intelligent**.
+# 🚗 AutoScout24 + CarGurus + Auto-Data + Carfolio - Système Automobile Global
+
+Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)** et **Auto-Data.net (Bulgarie)** et **Carfolio (global)** avec **extraction automatique des marques**, **spécifications techniques réelles**, **consolidation multi-sources** et **enrichissement technique intelligent**.
 
 ## 🎯 **Scripts Principaux**
 
