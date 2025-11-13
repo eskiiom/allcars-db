@@ -305,10 +305,10 @@ class CarGurusScraper:
             total_models = result_data["metadata"]["total_models"]
             brands_with_models = result_data["metadata"]["brands_with_models"]
             
-            logger.info("📊 FINAL SUMMARY:")
-            logger.info(f"   • Brands processed: {len(self.brand_models_data)}")
-            logger.info(f"   • Brands with models: {brands_with_models}")
-            logger.info(f"   • Total models: {total_models}")
+            logger.info("📊 RÉSUMÉ CARGURUS:")
+            logger.info(f"   • Marques traitées: {len(self.brand_models_data)}")
+            logger.info(f"   • Marques avec modèles: {brands_with_models}")
+            logger.info(f"   • Total modèles: {total_models}")
             
             return output_file
             
