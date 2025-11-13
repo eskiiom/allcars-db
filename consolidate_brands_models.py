@@ -33,7 +33,7 @@ def load_data_sources():
         print(f"Loaded AS24 data from: {latest_as24}")
 
     # Load CarGurus data if available
-    cguru_files = list(data_dir.glob("*cguru*scraped_models*.json"))
+    cguru_files = list(data_dir.glob("*cargurus*scraped_models*.json"))
     if cguru_files:
         # Get the most recent CarGurus file
         cguru_files.sort()
