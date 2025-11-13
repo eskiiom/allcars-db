@@ -651,15 +651,35 @@ def main():
     try:
         scraper = AutonomousTechnicalScraper()
 
-        # Utiliser des données de démonstration ou charger depuis un fichier
+        # Utiliser les données consolidées réelles
         try:
-            # Essayer de charger des données réelles
-            with open("data/consolidated_brands_models_with_prices.json", 'r', encoding='utf-8') as f:
+            # Charger les données consolidées réelles
+            with open("data/consolidated_brands_models.json", 'r', encoding='utf-8') as f:
                 real_data = json.load(f)
-                brand_models_data = real_data["brands_models"]
-                logger.info(f"Données réelles chargées: {len(brand_models_data)} marques")
-        except:
-            # Utiliser des données de démonstration
+                consolidated_data = real_data["consolidated_brands_models"]
+                logger.info(f"Données consolidées chargées: {len(consolidated_data)} marques")
+                
+                # Convertir vers le format attendu par le scraper
+                brand_models_data = {}
+                for brand_name, brand_data in consolidated_data.items():
+                    if isinstance(brand_data, dict) and "models" in brand_data:
+                        # Structure consolidée: {"models": [...], "model_count": n, "sources": [...]}
+                        models_list = brand_data["models"]
+                        brand_models_data[brand_name] = {}
+                        for model in models_list:
+                            brand_models_data[brand_name][model] = {"basic": {"fuel_type": "unknown"}}
+                    else:
+                        # Structure simple: liste de modèles
+                        models_list = brand_data if isinstance(brand_data, list) else []
+                        brand_models_data[brand_name] = {}
+                        for model in models_list:
+                            brand_models_data[brand_name][model] = {"basic": {"fuel_type": "unknown"}}
+                
+                logger.info(f"Formaté pour scraping: {len(brand_models_data)} marques avec modèles")
+                
+        except Exception as e:
+            logger.error(f"Erreur chargement données consolidées: {e}")
+            # Utiliser des données de démonstration en cas d'erreur
             brand_models_data = scraper.create_demo_data()
             logger.info("Utilisation de données de démonstration")
 

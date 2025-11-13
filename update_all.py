@@ -360,7 +360,9 @@ class AutoScoutOrchestrator:
                 print(f"🏷️ Total Models: {stats.get('total_models', 'N/A')}")
                 print(f"🇪🇺 AS24 Only: {stats.get('brands_only_as24', 'N/A')}")
                 print(f"🇺🇸 CarGurus Only: {stats.get('brands_only_cguru', 'N/A')}")
-                print(f"🔄 Both Sources: {stats.get('brands_both', 'N/A')}")
+                print(f"🇧🇬 Auto-Data Only: {stats.get('brands_only_autodata', 'N/A')}")
+                print(f"🔄 2 Sources: {stats.get('brands_both', 'N/A')}")
+                print(f"🌍 All 3 Sources: {stats.get('brands_all_three', 'N/A')}")
                 
                 # Show data sources details
                 data_sources = metadata.get('data_sources', {})

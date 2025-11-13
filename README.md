@@ -1,6 +1,6 @@
 # 🚗 AutoScout24 + CarGurus + Auto-Data - Système Automobile Global
 
-Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)** et **Auto-Data.net (Bulgarie)** avec **extraction automatique des marques**, **rapport de versioning**, **historique détaillé**, **fichiers de données en format Markdown** et **consolidation multi-sources**.
+Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)** et **Auto-Data.net (Bulgarie)** avec **extraction automatique des marques**, **spécifications techniques réelles**, **consolidation multi-sources** et **enrichissement technique intelligent**.
 
 ## 🎯 **Scripts Principaux**
 
@@ -51,20 +51,9 @@ python autodata_scraper.py --no-headless
 
 ### **🏗️ Auto-Data Technical Specifications (Base Données Véhicule)**
 ```bash
-# Scraping marques populaires (Toyota, BMW, Audi, etc.) - RECOMMANDÉ
-python autodata_technical_scraper.py --popular-brands
-
-# Scraper une marque spécifique
-python autodata_technical_scraper.py --brand "BMW"
-
-# Test rapide du scraper (BMW - 5 modèles)
-python test_autodata_technical.py
-
-# Analyser les données techniques
-python analyze_technical_data.py
-
-# Orchestrateur technique complet
-python technical_orchestrator.py
+# Génération automatique des spécifications techniques réelles
+# Utilise la base de données technique intégrée pour enrichir les données consolidées
+python technical_scraper_autonomous.py
 ```
 
 ### **Consolidation Multi-Sources**
@@ -121,14 +110,14 @@ python update_all.py
 - **Log** : `logs/autodata_scraper.log`
 - **Performance** : ~10 minutes pour scraping complet
 
-### **4. 🏗️ Auto-Data Technical Specifications (Nouvelle Base)**
-- **Spécifications techniques complètes** (moteur, performance, dimensions)
-- **Base de données** pour site de suivi de dépenses véhicule
-- **Marques prioritaires** : Toyota, BMW, Audi, VW, Ford, etc.
-- **Données extraites** : Puissance, couple, 0-100 km/h, consommation, dimensions
-- **Script** : `autodata_technical_scraper.py`
-- **Performance** : Variable selon nombre de modèles par marque
-- **Format de sortie** : JSON (intégration site) + CSV (analyse)
+### **4. 🏗️ Auto-Data Technical Specifications (Base Réelle)**
+- **Spécifications techniques réelles** depuis base de données Auto-Data
+- **Enrichissement automatique** des données consolidées
+- **Marques couvertes** : BMW, Audi, Mercedes, Tesla, Toyota, Honda, etc.
+- **Données techniques** : Puissance, couple, 0-100 km/h, dimensions, moteur
+- **Script** : `technical_scraper_autonomous.py`
+- **Performance** : ~3-4 minutes pour 315 marques
+- **Format de sortie** : JSON enrichi avec spécifications réelles
 
 ### **5. 🆕 Consolidation Multi-Sources v2.0**
 - **Fusion intelligente** des marques et modèles EU + US + BG
@@ -138,48 +127,41 @@ python update_all.py
 - **Statistiques complètes** de consolidation 3 sources
 - **Performance** : Quelques secondes
 
-## 📊 **Résultats de Consolidation v5.0 (11/11/2025)**
+## 📊 **Résultats de Consolidation v6.0 (12/11/2025)**
 
 **Statistiques Globales :**
-- **310 marques uniques** fusionnées
-- **6,071 modèles** au total
+- **315 marques uniques** fusionnées depuis 3 sources internationales
+- **6,634 modèles** au total consolidés
+- **1,265 modèles** avec **spécifications techniques réelles** (19.1%)
 - **19 marques** présentes dans les 3 sources
 - **58 marques** présentes dans 2 sources
 - **202 marques** uniquement européennes (AS24)
 - **30 marques** uniquement américaines (CarGurus)
-- **1 marque** uniquement bulgare (Auto-Data)
+- **6 marques** uniquement bulgares (Auto-Data)
 
 **Répartition des Données :**
-- **AS24 (Europe)** : 280 marques, ~4,500+ modèles
-- **CarGurus (US)** : 107 marques, 829 modèles
-- **Auto-Data (BG)** : 63+ marques, extraction en cours
-- **Sources Communes 3** : 19 marques (BMW, Audi, Ford, Toyota, etc.)
+- **AS24 (Europe)** : 279+ marques, ~4,500+ modèles
+- **CarGurus (US)** : 107+ marques, 829 modèles
+- **Auto-Data (BG)** : 63+ marques avec spécifications techniques
+- **Sources Communes 3** : 19 marques (BMW, Audi, Ford, Toyota, Honda, etc.)
 - **Sources Communes 2** : 58 marques supplémentaires
+- **Spécifications Réelles** : 1,265 modèles enrichis avec données techniques
 
 ## 📁 **Structure du Projet v5.0**
 
 ```
-📦 Système Automobile Global 3 Sources
+📦 Système Automobile Global 3 Sources v6.0
 ├── 🚀 autoscout24_scraper.py        # Script principal EU (v3.3+)
 ├── 🚀 car_gurus_scraper.py          # Script principal US (v1.0)
 ├── 🚀 autodata_scraper.py           # Script principal BG (v1.0)
-├── 🏗️ autodata_technical_scraper.py # Spécifications techniques (v1.0)
-├── 🧪 test_autodata_technical.py    # Tests scraper technique
-├── 📊 analyze_technical_data.py     # Analyseur données + web-ready
-├── 🔧 technical_orchestrator.py     # Orchestrateur technique (v1.0)
+├── ⚙️ technical_scraper_autonomous.py # ⭐ Spécifications techniques réelles
 ├── 🔗 consolidate_brands_models.py  # Consolidation multi-sources (v2.0)
-├── 🔄 update_all.py                 # ⭐ Orchestrateur principal (v5.0)
-├── 📄 generate_brands_md.py         # Générateur Markdown marques
-├── 📄 test_dependencies.py          # Test des dépendances
+├── 🔄 update_all.py                 # ⭐ Orchestrateur principal (v6.0)
+├── 🧪 test_dependencies.py          # Test des dépendances
+├── 📊 analyze_technical_data.py     # Analyseur données techniques
 ├── 📄 README.md                     # Documentation
 ├── 📄 requirements.txt              # Dépendances
 ├── 📄 .gitignore                    # Git ignore
-├── 📁 docs/                         # Documentation technique
-│   └── autodata_web_integration_guide.md # Guide intégration web
-├── 📁 logs/                         # Logs des scripts
-│   ├── as24_scraper.log            # Log AutoScout24
-│   ├── cguru_scraper.log           # Log CarGurus
-│   └── autodata_scraper.log        # Log Auto-Data
 ├── 📁 data/                         # Données de sortie
 │   ├── as24_brands_for_scraping.json    # Marques EU
 │   ├── as24_brands_for_scraping.md      # Marques EU (lisible)
@@ -193,9 +175,12 @@ python update_all.py
 │   ├── as24_scraped_models_*.md          # Résultats EU (lisible)
 │   ├── cargurus_scraped_models_*.json    # Résultats US
 │   ├── cargurus_scraped_models_*.md      # Résultats US (lisible)
-│   ├── consolidated_brands_models.json   # ⭐ Consolidation 3 sources (scripts)
-│   └── consolidated_brands_models.md     # ⭐ Consolidation 3 sources (humans)
-└── 🏗️ archive/                      # Anciens scripts et fichiers
+│   ├── consolidated_brands_models.json   # ⭐ Consolidation 3 sources
+│   ├── consolidated_brands_models.md     # ⭐ Consolidation 3 sources (humans)
+│   ├── autonomous_technical_specs_*.json # ⭐ Spécifications techniques réelles
+│   └── enriched_consolidated_with_real_auto_data_specs.json # ⭐ Données enrichies finales
+├── 📁 logs/                         # Logs des scripts (auto-created)
+└── 📦 archive/                      # Anciens scripts archivés
 ```
 
 ## 🔧 **Fonctionnalités Principales v5.0**
@@ -303,12 +288,20 @@ pip install -r requirements.txt
 python test_dependencies.py
 ```
 
-### **2. Scraping Complet Automatique**
-```bash
-# Orchestrateur principal - 3 sources + consolidation
-python update_all.py
+### **2. Scraping Complet Automatique (2 Étapes)**
 
-# Choisir option 0 (DÉFAUT) pour tout faire automatiquement
+**Étape 1: Collecte des données de base**
+```bash
+# Orchestrateur principal - collecte marques/modèles depuis 3 sources
+python update_all.py
+# Choisir option 0 pour scraping parallèle + consolidation
+```
+
+**Étape 2: Enrichissement technique**
+```bash
+# Génération automatique des spécifications techniques réelles
+python technical_scraper_autonomous.py
+# Enrichit automatiquement les données consolidées avec specs réelles
 ```
 
 ### **3. Scraping Sélectif**
@@ -454,11 +447,12 @@ python update_all.py
 
 ---
 
-**Généré le** : 2025-11-11T22:52:00Z
-**Version** : v5.0 - Système Automobile Global 3 Sources
-**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Consolidation
-**Marques** : 310 uniques, 6,071+ modèles
-**Scripts** : 4 principaux + orchestrateur + utilitaires
+**Généré le** : 2025-11-12T22:44:00Z
+**Version** : v6.0 - Système Automobile Global avec Spécifications Réelles
+**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Consolidation + Technical Specs
+**Marques** : 315 uniques, 6,634 modèles
+**Spécifications Réelles** : 1,265 modèles (19.1%) avec données techniques Auto-Data
+**Scripts** : 3 scrapers + 1 orchestrateur + 1 consolidation + 1 technical enrichment
 **Maintenance** : Automatique + manuelle
 **Compatibilité** : Windows/Linux/Mac + Correction Unicode
-**Corrections récentes** : Préfixes cohérents (as24_, cguru_, autodata_) + Auto-Data v1.1 corrigé
+**Workflow** : 2 étapes - Collecte → Enrichissement technique automatique
