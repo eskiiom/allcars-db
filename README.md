@@ -1,12 +1,12 @@
-TLDR; 
+TLDR;
 📅 Last Update: 2025-11-13T23:58:30Z
 🌍 Data Sources: 4
 📋 Total Brands: 1739
 🏷️ Total Models: 8239
 
-# 🚗 AutoScout24 + CarGurus + Auto-Data + Carfolio - Système Automobile Global
+# 🚗 AutoScout24 + CarGurus + Auto-Data + Carfolio - Système Automobile Global v6.0
 
-Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)** et **Auto-Data.net (Bulgarie)** et **Carfolio (global)** avec **extraction automatique des marques**, **spécifications techniques réelles**, **consolidation multi-sources** et **enrichissement technique intelligent**.
+Ce projet extrait les **listes de modèles par marque** depuis **AutoScout24.fr (Europe)**, **CarGurus.com (États-Unis)**, **Auto-Data.net (Bulgarie)** et **Carfolio.com (Global)** avec **extraction automatique des marques**, **spécifications techniques réelles**, **consolidation multi-sources** et **enrichissement technique intelligent**.
 
 ## 🎯 **Scripts Principaux**
 
@@ -55,6 +55,21 @@ python autodata_scraper.py --max-brands 50
 python autodata_scraper.py --no-headless
 ```
 
+### **Carfolio (Global - Marques Historiques)**
+```bash
+# Scraping complet (toutes les marques) - Extraction depuis page de spécifications
+python carfolio_scraper.py
+
+# Mode test (5 marques)
+python carfolio_scraper.py --test
+
+# Limiter à 15 marques
+python carfolio_scraper.py --max-brands 15
+
+# Voir le navigateur (non-headless)
+python carfolio_scraper.py --no-headless
+```
+
 ### **🏗️ Auto-Data Technical Specifications (Base Données Véhicule)**
 ```bash
 # Génération automatique des spécifications techniques réelles
@@ -64,7 +79,7 @@ python technical_scraper_autonomous.py
 
 ### **Consolidation Multi-Sources**
 ```bash
-# Consolider les marques et modèles de tous les scrapers (v2.0 - 3 sources)
+# Consolider les marques et modèles de tous les scrapers (v3.0 - 4 sources)
 python consolidate_brands_models.py
 
 # Génère:
@@ -72,25 +87,29 @@ python consolidate_brands_models.py
 # - data/consolidated_brands_models.md (pour humains)
 ```
 
-### **🔄 ORCHESTRATION PRINCIPALE (v5.0)**
+### **🔄 ORCHESTRATION PRINCIPALE (v6.0)**
 ```bash
 # Script d'orchestration principal - GESTION COMPLÈTE
 python update_all.py
 
-# Menu interactif avec 10 options:
+# Menu interactif avec 13 options:
 # 0. [DÉFAUT] 🔄 Update ALL sources + Consolidate (PARALLÈLE)
 # 1. 🇪🇺 Update AutoScout24 ONLY (EU market)
 # 2. 🇺🇸 Update CarGurus ONLY (US market)
 # 3. 🇧🇬 Update Auto-Data ONLY (Technical specs)
-# 4. 🔄 Update AS24 + CarGurus (NO auto-data)
-# 5. 🔄 Update AS24 + Auto-Data (NO car-gurus)
-# 6. 🔄 Update CarGurus + Auto-Data (NO as24)
-# 7. 🔄 Update ALL THREE sources (NO consolidation)
-# 8. 🔗 Consolidate data ONLY
-# 9. 📊 Show stored statistics + Quit
+# 4. 🌍 Update Carfolio ONLY (Global brands/models)
+# 5. 🔄 Update AS24 + CarGurus (NO auto-data)
+# 6. 🔄 Update AS24 + Auto-Data (NO car-gurus)
+# 7. 🔄 Update CarGurus + Auto-Data (NO as24)
+# 8. 🔄 Update AS24 + Carfolio (NO others)
+# 9. 🔄 Update CarGurus + Carfolio (NO others)
+# 10. 🔄 Update Auto-Data + Carfolio (NO others)
+# 11. 🔄 Update ALL FOUR sources (NO consolidation)
+# 12. 🔗 Consolidate data ONLY
+# 13. 📊 Show stored statistics + Quit
 ```
 
-## 🌍 **ARCHITECTURE GLOBALE v5.0 - 3 SOURCES**
+## 🌍 **ARCHITECTURE GLOBALE v6.0 - 4 SOURCES**
 
 ### **1. ✅ AutoScout24 (Europe) - 280+ Marques**
 - **279+ marques** européennes extraites automatiquement
@@ -116,6 +135,14 @@ python update_all.py
 - **Log** : `logs/autodata_scraper.log`
 - **Performance** : ~10 minutes pour scraping complet
 
+### **4. ✅ Carfolio (Global) - 1,953 Marques**
+- **1,953+ marques** globales extraites depuis page de spécifications
+- **Marques historiques** et de niche internationales
+- **Extraction massive** depuis une seule page (toutes marques visibles)
+- **Détection automatique** des doublons avec autres sources
+- **Log** : `logs/carfolio_scraper.log`
+- **Performance** : ~15-20 minutes pour scraping complet
+
 ### **4. 🏗️ Auto-Data Technical Specifications (Base Réelle)**
 - **Spécifications techniques réelles** depuis base de données Auto-Data
 - **Enrichissement automatique** des données consolidées
@@ -125,41 +152,45 @@ python update_all.py
 - **Performance** : ~3-4 minutes pour 315 marques
 - **Format de sortie** : JSON enrichi avec spécifications réelles
 
-### **5. 🆕 Consolidation Multi-Sources v2.0**
-- **Fusion intelligente** des marques et modèles EU + US + BG
+### **5. 🆕 Consolidation Multi-Sources v3.0**
+- **Fusion intelligente** des marques et modèles EU + US + BG + Global
 - **Approche additive uniquement** - aucune suppression
 - **Sorties JSON + Markdown** pour différents usages
 - **Traçabilité** des sources pour chaque marque/modèle
-- **Statistiques complètes** de consolidation 3 sources
+- **Statistiques complètes** de consolidation 4 sources
 - **Performance** : Quelques secondes
 
-## 📊 **Résultats de Consolidation v6.0 (12/11/2025)**
+## 📊 **Résultats de Consolidation v6.0 (13/11/2025)**
 
 **Statistiques Globales :**
-- **315 marques uniques** fusionnées depuis 3 sources internationales
-- **6,634 modèles** au total consolidés
-- **1,265 modèles** avec **spécifications techniques réelles** (19.1%)
-- **19 marques** présentes dans les 3 sources
-- **58 marques** présentes dans 2 sources
-- **202 marques** uniquement européennes (AS24)
-- **30 marques** uniquement américaines (CarGurus)
-- **6 marques** uniquement bulgares (Auto-Data)
+- **1,739 marques uniques** fusionnées depuis 4 sources internationales
+- **8,239 modèles** au total consolidés
+- **44 marques** présentes dans les 4 sources
+- **40 marques** présentes dans 3 sources
+- **104 marques** présentes dans 2 sources
+- **119 marques** uniquement européennes (AS24)
+- **8 marques** uniquement américaines (CarGurus)
+- **0 marques** uniquement bulgares (Auto-Data)
+- **1,424 marques** uniquement globales (Carfolio)
 
 **Répartition des Données :**
 - **AS24 (Europe)** : 279+ marques, ~4,500+ modèles
 - **CarGurus (US)** : 107+ marques, 829 modèles
 - **Auto-Data (BG)** : 63+ marques avec spécifications techniques
-- **Sources Communes 3** : 19 marques (BMW, Audi, Ford, Toyota, Honda, etc.)
-- **Sources Communes 2** : 58 marques supplémentaires
+- **Carfolio (Global)** : 1,953+ marques, ~2,000+ modèles (marques historiques)
+- **Sources Communes 4** : 44 marques (BMW, Audi, Ford, Toyota, Honda, etc.)
+- **Sources Communes 3** : 40 marques supplémentaires
+- **Sources Communes 2** : 104 marques supplémentaires
 - **Spécifications Réelles** : 1,265 modèles enrichis avec données techniques
 
-## 📁 **Structure du Projet v5.0**
+## 📁 **Structure du Projet v6.0**
 
 ```
-📦 Système Automobile Global 3 Sources v6.0
+📦 Système Automobile Global 4 Sources v6.0
 ├── 🚀 autoscout24_scraper.py        # Script principal EU (v3.3+)
 ├── 🚀 car_gurus_scraper.py          # Script principal US (v1.0)
 ├── 🚀 autodata_scraper.py           # Script principal BG (v1.0)
+├── 🚀 carfolio_scraper.py           # Script principal Global (v1.0)
 ├── ⚙️ technical_scraper_autonomous.py # ⭐ Spécifications techniques réelles
 ├── 🔗 consolidate_brands_models.py  # Consolidation multi-sources (v2.0)
 ├── 🔄 update_all.py                 # ⭐ Orchestrateur principal (v6.0)
@@ -181,15 +212,18 @@ python update_all.py
 │   ├── as24_scraped_models_*.md          # Résultats EU (lisible)
 │   ├── cargurus_scraped_models_*.json    # Résultats US
 │   ├── cargurus_scraped_models_*.md      # Résultats US (lisible)
-│   ├── consolidated_brands_models.json   # ⭐ Consolidation 3 sources
-│   ├── consolidated_brands_models.md     # ⭐ Consolidation 3 sources (humans)
+│   ├── carfolio_scraped_models_*.json    # Résultats Global
+│   ├── carfolio_scraped_models_*.md      # Résultats Global (lisible)
+│   ├── carfolio_exploration_*.json       # Exploration Carfolio
+│   ├── consolidated_brands_models.json   # ⭐ Consolidation 4 sources
+│   ├── consolidated_brands_models.md     # ⭐ Consolidation 4 sources (humans)
 │   ├── autonomous_technical_specs_*.json # ⭐ Spécifications techniques réelles
 │   └── enriched_consolidated_with_real_auto_data_specs.json # ⭐ Données enrichies finales
 ├── 📁 logs/                         # Logs des scripts (auto-created)
 └── 📦 archive/                      # Anciens scripts archivés
 ```
 
-## 🔧 **Fonctionnalités Principales v5.0**
+## 🔧 **Fonctionnalités Principales v6.0**
 
 ### **Extraction Intelligente Multi-Sources :**
 1. **Détection automatique** de l'absence des fichiers de marques
@@ -212,16 +246,16 @@ python update_all.py
 4. **Statistiques globales** d'évolution
 5. **Traçabilité** des sources
 
-### **Consolidation Intelligente 3-Sources :**
-1. **Fusion** des données EU + US + BG
+### **Consolidation Intelligente 4-Sources :**
+1. **Fusion** des données EU + US + BG + Global
 2. **Traçabilité des sources** pour chaque marque
-3. **Statistiques de consolidation** détaillées (3 sources)
+3. **Statistiques de consolidation** détaillées (4 sources)
 4. **Sorties multiples** (JSON + Markdown)
 5. **Incrémental** - re-exécutable pour ajouter des données
 
-### **Orchestration Avancée v5.0 :**
-1. **Parallélisme** avec ThreadPoolExecutor(max_workers=3)
-2. **10 options** de scraping et consolidation
+### **Orchestration Avancée v6.0 :**
+1. **Parallélisme** avec ThreadPoolExecutor(max_workers=4)
+2. **13 options** de scraping et consolidation
 3. **Menu interactif** avec descriptions
 4. **Gestion des combinaisons** de sources
 5. **Statistiques** de tous les systèmes
@@ -246,9 +280,15 @@ python update_all.py
 - **Couverture** : Spécifications techniques bulgares
 - **Fréquence** : 1-2 fois par an
 
-### **Consolidation Globale 3-Sources**
-- **310 marques uniques** consolidées
-- **6,071 modèles** au total
+### **Carfolio (Global)**
+- **1,953+ marques** scrapées en ~15-20 minutes (extraction massive)
+- **Taux de succès** : 100%
+- **Couverture** : Marques historiques et de niche internationales
+- **Fréquence** : 1-2 fois par an
+
+### **Consolidation Globale 4-Sources**
+- **1,739 marques uniques** consolidées
+- **8,239 modèles** au total
 - **Sources traçables** pour chaque marque
 - **Exécution** : Quelques secondes
 - **Sorties** : JSON (scripts) + MD (humains)
@@ -298,7 +338,7 @@ python test_dependencies.py
 
 **Étape 1: Collecte des données de base**
 ```bash
-# Orchestrateur principal - collecte marques/modèles depuis 3 sources
+# Orchestrateur principal - collecte marques/modèles depuis 4 sources
 python update_all.py
 # Choisir option 0 pour scraping parallèle + consolidation
 ```
@@ -360,10 +400,11 @@ head data/consolidated_brands_models.md
 
 ### **Test de Validation (Développement)**
 ```bash
-# Test rapide des 3 sources
+# Test rapide des 4 sources
 python autoscout24_scraper.py --test
 python car_gurus_scraper.py --test
 python autodata_scraper.py --test
+python carfolio_scraper.py --test
 
 # Consolidation des tests
 python consolidate_brands_models.py
@@ -376,18 +417,30 @@ wc -l data/consolidated_brands_models.md
 ```bash
 # 1. Scraping EU + US uniquement
 python update_all.py
-# Choisir option 4
+# Choisir option 5
 
 # 2. Scraping EU + BG uniquement
 python update_all.py
-# Choisir option 5
+# Choisir option 6
 
 # 3. Scraping US + BG uniquement
 python update_all.py
-# Choisir option 6
+# Choisir option 7
+
+# 4. Scraping EU + Global uniquement
+python update_all.py
+# Choisir option 8
+
+# 5. Scraping US + Global uniquement
+python update_all.py
+# Choisir option 9
+
+# 6. Scraping BG + Global uniquement
+python update_all.py
+# Choisir option 10
 ```
 
-## 📊 **Analyse des Données Consolidées v5.0**
+## 📊 **Analyse des Données Consolidées v6.0**
 
 ### **Top 20 Marques Globales (par nombre de modèles)**
 1. **Mercedes-Benz** - 382+ modèles (EU)
@@ -402,36 +455,40 @@ python update_all.py
 10. **Peugeot** - 82+ modèles (EU)
 [... et 300+ autres marques]
 
-### **Analyse de Couverture 3 Sources**
-- **Marques EU Uniques** : 202 (Porsche, Renault, Peugeot, etc.)
-- **Marques US Uniques** : 30 (Chevrolet, GMC, Ram, Cadillac, etc.)
-- **Marques BG Uniques** : 1 (Spécificités bulgares)
-- **Marques Communes 2 Sources** : 58 marques
-- **Marques Communes 3 Sources** : 19 marques (BMW, Audi, Ford, Toyota, Honda, etc.)
-- **Couverture Globale** : 310+ marques uniques
+### **Analyse de Couverture 4 Sources**
+- **Marques EU Uniques** : 119 (Porsche, Renault, Peugeot, etc.)
+- **Marques US Uniques** : 8 (Chevrolet, GMC, Ram, Cadillac, etc.)
+- **Marques BG Uniques** : 0 (intégrées dans autres sources)
+- **Marques Globales Uniques** : 1,424 (marques historiques et de niche)
+- **Marques Communes 2 Sources** : 104 marques
+- **Marques Communes 3 Sources** : 40 marques
+- **Marques Communes 4 Sources** : 44 marques (BMW, Audi, Ford, Toyota, Honda, etc.)
+- **Couverture Globale** : 1,739+ marques uniques
 
 ### **Types de Données par Source**
 - **AutoScout24 (EU)** : Marques/modèles commerciaux européens
-- **CarGurus (US)** : Marques/modèles commerciaux américains  
+- **CarGurus (US)** : Marques/modèles commerciaux américains
 - **Auto-Data (BG)** : Spécifications techniques bulgares
+- **Carfolio (Global)** : Marques historiques et de niche internationales
 
-## 🆕 **Nouveautés v5.0 - Système 3 Sources**
+## 🆕 **Nouveautés v6.0 - Système 4 Sources**
 
-### **Extension Géographique**
+### **Extension Géographique Massive**
 - **Europe** : AutoScout24 (279+ marques)
 - **États-Unis** : CarGurus (107+ marques)
 - **Bulgarie** : Auto-Data (63+ marques)
-- **Global** : 310+ marques consolidées
+- **🌍 Global** : Carfolio (1,953+ marques historiques)
+- **Total** : 1,739+ marques consolidées (+496% vs v5.0)
 
-### **Système de Consolidation 3 Sources**
+### **Système de Consolidation 4 Sources**
 - **Approche additive** - données préservées
 - **Traçabilité des sources** - knows country of origin + type
 - **Sorties multiples** - JSON (scripts) + MD (humans)
-- **Exécution facile** - un seul script de consolidation v2.0
+- **Exécution facile** - un seul script de consolidation v3.0
 
 ### **Orchestration Avancée**
-- **Parallélisme** - ThreadPoolExecutor(max_workers=3)
-- **10 options** - Combinaisons flexibles de sources
+- **Parallélisme** - ThreadPoolExecutor(max_workers=4)
+- **13 options** - Combinaisons flexibles de sources
 - **Menu interactif** - Interface utilisateur moderne
 - **Statistiques** - Analyse complète de tous les systèmes
 
@@ -447,18 +504,19 @@ python update_all.py
 - **AutoScout24 optimisé** - 32-33 minutes (vs 45-60 minutes estimé)
 - **CarGurus exceptionnel** - 1 minute (vs 30-45 minutes estimé)
 - **Auto-Data technique** - 10 minutes (extraction complexe de specs)
-- **Parallélisme** - Scraping simultané des 3 sources
-- **Consolidation efficace** - Quelques secondes pour 310 marques
+- **Carfolio massif** - 15-20 minutes (extraction depuis une page unique)
+- **Parallélisme** - Scraping simultané des 4 sources
+- **Consolidation efficace** - Quelques secondes pour 1,739 marques
 - **Logs centralisés** - Suivi unifié de toutes les opérations
 
 ---
 
-**Généré le** : 2025-11-12T22:44:00Z
-**Version** : v6.0 - Système Automobile Global avec Spécifications Réelles
-**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Consolidation + Technical Specs
-**Marques** : 315 uniques, 6,634 modèles
-**Spécifications Réelles** : 1,265 modèles (19.1%) avec données techniques Auto-Data
-**Scripts** : 3 scrapers + 1 orchestrateur + 1 consolidation + 1 technical enrichment
+**Généré le** : 2025-11-13T23:58:30Z
+**Version** : v6.0 - Système Automobile Global 4 Sources
+**Sources** : AutoScout24 (EU) + CarGurus (US) + Auto-Data (BG) + Carfolio (Global) + Consolidation
+**Marques** : 1,739 uniques, 8,239 modèles (+496% vs v5.0)
+**Spécifications Réelles** : 1,265 modèles (15.3%) avec données techniques Auto-Data
+**Scripts** : 4 scrapers + 1 orchestrateur + 1 consolidation + 1 explorer + 1 technical enrichment
 **Maintenance** : Automatique + manuelle
 **Compatibilité** : Windows/Linux/Mac + Correction Unicode
-**Workflow** : 2 étapes - Collecte → Enrichissement technique automatique
+**Workflow** : Phase 2 complète - Prêt pour Phase 3 (spécifications techniques)
